@@ -1,0 +1,42 @@
+.container-navBottom{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navBottom-plusBtn > button{
+    padding: .75rem 1.25rem;
+    border-radius: 100% ;
+    border: 1px solid white;
+
+    background-color: #152139;
+    color: white;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.navBottom-plusBtn > button:hover{
+    background-color: #1f3b6f;
+}
+
+.navBottom-section{
+    background-color: #152139;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.icons{
+    list-style-type: none;
+    display: flex;
+    align-items: row;
+    justify-content: space-around;
+    color: white;
+}
+
+.icons > .icon{
+    cursor:pointer;
+}
