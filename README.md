@@ -11,6 +11,6 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [ ] Criar a base de componentes mapeados
 - [ ] Adicionar Icons e Imagens
 
-## Setup and Documentations
+### Setup and Documentations
 
 This project was made with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.2 and [Node.js](https://nodejs.org/en/docs) version 18.16.0.
