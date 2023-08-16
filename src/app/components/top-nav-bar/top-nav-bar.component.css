@@ -1,6 +1,5 @@
 .container__topBar{
     width: 100%;
-    padding: 20px;
     background-color: #152139;
     position: fixed;
     top: 0;
@@ -16,6 +15,7 @@ img{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin: 20px;
 }
 
 .wrapper__appTitle > h1{
