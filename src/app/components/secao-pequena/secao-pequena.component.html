@@ -6,7 +6,15 @@
         </div>
 
         <div class="content">
-
+            <button
+                *ngFor = "let livro of livros"
+            >
+                <app-livro-thumb
+                    tituloLivro="{{livro.titulo}}"
+                    livroImg="{{livro.urlImg}}"
+             ></app-livro-thumb>
+            </button>
+            
         </div>
 
     </div>

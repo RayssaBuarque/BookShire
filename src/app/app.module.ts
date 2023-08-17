@@ -7,6 +7,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { BottomNavBarComponent } from './components/bottom-nav-bar/bottom-nav-bar.component';
 import { TopNavBarComponent } from './components/top-nav-bar/top-nav-bar.component';
 import { SecaoPequenaComponent } from './components/secao-pequena/secao-pequena.component';
+import { LivroThumbComponent } from './components/livros/livro-thumb/livro-thumb.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { SecaoPequenaComponent } from './components/secao-pequena/secao-pequena.
     HomeComponent,
     BottomNavBarComponent,
     TopNavBarComponent,
-    SecaoPequenaComponent
+    SecaoPequenaComponent,
+    LivroThumbComponent
   ],
   imports: [
     BrowserModule,
