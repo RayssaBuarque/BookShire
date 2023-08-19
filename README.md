@@ -6,13 +6,22 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 
 ### Atividades de Desenvolvimento
 
+##### 1st Sprint -- Componentes Principais
 - [x] Criar componentes de menus fixos na tela
 - [x] Conectar API às seções thumbnail
-- [ ] Adicionar constructor no modelo de livro
-- [ ] Concertar botão "+"
-- [ ] Criar a base de componentes mapeados
-- [ ] Adicionar Icons e Imagens
-- [ ] Fazer conexões com a API
+- [x] Criar modelo TypeScript de dados sobre livros
+
+##### 2nd Sprint -- Tela Inicial
+- [ ] Determinar estantes de recomendações
+- [ ] Criar capa padrão de livros sem thumbnail na API
+- [ ] Confeccionar design no CSS
+- [ ] Adicionar Icons e Imagens nos Menus
+
+##### 3rd Sprint -- Sistema de Busca
+- [ ] Criar tela de Pesquisa
+- [ ] Fazer conexões de busca com a API
+
+##### Future Sprints...
 - [ ] Adicionar avaliações por livro
 
 ### Setup and Documentations

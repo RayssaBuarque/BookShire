@@ -20,4 +20,9 @@
     border: 1px solid red;
     margin-top: 10px;
     min-height: 100px;
+    width: 100%;
+
+    /* display: flex;
+    flex-direction: row; */
+
 }

@@ -2,6 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 
 //isso daqui dá erro pq Livro é uma classe que precisa de constructor
 import { Livro } from '../livros/livro-modelo'
+import { ChildrenOutletContexts } from '@angular/router';
 // const livro:Livro = {}
 
 @Component({
@@ -12,6 +13,8 @@ import { Livro } from '../livros/livro-modelo'
 export class SecaoPequenaComponent implements OnInit {
 
   @Input() titulo:string = 'Categoria título'
+  categoria:string = ''
+  private idCategoria:string = ''
   livros:Livro[] = [];
   
   constructor() {
@@ -19,16 +22,39 @@ export class SecaoPequenaComponent implements OnInit {
   }
   
   ngOnInit() {
-    this.getLivros()
+    this.categoria = this.titulo.normalize('NFD').replace(/[\u0300-\u036f]/g, "").replace(/ /g,'+');
+    // console.log(this.categoria)
+
+    this.getLivros(this.categoria, 7)
   }
 
-  getLivros():void {
-    let livrosApi = fetch(`https://www.googleapis.com/books/v1/volumes?q=subject:${this.titulo}`)
-    .then( (res) => res.json())
-    .then( (livrosJson) => {
-      this.livros.push(...this.convertLivros(livrosJson.items))
-      console.log(this.livros)
-    })
+  getLivros(categoria:string, maxResults:number):void {
+    let categoriasApi = fetch(`https://www.googleapis.com/books/v1/users/114406819052862752801/bookshelves`)
+      .then( (res)=> res.json() )
+      .then( (colecoes) => colecoes.items)
+      .then( (listaCategorias) => {
+        for(let i = 0; i<listaCategorias.length; i++){
+          if(listaCategorias[i].title == categoria){
+            this.idCategoria = listaCategorias[i].id
+          }
+        }
+      }).then( ()=>{
+    
+        let livrosApi = fetch(`https://www.googleapis.com/books/v1/users/114406819052862752801/bookshelves/${this.idCategoria}/volumes`)
+          .then( (res) => res.json())
+          .then( (livrosJson) => {
+            this.livros.push(...this.convertLivros(livrosJson.items))
+            // console.log(this.livros)
+          })
+
+        // let livrosApi = fetch(`https://www.googleapis.com/books/v1/volumes?q=subject:${categoria}&maxResults=${maxResults}&langRestrict=pt`)
+        // .then( (res) => res.json())
+        // .then( (livrosJson) => {
+        //   this.livros.push(...this.convertLivros(livrosJson.items))
+        //   console.log(this.livros)
+        // })
+      } )
+
   }
 
   convertLivros (list:[]):Livro[] {
