@@ -1,6 +1,8 @@
-# BookShire
+# BookShire 📚🌳
 
 O BookShire é uma plataforma de vendas, doações e trocas de livros usados que visa facilitar o acesso à literatura.
+
+![Banner Informativo do BookShire](/assets/banner.png)
 
 Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais sobre o BookShire, acesse [nosso site oficial](https://bookshire.vercel.app/)
 
