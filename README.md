@@ -11,8 +11,8 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [x] 🔗 Conectar API às seções thumbnail
 - [x] 📚 Criar modelo TypeScript de dados sobre livros
 
-##### 2nd Sprint -- Tela Inicial
-- [ ] 🗣️ Determinar estantes de recomendações 
+##### 2nd Sprint -- Design de Tela Inicial
+- [x] 🗣️ Determinar estantes de recomendações 
 - [ ] 📘 Criar capa padrão de livros sem thumbnail na API
 - [ ] 🪄 Confeccionar design no CSS 
 - [ ] 👁️‍🗨️ Adicionar Icons e Imagens nos Menus
