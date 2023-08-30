@@ -18,7 +18,7 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [ ] 👁️‍🗨️ Adicionar Icons e Imagens nos Menus
 
 ##### 3rd Sprint -- Sistema de Busca
-- [ ] 🔎 Criar tela de Pesquisa
+- [x] 🔎 Criar tela de Pesquisa
 - [ ] 🪢 Fazer conexões de busca com a API
 
 ##### Future Sprints...

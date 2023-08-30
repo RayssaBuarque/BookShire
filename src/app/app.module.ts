@@ -9,6 +9,7 @@ import { TopNavBarComponent } from './components/top-nav-bar/top-nav-bar.compone
 import { SecaoPequenaComponent } from './components/secao-pequena/secao-pequena.component';
 import { LivroThumbComponent } from './components/livros/livro-thumb/livro-thumb.component';
 import { PesquisaComponent } from './pages/pesquisa/pesquisa.component';
+import { BarraPesquisaComponent } from './components/barra-pesquisa/barra-pesquisa.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { PesquisaComponent } from './pages/pesquisa/pesquisa.component';
     TopNavBarComponent,
     SecaoPequenaComponent,
     LivroThumbComponent,
-    PesquisaComponent
+    PesquisaComponent,
+    BarraPesquisaComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,40 @@
+.container__barra-pesquisa{
+    /* display: flex; */
+    margin: 0 .75rem;
+    justify-content: center;
+}
+
+.container__wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3px 5px;
+
+    border: 1px solid #1f3b6f;
+    border-radius: 50px;
+}
+
+.wrapper__lupa >.lupa__btn > img{
+    width: 18px;
+    height: 18px;
+
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.wrapper__lupa > .lupa__btn{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.inpt__barra-pesquisa{
+    width: 100%;
+    border: none;
+}
+
+.inpt__barra-pesquisa:focus{
+    outline: none;
+}
