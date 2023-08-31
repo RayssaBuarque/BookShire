@@ -15,14 +15,15 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 
 ##### 2nd Sprint -- Design de Tela Inicial
 - [x] 🗣️ Determinar estantes de recomendações 
-- [ ] 📘 Criar capa padrão de livros sem thumbnail na API
+- [x] 📘 Criar capa padrão de livros sem thumbnail na API
 - [ ] 🪄 Confeccionar design no CSS 
-- [ ] 👁️‍🗨️ Adicionar Icons e Imagens nos Menus
+- [x] 👁️‍🗨️ Adicionar Icons e Imagens nos Menus
 
 ##### 3rd Sprint -- Sistema de Busca
 - [x] 🔎 Criar tela de Pesquisa
 - [x] 📦 Criar nichos de Categoria
 - [ ] 💟 Encapar dos nichos de Categoria
+- [ ] 📨 Conectar lista de Categorias com Banco de Dados
 - [x] 🪢 Fazer conexões dos nichos com a API
 - [ ] 🪢 Fazer conexões de busca com a API
 

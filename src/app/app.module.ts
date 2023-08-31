@@ -10,7 +10,9 @@ import { SecaoPequenaComponent } from './components/secao-pequena/secao-pequena.
 import { LivroThumbComponent } from './components/livros/livro-thumb/livro-thumb.component';
 import { PesquisaComponent } from './pages/pesquisa/pesquisa.component';
 import { BarraPesquisaComponent } from './components/barra-pesquisa/barra-pesquisa.component';
-import { CategoriaComponent } from './pages/pesquisa/categoria/categoria.component';
+import { CategoriaThumbnailComponent } from './pages/pesquisa/categoria-thumbnail/categoria-thumbnail.component';
+import { CategoriaComponent } from './pages/categoria/categoria.component';
+import { CardLivroComponent } from './components/livros/card-livro/card-livro.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { CategoriaComponent } from './pages/pesquisa/categoria/categoria.compone
     LivroThumbComponent,
     PesquisaComponent,
     BarraPesquisaComponent,
-    CategoriaComponent
+    CategoriaThumbnailComponent,
+    CategoriaComponent,
+    CardLivroComponent
   ],
   imports: [
     BrowserModule,
