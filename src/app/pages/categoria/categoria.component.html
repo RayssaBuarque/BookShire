@@ -2,10 +2,13 @@
     <div class="categoria__barra-pesquisa"></div>
 
     <div class="categoria__livros">
-        <app-card-livro></app-card-livro>
-        <app-card-livro></app-card-livro>
-        <app-card-livro></app-card-livro>
-        <app-card-livro></app-card-livro>
+        <button *ngFor = "let livro of livros">
+            <app-card-livro
+            livroTitulo="{{livro.titulo}}"
+            urlLivroCapa="{{livro.urlImg}}"
+            nomeAutor="{{livro.autores}}"
+            ></app-card-livro>
+        </button>
     </div>
 </div>
 

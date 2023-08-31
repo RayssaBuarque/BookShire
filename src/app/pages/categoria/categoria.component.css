@@ -1,3 +1,9 @@
-.categoria__livros{
-    margin: 0 15px;
+.categoria__livros > button{
+    width: 100%;
+    padding: 0 15px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    margin-bottom: 20px;
 }
