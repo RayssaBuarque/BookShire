@@ -22,9 +22,9 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 ##### 3rd Sprint -- Sistema de Busca
 - [x] 🔎 Criar tela de Pesquisa
 - [x] 📦 Criar nichos de Categoria
-- [ ] 💟 Encapar dos nichos de Categoria
+- [ ] 💟 Encapar os nichos de Categoria
 - [ ] 📨 Conectar lista de Categorias com Banco de Dados
-- [x] 🪢 Fazer conexões dos nichos com a API
+- [ ] 🪢 Fazer conexões dos nichos com a API
 - [ ] 🪢 Fazer conexões de busca com a API
 
 ##### Future Sprints...
