@@ -10,6 +10,7 @@ import { SecaoPequenaComponent } from './components/secao-pequena/secao-pequena.
 import { LivroThumbComponent } from './components/livros/livro-thumb/livro-thumb.component';
 import { PesquisaComponent } from './pages/pesquisa/pesquisa.component';
 import { BarraPesquisaComponent } from './components/barra-pesquisa/barra-pesquisa.component';
+import { CategoriaComponent } from './pages/pesquisa/categoria/categoria.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { BarraPesquisaComponent } from './components/barra-pesquisa/barra-pesqui
     SecaoPequenaComponent,
     LivroThumbComponent,
     PesquisaComponent,
-    BarraPesquisaComponent
+    BarraPesquisaComponent,
+    CategoriaComponent
   ],
   imports: [
     BrowserModule,

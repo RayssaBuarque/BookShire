@@ -40,3 +40,8 @@
 .icons > .icon{
     cursor:pointer;
 }
+
+.icon > a > img{
+    width: 24px;
+    height: 24px;
+}
