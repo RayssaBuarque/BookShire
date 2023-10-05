@@ -5,18 +5,25 @@
     </div>
 
     <div class="pesquisa__categorias">
-        <app-categoria-thumbnail idCategoria="1018"></app-categoria-thumbnail>
-        <app-categoria-thumbnail idCategoria="1003"></app-categoria-thumbnail>
-        <app-categoria-thumbnail idCategoria="1001"></app-categoria-thumbnail>
+        <div *ngFor="let categoria of categorias">
+            <app-categoria-thumbnail 
+                idCategoria={{categoria.id}} 
+                nomeCategoria={{categoria.titulo}}></app-categoria-thumbnail>
+        </div>
+
+        <!-- <app-categoria-thumbnail idCategoria="1018"></app-categoria-thumbnail>
         <app-categoria-thumbnail idCategoria="1013"></app-categoria-thumbnail>
-        <app-categoria-thumbnail idCategoria="5"></app-categoria-thumbnail>
-        <app-categoria-thumbnail idCategoria="6"></app-categoria-thumbnail>
+        <app-categoria-thumbnail idCategoria="1009"></app-categoria-thumbnail>
+        <app-categoria-thumbnail idCategoria="1003"></app-categoria-thumbnail>
+        <app-categoria-thumbnail idCategoria="1001"></app-categoria-thumbnail> -->
+        
+        <!-- <app-categoria-thumbnail idCategoria="6"></app-categoria-thumbnail>
         <app-categoria-thumbnail idCategoria="7"></app-categoria-thumbnail>
         <app-categoria-thumbnail idCategoria="8"></app-categoria-thumbnail>
         <app-categoria-thumbnail idCategoria="9"></app-categoria-thumbnail>
         <app-categoria-thumbnail idCategoria="10"></app-categoria-thumbnail>
         <app-categoria-thumbnail idCategoria="11"></app-categoria-thumbnail>
-        <app-categoria-thumbnail idCategoria="12"></app-categoria-thumbnail>
+        <app-categoria-thumbnail idCategoria="12"></app-categoria-thumbnail> -->
     </div>
 
 </div>

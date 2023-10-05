@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class CategoriaThumbnailComponent implements OnInit {
 
   @Input() idCategoria:string = '';
+  @Input() nomeCategoria:string = '';
 
   constructor() { }
 
