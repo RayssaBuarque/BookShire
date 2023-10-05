@@ -9,6 +9,7 @@ export class CategoriaThumbnailComponent implements OnInit {
 
   @Input() idCategoria:string = '';
   @Input() nomeCategoria:string = '';
+  urlCategoria:string = '../../../../assets/thumbnails/default-book_thumbnail.png';
 
   constructor() { }
 
