@@ -6,10 +6,21 @@
             ></app-barra-pesquisa>
     </div>
 
-    <div class="livros__resultados">
-        
+    <div #resultados__livros class="resultados__livros">
+        <button *ngFor = "let livro of livros">
+            <app-card-livro
+            livroTitulo="{{livro.titulo}}"
+            urlLivroCapa="{{livro.urlImg}}"
+            nomeAutor="{{livro.autores}}"
+            ></app-card-livro>
+        </button>
     </div>
 
+    <!-- botões de paginação -->
+    <div class="container__paginacao" style="padding-bottom: 50px">
+        <button type="button" (click)="this.recuarLista_Livros()"> < </button>
+        <button type="button" (click)="this.avancarLista_Livros()" > > </button>
+    </div>
 </div>
 
 <app-bottom-nav-bar></app-bottom-nav-bar>
