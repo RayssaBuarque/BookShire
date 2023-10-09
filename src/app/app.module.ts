@@ -13,6 +13,7 @@ import { BarraPesquisaComponent } from './components/barra-pesquisa/barra-pesqui
 import { CategoriaThumbnailComponent } from './pages/pesquisa/categoria-thumbnail/categoria-thumbnail.component';
 import { CategoriaComponent } from './pages/categoria/categoria.component';
 import { CardLivroComponent } from './components/livros/card-livro/card-livro.component';
+import { PesquisaResultadosComponent } from './pages/pesquisa-resultados/pesquisa-resultados.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { CardLivroComponent } from './components/livros/card-livro/card-livro.co
     BarraPesquisaComponent,
     CategoriaThumbnailComponent,
     CategoriaComponent,
-    CardLivroComponent
+    CardLivroComponent,
+    PesquisaResultadosComponent
   ],
   imports: [
     BrowserModule,

@@ -14,7 +14,7 @@
     border-radius: 50px;
 }
 
-.wrapper__lupa >.lupa__btn > img{
+.wrapper__lupa >#lupa__btn > img{
     width: 18px;
     height: 18px;
 
@@ -22,7 +22,7 @@
     margin-right: 10px;
 }
 
-.wrapper__lupa > .lupa__btn{
+.wrapper__lupa > #lupa__btn{
     border: none;
     background-color: transparent;
     cursor: pointer;
@@ -37,4 +37,8 @@
 
 .inpt__barra-pesquisa:focus{
     outline: none;
+}
+
+.wrapper__caixa-texto{
+    width: 100%;
 }

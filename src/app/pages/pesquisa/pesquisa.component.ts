@@ -14,6 +14,7 @@ export class PesquisaComponent implements OnInit {
   public categorias:any[] | null = [
 
   ]
+
   constructor() { }
 
   ngOnInit(): void {
@@ -23,20 +24,21 @@ export class PesquisaComponent implements OnInit {
     }
   }
 
-  //método que solicita dados específicos da categoria
+  //método que solicita DADOS DA CATEGORIA
   getCategoriaDado(id:string|null):void{
     let livrosApi = fetch(`https://www.googleapis.com/books/v1/users/114406819052862752801/bookshelves/${id}`)
       .then( (res) => res.json())
       .then( (res) =>{
-        console.log(`o Id dessa estante é ${id}`);
+        // console.log(`o Id dessa estante é ${id}`);
         
+        //dados selecionados
         this.categorias?.push({
           id: res.id,
           titulo: res.title
         });
         
-        console.log(res)
-        console.log(this.categorias)
+        // console.log(res)
+        // console.log(this.categorias)
 
       }  )
   }

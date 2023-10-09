@@ -10,6 +10,18 @@
             ></app-card-livro>
         </button>
     </div>
+
+    <!-- <div
+        [innerHTML]="htmlString" 
+        class="categoria__livros"
+        
+        ></div> -->
+
+    <div class="container__paginacao" style="padding-bottom: 50px">
+        <button type="button" (click)="this.recuarLista_Livros()"> < </button>
+        <button type="button" (click)="this.avancarLista_Livros()" > > </button>
+    </div>
+    
 </div>
 
 <app-bottom-nav-bar></app-bottom-nav-bar>

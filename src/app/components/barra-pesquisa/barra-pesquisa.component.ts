@@ -12,4 +12,14 @@ export class BarraPesquisaComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+  getPesquisa(pesquisaTexto:string):void{
+    console.log(pesquisaTexto)
+
+    let livrosApi = fetch(`https://www.googleapis.com/books/v1/volumes?q=${pesquisaTexto}`)
+      .then( (res) => res.json())
+      .then( (res) => console.log(res) );
+        
+  }
+
 }
