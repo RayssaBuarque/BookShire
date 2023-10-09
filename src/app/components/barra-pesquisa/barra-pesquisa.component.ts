@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-barra-pesquisa',
@@ -7,19 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BarraPesquisaComponent implements OnInit {
 
-  constructor() { }
+  @Input() textoPadrao:string = 'Pesquise um livro...'
+
+  constructor(private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
   }
 
 
-  getPesquisa(pesquisaTexto:string):void{
-    console.log(pesquisaTexto)
-
-    let livrosApi = fetch(`https://www.googleapis.com/books/v1/volumes?q=${pesquisaTexto}`)
-      .then( (res) => res.json())
-      .then( (res) => console.log(res) );
-        
+  rotaPesquisa(pesquisaTexto:string):void{
+    //Ao pesquisar alguma coisa, o Router redireciona à tela de pesquisa
+    this.router.navigate([`../pesquisa/${pesquisaTexto}`]);
   }
 
 }

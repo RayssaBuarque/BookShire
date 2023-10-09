@@ -1,11 +1,11 @@
 <div class="container__barra-pesquisa">
     <div class="container__wrapper">
         <div class="wrapper__caixa-texto">
-            <input id="pesquisaTexto" #pesquisaTexto type="text" class="inpt__barra-pesquisa" placeholder="Pesquise um livro...">
+            <input id="pesquisaTexto" #pesquisaTexto type="text" class="inpt__barra-pesquisa" placeholder="{{textoPadrao}}" (keyup.enter)="rotaPesquisa(pesquisaTexto.value)">
         </div>
 
         <div class="wrapper__lupa">
-            <button id="lupa__btn" (click)="getPesquisa(pesquisaTexto.value)" >
+            <button id="lupa__btn" (click)="rotaPesquisa(pesquisaTexto.value)" >
                 <img src="../../../assets/icons/pesquisa-icon-dark.svg" alt="Pesquisar">
             </button>
         </div>

@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { PesquisaComponent } from './pages/pesquisa/pesquisa.component';
 import { CategoriaComponent } from './pages/categoria/categoria.component';
+import { PesquisaResultadosComponent } from './pages/pesquisa-resultados/pesquisa-resultados.component';
 
 const routes: Routes = [
   {
@@ -12,6 +13,10 @@ const routes: Routes = [
   {
     path:'pesquisa',
     component: PesquisaComponent
+  },
+  {
+    path:'pesquisa/:pesquisaQuery',
+    component: PesquisaResultadosComponent
   },
   {
     path:'categoria/:id',
