@@ -14,6 +14,7 @@ import { CategoriaThumbnailComponent } from './pages/pesquisa/categoria-thumbnai
 import { CategoriaComponent } from './pages/categoria/categoria.component';
 import { CardLivroComponent } from './components/livros/card-livro/card-livro.component';
 import { PesquisaResultadosComponent } from './pages/pesquisa-resultados/pesquisa-resultados.component';
+import { PerfilComponent } from './pages/perfil/perfil.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { PesquisaResultadosComponent } from './pages/pesquisa-resultados/pesquis
     CategoriaThumbnailComponent,
     CategoriaComponent,
     CardLivroComponent,
-    PesquisaResultadosComponent
+    PesquisaResultadosComponent,
+    PerfilComponent
   ],
   imports: [
     BrowserModule,

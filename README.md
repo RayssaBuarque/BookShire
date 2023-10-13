@@ -24,7 +24,11 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [x] 📦 Criar nichos de Categoria
 - [ ] 💟 Encapar os nichos de Categoria
 - [x] 🪢 Fazer conexões dos nichos com a API
-- [ ] 🪢 Fazer conexões de busca com a API
+- [x] 🪢 Fazer conexões de busca com a API
+
+#### 4rth Sprint -- Conexões com o Banco
+- [ ] 👤 Desenvolver tela de Perfil
+- [ ] 🖇️ Linkar tela de Perfil corretamente (+routing-module)
 
 ##### Future Sprints...
 - [ ] ⭐ Adicionar avaliações por livro 
