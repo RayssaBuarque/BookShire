@@ -1,18 +1,60 @@
-.container__perfil{
-    padding: 0 24px;
-}
-
 .header__perfil{
     display: flex;
     flex-direction: row;
+    padding: 0 24px;
 
     align-items: center;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
 .header__perfil > img{
-    width: 145px;
-    height: 145px;
+    width: 115px;
+    height: 115px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+.info__header > h2{
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 30px;
+    color: #152139;
+}
+
+/* NAVEGAÇÃO DO PERFIL */
+.nav__perfil{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: .175rem;
+
+    margin-top: 1.5rem;
+    padding-top: .65rem;
+    border-top: 2px solid #d7deea;
+    border-bottom: 6px solid #d7deea;
+
+    -webkit-box-shadow: 0px 46px 57px 1px rgba(215,222,234,0.75);
+    -moz-box-shadow: 0px 46px 57px 1px rgba(215,222,234,0.75);
+    box-shadow: 0px 46px 57px 1px rgba(215,222,234,0.75);
+}
+
+/* .nav-decor{
+    height: 5px;
+    width: 100%;
+    background-color: #d7deea;
+} */
+
+.navItem{
+    border: none;
+    background-color: transparent;
+
+    color: #152139;
+
+    font-size: 18px;
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 500;
+
+    padding: 0 22px;
+    padding-bottom: .65rem;
+    /* border-bottom: 5px solid #152139; */
+    /* border-bottom: 5px solid #1f3b6f; */
 }
