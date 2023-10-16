@@ -1,12 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
-
 @Component({
-  selector: 'app-pesquisa',
-  templateUrl: './pesquisa.component.html',
-  styleUrls: ['./pesquisa.component.css']
+  selector: 'app-pesquisa-anunciar',
+  templateUrl: './pesquisa-anunciar.component.html',
+  styleUrls: ['./pesquisa-anunciar.component.css', '../pesquisa.component.css']
 })
-export class PesquisaComponent implements OnInit {
+export class PesquisaAnunciarComponent implements OnInit {
 
   //variável que carrega os IDs de categorias apresentados
   private idCategorias:string[] = ['1021','1017','1003','1004','1015','1025','1002','1007','1013','1016','1005','1001','1009','1034','1024'];  
@@ -19,11 +18,6 @@ export class PesquisaComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    //isso daqui é de quando eu tava tentando montar a rota de anunciar
-    // this.activatedRoute.fragment.subscribe((fragment: string | null) => {
-    //   console.log("My hash fragment is here => ", fragment)
-    // })
-
     //
     for(let i in this.idCategorias){
       this.getCategoriaDado(this.idCategorias[i]);

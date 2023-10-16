@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RouterModule, Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-bottom-nav-bar',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BottomNavBarComponent implements OnInit {
 
-  constructor() { }
+  constructor(RouterModule:RouterModule, activatedRoute:ActivatedRoute) { }
 
   ngOnInit(): void {
+    
   }
 
 }

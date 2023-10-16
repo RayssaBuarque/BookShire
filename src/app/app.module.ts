@@ -15,6 +15,10 @@ import { CategoriaComponent } from './pages/categoria/categoria.component';
 import { CardLivroComponent } from './components/livros/card-livro/card-livro.component';
 import { PesquisaResultadosComponent } from './pages/pesquisa-resultados/pesquisa-resultados.component';
 import { PerfilComponent } from './pages/perfil/perfil.component';
+import { PesquisaAnunciarComponent } from './pages/pesquisa/pesquisa-anunciar/pesquisa-anunciar.component';
+import { NotificacoesComponent } from './pages/notificacoes/notificacoes.component';
+import { CardNotificacaoComponent } from './components/card-notificacao/card-notificacao.component';
+// import { PesquisaAnunciarComponent } from './pages/pesquisa-anunciar/pesquisa-anunciar.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +34,11 @@ import { PerfilComponent } from './pages/perfil/perfil.component';
     CategoriaComponent,
     CardLivroComponent,
     PesquisaResultadosComponent,
-    PerfilComponent
+    PerfilComponent,
+    PesquisaAnunciarComponent,
+    NotificacoesComponent,
+    CardNotificacaoComponent,
+    // PesquisaAnunciarComponent
   ],
   imports: [
     BrowserModule,

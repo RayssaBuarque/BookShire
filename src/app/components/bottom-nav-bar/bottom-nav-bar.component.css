@@ -8,7 +8,7 @@
     align-items: end;
 }
 
-.navBottom-plusBtn > button{
+.navBottom-plusBtn > a > button{
     padding: .75rem 1.25rem;
     border-radius: 100%;
     border: 1px solid white;
@@ -24,7 +24,7 @@
     margin-bottom: 12px;
 }
 
-.navBottom-plusBtn > button:hover{
+.navBottom-plusBtn > a > button:hover{
     background-color: #1f3b6f;
 }
 

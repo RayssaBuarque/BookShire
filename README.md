@@ -29,6 +29,7 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 #### 4rth Sprint -- Conexões com o Banco
 - [x] 👤 Desenvolver tela de Perfil
 - [ ] 🖇️ Linkar tela de Perfil corretamente (+routing-module)
+- [ ] 🎯 Consertar rota de Anunciar livro
 
 ##### Future Sprints...
 - [ ] ⭐ Adicionar avaliações por livro 
