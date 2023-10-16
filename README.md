@@ -22,12 +22,12 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 ##### 3rd Sprint -- Sistema de Busca
 - [x] 🔎 Criar tela de Pesquisa
 - [x] 📦 Criar nichos de Categoria
-- [ ] 💟 Encapar os nichos de Categoria
+- [x] 💟 Encapar os nichos de Categoria
 - [x] 🪢 Fazer conexões dos nichos com a API
 - [x] 🪢 Fazer conexões de busca com a API
 
 #### 4rth Sprint -- Conexões com o Banco
-- [ ] 👤 Desenvolver tela de Perfil
+- [x] 👤 Desenvolver tela de Perfil
 - [ ] 🖇️ Linkar tela de Perfil corretamente (+routing-module)
 
 ##### Future Sprints...
