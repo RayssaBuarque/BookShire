@@ -23,7 +23,6 @@ export class SecaoPequenaComponent implements OnInit {
   
   ngOnInit() {
     this.categoria = this.titulo.normalize('NFD').replace(/[\u0300-\u036f]/g, "").replace(/ /g,'+');
-    // console.log(this.categoria)
 
     this.getLivros(this.categoria, 7)
   }

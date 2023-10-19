@@ -7,6 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class CardLivroComponent implements OnInit {
 
+  @Input() idLivro:string | null = 'Id do Livro'
   @Input() livroTitulo:string = 'Título do livro'
   @Input() urlLivroCapa:string = '../../../../assets/thumbnails/default-book_thumbnail.png'
   @Input() nomeAutor:string = 'Nome do Autor'
@@ -14,7 +15,6 @@ export class CardLivroComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-
   }
 
 }

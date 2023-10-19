@@ -1,9 +1,12 @@
 <div class="container__categoria">
-    <div class="categoria__barra-pesquisa"></div>
+    <div class="pesquisa__barra">
+        <app-barra-pesquisa></app-barra-pesquisa>
+    </div>
 
     <div class="categoria__livros">
         <button *ngFor = "let livro of livros">
             <app-card-livro
+            idLivro="{{livro.id}}"
             livroTitulo="{{livro.titulo}}"
             urlLivroCapa="{{livro.urlImg}}"
             nomeAutor="{{livro.autores}}"

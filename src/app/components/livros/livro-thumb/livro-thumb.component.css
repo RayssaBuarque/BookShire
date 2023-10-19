@@ -1,4 +1,6 @@
-.container__livro-thumb{
+.container__livro-thumb > a{
+    text-decoration: none;
+    color: #1F3B6F;
     width: 100px;
 }
 

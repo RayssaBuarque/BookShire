@@ -35,7 +35,6 @@ export class PesquisaResultadosComponent implements OnInit {
       .then( (livrosJson) => {
         this.livros.length = 0;
         this.livros.push(...this.convertLivros(livrosJson.items))
-        console.log(this.livros)
       });
   }
 
@@ -52,9 +51,17 @@ export class PesquisaResultadosComponent implements OnInit {
         values.volumeInfo.authors
       );
 
+      newLivro.urlImg = 'default'
+
+      //tentando pegar a foto do livro
       try{
         newLivro.urlImg = values.volumeInfo.imageLinks.thumbnail
       }catch{ (error:Error) => console.log(error)}
+
+      //Se a foto não estiver disponível, utilize a default
+      if(newLivro.urlImg == 'default'){
+        newLivro.urlImg = '../../assets/thumbnails/default-book_thumbnail.png'
+      }
 
       cache.push(newLivro);
     }

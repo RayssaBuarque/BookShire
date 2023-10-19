@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-anuncio-thumb',
@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AnuncioThumbComponent implements OnInit {
 
+  @Input() idLivro:string = 'Id do Livro'
   tituloLivro:string = 'Título do Livro'
   urlImgLivro:string = '../../../../assets/thumbnails/default-book_thumbnail.png'
   localAnuncio:string = 'Local do anunciante'
@@ -15,6 +16,13 @@ export class AnuncioThumbComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    //Coletando titulo do livro com base no id dele
+    let fetchApi = fetch(`https://www.googleapis.com/books/v1/volumes/${this.idLivro}`)
+                    .then( (res) => res.json() )
+                    .then( (res) => {
+                      this.tituloLivro = res.volumeInfo.title
+                    } )
+
   }
 
 }

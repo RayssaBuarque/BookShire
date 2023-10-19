@@ -28,7 +28,7 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 
 #### 4rth Sprint -- Estrutura de Telas
 - [x] 🎯 Consertar rota de Anunciar livro
-- [ ] 📔 Consertar capa padrão de livro
+- [x] 📔 Consertar capa padrão de livro
 - [x] 👤 Desenvolver tela de Perfil
 - [x] 📢 Desenvolver tela de Anúncios @RAYSSA
 - [ ] 👤 Desenvolver tela de Chat @RAYSSA

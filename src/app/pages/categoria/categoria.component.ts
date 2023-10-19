@@ -32,7 +32,7 @@ export class CategoriaComponent implements OnInit {
   constructor(private route:ActivatedRoute) { }
 
   ngOnInit(): void {
-   //pegando o id do projeto na url da pagina
+   //pegando o id da categoria na url da pagina
     this.route.paramMap.subscribe( (value) => this.idCategoria = value.get('id') );
   
     this.getLivros_Categoria(this.idCategoria, this.startIndex);

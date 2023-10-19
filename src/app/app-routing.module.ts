@@ -43,7 +43,7 @@ const routes: Routes = [
     component: CategoriaComponent
   },
   {
-    path:'anuncios',
+    path:'anuncios/:idLivro',
     component: ListaAnunciosComponent
   },
   {

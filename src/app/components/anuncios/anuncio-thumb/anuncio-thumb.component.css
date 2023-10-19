@@ -26,4 +26,24 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    width: 65%;
+    margin-right: .25rem;
+
+    font-family: 'Advent Pro';
+    text-align: center;
+    text-wrap: wrap;
+}
+
+.text__titulo > h2 {
+    font-size: 20px;
+}
+
+.text__local > p {
+    font-size: 18px;
+}
+
+.text__transacao > h1 {
+    font-size: 22px;
+    color: #FF6D1F;
 }

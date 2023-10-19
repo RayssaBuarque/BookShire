@@ -10,6 +10,7 @@
                 *ngFor = "let livro of livros"
             >
                 <app-livro-thumb
+                    idLivro = "{{livro.id}}"
                     tituloLivro="{{livro.titulo}}"
                     livroImg="{{livro.urlImg}}"
              ></app-livro-thumb>

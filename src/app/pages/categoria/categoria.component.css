@@ -1,3 +1,7 @@
+.categoria__livros {
+    margin-top: .75rem;
+}
+
 .categoria__livros > button{
     width: 100%;
     padding: 0 15px;
