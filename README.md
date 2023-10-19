@@ -16,7 +16,7 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 ##### 2nd Sprint -- Design de Tela Inicial
 - [x] 🗣️ Determinar estantes de recomendações 
 - [x] 📘 Criar capa padrão de livros sem thumbnail na API
-- [ ] 🪄 Confeccionar design no CSS 
+- [ ] ✔ Confeccionar design no CSS 
 - [x] 👁️‍🗨️ Adicionar Icons e Imagens nos Menus
 
 ##### 3rd Sprint -- Sistema de Busca
