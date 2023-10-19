@@ -28,6 +28,11 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 
 #### 4rth Sprint -- Conexões com o Banco
 - [x] 👤 Desenvolver tela de Perfil
+- [ ] 📢 Desenvolver tela de Anúncios
+- [ ] 👤 Desenvolver tela de Chat @RAYSSA
+- [ ] 👤 Desenvolver tela de Mensagens @RAYSSA
+- [ ] 👤 Desenvolver tela de Notificações
+- [ ] 👤 Desenvolver tela de Configurações
 - [ ] 🖇️ Linkar tela de Perfil corretamente (+routing-module)
 - [ ] 🎯 Consertar rota de Anunciar livro
 

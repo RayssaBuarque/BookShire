@@ -11,6 +11,7 @@
     <div class="pesquisa__categorias">
         <div *ngFor="let categoria of categorias">
             <app-categoria-thumbnail 
+                urlAcesso="acesso"
                 idCategoria={{categoria.id}} 
                 nomeCategoria={{categoria.titulo}}
                 ></app-categoria-thumbnail>

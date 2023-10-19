@@ -34,6 +34,10 @@ const routes: Routes = [
     component: PesquisaResultadosComponent
   },
   {
+    path:'acesso/categoria/:id',
+    component: CategoriaComponent
+  },
+  {
     path:'categoria/:id',
     component: CategoriaComponent
   },

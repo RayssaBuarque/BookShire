@@ -18,6 +18,7 @@ import { PerfilComponent } from './pages/perfil/perfil.component';
 import { PesquisaAnunciarComponent } from './pages/pesquisa/pesquisa-anunciar/pesquisa-anunciar.component';
 import { NotificacoesComponent } from './pages/notificacoes/notificacoes.component';
 import { CardNotificacaoComponent } from './components/card-notificacao/card-notificacao.component';
+import { ChatComponent } from './pages/chat/chat.component';
 // import { PesquisaAnunciarComponent } from './pages/pesquisa-anunciar/pesquisa-anunciar.component';
 
 @NgModule({
@@ -38,6 +39,7 @@ import { CardNotificacaoComponent } from './components/card-notificacao/card-not
     PesquisaAnunciarComponent,
     NotificacoesComponent,
     CardNotificacaoComponent,
+    ChatComponent,
     // PesquisaAnunciarComponent
   ],
   imports: [
