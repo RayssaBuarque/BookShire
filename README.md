@@ -26,15 +26,22 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [x] 🪢 Fazer conexões dos nichos com a API
 - [x] 🪢 Fazer conexões de busca com a API
 
-#### 4rth Sprint -- Conexões com o Banco
+#### 4rth Sprint -- Estrutura de Telas
+- [x] 🎯 Consertar rota de Anunciar livro
+- [ ] 📔 Consertar capa padrão de livro
 - [x] 👤 Desenvolver tela de Perfil
-- [ ] 📢 Desenvolver tela de Anúncios
+- [x] 📢 Desenvolver tela de Anúncios @RAYSSA
 - [ ] 👤 Desenvolver tela de Chat @RAYSSA
 - [ ] 👤 Desenvolver tela de Mensagens @RAYSSA
 - [ ] 👤 Desenvolver tela de Notificações
 - [ ] 👤 Desenvolver tela de Configurações
 - [ ] 🖇️ Linkar tela de Perfil corretamente (+routing-module)
-- [ ] 🎯 Consertar rota de Anunciar livro
+
+#### 5fth Sprint -- Conexões com o Banco
+- [ ] 👤 Fazer conexões de dados de Usuários
+- [ ] 📢 Fazer conexões de dados de Anúncios
+- [ ] 📪 Fazer conexões de dados de Chats
+- [ ] 📨 Fazer conexões de dados de Mensagens
 
 ##### Future Sprints...
 - [ ] ⭐ Adicionar avaliações por livro 

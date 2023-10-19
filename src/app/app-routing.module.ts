@@ -9,6 +9,7 @@ import { PesquisaResultadosComponent } from './pages/pesquisa-resultados/pesquis
 import { PerfilComponent } from './pages/perfil/perfil.component';
 import { PesquisaAnunciarComponent } from './pages/pesquisa/pesquisa-anunciar/pesquisa-anunciar.component';
 import { NotificacoesComponent } from './pages/notificacoes/notificacoes.component';
+import { ListaAnunciosComponent } from './pages/lista-anuncios/lista-anuncios.component';
 
 
 const routes: Routes = [
@@ -40,6 +41,10 @@ const routes: Routes = [
   {
     path:'categoria/:id',
     component: CategoriaComponent
+  },
+  {
+    path:'anuncios',
+    component: ListaAnunciosComponent
   },
   {
     path:'malur',
