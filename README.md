@@ -27,6 +27,7 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [x] 🪢 Fazer conexões de busca com a API @RAYSSA
 
 #### 4rth Sprint -- Estrutura de Telas
+- [ ] 🏠 Desenvolver tela de Home @MALU
 - [ ] 👤 Desenvolver tela de Perfil @RAYSSA
 - [x] 📢 Desenvolver tela de Anúncios @RAYSSA
 - [ ] 📢 Desenvolver tela de Anúncio Específico @RAYSSA
@@ -38,7 +39,7 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [ ] 🖇️ Linkar tela de Perfil corretamente (+routing-module)
 - [ ] 🪄 Tornar design Responsivo @MALU
 
-###### Bugs 👾👾👾
+###### 4SP Bugs 👾👾👾
 - [x] 🎯 Consertar rota de Anunciar livro @RAYSSA
 - [x] 📔 Consertar capa padrão de livro @RAYSSA
 
