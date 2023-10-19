@@ -9,33 +9,37 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 ### Atividades de Desenvolvimento
 
 ##### 1st Sprint -- Componentes Principais
-- [x] ⚙️ Criar componentes de menus fixos na tela
-- [x] 🔗 Conectar API às seções thumbnail
-- [x] 📚 Criar modelo TypeScript de dados sobre livros
+- [x] ⚙️ Criar componentes de menus fixos na tela @RAYSSA
+- [x] 🔗 Conectar API às seções thumbnail @RAYSSA
+- [x] 📚 Criar modelo TypeScript de dados sobre livros @RAYSSA
 
 ##### 2nd Sprint -- Design de Tela Inicial
-- [x] 🗣️ Determinar estantes de recomendações 
-- [x] 📘 Criar capa padrão de livros sem thumbnail na API
-- [ ] ✔ Confeccionar design no CSS 
-- [x] 👁️‍🗨️ Adicionar Icons e Imagens nos Menus
+- [x] 🗣️ Determinar estantes de recomendações @RAYSSA
+- [x] 📘 Criar capa padrão de livros sem thumbnail na API @RAYSSA
+- [x] ✔ Confeccionar designs básicos no CSS @RAYSSA 
+- [x] 👁️‍🗨️ Adicionar Icons e Imagens nos Menus @RAYSSA
 
 ##### 3rd Sprint -- Sistema de Busca
-- [x] 🔎 Criar tela de Pesquisa
-- [x] 📦 Criar nichos de Categoria
-- [x] 💟 Encapar os nichos de Categoria
-- [x] 🪢 Fazer conexões dos nichos com a API
-- [x] 🪢 Fazer conexões de busca com a API
+- [x] 🔎 Criar tela de Pesquisa @RAYSSA
+- [x] 📦 Criar nichos de Categoria @RAYSSA
+- [x] 💟 Encapar os nichos de Categoria @MARIA CLARA
+- [x] 🪢 Fazer conexões dos nichos com a API @RAYSSA
+- [x] 🪢 Fazer conexões de busca com a API @RAYSSA
 
 #### 4rth Sprint -- Estrutura de Telas
-- [x] 🎯 Consertar rota de Anunciar livro
-- [x] 📔 Consertar capa padrão de livro
-- [x] 👤 Desenvolver tela de Perfil
+- [ ] 👤 Desenvolver tela de Perfil @RAYSSA
 - [x] 📢 Desenvolver tela de Anúncios @RAYSSA
+- [ ] 📢 Desenvolver tela de Anúncio Específico @RAYSSA
 - [ ] 👤 Desenvolver tela de Chat @RAYSSA
 - [ ] 👤 Desenvolver tela de Mensagens @RAYSSA
-- [ ] 👤 Desenvolver tela de Notificações
-- [ ] 👤 Desenvolver tela de Configurações
+- [ ] 👤 Desenvolver tela de Notificações @MALU
+- [ ] 👤 Desenvolver tela de Configurações @MALU
 - [ ] 🖇️ Linkar tela de Perfil corretamente (+routing-module)
+- [ ] 🪄 Tornar design Responsivo @MALU
+
+###### Bugs 👾👾👾
+- [x] 🎯 Consertar rota de Anunciar livro @RAYSSA
+- [x] 📔 Consertar capa padrão de livro @RAYSSA
 
 #### 5fth Sprint -- Conexões com o Banco
 - [ ] 👤 Fazer conexões de dados de Usuários
