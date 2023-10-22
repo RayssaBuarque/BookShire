@@ -27,6 +27,7 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [x] 🪢 Fazer conexões de busca com a API @RAYSSA
 
 #### 4rth Sprint -- Estrutura de Telas
+- [x] 🏠 Estruturar Banco de Dados @SARA
 - [ ] 🏠 Desenvolver tela de Home @MALU
 - [ ] 👤 Desenvolver tela de Perfil @RAYSSA
 - [x] 📢 Desenvolver tela de Anúncios @RAYSSA
@@ -36,8 +37,6 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [ ] 📨 Desenvolver bolha de chat @MALU
 - [ ] 🔔 Desenvolver tela de Notificações @MALU
 - [ ] ⚙️ Desenvolver tela de Configurações @MALU
-- [ ] 🖇️ Linkar tela de Perfil corretamente (+routing-module)
-- [ ] 🪄 Tornar design Responsivo @MALU
 
 ###### 4SP Bugs 👾👾👾
 - [x] 🎯 Consertar rota de Anunciar livro @RAYSSA
@@ -48,6 +47,8 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [ ] 📢 Fazer conexões de dados de Anúncios
 - [ ] 📪 Fazer conexões de dados de Chats
 - [ ] 📨 Fazer conexões de dados de Mensagens
+- [ ] 🖇️ Linkar tela de Perfil corretamente (+routing-module)
+- [ ] 🪄 Tornar design Responsivo @MALU
 
 ##### Future Sprints...
 - [ ] ⭐ Adicionar avaliações por livro 

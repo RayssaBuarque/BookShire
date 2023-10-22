@@ -1,0 +1,9 @@
+.container__voltar{
+    width: 100%;
+}
+
+.container__voltar > img{
+    margin-left: 22px;
+    width: 26px;
+    height: 26px;
+}

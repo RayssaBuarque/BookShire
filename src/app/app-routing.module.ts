@@ -10,7 +10,7 @@ import { PerfilComponent } from './pages/perfil/perfil.component';
 import { PesquisaAnunciarComponent } from './pages/pesquisa/pesquisa-anunciar/pesquisa-anunciar.component';
 import { NotificacoesComponent } from './pages/notificacoes/notificacoes.component';
 import { ListaAnunciosComponent } from './pages/lista-anuncios/lista-anuncios.component';
-
+import { AnuncioComponent } from './pages/anuncio/anuncio.component';
 
 const routes: Routes = [
   {
@@ -45,6 +45,10 @@ const routes: Routes = [
   {
     path:'anuncios/:idLivro',
     component: ListaAnunciosComponent
+  },
+  {
+    path:'rayssa',
+    component: AnuncioComponent
   },
   {
     path:'malur',
