@@ -1,5 +1,8 @@
 .container__voltar{
+    padding-top: 2rem;
+    padding-bottom: .5rem;
     width: 100%;
+    top: 0;
 }
 
 .container__voltar > img{

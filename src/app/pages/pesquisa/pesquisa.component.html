@@ -1,18 +1,18 @@
-<div class="container__pesquisa">
+<app-top-nav-bar></app-top-nav-bar>
 
-    <div class="pesquisa__barra">
-        <app-barra-pesquisa></app-barra-pesquisa>
-    </div>
-
-    <div class="pesquisa__categorias">
-        <div *ngFor="let categoria of categorias">
-            <app-categoria-thumbnail 
-                idCategoria={{categoria.id}} 
-                nomeCategoria={{categoria.titulo}}
-                ></app-categoria-thumbnail>
+    <div class="container__pesquisa container">
+    
+        <div class="pesquisa__barra">
+            <app-barra-pesquisa></app-barra-pesquisa>
         </div>
+    
+        <div class="pesquisa__categorias">
+            <div *ngFor="let categoria of categorias">
+                <app-categoria-thumbnail 
+                    idCategoria={{categoria.id}} 
+                    nomeCategoria={{categoria.titulo}}
+                    ></app-categoria-thumbnail>
+            </div>
+        </div>
+    
     </div>
-
-</div>
-
-<app-bottom-nav-bar></app-bottom-nav-bar>
