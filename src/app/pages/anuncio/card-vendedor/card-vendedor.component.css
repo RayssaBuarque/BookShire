@@ -1,0 +1,38 @@
+.container__vendedor{
+    padding: 10px 24px;  
+    border-radius: 10px;
+    gap: 2rem;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.container__vendedor, .estrelinhas{
+    display: flex;
+    flex-direction: row;
+}
+
+.estrelinhas{
+    gap: .75rem;
+}
+
+.vendedor__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.vendedor__info > h1{
+    font-size: 24px;
+    font-family: 'Advent Pro';
+}
+
+.vendedor__foto > img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.estrela > img{
+    height: 25px;
+    width: 25px;
+}

@@ -23,6 +23,7 @@ import { ListaAnunciosComponent } from './pages/lista-anuncios/lista-anuncios.co
 import { AnuncioThumbComponent } from './components/anuncios/anuncio-thumb/anuncio-thumb.component';
 import { AnuncioComponent } from './pages/anuncio/anuncio.component';
 import { BtnVoltarComponent } from './components/btn-voltar/btn-voltar.component';
+import { CardVendedorComponent } from './pages/anuncio/card-vendedor/card-vendedor.component';
 // import { PesquisaAnunciarComponent } from './pages/pesquisa-anunciar/pesquisa-anunciar.component';
 
 @NgModule({
@@ -48,6 +49,7 @@ import { BtnVoltarComponent } from './components/btn-voltar/btn-voltar.component
     AnuncioThumbComponent,
     AnuncioComponent,
     BtnVoltarComponent,
+    CardVendedorComponent,
     // PesquisaAnunciarComponent
   ],
   imports: [

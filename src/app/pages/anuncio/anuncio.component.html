@@ -1,5 +1,50 @@
-<app-btn-voltar></app-btn-voltar>
-
 <div class="container__anuncio">
+    <div class="background__capa">
+        <!-- style="background-image: url('{{capaLivro}}'); background-size: cover;"" -->
+        <div class="anuncio__topo">
+            <app-btn-voltar></app-btn-voltar>
+            
+            <div class="anuncio__capa">
+                <img src="{{capaLivro}}" alt="Capa de {{tituloLivro}}">
+            </div>
+        </div>
+    </div>
 
+    <div class="anuncio__text">
+        <h1>{{tituloLivro}}</h1>
+        <h3>{{autorLivro}}</h3>
+
+        <button class="text__transacao">
+            <h1>{{infoTransacao}}</h1>
+        </button>
+    </div>
+
+    <div class="cardTxt">
+        <h2>Descrição</h2>
+        <ul>
+            <li *ngFor="let descricao of descricaoLivro">
+                {{descricao}}
+            </li>
+        </ul>
+    </div>
+    
+    <div class="container__vendedor">
+        <app-card-vendedor></app-card-vendedor>
+    </div>
+    
+    <div class="cardTxt">
+        <h2>Sinopse</h2>
+        <p>{{sinopseLivro}}</p>
+    </div>
+
+
+    <h1>Outros Anúncios</h1>
+    <div class="container__outros-anuncios">
+        <app-anuncio-thumb
+            idLivro = 'mORT0kN1uBwC'
+        ></app-anuncio-thumb>
+        <app-anuncio-thumb
+            idLivro = 'mORT0kN1uBwC'
+        ></app-anuncio-thumb>
+    </div>
 </div>

@@ -3,9 +3,15 @@
     padding-bottom: .5rem;
     width: 100%;
     top: 0;
+    cursor: pointer;
 }
 
-.container__voltar > img{
+.container__voltar > button {
+    background-color: transparent;
+    border: none;
+}
+
+.container__voltar > button > img{
     margin-left: 22px;
     width: 26px;
     height: 26px;

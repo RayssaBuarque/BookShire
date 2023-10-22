@@ -31,7 +31,7 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [ ] 🏠 Desenvolver tela de Home @MALU
 - [ ] 👤 Desenvolver tela de Perfil @RAYSSA
 - [x] 📢 Desenvolver tela de Anúncios @RAYSSA
-- [ ] 📢 Desenvolver tela de Anúncio Específico @RAYSSA
+- [x] 📢 Desenvolver tela de Anúncio Específico @RAYSSA
 - [ ] 📪 Desenvolver tela de Chat @MALU
 - [ ] 📬 Desenvolver tela de Chat Específico @MALU
 - [ ] 📨 Desenvolver bolha de chat @MALU

@@ -1,0 +1,14 @@
+<div class="container__vendedor">
+    <div class="vendedor__foto">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvP2N8endTgqISC-ho8HOZHXdjfx1It3DsSEt3bAQyKQ&s" alt="Foto de {{nomeVendedor}}">
+    </div>
+
+    <div class="vendedor__info">
+        <h1>{{nomeVendedor}}</h1>
+        <div class="estrelinhas">
+            <div *ngFor="nota of notasVendedor" class="estrela">
+                <img src="https://cdn-icons-png.flaticon.com/512/148/148839.png" alt="Estrela">
+            </div>
+        </div>
+    </div>
+</div>
