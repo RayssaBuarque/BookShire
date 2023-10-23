@@ -28,6 +28,7 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 
 #### 4rth Sprint -- Estrutura de Telas
 - [x] 🔨 Estruturar Banco de Dados @SARA
+- [ ] 👹👹👹👹 Testar o BookShire em um Servidor local @RAYSSA
 - [ ] 👹 Configurar um Servidor @RAYSSA
 - [ ] 🏠 Desenvolver tela de Home @MALU
 - [ ] 👤 Desenvolver tela de Perfil @RAYSSA
