@@ -11,6 +11,7 @@ import { PesquisaAnunciarComponent } from './pages/pesquisa/pesquisa-anunciar/pe
 import { NotificacoesComponent } from './pages/notificacoes/notificacoes.component';
 import { ListaAnunciosComponent } from './pages/lista-anuncios/lista-anuncios.component';
 import { AnuncioComponent } from './pages/anuncio/anuncio.component';
+import { ChatComponent } from './pages/chat/chat.component';
 
 const routes: Routes = [
   {
@@ -48,7 +49,7 @@ const routes: Routes = [
   },
   {
     path:'rayssa',
-    component: AnuncioComponent
+    component: ChatComponent
   },
   {
     path:'malur',

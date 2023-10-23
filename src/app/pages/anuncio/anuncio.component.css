@@ -1,6 +1,6 @@
 .container__anuncio > h1{
     font-size: 32px;
-    color:#152139 ;
+    color:#152139;
     font-family: 'Advent Pro';
     margin-top: 1.75rem;
     margin-bottom: 1rem;
@@ -12,7 +12,7 @@
     background-color: red;
     /* filter: blur(10px);  */
     /* filter: blur(8px);
-  -webkit-filter: blur(8px); */
+    -webkit-filter: blur(8px); */
 }
 
 .anuncio__capa{
