@@ -27,7 +27,8 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [x] 🪢 Fazer conexões de busca com a API @RAYSSA
 
 #### 4rth Sprint -- Estrutura de Telas
-- [x] 🏠 Estruturar Banco de Dados @SARA
+- [x] 🔨 Estruturar Banco de Dados @SARA
+- [ ] 👹 Configurar um Servidor @RAYSSA
 - [ ] 🏠 Desenvolver tela de Home @MALU
 - [ ] 👤 Desenvolver tela de Perfil @RAYSSA
 - [x] 📢 Desenvolver tela de Anúncios @RAYSSA
