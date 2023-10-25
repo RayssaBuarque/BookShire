@@ -53,7 +53,7 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [ ] 📪 Fazer conexões de dados de Chats
 - [ ] 📨 Fazer conexões de dados de Mensagens
 - [ ] 🖇️ Linkar tela de Perfil corretamente (+routing-module)
-- [ ] 🪄 Tornar design Responsivo @MALU
+- [ ] 🪄 Tornar design Responsivo 
 
 ##### Future Sprints...
 - [ ] ⭐ Adicionar avaliações por livro 
