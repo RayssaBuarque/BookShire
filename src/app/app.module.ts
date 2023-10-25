@@ -25,6 +25,9 @@ import { AnuncioComponent } from './pages/anuncio/anuncio.component';
 import { BtnVoltarComponent } from './components/btn-voltar/btn-voltar.component';
 import { CardVendedorComponent } from './pages/anuncio/card-vendedor/card-vendedor.component';
 import { ConversaThumbComponent } from './pages/chat/conversa-thumb/conversa-thumb.component';
+import { PedidoComponent } from './components/pedido/pedido.component';
+import { SeboThumbComponent } from './components/sebo-thumb/sebo-thumb.component';
+import { ListaSebosComponent } from './pages/lista-sebos/lista-sebos.component';
 // import { PesquisaAnunciarComponent } from './pages/pesquisa-anunciar/pesquisa-anunciar.component';
 
 @NgModule({
@@ -52,6 +55,9 @@ import { ConversaThumbComponent } from './pages/chat/conversa-thumb/conversa-thu
     BtnVoltarComponent,
     CardVendedorComponent,
     ConversaThumbComponent,
+    PedidoComponent,
+    SeboThumbComponent,
+    ListaSebosComponent,
     // PesquisaAnunciarComponent
   ],
   imports: [

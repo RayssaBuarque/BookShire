@@ -52,7 +52,7 @@ const routes: Routes = [
     component: ChatComponent
   },
   {
-    path:'malur',
+    path:'notificacoes',
     component: NotificacoesComponent
   },
 
