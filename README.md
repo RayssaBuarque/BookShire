@@ -37,6 +37,7 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [ ] 👤 Desenvolver COMPONENTE pedidos pro Perfil @
 - [x] 📢 Desenvolver tela de Anúncios @RAYSSA
 - [x] 📢 Desenvolver tela de Anúncio Específico @RAYSSA
+- [ ] 📢 Desenvolver tela de criação de anúncio 
 - [ ] 📪 Desenvolver tela de Chat @
 - [ ] 📬 Desenvolver tela de Chat Específico @MALU
 - [ ] 📨 Desenvolver bolha de chat @MALU
@@ -53,7 +54,7 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [ ] 📪 Fazer conexões de dados de Chats
 - [ ] 📨 Fazer conexões de dados de Mensagens
 - [ ] 🖇️ Linkar tela de Perfil corretamente (+routing-module)
-- [ ] 🪄 Tornar design Responsivo 
+- [ ] 🪄 Tornar design Responsivo @ MARIA CLARA 
 
 ##### Future Sprints...
 - [ ] ⭐ Adicionar avaliações por livro 
