@@ -1,5 +1,10 @@
 import { Injectable } from '@angular/core';
+
+// SERVIÇOS INDIVIDUAIS DO CRUD
+import { CreateService } from './create.service';
 import { ReadService } from './read.service';
+import { UpdateService } from './update.service';
+import { DeleteService } from './delete.service';
 
 @Injectable({
   providedIn: 'root'
@@ -21,10 +26,25 @@ export class CrudService {
   apiUrl:string = 'https://0un8uy3hp5.execute-api.us-east-1.amazonaws.com/dev'
 
   //Recuperando módulos de serviço crud
-  constructor(private readService:ReadService) { }
+  constructor(
+    private createService:CreateService,
+    private readService:ReadService,
+    private updateService:UpdateService,
+    private deleteService:DeleteService
+    ) { }
 
 
+  //linkar CREATE
+
+  //linkar READ
   read(baseUrl:string, param:string):any{
     return this.readService.read(this.apiUrl, baseUrl, param);
   }
+
+  //linkar UPDATE
+  update(baseUrl:string, param:string):any{
+    return this.readService.read(this.apiUrl, baseUrl, param);
+  }
+
+  //linkar DELETE
 }
