@@ -26,10 +26,12 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [x] 🪢 Fazer conexões dos nichos com a API @RAYSSA
 - [x] 🪢 Fazer conexões de busca com a API @RAYSSA
 
-#### 4rth Sprint -- Estrutura de Telas
+#### 4rth Sprint -- Banco de Dados
 - [x] 🔨 Estruturar Banco de Dados @SARA
-- [ ] 👹👹👹👹 Testar o BookShire em um Servidor local @RAYSSA
-- [ ] 👹 Configurar um Servidor @RAYSSA
+- [x] 👹👹👹👹 Testar o BookShire em um Servidor local @RAYSSA
+- [x] 👹 Configurar um Servidor @RAYSSA
+
+#### 5fth Sprint -- Estrutura de Telas
 - [ ] 🏠 Desenvolver tela de Home @MALU
 - [ ] 📚 Desenvolver COMPONENTE thumb (ícones) dos Sebos @MALU
 - [ ] 📚 Desenvolver tela de Listagem de Sebos @MALU
@@ -37,12 +39,17 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [ ] 👤 Desenvolver COMPONENTE pedidos pro Perfil @
 - [x] 📢 Desenvolver tela de Anúncios @RAYSSA
 - [x] 📢 Desenvolver tela de Anúncio Específico @RAYSSA
-- [ ] 📢 Desenvolver tela de criação de anúncio 
-- [ ] 📪 Desenvolver tela de Chat @
+- [ ] 📢 Desenvolver tela de criação de anúncio @ 
+- [ ] 💵 Desenvolver tela de pagamento @MARIA CLARA
+- [ ] 📪 Desenvolver tela de Chat @ MALU
 - [ ] 📬 Desenvolver tela de Chat Específico @MALU
 - [ ] 📨 Desenvolver bolha de chat @MALU
 - [ ] 🔔 Desenvolver tela de Notificações @MALU
 - [ ] ⚙️ Desenvolver tela de Configurações @MALU
+
+#### 6xth Sprint -- Conexão das Telas
+- [ ] 🙌 Conectar usuário no protótipo @RAYSSA
+- [ ] 🙌 Conectar anúncios no protótipo @RAYSSA
 
 ###### 4SP Bugs 👾👾👾
 - [x] 🎯 Consertar rota de Anunciar livro @RAYSSA
