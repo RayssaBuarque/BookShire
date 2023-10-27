@@ -10,9 +10,11 @@ export class ReadService {
 
 
   read (apiUrl:string, baseUrl:string, param:string):any{
-    fetch(`${apiUrl}${baseUrl}${param}`)
-        .then( (res) => res.json())
-        // .then( (res) => console.log(res) );
+      
+    fetch(`${apiUrl}${baseUrl}/${param}`)
+          .then((res) => res.json())
+          .then( (r) => console.log(r) )
+          // .then( (res) => console.log(res) );
   }
 
 }

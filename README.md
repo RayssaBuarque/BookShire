@@ -48,6 +48,10 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [ ] ⚙️ Desenvolver tela de Configurações @MALU
 
 #### 6xth Sprint -- Conexão das Telas
+- [ ] 🙌 Desenvolver CRUD anúncios AWS API @RAYSSA
+- [ ] 🙌 Desenvolver CRUD anúncios AWS API @RAYSSA
+- [ ] 🙌 Desenvolver CRUD anúncios AWS API @RAYSSA
+- [ ] 🙌 Desenvolver CRUD anúncios AWS API @RAYSSA
 - [ ] 🙌 Conectar usuário no protótipo @RAYSSA
 - [ ] 🙌 Conectar anúncios no protótipo @RAYSSA
 

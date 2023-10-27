@@ -15,7 +15,7 @@ export class PerfilComponent implements OnInit {
   constructor( private crud:CrudService) { }
 
   ngOnInit(): void {
-    // this.nome_usuario = this.crud.read('/users', this.idUsuario);
+    console.log(this.crud.read('/users', this.idUsuario))
   }
 
 }
