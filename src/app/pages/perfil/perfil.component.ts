@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterContentInit} from '@angular/core';
 import { CrudService } from 'src/app/crud/crud.service';
 
 @Component({
@@ -9,13 +9,21 @@ import { CrudService } from 'src/app/crud/crud.service';
 export class PerfilComponent implements OnInit {
 
   private idUsuario:string = "1"; //descobrir como dinamizar isso um pouco mais
+  private dadosUsuario:any = '';
   url_fotoUsuario:string = '../../../assets/thumbnails/default-book_thumbnail.png'
   nome_usuario:string = 'Nome do Usuário'
   
   constructor( private crud:CrudService) { }
 
   ngOnInit(): void {
-    console.log(this.crud.read('/users', this.idUsuario))
-  }
+    this.crud.read('/users', this.idUsuario)
+      .then( (res:JSON) => {
+        console.log(res)
+        this.dadosUsuario = res
+      
+        this.nome_usuario = this.dadosUsuario[0].nome
+        this.url_fotoUsuario = this.dadosUsuario[0].fotoUsuario
+      })
+  } 
 
 }
