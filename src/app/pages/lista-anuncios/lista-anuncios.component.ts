@@ -13,6 +13,7 @@ export class ListaAnunciosComponent implements OnInit {
 
   idLivro: string | null = 'Id do Livro'
   lista_anuncios:Anuncio[] = []
+  contemAnuncios:boolean = true;
 
   constructor(private route:ActivatedRoute, private crud:CrudService) { }
 
@@ -40,6 +41,11 @@ export class ListaAnunciosComponent implements OnInit {
             local,
             item.status
           ));
+        }
+
+        //Conferindo se nenhum anúncio for encontrado
+        if(this.lista_anuncios.length == 0){
+          this.contemAnuncios = false
         }
         console.log(this.lista_anuncios)
       })
