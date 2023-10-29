@@ -20,7 +20,7 @@ const routes: Routes = [
   },
   {
     // DETALHE:: especificar ID do perfil mais tarde
-    path:'perfil',
+    path:'perfil/:id',
     component: PerfilComponent
   },
   {

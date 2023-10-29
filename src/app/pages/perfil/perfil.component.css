@@ -63,3 +63,8 @@
     /* border-bottom: 5px solid #152139; */
     /* border-bottom: 5px solid #1f3b6f; */
 }
+
+.selecionado{
+    font-weight: 600;
+    color: #FF6D1F;
+}

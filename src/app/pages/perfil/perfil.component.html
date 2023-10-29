@@ -13,9 +13,9 @@
     </div>
 
     <div class="nav__perfil">
-        <button class="navItem" (click)="mudarSecao(0)">Anúncios</button>
-        <button class="navItem" (click)="mudarSecao(1)">Avaliação</button>
-        <button class="navItem" (click)="mudarSecao(2)">Pedidos</button>
+        <button class="navItem" (click)="mudarSecao(0)" [ngClass] = "selecionarA()">Anúncios</button>
+        <button class="navItem" (click)="mudarSecao(1)" [ngClass] = "selecionarB()">Avaliação</button>
+        <button class="navItem" (click)="mudarSecao(2)" [ngClass] = "selecionarC()">Pedidos</button>
     </div>
 
     <!-- usar o ngFor aqui depois -->

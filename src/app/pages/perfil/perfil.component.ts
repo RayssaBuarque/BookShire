@@ -1,6 +1,7 @@
 import { Component, OnInit, AfterContentInit} from '@angular/core';
 import { CrudService } from 'src/app/services/crud/crud.service';
 import { Anuncio } from 'src/app/models/anuncio';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-perfil',
@@ -9,7 +10,7 @@ import { Anuncio } from 'src/app/models/anuncio';
 })
 export class PerfilComponent implements OnInit {
 
-  private idUsuario:string = "2"; //descobrir como dinamizar isso um pouco mais
+  private idUsuario:string | null = "2"; //descobrir como dinamizar isso um pouco mais
   private dadosUsuario:any = '';
   url_fotoUsuario:string = '../../../assets/thumbnails/default-book_thumbnail.png'
   nome_usuario:string = 'Nome do Usuário'
@@ -19,9 +20,15 @@ export class PerfilComponent implements OnInit {
   //index da seção que fica aparecendo no perfil
   secaoIndex:number = 0
   
-  constructor( private crud:CrudService) { }
+  constructor( private crud:CrudService, private route:ActivatedRoute) { }
 
   ngOnInit(): void {
+    //recolhendo ids da rota
+    this.route.paramMap.subscribe( (value) =>{
+      this.idUsuario = value.get('id')
+      console.log(this.idUsuario)
+    });
+
     this.crud.read('/users', this.idUsuario, "")
       .then( (res:JSON) => {
         // console.log(res)
@@ -62,8 +69,32 @@ export class PerfilComponent implements OnInit {
     else if(index == 1){
       this.secaoIndex = 1;
     }
-    if(index == 2){
+    else if(index == 2){
       this.secaoIndex = 2;
+    }
+  }
+
+  //Determina qual seção fica em destaque na navegação
+  //P.S: Gambiarra pura, favor não julgar
+  selecionarA():string | undefined{
+    if(this.secaoIndex == 0){
+      return 'selecionado';
+    }else{
+      return ''
+    }
+  }
+  selecionarB():string | undefined{
+    if(this.secaoIndex == 1){
+      return 'selecionado';
+    }else{
+      return ''
+    }
+  }
+  selecionarC():string | undefined{
+    if(this.secaoIndex == 2){
+      return 'selecionado';
+    }else{
+      return ''
     }
   }
 
