@@ -1,14 +1,16 @@
 <div class="container__vendedor">
-    <div class="vendedor__foto">
-        <img src="{{urlFoto}}" alt="Foto de {{nomeVendedor}}">
-    </div>
-
-    <div class="vendedor__info">
-        <h1>{{nomeVendedor}}</h1>
-        <div class="estrelinhas">
-            <div *ngFor="let nota of notasVendedor" class="estrela">
-                <img src="https://cdn-icons-png.flaticon.com/512/148/148839.png" alt="Estrela">
+    <a href="/perfil/{{idVendedor}}">
+        <div class="vendedor__foto">
+            <img src="{{urlFoto}}" alt="Foto de {{nomeVendedor}}">
+        </div>
+        
+        <div class="vendedor__info">
+            <h1>{{nomeVendedor}}</h1>
+            <div class="estrelinhas">
+                <div *ngFor="let nota of notasVendedor" class="estrela">
+                    <img src="https://cdn-icons-png.flaticon.com/512/148/148839.png" alt="Estrela">
+                </div>
             </div>
         </div>
-    </div>
+    </a>
 </div>

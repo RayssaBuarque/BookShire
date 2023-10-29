@@ -21,7 +21,6 @@ export class AnuncioComponent implements OnInit {
   sinopseLivro:string = 'Sinopse do Livro kdhfkj sdhkjfhdskjfhksdhf kjdshfkj hdskjfhs dkjhfkjdshfuye iuhfsdkjhfkdjshfkuehfkjhgf akfhkjhdksjhfudshfdsjhd fkjdshfkj';
   
   private dadosAnuncio!:Anuncio
-  private dadosVendedor!:JSON
   descricaoLivro:string[] = [];
   idVendedor:string = "0";
   infoTransacao:string = 'Informação';
@@ -52,7 +51,7 @@ export class AnuncioComponent implements OnInit {
           res[0].criacao,
           res[0].descricao,
           res[0].situacao,
-          "São Paulo",
+          "",
           res[0].anuncio_status
         )
         

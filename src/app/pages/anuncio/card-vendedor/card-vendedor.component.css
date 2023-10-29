@@ -1,12 +1,15 @@
-.container__vendedor{
+.container__vendedor > a{
     margin: 0 24px;
     padding: 10px 24px;  
     border-radius: 10px;
     gap: 2rem;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+
+    color: black;
+    text-decoration: none;
 }
 
-.container__vendedor, .estrelinhas{
+.container__vendedor > a, .estrelinhas{
     display: flex;
     flex-direction: row;
 }

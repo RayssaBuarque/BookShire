@@ -19,18 +19,18 @@ export class CardVendedorComponent implements OnInit {
   constructor(private crud:CrudService) { }
 
   ngOnInit(): void {
-    console.log(this.idVendedor)
+    // console.log(this.idVendedor)
     this.crud.read('/users', this.idVendedor, '')
       .then( (res:any) => {
         let nome = res[0].nome.split(' ')
         this.nomeVendedor = nome[0] + ' ' + nome[nome.length - 1]
         this.urlFoto = res[0].fotoUsuario
         this.notaVendedor = res[0].mediaAvaliacao
+        
         // console.log(this.notaVendedor)
+        for(let i = 0; i<this.notaVendedor; i++){
+          this.notasVendedor.push(this.notaVendedor)
+        }
       })
-
-    for(let i = 0; i<this.notaVendedor; i++){
-      this.notasVendedor.push(this.notaVendedor)
-    }
   }
 }
