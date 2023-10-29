@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+
 import { SetLivroService } from 'src/app/services/set-livro.service';
+
+import { Anuncio } from 'src/app/models/anuncio';
 
 @Component({
   selector: 'app-criacao-anuncio',
@@ -13,6 +16,8 @@ export class CriacaoAnuncioComponent implements OnInit {
   tituloLivro:string = 'Título do Livro'
   autoresLivro:string[] = []
   urlFoto:string = '../../assets/thumbnails/default-book_thumbnail.png'
+
+  dadosAnunciar!:Anuncio
 
   constructor(
     private setter:SetLivroService,
@@ -41,6 +46,10 @@ export class CriacaoAnuncioComponent implements OnInit {
           console.log(this.autoresLivro)
         }
       })
+  }
+
+  coletarDados():void{
+
   }
 
 }
