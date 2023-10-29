@@ -21,9 +21,11 @@ export class AnuncioComponent implements OnInit {
   sinopseLivro:string = 'Sinopse do Livro kdhfkj sdhkjfhdskjfhksdhf kjdshfkj hdskjfhs dkjhfkjdshfuye iuhfsdkjhfkdjshfkuehfkjhgf akfhkjhdksjhfudshfdsjhd fkjdshfkj';
   
   private dadosAnuncio!:Anuncio
+  private dadosVendedor!:JSON
   descricaoLivro:string[] = [];
   idVendedor:string = "0";
   infoTransacao:string = 'Informação';
+  localAnuncio:string = 'Local do Anúncio';
 
   constructor(
     private crud:CrudService,
@@ -53,7 +55,7 @@ export class AnuncioComponent implements OnInit {
           "São Paulo",
           res[0].anuncio_status
         )
-
+        
         this.idVendedor = this.dadosAnuncio.Id_usuario
         this.descricaoLivro.push(this.dadosAnuncio.descricao);
         
@@ -62,12 +64,17 @@ export class AnuncioComponent implements OnInit {
         }else{
           this.infoTransacao = this.dadosAnuncio.transacao
         }
+        
+        //recolhendo dados do vendedor
+        this.crud.read('/endereco', '', `?Id_usuario=${this.idVendedor}`)
+        .then( (res:any) => {
+          this.localAnuncio = res[0].bairro
+          this.descricaoLivro.push(`Local do anunciante: ${this.localAnuncio}`);
+          })
 
-        // console.log(this.idVendedor)
-        // console.log(this.dadosAnuncio)
-      })
+      })      
 
-      //recolhendo e setando dados do Google Books
+    //recolhendo e setando dados do Google Books
     this.setter.setLivro(this.idLivro)
     .then( (info:Livro) => {
       this.tituloLivro = info.titulo

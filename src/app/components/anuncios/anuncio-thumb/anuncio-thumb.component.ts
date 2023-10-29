@@ -26,7 +26,7 @@ export class AnuncioThumbComponent implements OnInit {
   setAnuncio():void{
     this.crud.read('/anuncios', this.idAnuncio, '')
       .then( (res:any) =>{
-        console.log(res)
+        // console.log(res)
         this.idLivro = res[0].Id_livro
         
         if(res[0].transacao == 'Venda'){

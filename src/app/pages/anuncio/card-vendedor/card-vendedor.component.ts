@@ -26,7 +26,7 @@ export class CardVendedorComponent implements OnInit {
         this.nomeVendedor = nome[0] + ' ' + nome[nome.length - 1]
         this.urlFoto = res[0].fotoUsuario
         this.notaVendedor = res[0].mediaAvaliacao
-        console.log(this.notaVendedor)
+        // console.log(this.notaVendedor)
       })
 
     for(let i = 0; i<this.notaVendedor; i++){

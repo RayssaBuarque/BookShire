@@ -1,3 +1,7 @@
+.container__anuncio{
+    margin-bottom: 120px;
+}
+
 .container__anuncio > h1{
     font-size: 32px;
     color:#152139;
