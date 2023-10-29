@@ -1,5 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { CrudService } from 'src/app/crud/crud.service';
+import { CrudService } from 'src/app/services/crud/crud.service';
+import { SetLivroService } from 'src/app/services/set-livro.service';
+import { Livro } from '../../livros/livro-modelo';
 
 @Component({
   selector: 'app-anuncio-thumb',
@@ -15,10 +17,10 @@ export class AnuncioThumbComponent implements OnInit {
   @Input() localAnuncio:string = 'Local do anunciante'
   transacaoData:string = 'Doação/Troca/Preço'
 
-  constructor(private crud:CrudService) { }
+  constructor(private crud:CrudService, private setter:SetLivroService) { }
 
   ngOnInit(): void {
-    this.setAnuncio();
+    this.setAnuncio()
   }
 
   setAnuncio():void{
@@ -33,24 +35,33 @@ export class AnuncioThumbComponent implements OnInit {
           this.transacaoData = res[0].transacao
         }
 
-        this.setTituloLivro(this.idLivro)
-      } )
+        this.setter.setLivro(this.idLivro)
+          .then( (info:Livro) => {
+              this.tituloLivro = info.titulo
+    
+                if(info.urlImg != undefined){
+                  this.urlImgLivro = info.urlImg
+                }
+              })
+      })
+
   }
 
-  setTituloLivro(Id_livro:string):void{
-    //Coletando titulo do livro com base no id dele
-    let fetchApi = fetch(`https://www.googleapis.com/books/v1/volumes/${Id_livro}`)
-                    .then( (res) => res.json() )
-                    .then( (res) => {
-                      this.tituloLivro = res.volumeInfo.title
+  //ANTIGA FUNÇÃO QUE RECOLHIA DADOS DO GOOGLE BOOKS
+  // setLivro(Id_livro:string):void{
+  //   //Coletando titulo do livro com base no id dele
+  //   let fetchApi = fetch(`https://www.googleapis.com/books/v1/volumes/${Id_livro}`)
+  //                   .then( (res) => res.json() )
+  //                   .then( (res) => {
+  //                     this.tituloLivro = res.volumeInfo.title
 
-                      try{
-                        this.urlImgLivro = res.volumeInfo.imageLinks.thumbnail
-                      }
-                      catch(error){
+  //                     try{
+  //                       this.urlImgLivro = res.volumeInfo.imageLinks.thumbnail
+  //                     }
+  //                     catch(error){
                        
-                      }
-                    } )
-  }
+  //                     }
+  //                   } )
+  // }
 
 }

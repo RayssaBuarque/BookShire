@@ -28,8 +28,11 @@
         </ul>
     </div>
     
-    <div class="container__vendedor">
-        <app-card-vendedor></app-card-vendedor>
+    <!-- Usando o ngIf pra atrasar o load do componente até obtermos o id necessário pra enviar -->
+    <div class="container__vendedor" *ngIf="idVendedor != '0'">
+        <app-card-vendedor
+            idVendedor={{idVendedor}}
+        ></app-card-vendedor>
     </div>
     
     <div class="cardTxt">
@@ -40,11 +43,11 @@
 
     <h1>Outros Anúncios</h1>
     <div class="container__outros-anuncios">
-        <app-anuncio-thumb
+        <!-- <app-anuncio-thumb
             idLivro = 'mORT0kN1uBwC'
         ></app-anuncio-thumb>
         <app-anuncio-thumb
             idLivro = 'mORT0kN1uBwC'
-        ></app-anuncio-thumb>
+        ></app-anuncio-thumb> -->
     </div>
 </div>

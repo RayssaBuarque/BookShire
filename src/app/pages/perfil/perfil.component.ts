@@ -1,5 +1,5 @@
 import { Component, OnInit, AfterContentInit} from '@angular/core';
-import { CrudService } from 'src/app/crud/crud.service';
+import { CrudService } from 'src/app/services/crud/crud.service';
 import { Anuncio } from 'src/app/models/anuncio';
 
 @Component({
@@ -54,6 +54,7 @@ export class PerfilComponent implements OnInit {
 
   }
 
+  //função que muda a seção aparente no perfil
   mudarSecao(index:number):void{
     if(index == 0){
       this.secaoIndex = 0;

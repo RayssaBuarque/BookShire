@@ -37,7 +37,7 @@ export class CrudService {
   //linkar CREATE
 
   //linkar READ
-  read(baseUrl:string, param:string, query:string):any{
+  read(baseUrl:string, param:string | null, query:string):any{
     return this.readService.read(this.apiUrl, baseUrl, param, query);
   }
 

@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { CrudService } from 'src/app/crud/crud.service';
+import { ActivatedRoute } from '@angular/router';
+import { Livro } from 'src/app/components/livros/livro-modelo';
+import { Anuncio } from 'src/app/models/anuncio';
+import { CrudService } from 'src/app/services/crud/crud.service';
+import { SetLivroService } from 'src/app/services/set-livro.service';
 
 @Component({
   selector: 'app-anuncio',
@@ -8,17 +12,81 @@ import { CrudService } from 'src/app/crud/crud.service';
 })
 export class AnuncioComponent implements OnInit {
 
-  tituloLivro:string = 'Título do Livro';
-  autorLivro:string = 'Autor do Livro';
-  capaLivro:string = '../../../assets/thumbnails/default-book_thumbnail.png'
-  infoTransacao:string = 'Informação';
-  descricaoLivro:string[] = ['Livro Usado', 'Livro com marcas de uso'];
-  sinopseLivro:string = 'Sinopse do Livro kdhfkj sdhkjfhdskjfhksdhf kjdshfkj hdskjfhs dkjhfkjdshfuye iuhfsdkjhfkdjshfkuehfkjhgf akfhkjhdksjhfudshfdsjhd fkjdshfkj';
+  idAnuncio:string | null = "2"
+  idLivro:string | null = ""
 
-  constructor(private crud:CrudService) { }
+  tituloLivro:string = 'Título do Livro';
+  autorLivro:string[] = [];
+  capaLivro:string = '../../../assets/thumbnails/default-book_thumbnail.png'
+  sinopseLivro:string = 'Sinopse do Livro kdhfkj sdhkjfhdskjfhksdhf kjdshfkj hdskjfhs dkjhfkjdshfuye iuhfsdkjhfkdjshfkuehfkjhgf akfhkjhdksjhfudshfdsjhd fkjdshfkj';
+  
+  private dadosAnuncio!:Anuncio
+  descricaoLivro:string[] = [];
+  idVendedor:string = "0";
+  infoTransacao:string = 'Informação';
+
+  constructor(
+    private crud:CrudService,
+    private route:ActivatedRoute,
+    private setter:SetLivroService
+    ) { }
 
   ngOnInit(): void {
-    // this.crud.read('/anuncios', this.)
+    //recolhendo ids da rota
+    this.route.paramMap.subscribe( (value) =>{
+      this.idAnuncio = value.get('idAnuncio')
+      this.idLivro = value.get('idLivro')
+    });
+
+    //recolhendo dados do anúncio
+    this.crud.read('/anuncios', this.idAnuncio, "")
+      .then( (res:any) => {
+        this.dadosAnuncio = new Anuncio(
+          res[0].Id_anuncio,
+          res[0].Id_livro,
+          res[0].Id_usuario,
+          res[0].transacao,
+          res[0].preco,
+          res[0].criacao,
+          res[0].descricao,
+          res[0].situacao,
+          "São Paulo",
+          res[0].anuncio_status
+        )
+
+        this.idVendedor = this.dadosAnuncio.Id_usuario
+        this.descricaoLivro.push(this.dadosAnuncio.descricao);
+        
+        if(this.dadosAnuncio.transacao == "Venda"){
+          this.infoTransacao = `R$ ${Number(this.dadosAnuncio.preco).toFixed(2)}`
+        }else{
+          this.infoTransacao = this.dadosAnuncio.transacao
+        }
+
+        // console.log(this.idVendedor)
+        // console.log(this.dadosAnuncio)
+      })
+
+      //recolhendo e setando dados do Google Books
+    this.setter.setLivro(this.idLivro)
+    .then( (info:Livro) => {
+      this.tituloLivro = info.titulo
+      this.sinopseLivro = info.sinopse
+          .replace('<p>', '\n')
+          .replace('</p>', '')
+          .replace('<i>', '')
+          .replace('</i>', '')
+          .replace('<b>', '')
+          .replace('</b>', '')
+
+      if(info.autores != undefined){
+        this.autorLivro.push(...info.autores)
+      }
+      
+      if(info.urlImg != undefined){
+        this.capaLivro = info.urlImg
+      }
+    })
   }
 
 }

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
-import { CrudService } from 'src/app/crud/crud.service';
+import { CrudService } from 'src/app/services/crud/crud.service';
 import { Anuncio } from 'src/app/models/anuncio';
 
 @Component({

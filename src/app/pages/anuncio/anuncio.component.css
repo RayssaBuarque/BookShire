@@ -9,7 +9,7 @@
 
 .background__capa{
     height: 250px;
-    background-color: red;
+    background-color: #1F3B6F;
     /* filter: blur(10px);  */
     /* filter: blur(8px);
     -webkit-filter: blur(8px); */
@@ -40,6 +40,8 @@
 }
 
 .anuncio__text > h1{
+    width: 90%;
+    text-align: center;
     color: #1F3B6F;
 }
 

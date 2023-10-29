@@ -43,9 +43,15 @@ const routes: Routes = [
     path:'categoria/:id',
     component: CategoriaComponent
   },
+
+  //ROTAS DE TELAS DE ANÚNCIOS
   {
     path:'anuncios/:idLivro',
     component: ListaAnunciosComponent
+  },
+  {
+    path:'anuncios/:idLivro/:idAnuncio',
+    component: AnuncioComponent
   },
   {
     path:'rayssa',
