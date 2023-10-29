@@ -1,0 +1,52 @@
+<div class="container__criacao-anuncio">
+    <app-btn-voltar></app-btn-voltar>
+
+    <div class="dados__livro">
+        <img src="{{urlFoto}}" alt="Capa de {{tituloLivro}}">
+    
+        <h1>{{tituloLivro}}</h1>
+        <h3 *ngFor="let autor of autoresLivro">{{autor}}</h3>        
+    </div>
+
+    <form class="formulario__anuncio">
+        <div class="tipo__transacao">
+            <input type="radio" value="Venda" name="transacao" id="radioVenda">
+            <label for="radioVenda">Venda</label>
+            
+            <input type="radio" value="Troca" name="transacao" id="radioTroca">
+            <label for="radioTroca">Troca</label>
+
+            <input type="radio" value="Doação" name="transacao" id="radioDoacao">
+            <label for="radioDoacao">Doação</label>
+        </div>
+
+        <div class="anuncio__descricao">
+            <textarea id="descricao" rows="3">Descreva a condição de seu Livro</textarea>
+        </div>
+
+        <div class="anuncio__situacao">
+            <input type="checkbox" name="desc1" value="Rasgado" id="desc1">
+            <label for="desc1">Rasgado</label>
+
+            <input type="checkbox" name="desc2" value="Manchado" id="desc2">
+            <label for="desc2">Manchado</label>
+
+            <input type="checkbox" name="desc3" value="Rasurado" id="desc3">
+            <label for="desc3">Rasurado</label>
+
+            <input type="checkbox" name="desc4" value="Página(s) faltando" id="desc4">
+            <label for="desc4">Página(s) faltando</label>
+
+            <input type="checkbox" name="desc5" value="Amassado" id="desc5">
+            <label for="desc5">Amassado</label>
+            
+            <input type="checkbox" name="desc6" value="Rasgado" id="desc6">
+            <label for="desc6">Rasgado</label>
+        </div>
+
+        <div class="btn__anunciar">
+            <button>Anunciar</button>
+        </div>
+    </form>
+
+</div>

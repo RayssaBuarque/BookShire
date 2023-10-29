@@ -12,6 +12,7 @@ import { NotificacoesComponent } from './pages/notificacoes/notificacoes.compone
 import { ListaAnunciosComponent } from './pages/lista-anuncios/lista-anuncios.component';
 import { AnuncioComponent } from './pages/anuncio/anuncio.component';
 import { ChatComponent } from './pages/chat/chat.component';
+import { CriacaoAnuncioComponent } from './pages/criacao-anuncio/criacao-anuncio.component';
 
 const routes: Routes = [
   {
@@ -52,6 +53,10 @@ const routes: Routes = [
   {
     path:'anuncios/:idLivro/:idAnuncio',
     component: AnuncioComponent
+  },
+  {
+    path:'anunciar/:idLivro',
+    component: CriacaoAnuncioComponent
   },
   {
     path:'rayssa',
