@@ -12,7 +12,6 @@ export class HomeComponent implements OnInit {
   constructor(private crud:CrudService) { }
 
   ngOnInit(): void {
-    console.log(this.crud.read('/users', ''));
   }
 
 }

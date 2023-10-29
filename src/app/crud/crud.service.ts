@@ -37,13 +37,13 @@ export class CrudService {
   //linkar CREATE
 
   //linkar READ
-  read(baseUrl:string, param:string):any{
-    return this.readService.read(this.apiUrl, baseUrl, param);
+  read(baseUrl:string, param:string, query:string):any{
+    return this.readService.read(this.apiUrl, baseUrl, param, query);
   }
 
   //linkar UPDATE
   update(baseUrl:string, param:string):any{
-    return this.readService.read(this.apiUrl, baseUrl, param);
+    // return this.readService.read(this.apiUrl, baseUrl, param);
   }
 
   //linkar DELETE

@@ -7,14 +7,10 @@
     </div>
 
     <div class="anuncios__listagem">
-        <app-anuncio-thumb
+        <app-anuncio-thumb *ngFor = "let anuncio of lista_anuncios"
             idLivro = {{idLivro}}
-        ></app-anuncio-thumb>
-        <app-anuncio-thumb
-            idLivro = {{idLivro}}
-        ></app-anuncio-thumb>
-        <app-anuncio-thumb
-            idLivro = {{idLivro}}
+            localAnuncio = {{anuncio.local}}
+            transacaoData = {{anuncio.transacao}}
         ></app-anuncio-thumb>
     </div>
 </div>

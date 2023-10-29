@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CrudService } from 'src/app/crud/crud.service';
 
 @Component({
   selector: 'app-anuncio',
@@ -14,9 +15,10 @@ export class AnuncioComponent implements OnInit {
   descricaoLivro:string[] = ['Livro Usado', 'Livro com marcas de uso'];
   sinopseLivro:string = 'Sinopse do Livro kdhfkj sdhkjfhdskjfhksdhf kjdshfkj hdskjfhs dkjhfkjdshfuye iuhfsdkjhfkdjshfkuehfkjhgf akfhkjhdksjhfudshfdsjhd fkjdshfkj';
 
-  constructor() { }
+  constructor(private crud:CrudService) { }
 
   ngOnInit(): void {
+    // this.crud.read('/anuncios', this.)
   }
 
 }

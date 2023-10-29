@@ -10,8 +10,8 @@ export class AnuncioThumbComponent implements OnInit {
   @Input() idLivro:string = 'Id do Livro'
   tituloLivro:string = 'Título do Livro'
   urlImgLivro:string = '../../../../assets/thumbnails/default-book_thumbnail.png'
-  localAnuncio:string = 'Local do anunciante'
-  transacaoData:string = 'Doação/Troca/Preço'
+  @Input() localAnuncio:string = 'Local do anunciante'
+  @Input() transacaoData:string = 'Doação/Troca/Preço'
 
   constructor() { }
 
