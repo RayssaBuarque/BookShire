@@ -15,6 +15,7 @@ export class CategoriaComponent implements OnInit {
   private idCategoria:string | null = 'id da Categoria';
   private startIndex:number = 0;
   private qtdLivros:number = 0;
+  acesso:string | null = 'Bloqueado'
   livros:Livro[] = [];
 
   htmlString:string = `
@@ -33,7 +34,16 @@ export class CategoriaComponent implements OnInit {
 
   ngOnInit(): void {
    //pegando o id da categoria na url da pagina
-    this.route.paramMap.subscribe( (value) => this.idCategoria = value.get('id') );
+    this.route.paramMap.subscribe( (value) => {
+      this.idCategoria = value.get('id') 
+
+      if(value.get('acesso') != null){
+        this.acesso =  value.get('acesso')
+      }else{
+        this.acesso = 'bloqueado'
+      }
+      // console.log(this.acesso)
+    });
   
     this.getLivros_Categoria(this.idCategoria, this.startIndex);
     this.getCategoria_Data(this.idCategoria);

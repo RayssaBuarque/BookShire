@@ -12,6 +12,9 @@ export class CardLivroComponent implements OnInit {
   @Input() urlLivroCapa:string = '../../../../assets/thumbnails/default-book_thumbnail.png'
   @Input() nomeAutor:string = 'Nome do Autor'
 
+  //Gatilho que diferencia busca de criação anúncios
+  @Input() acesso:string = 'bloqueado'
+
   constructor() { }
 
   ngOnInit(): void {

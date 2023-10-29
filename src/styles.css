@@ -27,3 +27,17 @@
     padding-top: 100px;
     padding-bottom: 100px;
 }
+
+.lembrete{
+    border-radius: 15px;
+    background: rgba(255, 109, 31, 0.5);
+    padding: 3px 0;
+    color: #FF6D1F;
+    
+
+    text-align: center;
+    font-family: 'Advent Pro';
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 15px;
+}

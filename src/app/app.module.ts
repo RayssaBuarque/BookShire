@@ -10,7 +10,7 @@ import { SecaoPequenaComponent } from './components/secao-pequena/secao-pequena.
 import { LivroThumbComponent } from './components/livros/livro-thumb/livro-thumb.component';
 import { PesquisaComponent } from './pages/pesquisa/pesquisa.component';
 import { BarraPesquisaComponent } from './components/barra-pesquisa/barra-pesquisa.component';
-import { CategoriaThumbnailComponent } from './components/categoria-thumbnail/categoria-thumbnail.component';
+import { CategoriaThumbnailComponent } from './pages/pesquisa/categoria-thumbnail/categoria-thumbnail.component';
 import { CategoriaComponent } from './pages/categoria/categoria.component';
 import { CardLivroComponent } from './components/livros/card-livro/card-livro.component';
 import { PesquisaResultadosComponent } from './pages/pesquisa-resultados/pesquisa-resultados.component';

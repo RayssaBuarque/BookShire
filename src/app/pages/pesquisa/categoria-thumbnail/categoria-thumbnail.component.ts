@@ -25,7 +25,7 @@ export class CategoriaThumbnailComponent implements OnInit, AfterContentInit {
     // Ciclo de Vida do Angular: APÓS o conteúdo Inicializar
     ngAfterContentInit(): void {
       if(this.urlAcesso != ''){
-        this.acesso = `${this.urlAcesso}/categoria/${this.idCategoria}`
+        this.acesso = `categoria/${this.urlAcesso}/${this.idCategoria}`
       }else{
         this.acesso = `categoria/${this.idCategoria}`
       }

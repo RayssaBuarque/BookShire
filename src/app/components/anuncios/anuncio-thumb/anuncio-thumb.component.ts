@@ -10,11 +10,11 @@ import { Livro } from '../../livros/livro-modelo';
 })
 export class AnuncioThumbComponent implements OnInit {
 
-  @Input() idAnuncio:string = 'Id do Anúncio'
   idLivro:string = 'Id do Livro'
+  @Input() idAnuncio:string = 'Id do Anúncio'
+  @Input() localAnuncio:string = 'Local do anunciante'
   tituloLivro:string = 'Título do Livro'
   urlImgLivro:string = '../../../../assets/thumbnails/default-book_thumbnail.png'
-  @Input() localAnuncio:string = 'Local do anunciante'
   transacaoData:string = 'Doação/Troca/Preço'
 
   constructor(private crud:CrudService, private setter:SetLivroService) { }
