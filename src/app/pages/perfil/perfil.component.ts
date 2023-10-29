@@ -15,6 +15,9 @@ export class PerfilComponent implements OnInit {
   nome_usuario:string = 'Nome do Usuário'
   localUsuario:string = 'Local dos Anúncios'
   idAnuncios:number[] = []
+
+  //index da seção que fica aparecendo no perfil
+  secaoIndex:number = 0
   
   constructor( private crud:CrudService) { }
 
@@ -49,6 +52,18 @@ export class PerfilComponent implements OnInit {
         this.localUsuario = res[0].bairro
       } )
 
+  }
+
+  mudarSecao(index:number):void{
+    if(index == 0){
+      this.secaoIndex = 0;
+    }
+    else if(index == 1){
+      this.secaoIndex = 1;
+    }
+    if(index == 2){
+      this.secaoIndex = 2;
+    }
   }
 
 }

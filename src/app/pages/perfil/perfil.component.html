@@ -13,13 +13,13 @@
     </div>
 
     <div class="nav__perfil">
-        <button class="navItem">Anúncios</button>
-        <button class="navItem">Avaliação</button>
-        <button class="navItem">Pedidos</button>
+        <button class="navItem" (click)="mudarSecao(0)">Anúncios</button>
+        <button class="navItem" (click)="mudarSecao(1)">Avaliação</button>
+        <button class="navItem" (click)="mudarSecao(2)">Pedidos</button>
     </div>
 
     <!-- usar o ngFor aqui depois -->
-    <div class="anuncios__perfil">
+    <div class="anuncios__perfil" *ngIf = "secaoIndex == 0">
         <app-anuncio-thumb *ngFor="let anuncio of idAnuncios"
         idAnuncio = "{{anuncio}}"
         localAnuncio="{{localUsuario}}"
@@ -27,9 +27,13 @@
     </div>
 
     <!-- usar o ngFor aqui depois -->
-    <div class="avaliacao__perfil"></div>
+    <div class="avaliacao__perfil" *ngIf = "secaoIndex == 1">
+        <p>teste: AVALIACAO</p>
+    </div>
 
     <!-- usar o ngFor aqui depois -->
-    <div class="pedidos__perfil"></div>
+    <div class="pedidos__perfil" *ngIf = "secaoIndex == 2">
+        <p>Teste: PEDIDO</p>
+    </div>
     
 </div>
