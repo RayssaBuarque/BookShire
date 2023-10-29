@@ -5,7 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { PesquisaComponent } from './pages/pesquisa/pesquisa.component';
 import { CategoriaComponent } from './pages/categoria/categoria.component';
-import { PesquisaResultadosComponent } from './pages/pesquisa/pesquisa-resultados/pesquisa-resultados.component';
+import { PesquisaResultadosComponent } from './pages/pesquisa-resultados/pesquisa-resultados.component';
 import { PerfilComponent } from './pages/perfil/perfil.component';
 import { PesquisaAnunciarComponent } from './pages/pesquisa/pesquisa-anunciar/pesquisa-anunciar.component';
 import { NotificacoesComponent } from './pages/notificacoes/notificacoes.component';

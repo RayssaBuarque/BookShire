@@ -13,7 +13,7 @@ import { BarraPesquisaComponent } from './components/barra-pesquisa/barra-pesqui
 import { CategoriaThumbnailComponent } from './components/categoria-thumbnail/categoria-thumbnail.component';
 import { CategoriaComponent } from './pages/categoria/categoria.component';
 import { CardLivroComponent } from './components/livros/card-livro/card-livro.component';
-import { PesquisaResultadosComponent } from './pages/pesquisa/pesquisa-resultados/pesquisa-resultados.component';
+import { PesquisaResultadosComponent } from './pages/pesquisa-resultados/pesquisa-resultados.component';
 import { PerfilComponent } from './pages/perfil/perfil.component';
 import { PesquisaAnunciarComponent } from './pages/pesquisa/pesquisa-anunciar/pesquisa-anunciar.component';
 import { NotificacoesComponent } from './pages/notificacoes/notificacoes.component';
