@@ -16,6 +16,13 @@
     margin: 0;
 }
 
+:root{
+    --deep-blue: #152139;
+    --bookshire-blue: #1F3B6F;
+    --book-orange: #FF6D1F;
+    --book-clear: #D7DEEA;
+}
+
 .container{
     padding-top: 100px;
     padding-bottom: 100px;

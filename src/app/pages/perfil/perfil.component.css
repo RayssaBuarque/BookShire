@@ -51,7 +51,7 @@
     border: none;
     background-color: transparent;
 
-    color: #152139;
+    color: var(--deep-blue);
 
     font-size: 18px;
     font-family: 'Advent Pro', sans-serif;
@@ -66,5 +66,5 @@
 
 .selecionado{
     font-weight: 600;
-    color: #FF6D1F;
+    color: var(--book-orange);
 }

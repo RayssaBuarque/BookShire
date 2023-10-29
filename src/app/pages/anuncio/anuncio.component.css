@@ -13,7 +13,7 @@
 
 .background__capa{
     height: 250px;
-    background-color: #1F3B6F;
+    background-color: var(--bookshire-blue);
     /* filter: blur(10px);  */
     /* filter: blur(8px);
     -webkit-filter: blur(8px); */
@@ -46,17 +46,17 @@
 .anuncio__text > h1{
     width: 90%;
     text-align: center;
-    color: #1F3B6F;
+    color: var(--bookshire-blue);
 }
 
 .anuncio__text > h3{
-    color: #1F3B6F;
+    color: var(--bookshire-blue);
 }
 
 .text__transacao{
     cursor: pointer;
     margin: 1rem 0;
-    background-color: #FF6D1F;
+    background-color: var(--book-orange);
     font-family: 'Advent Pro';
     border: none;
     color: white;
@@ -67,8 +67,8 @@
 
 .cardTxt{
     border-radius: 20px;
-    background-color: #D7DEEA;
-    color: #152139;
+    background-color: var(--book-clear);
+    color: var(--deep-blue);
     text-align: center;
     width: 80%;
 
