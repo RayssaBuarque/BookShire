@@ -19,16 +19,20 @@ export class AnuncioThumbComponent implements OnInit {
 
   ngOnInit(): void {
     this.setAnuncio();
-
-    
   }
 
   setAnuncio():void{
     this.crud.read('/anuncios', this.idAnuncio, '')
       .then( (res:any) =>{
         console.log(res)
-        this.transacaoData = res[0].transacao
         this.idLivro = res[0].Id_livro
+        
+        if(res[0].transacao == 'Venda'){
+          this.transacaoData = `R$ ${Number(res[0].preco).toFixed(2)}`
+        }else{
+          this.transacaoData = res[0].transacao
+        }
+
         this.setTituloLivro(this.idLivro)
       } )
   }
@@ -39,6 +43,13 @@ export class AnuncioThumbComponent implements OnInit {
                     .then( (res) => res.json() )
                     .then( (res) => {
                       this.tituloLivro = res.volumeInfo.title
+
+                      try{
+                        this.urlImgLivro = res.volumeInfo.imageLinks.thumbnail
+                      }
+                      catch(error){
+                       
+                      }
                     } )
   }
 

@@ -13,6 +13,7 @@ export class PerfilComponent implements OnInit {
   private dadosUsuario:any = '';
   url_fotoUsuario:string = '../../../assets/thumbnails/default-book_thumbnail.png'
   nome_usuario:string = 'Nome do Usuário'
+  localUsuario:string = 'Local dos Anúncios'
   idAnuncios:number[] = []
   
   constructor( private crud:CrudService) { }
@@ -25,6 +26,7 @@ export class PerfilComponent implements OnInit {
       
         this.nome_usuario = this.dadosUsuario[0].nome
         this.url_fotoUsuario = this.dadosUsuario[0].fotoUsuario
+        this.getEndereco(this.dadosUsuario[0].Id_usuario);
       })
     
     this.getAnuncios()
@@ -39,6 +41,14 @@ export class PerfilComponent implements OnInit {
         }
         console.log(this.idAnuncios)
       })
+  }
+
+  getEndereco(id:number):void{
+    this.crud.read('/endereco', '', `?Id_usuario=${id}`)
+      .then( (res:any) =>{
+        this.localUsuario = res[0].bairro
+      } )
+
   }
 
 }

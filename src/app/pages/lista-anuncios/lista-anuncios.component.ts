@@ -25,29 +25,33 @@ export class ListaAnunciosComponent implements OnInit {
       .then( (res:any) => {
         for(let r in res){
           let item = res[r]
-          let local = "Local do Usuário"
 
-          this.crud.read("/users", item.Id_usuario, "")
+          //coletando o local do Usuário
+          this.crud.read("/endereco", "", `?Id_usuario=${item.Id_usuario}`)
+            .then( (res:any) =>{
+              let local = res[0].bairro
+              
+              this.lista_anuncios.push(new Anuncio(
+                item.Id_anuncio,
+                item.Id_livro,
+                item.Id_usuario,
+                item.transacao,
+                item.preco,
+                item.criacao,
+                item.descricao,
+                item.situacao,
+                local,
+                item.status
+              ));
 
-          this.lista_anuncios.push(new Anuncio(
-            item.Id_anuncio,
-            item.Id_livro,
-            item.Id_usuario,
-            item.transacao,
-            item.preco,
-            item.criacao,
-            item.descricao,
-            item.situacao,
-            local,
-            item.status
-          ));
+            })
         }
 
         //Conferindo se nenhum anúncio for encontrado
         if(this.lista_anuncios.length == 0){
           this.contemAnuncios = false
         }
-        console.log(this.lista_anuncios)
+        // console.log(this.lista_anuncios)
       })
   }
 
