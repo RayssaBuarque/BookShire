@@ -20,7 +20,7 @@ export class ListaAnunciosComponent implements OnInit {
     //pegando o id do Livro no url da pagina
     this.route.paramMap.subscribe( (value) => this.idLivro = value.get('idLivro') );
 
-    this.crud.read('/anuncios', '', ("Id_livro=" + this.idLivro))
+    this.crud.read('/anuncios', '', ("?Id_livro=" + this.idLivro))
       .then( (res:any) => {
         for(let r in res){
           let item = res[r]

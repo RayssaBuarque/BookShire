@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { CrudService } from 'src/app/crud/crud.service';
 
 @Component({
   selector: 'app-anuncio-thumb',
@@ -8,12 +9,13 @@ import { Component, Input, OnInit } from '@angular/core';
 export class AnuncioThumbComponent implements OnInit {
 
   @Input() idLivro:string = 'Id do Livro'
+  @Input() idAnuncio:string = 'Id do Anúncio'
   tituloLivro:string = 'Título do Livro'
   urlImgLivro:string = '../../../../assets/thumbnails/default-book_thumbnail.png'
   @Input() localAnuncio:string = 'Local do anunciante'
-  @Input() transacaoData:string = 'Doação/Troca/Preço'
+  transacaoData:string = 'Doação/Troca/Preço'
 
-  constructor() { }
+  constructor(private crud:CrudService) { }
 
   ngOnInit(): void {
     //Coletando titulo do livro com base no id dele
@@ -23,6 +25,15 @@ export class AnuncioThumbComponent implements OnInit {
                       this.tituloLivro = res.volumeInfo.title
                     } )
 
+    this.setAnuncio();
+  }
+
+  setAnuncio():void{
+    this.crud.read('/anuncios', this.idAnuncio, '')
+      .then( (res:any) =>{
+        console.log(res)
+        this.transacaoData = res[0].transacao
+      } )
   }
 
 }
