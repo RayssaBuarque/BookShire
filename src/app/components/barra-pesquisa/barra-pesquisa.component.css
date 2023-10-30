@@ -1,7 +1,8 @@
 .container__barra-pesquisa{
     /* display: flex; */
-    margin: 0 .75rem;
+    /* margin: 0 24px; */
     justify-content: center;
+    width: 100%;
 }
 
 .container__wrapper{

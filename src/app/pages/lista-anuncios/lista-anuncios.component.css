@@ -6,16 +6,29 @@
     margin-top: .75rem;
 }
 
-/* .mensagemVazia{
-    border-radius: 15px;
-    background: rgba(255, 109, 31, 0.5);
-    padding: 3px 0;
-    color: var(--book-orange);
-    
+.mensagemVazia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-    text-align: center;
-    font-family: 'Advent Pro';
-    font-weight: bold;
-    font-size: 15px;
-    margin-bottom: 15px;
-} */
+.mensagemVazia > button{
+    background-color: var(--book-clear);
+    padding: .5rem 1.5rem;
+    border: none;
+    border-radius: 1rem;
+
+    font-size: 18px;
+    font-family: 'Roboto';
+    font-weight: 600;
+    color: var(--bookshire-blue);
+    cursor:pointer;
+}
+
+.mensagemVazia > button:hover{
+    background-color: var(--bookshire-blue);
+    color: var(--book-clear);
+    box-shadow: 0px 0px 8px 1px rgba(26,23,89,0.54) inset;
+    -webkit-box-shadow: 0px 0px 8px 1px rgba(26,23,89,0.54) inset;
+    -moz-box-shadow: 0px 0px 8px 1px rgba(26,23,89,0.54) inset;
+}
