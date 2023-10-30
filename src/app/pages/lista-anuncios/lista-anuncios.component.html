@@ -13,7 +13,10 @@
         ></app-anuncio-thumb>
     </div>
 
-    <div class="mensagemVazia" *ngIf = "lista_anuncios.length == 0">
-        <h4>Parece que não há nenhum anúncio deste livro no momento.</h4>
+    <div class="mensagemVazia"  *ngIf = "lista_anuncios.length == 0 && tituloLivro != 'Título do Livro'">
+        <div class="lembrete">
+            <h4>Parece que não há nenhum anúncio de "{{tituloLivro}}" no momento.</h4>
+        </div>
+        <button (click)="redirectAnunciar()">Anunciar</button>
     </div>
 </div>

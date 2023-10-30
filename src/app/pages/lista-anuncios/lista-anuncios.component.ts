@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Route, Router } from '@angular/router';
 
 import { CrudService } from 'src/app/services/crud/crud.service';
 import { Anuncio } from 'src/app/models/anuncio';
+import { SetLivroService } from 'src/app/services/set-livro.service';
 
 @Component({
   selector: 'app-lista-anuncios',
@@ -12,15 +13,27 @@ import { Anuncio } from 'src/app/models/anuncio';
 export class ListaAnunciosComponent implements OnInit {
 
   idLivro: string | null = 'Id do Livro'
+  tituloLivro: string = 'Título do Livro'
   lista_anuncios:Anuncio[] = []
   contemAnuncios:boolean = true;
 
-  constructor(private route:ActivatedRoute, private crud:CrudService) { }
+  constructor(
+    private route:ActivatedRoute,
+    private router:Router,
+    private crud:CrudService,
+    private setter:SetLivroService
+    ) { }
 
   ngOnInit(): void {
     //pegando o id do Livro no url da pagina
     this.route.paramMap.subscribe( (value) => this.idLivro = value.get('idLivro') );
 
+    this.setter.setLivro( this.idLivro )
+      .then( (res:any) => {
+        this.tituloLivro = res.titulo
+      })
+
+    //coletando os anúncios registrados do livro
     this.crud.read('/anuncios', '', ("?Id_livro=" + this.idLivro))
       .then( (res:any) => {
         for(let r in res){
@@ -51,8 +64,11 @@ export class ListaAnunciosComponent implements OnInit {
         if(this.lista_anuncios.length == 0){
           this.contemAnuncios = false
         }
-        // console.log(this.lista_anuncios)
       })
+  }
+
+  redirectAnunciar():void{
+    this.router.navigateByUrl(`anunciar/${this.idLivro}`)
   }
 
 }
