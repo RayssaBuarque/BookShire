@@ -75,3 +75,8 @@ This project was made with:
 - [Angular CLI](https://github.com/angular/angular-cli) version 14.1.2
 - [Node.js](https://nodejs.org/en/docs) version 18.16.0
 - [Google Books API](https://developers.google.com/books) 
+
+### Dependencies::
+    - Angular CLI: ""
+    - Angular Builder: ""
+    - ngBootstrap: "ng add @ng-bootstrap/ng-bootstrap"

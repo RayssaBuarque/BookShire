@@ -68,3 +68,9 @@
     font-weight: 600;
     color: var(--book-orange);
 }
+
+/* CSS DA PARTE DE AVALIAÇÃO DO PERFIL */
+.estrelinhas > img{
+    height: 40px;
+    width: 40px;
+}
