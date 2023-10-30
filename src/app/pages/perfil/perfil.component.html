@@ -33,7 +33,10 @@
 
     <!-- usar o ngFor aqui depois -->
     <div class="pedidos__perfil" *ngIf = "secaoIndex == 2">
-        <p>Teste: PEDIDO</p>
+        <app-pedido
+            *ngFor="let pedido of idPedidos"
+            idPedido="{{pedido}}"
+        ></app-pedido>
     </div>
     
 </div>

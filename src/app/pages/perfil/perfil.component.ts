@@ -15,10 +15,12 @@ export class PerfilComponent implements OnInit {
   url_fotoUsuario:string = '../../../assets/thumbnails/default-book_thumbnail.png'
   nome_usuario:string = 'Nome do Usuário'
   localUsuario:string = 'Local dos Anúncios'
+  
   idAnuncios:number[] = []
+  idPedidos:number[] = []
 
   //index da seção que fica aparecendo no perfil
-  secaoIndex:number = 0
+  secaoIndex:number = 2
   
   constructor( private crud:CrudService, private route:ActivatedRoute) { }
 
@@ -26,7 +28,7 @@ export class PerfilComponent implements OnInit {
     //recolhendo ids da rota
     this.route.paramMap.subscribe( (value) =>{
       this.idUsuario = value.get('id')
-      console.log(this.idUsuario)
+      // console.log(this.idUsuario)
     });
 
     this.crud.read('/users', this.idUsuario, "")
@@ -40,6 +42,7 @@ export class PerfilComponent implements OnInit {
       })
     
     this.getAnuncios()
+    this.getPedidos()
   } 
 
   getAnuncios():void{
@@ -49,7 +52,18 @@ export class PerfilComponent implements OnInit {
         for (let i = 0; i< res.length; i++){
           this.idAnuncios.push( res[i].Id_anuncio )
         }
-        console.log(this.idAnuncios)
+        // console.log(this.idAnuncios)
+      })
+  }
+
+  getPedidos():void{
+    this.crud.read('/pedidos', '', `?Id_cliente=${this.idUsuario}`)
+      .then( (res:any) => {
+
+        for(let i = 0; i< res.length; i++){
+          this.idPedidos.push(res[i].Id_pedido)
+        }
+        // console.log(this.idPedidos)
       })
   }
 

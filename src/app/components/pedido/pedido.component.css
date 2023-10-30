@@ -1,0 +1,12 @@
+.container__pedido{
+    display: flex;
+    flex-direction: row;
+}
+
+.capa__livro > img{
+    width: 80px;
+    height: 115px;
+    border-radius: 12px;
+
+    object-fit: cover;
+}
