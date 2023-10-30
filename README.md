@@ -39,7 +39,7 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [ ] 👤 Desenvolver COMPONENTE pedidos pro Perfil @
 - [x] 📢 Desenvolver tela de Anúncios @RAYSSA
 - [x] 📢 Desenvolver tela de Anúncio Específico @RAYSSA
-- [ ] 📢 Desenvolver tela de criação de anúncio @ 
+- [ ] 📢 Terminar Tela de criação de anúncio @ 
 - [ ] 💵 Desenvolver tela de pagamento @MARIA CLARA
 - [ ] 📪 Desenvolver tela de Chat @ MALU
 - [ ] 📬 Desenvolver tela de Chat Específico @MALU
@@ -53,6 +53,7 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [x] 🙌 Desenvolver CRUD usuários AWS API @RAYSSA
 - [x] 🙌 Conectar usuário no protótipo @RAYSSA
 - [x] 🙌 Conectar anúncios no protótipo @RAYSSA
+- [ ] ⬅️ Definir botão Voltar rota @RAYSSA
 
 ###### 4SP Bugs 👾👾👾
 - [x] 🎯 Consertar rota de Anunciar livro @RAYSSA

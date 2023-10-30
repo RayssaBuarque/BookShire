@@ -1,6 +1,10 @@
 <div class="container__criacao-anuncio">
     <app-btn-voltar></app-btn-voltar>
 
+    <div *ngIf="lembrete" class="lembrete">
+        <h3>Preencha todos os campos corretamente!</h3>
+    </div>
+
     <div class="dados__livro">
         <img src="{{urlFoto}}" alt="Capa de {{tituloLivro}}">
     
@@ -8,44 +12,71 @@
         <h3 *ngFor="let autor of autoresLivro">{{autor}}</h3>        
     </div>
 
-    <form class="formulario__anuncio">
+    <form
+        [formGroup]="anunciarForm"
+        class="formulario__anuncio" 
+        (ngSubmit)="onSubmit()"
+        >
         <div class="tipo__transacao">
-            <input type="radio" value="Venda" name="transacao" id="radioVenda">
+            <input 
+                id="radioVenda"
+                type="radio"
+                value="Venda"
+                formControlName="transacao"
+                >
             <label for="radioVenda">Venda</label>
             
-            <input type="radio" value="Troca" name="transacao" id="radioTroca">
+            <input
+                id="radioTroca"
+                type="radio"
+                value="Troca"
+                formControlName="transacao"
+                >
             <label for="radioTroca">Troca</label>
 
-            <input type="radio" value="Doação" name="transacao" id="radioDoacao">
+            <input 
+                id="radioDoacao"
+                type="radio"
+                value="Doação"
+                formControlName="transacao"
+                >
             <label for="radioDoacao">Doação</label>
         </div>
 
         <div class="anuncio__descricao">
-            <textarea id="descricao" rows="3">Descreva a condição de seu Livro</textarea>
+            <input
+                id="descricao"
+                formControlName = "descricao"
+                placeholder="Descreva a condição de seu Livro"
+                >
+        </div>
+
+        <div class="anuncio__preco">
+            <input formControlName="preco" type="number" step=".25">
         </div>
 
         <div class="anuncio__situacao">
-            <input type="checkbox" name="desc1" value="Rasgado" id="desc1">
+            <input type="checkbox" formControlName="desc1" value="Rasgado" id="desc1">
             <label for="desc1">Rasgado</label>
 
-            <input type="checkbox" name="desc2" value="Manchado" id="desc2">
+            <input type="checkbox" formControlName="desc2" value="Manchado" id="desc2">
             <label for="desc2">Manchado</label>
 
-            <input type="checkbox" name="desc3" value="Rasurado" id="desc3">
+            <input type="checkbox" formControlName="desc3" value="Rasurado" id="desc3">
             <label for="desc3">Rasurado</label>
 
-            <input type="checkbox" name="desc4" value="Página(s) faltando" id="desc4">
+            <input type="checkbox" formControlName="desc4" value="Página(s) faltando" id="desc4">
             <label for="desc4">Página(s) faltando</label>
 
-            <input type="checkbox" name="desc5" value="Amassado" id="desc5">
+            <input type="checkbox" formControlName="desc5" value="Amassado" id="desc5">
             <label for="desc5">Amassado</label>
             
-            <input type="checkbox" name="desc6" value="Rasgado" id="desc6">
+            <input type="checkbox" formControlName="desc6" value="Rasgado" id="desc6">
             <label for="desc6">Rasgado</label>
         </div>
 
         <div class="btn__anunciar">
-            <button (click)="coletarDados()">Anunciar</button>
+            <button type="submit">Anunciar</button>
         </div>
     </form>
 

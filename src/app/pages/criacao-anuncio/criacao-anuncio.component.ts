@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+import { FormBuilder } from '@angular/forms';
 
 import { SetLivroService } from 'src/app/services/set-livro.service';
-
-import { Anuncio } from 'src/app/models/anuncio';
+import { CrudService } from 'src/app/services/crud/crud.service';
 
 @Component({
   selector: 'app-criacao-anuncio',
@@ -17,11 +17,28 @@ export class CriacaoAnuncioComponent implements OnInit {
   autoresLivro:string[] = []
   urlFoto:string = '../../assets/thumbnails/default-book_thumbnail.png'
 
-  dadosAnunciar!:Anuncio
+  lembrete:boolean = false
+
+  anunciarForm = this.formBuilder.group({
+    //POSSIBILITAR TROCA DO USUARIO NO FUTURO !!!
+    Id_usuario: '2',
+    transacao: null,
+    preco : 0,
+    descricao : null,
+    desc1: null,
+    desc2: null,
+    desc3: null,
+    desc4: null,
+    desc5: null,
+    desc6: null
+  })
 
   constructor(
     private setter:SetLivroService,
-    private route:ActivatedRoute
+    private route:ActivatedRoute,
+    private router:Router,
+    private formBuilder:FormBuilder,
+    private crud:CrudService
     ) { }
 
   ngOnInit(): void {
@@ -32,7 +49,7 @@ export class CriacaoAnuncioComponent implements OnInit {
 
     this.setter.setLivro(this.idLivro)
       .then( (res:any) => {
-        console.log(res)
+        // console.log(res)
         this.tituloLivro = res.titulo
         
         if(res.urlImg != undefined){
@@ -43,13 +60,49 @@ export class CriacaoAnuncioComponent implements OnInit {
           for(let autor in res.autores){
             this.autoresLivro.push(res.autores[autor])
           }
-          console.log(this.autoresLivro)
         }
       })
   }
 
-  coletarDados():void{
+  onSubmit():void{
+    //cheque se os valores foram preenchidos
+    let inpts = this.anunciarForm.value
+    if(inpts.descricao == null || inpts.transacao == null || (inpts.transacao == 'Venda' && (inpts.preco == 0 || inpts.preco == null))){
+      this.lembrete = true
+    }else{
+      let situacoes = [inpts.desc1, inpts.desc2, inpts.desc3, inpts.desc4, inpts.desc5, inpts.desc6]
+      let situacao = ''
+      for(let i in situacoes){
+        if(situacoes[i] != null){
+          situacao += situacoes[i]
+        }
+      }
 
+      if(situacao == ''){
+        situacao = 'Livro em perfeita condição.'
+      }
+
+      console.log(inpts)
+
+      let body =
+        {
+        Id_usuario: inpts.Id_usuario,
+        Id_livro: this.idLivro,
+        transacao : inpts.transacao,
+        preco : inpts.preco,
+        descricao : inpts.descricao,
+        situacao: situacao
+        }
+      
+      this.crud.create('/anuncios', '', body)
+        .then( (r) => {
+          this.router.navigateByUrl('perfil')
+        })
+      console.log(body)
+    }
+
+    
+    // this.anunciarForm.reset();
   }
 
 }

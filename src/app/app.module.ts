@@ -29,6 +29,7 @@ import { PedidoComponent } from './components/pedido/pedido.component';
 import { SeboThumbComponent } from './components/sebo-thumb/sebo-thumb.component';
 import { ListaSebosComponent } from './pages/lista-sebos/lista-sebos.component';
 import { CriacaoAnuncioComponent } from './pages/criacao-anuncio/criacao-anuncio.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 // import { PesquisaAnunciarComponent } from './pages/pesquisa-anunciar/pesquisa-anunciar.component';
 
 @NgModule({
@@ -64,6 +65,8 @@ import { CriacaoAnuncioComponent } from './pages/criacao-anuncio/criacao-anuncio
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule
   ],
   providers: [],
