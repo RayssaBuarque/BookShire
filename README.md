@@ -45,7 +45,6 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [ ] 📬 Desenvolver tela de Chat Específico @MALU
 - [ ] 📨 Desenvolver bolha de chat @MALU
 - [ ] 🔔 Desenvolver tela de Notificações @MALU
-- [ ] ⚙️ Desenvolver tela de Configurações @MALU
 
 #### 6xth Sprint -- Conexão das Telas
 - [x] 🙌 Desenvolver CRUD anúncios AWS API @RAYSSA
