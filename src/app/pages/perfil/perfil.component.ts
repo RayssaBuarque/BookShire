@@ -2,6 +2,7 @@ import { Component, OnInit, AfterContentInit} from '@angular/core';
 import { CrudService } from 'src/app/services/crud/crud.service';
 import { Anuncio } from 'src/app/models/anuncio';
 import { ActivatedRoute } from '@angular/router';
+import { GraficoAvaliacaoComponent } from 'src/app/components/grafico-avaliacao/grafico-avaliacao.component';
 
 @Component({
   selector: 'app-perfil',
@@ -15,6 +16,10 @@ export class PerfilComponent implements OnInit {
   url_fotoUsuario:string = '../../../assets/thumbnails/default-book_thumbnail.png'
   nome_usuario:string = 'Nome do Usuário'
   localUsuario:string = 'Local dos Anúncios'
+  
+  //Avaliações
+  mediaAvaliacao:number = 0
+  notasAvaliacao:number[] = []
   
   idAnuncios:number[] = []
   idPedidos:number[] = []
@@ -36,12 +41,14 @@ export class PerfilComponent implements OnInit {
         // console.log(res)
         this.dadosUsuario = res
       
+        this.mediaAvaliacao = this.dadosUsuario[0].mediaAvaliacao
         this.nome_usuario = this.dadosUsuario[0].nome
         this.url_fotoUsuario = this.dadosUsuario[0].fotoUsuario
         this.getEndereco(this.dadosUsuario[0].Id_usuario);
       })
     
     this.getAnuncios()
+    this.getAvaliacoes()
     this.getPedidos()
   } 
 
@@ -53,6 +60,16 @@ export class PerfilComponent implements OnInit {
           this.idAnuncios.push( res[i].Id_anuncio )
         }
         // console.log(this.idAnuncios)
+      })
+  }
+
+  getAvaliacoes():void{
+    this.crud.read('/pedidos', '', `?Id_anunciante=${this.idUsuario}`)
+      .then( (res:any) => {
+        for(let i in res){
+          this.notasAvaliacao.push(res[i].notaAvaliacao)
+        }
+        // console.log(this.notasAvaliacao.length)
       })
   }
 

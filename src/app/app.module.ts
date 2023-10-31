@@ -30,7 +30,13 @@ import { SeboThumbComponent } from './components/sebo-thumb/sebo-thumb.component
 import { ListaSebosComponent } from './pages/lista-sebos/lista-sebos.component';
 import { CriacaoAnuncioComponent } from './pages/criacao-anuncio/criacao-anuncio.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { GraficoAvaliacaoComponent } from './components/grafico-avaliacao/grafico-avaliacao.component';
+
+// Importing bootstrap modules
+// import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
+
 // import { PesquisaAnunciarComponent } from './pages/pesquisa-anunciar/pesquisa-anunciar.component';
 
 @NgModule({
@@ -62,6 +68,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     SeboThumbComponent,
     ListaSebosComponent,
     CriacaoAnuncioComponent,
+    GraficoAvaliacaoComponent,
     // PesquisaAnunciarComponent
   ],
   imports: [
