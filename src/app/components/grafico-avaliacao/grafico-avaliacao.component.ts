@@ -17,17 +17,18 @@ export class GraficoAvaliacaoComponent implements OnInit {
   estrelas:string = ''
   nValorMax:number = Number(this.valorMax)
   nQtdNotas:number = Number(this.qtdNotas)
+
+  demonstracao:boolean = false
   
   constructor() { }
   
   ngOnInit(): void {
-    this.nValorMax = Number(this.valorMax)
-    console.log(this.valorMax)
-    this.nQtdNotas = Number(this.qtdNotas)
-
     for(let i = 0; i<Number(this.qtdEstrelas); i++){
       this.estrelas += '⭐'
     }
+    console.log(this.nQtdNotas)
+    console.log(this.nValorMax)
+    this.demonstracao = true;
   }
 
 }

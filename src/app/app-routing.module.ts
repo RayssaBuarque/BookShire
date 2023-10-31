@@ -13,6 +13,7 @@ import { ListaAnunciosComponent } from './pages/lista-anuncios/lista-anuncios.co
 import { AnuncioComponent } from './pages/anuncio/anuncio.component';
 import { ChatComponent } from './pages/chat/chat.component';
 import { CriacaoAnuncioComponent } from './pages/criacao-anuncio/criacao-anuncio.component';
+import { SebosListaComponent } from './pages/sebos-lista/sebos-lista.component';
 
 const routes: Routes = [
   {
@@ -49,6 +50,10 @@ const routes: Routes = [
   {
     path:'anuncios/:idLivro',
     component: ListaAnunciosComponent
+  },
+  {
+    path:'sebos',
+    component: SebosListaComponent
   },
   {
     path:'anuncios/:idLivro/:idAnuncio',

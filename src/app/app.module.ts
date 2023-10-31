@@ -27,12 +27,12 @@ import { CardVendedorComponent } from './pages/anuncio/card-vendedor/card-vended
 import { ConversaThumbComponent } from './pages/chat/conversa-thumb/conversa-thumb.component';
 import { PedidoComponent } from './components/pedido/pedido.component';
 import { SeboThumbComponent } from './components/sebo-thumb/sebo-thumb.component';
-import { ListaSebosComponent } from './pages/lista-sebos/lista-sebos.component';
 import { CriacaoAnuncioComponent } from './pages/criacao-anuncio/criacao-anuncio.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { GraficoAvaliacaoComponent } from './components/grafico-avaliacao/grafico-avaliacao.component';
+import { SebosListaComponent } from './pages/sebos-lista/sebos-lista.component';
 
 // Importing bootstrap modules
 // import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
@@ -66,9 +66,9 @@ import { GraficoAvaliacaoComponent } from './components/grafico-avaliacao/grafic
     ConversaThumbComponent,
     PedidoComponent,
     SeboThumbComponent,
-    ListaSebosComponent,
     CriacaoAnuncioComponent,
     GraficoAvaliacaoComponent,
+    SebosListaComponent,
     // PesquisaAnunciarComponent
   ],
   imports: [
