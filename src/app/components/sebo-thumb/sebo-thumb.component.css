@@ -1,0 +1,40 @@
+img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: .75rem;
+}
+
+.titulo-sebo{
+    text-align: center;
+}
+
+.geral{
+    margin-top: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    background-color: yellow;
+    text-align: center;
+}
+
+.container_sebos{
+    background-color: pink;
+    display: flex;
+    text-align: center;
+    margin-left: 35px;
+    width: 100%;
+    
+}
+
+.sebos{
+    background-color: white;
+    margin-left: 15px;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 28px;
+}
