@@ -28,7 +28,6 @@ export class PesquisaComponent implements OnInit {
     for(let i in this.idCategorias){
       this.getCategoriaDado(this.idCategorias[i]);
     }
-    console.log(this.idCategorias)
   }
 
   //método que solicita DADOS DA CATEGORIA

@@ -11,10 +11,9 @@ import { CrudService } from 'src/app/services/crud/crud.service';
 })
 export class GraficoAvaliacaoComponent implements OnInit {
 
-  @Input() Id_anunciante:string = "2";
-  valorMax:any = "100"
-  qtdNotas:any = "50"
-  qtdEstrelas:string = "0"
+  @Input() valorMax:string = "100"
+  @Input() qtdNotas:string = "50"
+  @Input() qtdEstrelas:string = "0"
   
   estrelas:string = ''
   nValorMax:number = Number(this.valorMax)
@@ -25,20 +24,12 @@ export class GraficoAvaliacaoComponent implements OnInit {
   constructor(private crud:CrudService) { }
   
   ngOnInit(): void {
-  
-    this.crud.read('/anuncios', '', `?Id_usuario=${this.Id_anunciante}`)
-      .then((res:any) => {
-        // this.valorMax = res[0].
-        this.valorMax = res.length
-        console.log(res)
-      })
-
-    // for(let i = 0; i<Number(this.qtdEstrelas); i++){
-    //   this.estrelas += '⭐'
-    // }
-    // console.log(this.nQtdNotas)
-    // console.log(this.nValorMax)
-    // this.demonstracao = true;
+    for(let i = 0; i<Number(this.qtdEstrelas); i++){
+      this.estrelas += '⭐'
+    }
+    console.log(this.nQtdNotas)
+    console.log(this.nValorMax)
+    this.demonstracao = true;
   }
 
 }
