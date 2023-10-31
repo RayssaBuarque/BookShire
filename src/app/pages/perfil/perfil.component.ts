@@ -11,7 +11,7 @@ import { GraficoAvaliacaoComponent } from 'src/app/components/grafico-avaliacao/
 })
 export class PerfilComponent implements OnInit {
 
-  private idUsuario:string | null = "2"; //descobrir como dinamizar isso um pouco mais
+  idUsuario:string | null = "2"; //descobrir como dinamizar isso um pouco mais
   private dadosUsuario:any = '';
   url_fotoUsuario:string = '../../../assets/thumbnails/default-book_thumbnail.png'
   nome_usuario:string = 'Nome do Usuário'
@@ -26,37 +26,7 @@ export class PerfilComponent implements OnInit {
   notas3:number = 0
   notas4:number = 0
   notas5:number = 0
-  public htmlAvaliacao:string = `
-  <div class="grafico__avaliacao">
-      <div class="line-stars">
-          <app-grafico-avaliacao
-              valorMax = "{{${this.notasQtd}}}"
-              qtdEstrelas = "5"
-              qtdNotas = "{{${this.notas5}}}"
-          ></app-grafico-avaliacao>
-          <app-grafico-avaliacao
-              valorMax = "{{${this.notasQtd}}}"
-              qtdEstrelas = "4"
-              qtdNotas = "{{${this.notas4}}}"
-          ></app-grafico-avaliacao>
-          <app-grafico-avaliacao
-              valorMax = "{{${this.notasQtd}}}"
-              qtdEstrelas = "3"
-              qtdNotas = "{{${this.notas3}}}"
-          ></app-grafico-avaliacao>
-          <app-grafico-avaliacao
-              valorMax = "{{${this.notasQtd}}}"
-              qtdEstrelas = "2"
-              qtdNotas = "{{${this.notas2}}}"
-          ></app-grafico-avaliacao>
-          <app-grafico-avaliacao
-              valorMax = "{{${this.notasQtd}}}"
-              qtdEstrelas = "1"
-              qtdNotas = "{{${this.notas1}}}"
-          ></app-grafico-avaliacao>
-      </div>
-  </div>
-  `
+  
   idAnuncios:number[] = []
   idPedidos:number[] = []
 
