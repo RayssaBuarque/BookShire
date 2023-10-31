@@ -10,8 +10,8 @@ import { subscriptionLogsToBeFn } from 'rxjs/internal/testing/TestScheduler';
 })
 export class GraficoAvaliacaoComponent implements OnInit {
 
-  @Input() valorMax:string = "100"
-  @Input() qtdNotas:string = "50"
+  @Input('valMax') valorMax:any = "100"
+  @Input('qtdN') qtdNotas:any = "50"
   @Input() qtdEstrelas:string = "0"
   
   estrelas:string = ''
@@ -29,6 +29,10 @@ export class GraficoAvaliacaoComponent implements OnInit {
     console.log(this.nQtdNotas)
     console.log(this.nValorMax)
     this.demonstracao = true;
+  }
+
+  parseNum(strNum:string):number{
+    return Number(strNum)
   }
 
 }

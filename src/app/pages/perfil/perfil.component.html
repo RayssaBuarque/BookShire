@@ -42,6 +42,7 @@
 
 
         <div class="container__avaliacao" *ngIf="avaliacao == true">
+        <!-- <div class="container__avaliacao" *ngIf="avaliacao$ |async as avaliacao"> -->
             <div class="nota__grande">
                 <h1>{{mediaAvaliacao.toFixed(1)}}</h1>
 
@@ -53,11 +54,11 @@
             <div class="grafico__avaliacao">
                 <div class="line-stars">
                     <app-grafico-avaliacao
-                        valorMax = "{{notasQtd}}"
+                        [valMax] = "[notasQtd]"
                         qtdEstrelas = "5"
-                        qtdNotas = "{{notas5}}"
+                        [qtdN] = "[notas5]"
                     ></app-grafico-avaliacao>
-                    <app-grafico-avaliacao
+                    <!-- <app-grafico-avaliacao
                         valorMax = "{{notasQtd}}"
                         qtdEstrelas = "4"
                         qtdNotas = "{{notas4}}"
@@ -76,7 +77,7 @@
                         valorMax = "{{notasQtd}}"
                         qtdEstrelas = "1"
                         qtdNotas = "{{notas1}}"
-                    ></app-grafico-avaliacao>
+                    ></app-grafico-avaliacao> -->
                 </div>
             </div>
         </div>
