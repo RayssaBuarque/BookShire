@@ -25,7 +25,7 @@
 
 .container{
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 35px; /*alteração do bottom na barra de pesquisa*/
 }
 
 .lembrete{

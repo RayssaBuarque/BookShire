@@ -71,6 +71,7 @@ import { SebosCadastradosListaComponent } from './components/sebos-cadastrados-l
     GraficoAvaliacaoComponent,
     SebosListaComponent,
     SebosCadastradosListaComponent,
+    
     // PesquisaAnunciarComponent
   ],
   imports: [
