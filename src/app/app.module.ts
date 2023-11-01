@@ -33,6 +33,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { GraficoAvaliacaoComponent } from './components/grafico-avaliacao/grafico-avaliacao.component';
 import { SebosListaComponent } from './pages/sebos-lista/sebos-lista.component';
+import { SebosCadastradosListaComponent } from './components/sebos-cadastrados-lista/sebos-cadastrados-lista.component';
 
 // Importing bootstrap modules
 // import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
@@ -69,6 +70,7 @@ import { SebosListaComponent } from './pages/sebos-lista/sebos-lista.component';
     CriacaoAnuncioComponent,
     GraficoAvaliacaoComponent,
     SebosListaComponent,
+    SebosCadastradosListaComponent,
     // PesquisaAnunciarComponent
   ],
   imports: [

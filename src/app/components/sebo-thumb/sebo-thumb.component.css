@@ -1,6 +1,6 @@
 img{
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     object-fit: cover;
     border-radius: .75rem;
 }
@@ -11,7 +11,7 @@ img{
 }
 
 .sebos{
-    margin-left: 15px;
+    margin-left: 20px;
     text-align: center;
 }
 
