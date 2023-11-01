@@ -35,12 +35,11 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [ ] 🏠 Desenvolver tela de Home @MALU
 - [x] 📚 Desenvolver COMPONENTE thumb (ícones) dos Sebos @MALU
 - [x] 📚 Desenvolver tela de Listagem de Sebos @MALU
-- [ ] 📚 Desenvolver barra de pesquisa de sebos @MALU
 - [ ] 👤 Desenvolver tela de Perfil @
-- [ ] 👤 Desenvolver COMPONENTE pedidos pro Perfil @
+- [ ] 👤 Estilizar COMPONENTE pedidos pro Perfil @
 - [x] 📢 Desenvolver tela de Anúncios @RAYSSA
 - [x] 📢 Desenvolver tela de Anúncio Específico @RAYSSA
-- [ ] 📢 Terminar Tela de criação de anúncio @ 
+- [ ] 📢 Estilizar Tela de criação de anúncio @MALU / MARIA CLARA
 - [ ] 💵 Desenvolver tela de pagamento @MARIA CLARA
 - [ ] 📪 Desenvolver tela de Chat @ MALU
 - [ ] 📬 Desenvolver tela de Chat Específico @MALU
