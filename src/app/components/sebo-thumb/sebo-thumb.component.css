@@ -1,18 +1,21 @@
 img{
     width: 130px;
     height: 130px;
-    object-fit: cover;
-    border-radius: .75rem;
+    border-radius: 50%;
 }
 
-.container_sebos{
+.container-sebos{
     display: flex;
-    text-align: center;    
+    text-align: center;   
+    background-color: beige;
+    align-items: center;
 }
+
 
 .sebos{
     margin-left: 20px;
     text-align: center;
+    margin-top: 15px;
 }
 
 a{
@@ -20,4 +23,6 @@ a{
     color: var(--deep-blue);
 }
 
-
+p{
+    text-align: center;
+}

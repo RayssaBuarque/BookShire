@@ -33,8 +33,9 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 
 #### 5fth Sprint -- Estrutura de Telas
 - [ ] 🏠 Desenvolver tela de Home @MALU
-- [ ] 📚 Desenvolver COMPONENTE thumb (ícones) dos Sebos @MALU
-- [ ] 📚 Desenvolver tela de Listagem de Sebos @MALU
+- [x] 📚 Desenvolver COMPONENTE thumb (ícones) dos Sebos @MALU
+- [x] 📚 Desenvolver tela de Listagem de Sebos @MALU
+- [ ] 📚 Desenvolver barra de pesquisa de sebos @MALU
 - [ ] 👤 Desenvolver tela de Perfil @
 - [ ] 👤 Desenvolver COMPONENTE pedidos pro Perfil @
 - [x] 📢 Desenvolver tela de Anúncios @RAYSSA
