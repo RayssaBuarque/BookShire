@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./chat-geral.component.css']
 })
 export class ChatGeralComponent implements OnInit {
+  
 
   constructor() { }
 
