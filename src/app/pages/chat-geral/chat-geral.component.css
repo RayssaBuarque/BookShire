@@ -1,0 +1,24 @@
+img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.usuario{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+p{
+    margin-left: 25px;
+    font-family: 'Advent Pro', sans-serif;
+    color: #152139;
+    font-weight: bold;
+    font-size: 24px;
+}
+.geral_conversasLista {
+    margin-bottom: 50px;
+}

@@ -29,14 +29,13 @@ import { PedidoComponent } from './components/pedido/pedido.component';
 import { SeboThumbComponent } from './components/sebo-thumb/sebo-thumb.component';
 import { CriacaoAnuncioComponent } from './pages/criacao-anuncio/criacao-anuncio.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { GraficoAvaliacaoComponent } from './components/grafico-avaliacao/grafico-avaliacao.component';
 import { SebosListaComponent } from './pages/sebos-lista/sebos-lista.component';
 import { SebosCadastradosListaComponent } from './components/sebos-cadastrados-lista/sebos-cadastrados-lista.component';
 import { BotaoVermaisSebosComponent } from './components/botao-vermais-sebos/botao-vermais-sebos.component';
-import { MensagensGeralComponent } from './pages/mensagens-geral/mensagens-geral.component';
-import { MensagensGeralUsersComponent } from './components/mensagens-geral-users/mensagens-geral-users.component';
+import { ChatGeralComponent } from './pages/chat-geral/chat-geral.component';
+import { ChatGeralConfigComponent } from './components/chat-geral-config/chat-geral-config.component';
 
 // Importing bootstrap modules
 // import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
@@ -75,8 +74,9 @@ import { MensagensGeralUsersComponent } from './components/mensagens-geral-users
     SebosListaComponent,
     SebosCadastradosListaComponent,
     BotaoVermaisSebosComponent,
-    MensagensGeralComponent,
-    MensagensGeralUsersComponent,
+    ChatGeralComponent,
+    ChatGeralConfigComponent,
+
     
     // PesquisaAnunciarComponent
   ],
