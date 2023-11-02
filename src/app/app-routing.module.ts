@@ -14,6 +14,7 @@ import { AnuncioComponent } from './pages/anuncio/anuncio.component';
 import { ChatComponent } from './pages/chat/chat.component';
 import { CriacaoAnuncioComponent } from './pages/criacao-anuncio/criacao-anuncio.component';
 import { SebosListaComponent } from './pages/sebos-lista/sebos-lista.component';
+import { MensagensGeralComponent } from './pages/mensagens-geral/mensagens-geral.component';
 
 const routes: Routes = [
   {
@@ -67,7 +68,10 @@ const routes: Routes = [
     path:'notificacoes',
     component: NotificacoesComponent
   },
-
+  {
+    path:'mensagens',
+    component: MensagensGeralComponent
+  },
   //Sebos 
   {
     path:'sebos',

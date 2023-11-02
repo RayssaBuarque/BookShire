@@ -35,6 +35,8 @@ import { GraficoAvaliacaoComponent } from './components/grafico-avaliacao/grafic
 import { SebosListaComponent } from './pages/sebos-lista/sebos-lista.component';
 import { SebosCadastradosListaComponent } from './components/sebos-cadastrados-lista/sebos-cadastrados-lista.component';
 import { BotaoVermaisSebosComponent } from './components/botao-vermais-sebos/botao-vermais-sebos.component';
+import { MensagensGeralComponent } from './pages/mensagens-geral/mensagens-geral.component';
+import { MensagensGeralUsersComponent } from './components/mensagens-geral-users/mensagens-geral-users.component';
 
 // Importing bootstrap modules
 // import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
@@ -73,6 +75,8 @@ import { BotaoVermaisSebosComponent } from './components/botao-vermais-sebos/bot
     SebosListaComponent,
     SebosCadastradosListaComponent,
     BotaoVermaisSebosComponent,
+    MensagensGeralComponent,
+    MensagensGeralUsersComponent,
     
     // PesquisaAnunciarComponent
   ],

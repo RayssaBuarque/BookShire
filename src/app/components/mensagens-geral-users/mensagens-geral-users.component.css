@@ -1,0 +1,24 @@
+
+.nomeUser{
+    margin-left: 20px;
+    font-family: 'Advent Pro', sans-serif;
+    color: #152139;
+    font-weight: bold;
+    font-size: 20px;
+}
+.user{
+    display: flex;
+    align-items: center;
+    background-color:aquamarine;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 15px;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
