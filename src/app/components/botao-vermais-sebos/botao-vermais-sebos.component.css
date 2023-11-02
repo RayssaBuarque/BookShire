@@ -1,0 +1,17 @@
+.geral_botao{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100px;
+}
+.button{
+    margin-top: 20px;
+    padding: 7px;
+    width: 150px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #F2F2F4C9;
+    border-color: #F2F2F4C9;
+    font-family: 'Advent Pro', sans-serif;
+    color: #152139;
+    font-weight: bold;
+}

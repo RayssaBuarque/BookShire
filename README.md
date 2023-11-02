@@ -32,7 +32,7 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [x] 👹 Configurar um Servidor @RAYSSA
 
 #### 5fth Sprint -- Estrutura de Telas
-- [ ] 🏠 Desenvolver tela de Home @MALU
+- [x] 🏠 Desenvolver tela de Home @MALU
 - [x] 📚 Desenvolver COMPONENTE thumb (ícones) dos Sebos @MALU
 - [x] 📚 Desenvolver tela de Listagem de Sebos @MALU
 - [ ] 👤 Desenvolver tela de Perfil @

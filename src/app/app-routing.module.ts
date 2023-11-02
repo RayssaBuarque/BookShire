@@ -52,10 +52,6 @@ const routes: Routes = [
     component: ListaAnunciosComponent
   },
   {
-    path:'sebos',
-    component: SebosListaComponent
-  },
-  {
     path:'anuncios/:idLivro/:idAnuncio',
     component: AnuncioComponent
   },
@@ -72,6 +68,12 @@ const routes: Routes = [
     component: NotificacoesComponent
   },
 
+  //Sebos 
+  {
+    path:'sebos',
+    component: SebosListaComponent
+  },
+ 
   //Rota default (padrão) = Home
   {
     path: '**',
