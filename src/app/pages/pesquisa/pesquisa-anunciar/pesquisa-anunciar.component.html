@@ -1,0 +1,24 @@
+<app-top-nav-bar></app-top-nav-bar>
+
+<div class="container__pesquisa container">
+
+    <div class="lembrete">
+        <p>Escolha o livro que deseja anunciar:</p>
+    </div>
+
+    <div class="pesquisa__barra">
+        <app-barra-pesquisa></app-barra-pesquisa>
+    </div>
+
+    <div class="pesquisa__categorias">
+        <div *ngFor="let categoria of categorias">
+            <app-categoria-thumbnail 
+                urlAcesso="anunciar"
+                idCategoria={{categoria.id}} 
+                nomeCategoria={{categoria.titulo}}
+                ></app-categoria-thumbnail>
+        </div>
+        <!-- qtdLivros={{categoria.qtdLivros}} -->
+    </div>
+
+</div>

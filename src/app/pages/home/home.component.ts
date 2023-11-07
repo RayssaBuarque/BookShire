@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CrudService } from 'src/app/services/crud/crud.service';
+// import { ReadService } from '../../crud/read.service'; 
 
 @Component({
   selector: 'app-home',
@@ -7,9 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private crud:CrudService) { }
 
   ngOnInit(): void {
   }
 
 }
+

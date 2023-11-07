@@ -1,0 +1,20 @@
+.container__livro-thumb > a{
+    text-decoration: none;
+    color: #1F3B6F;
+    width: 100px;
+}
+
+.livro-foto > img{
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: .75rem;
+}
+
+.titulo-livro > h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    text-wrap: wrap;
+}

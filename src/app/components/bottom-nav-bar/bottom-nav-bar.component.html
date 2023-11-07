@@ -1,40 +1,56 @@
 <div class="container-navBottom">
     <div class="navBottom-plusBtn">
-        <button>+</button>
+        <!-- Rota de conexão com a pesquisa de livros p/ anúncio -->
+        <a 
+            href="anunciar/pesquisa"
+        >
+            <button>+</button>
+        </a>
+            <!-- [routerLink]="['pesquisa']" -->
+            <!-- [queryParams]="{ sort:sort }" -->
+            <!-- fragment ="anunciar" -->
     </div>
 
     <div class="navBottom-section">
 
         <div class="section-icons">
             <ul class="icons">
+                <!-- ADAPTAÇÃO -->
                 <li class="icon">
                     <a href="#">
-                        <img 
-                            src="../../../assets/icons/perfil-icon.svg"
-                            alt="Ícone de Perfil">
-                    </a>
+                        <img
+                            src="../../../assets/icons/home-icon.svg"
+                            alt="Ícone de Tela Inicial">
+                    </a>    
                 </li>
                 <li class="icon">
-                    <a href="#">
+                    <a href="pesquisa">
                         <img
                             src="../../../assets/icons/pesquisa-icon.svg"
                             alt="Ícone de Pesquisa">
                     </a>
                 </li>
                 <li class="icon">
-                    <a href="#">
-                        <img
-                            src="#"
-                            alt="Ícone de Mensagens">
+                    <a href="perfil/2">
+                        <img 
+                            src="../../../assets/icons/perfil-icon.svg"
+                            alt="Ícone de Perfil">
                     </a>
                 </li>
                 <li class="icon">
-                    <a href="#">
+                    <a href="conversas">
                         <img
-                            src="#"
-                            alt="Ícone de Notificações">
+                            src="../../../assets/icons/mensagens-icon.svg"
+                            alt="Ícone de Mensagens">
                     </a>
                 </li>
+                <!--<li class="icon">
+                    <a href="notificacoes">
+                        <img
+                            src="../../../assets/icons/notificacao-icon.svg"
+                            alt="Ícone de Notificações">
+                    </a>
+                </li> -->
             </ul>
         </div>
 

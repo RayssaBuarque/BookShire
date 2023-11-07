@@ -1,0 +1,110 @@
+.container__anuncio{
+    margin-bottom: 120px;
+}
+
+.container__anuncio > h1{
+    font-size: 32px;
+    color:#152139;
+    font-family: 'Advent Pro';
+    margin-top: 1.75rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.background__capa{
+    height: 250px;
+    background-color: var(--bookshire-blue);
+    /* filter: blur(10px);  */
+    /* filter: blur(8px);
+    -webkit-filter: blur(8px); */
+}
+
+.anuncio__capa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.anuncio__capa > img{
+    height: 240px;
+    width: 115x;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.anuncio__text{
+    width: 100%;
+    margin-top: 5rem;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Advent Pro';
+}
+
+.anuncio__text > h1{
+    width: 90%;
+    text-align: center;
+    color: var(--bookshire-blue);
+}
+
+.anuncio__text > h3{
+    color: var(--bookshire-blue);
+}
+
+.text__transacao{
+    cursor: pointer;
+    margin: 1rem 0;
+    background-color: var(--book-orange);
+    font-family: 'Advent Pro';
+    border: none;
+    color: white;
+    border-radius: 50px;
+    padding: 3px 45px;
+    box-shadow: 0px 4px 20px rgba(255, 115, 0, 0.384);
+}
+
+.cardTxt{
+    border-radius: 20px;
+    background-color: var(--book-clear);
+    color: var(--deep-blue);
+    text-align: center;
+    width: 80%;
+
+    padding: 20px 1rem;
+    margin: 0 auto;
+    margin-top: 10px;
+    /* margin-bottom: 190px; */
+}
+
+.cardTxt > ul{
+    list-style: none;
+}
+
+.cardTxt > ul > li{
+    font-size: 18px;
+    padding-top: .25rem;
+    font-family: 'Roboto';
+}
+
+.cardTxt > h2{
+    padding-bottom: .75rem;
+    font-family: 'Advent Pro';
+}
+
+.cardTxt > p{
+    font-family: 'Roboto';
+    text-wrap: wrap;
+}
+
+.container__vendedor{
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container__outros-anuncios{
+    padding: 0 24px;
+}

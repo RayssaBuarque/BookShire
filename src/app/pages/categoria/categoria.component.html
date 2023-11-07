@@ -1,0 +1,31 @@
+<app-top-nav-bar></app-top-nav-bar>
+
+<div class="container__categoria container">
+    <div *ngIf="acesso == 'anunciar'" class="lembrete">
+        <p>Escolha o livro que deseja anunciar:</p>
+    </div>
+
+    <div class="pesquisa__barra">
+        <app-barra-pesquisa></app-barra-pesquisa>
+    </div>
+
+    <div class="categoria__livros">
+        <button *ngFor = "let livro of livros">
+            <app-card-livro
+            idLivro="{{livro.id}}"
+            livroTitulo="{{livro.titulo}}"
+            urlLivroCapa="{{livro.urlImg}}"
+            nomeAutor="{{livro.autores}}"
+
+            acesso="{{acesso}}"
+            ></app-card-livro>
+        </button>
+    </div>
+
+    <!-- botões de paginação -->
+    <div class="container__paginacao" style="padding-bottom: 50px">
+        <button type="button" (click)="this.recuarLista_Livros()"> < </button>
+        <button type="button" (click)="this.avancarLista_Livros()" > > </button>
+    </div>
+    
+</div>

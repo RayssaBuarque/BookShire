@@ -3,26 +3,44 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 50px;
+    background-color: #D7DEEA;
+    border-radius: 10px 10px 10px 10px;
 
-    background-color: aqua;
 }
 
 .scn-pqn__wrapper{
+    width: 90%;
     margin: 15px 24px;
-    background-color: aquamarine;
+
+}
+
+.scn-pqn__wrapper > .title > h2{
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 28px;
+    text-align: center;
 }
 
 .title > h2{
     font-size: 24px;
 }
 
-.content{
-    border: 1px solid red;
-    margin-top: 10px;
-    min-height: 100px;
+.scn-pqn__wrapper > .content{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 1rem;
+    
     width: 100%;
+    margin-top: 10px;
 
-    /* display: flex;
-    flex-direction: row; */
-
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
 }
+
+.content > button{
+    border: none;
+    background-color: transparent;
+}
+

@@ -1,0 +1,22 @@
+<app-top-nav-bar></app-top-nav-bar>
+
+<div class="container__list-anuncios" style="margin: 100px 0">
+
+    <div class="pesquisa__barra">
+        <app-barra-pesquisa></app-barra-pesquisa>
+    </div>
+
+    <div class="anuncios__listagem">
+        <app-anuncio-thumb *ngFor = "let anuncio of lista_anuncios"
+            idAnuncio= {{anuncio.Id_anuncio}}
+            localAnuncio = {{anuncio.local}}
+        ></app-anuncio-thumb>
+    </div>
+
+    <div class="mensagemVazia"  *ngIf = "lista_anuncios.length == 0 && tituloLivro != 'Título do Livro'">
+        <div class="lembrete">
+            <h4>Parece que não há nenhum anúncio de "{{tituloLivro}}" no momento.</h4>
+        </div>
+        <button (click)="redirectAnunciar()">Anunciar</button>
+    </div>
+</div>

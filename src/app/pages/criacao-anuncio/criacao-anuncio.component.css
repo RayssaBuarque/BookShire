@@ -1,0 +1,10 @@
+.container__criacao-anuncio{
+    margin: 0 24px;
+}
+
+.dados__livro > img{
+    height: 220px;
+    width: 140px;
+    object-fit: cover;
+    border-radius: 15px;
+}

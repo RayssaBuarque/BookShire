@@ -1,0 +1,44 @@
+.container__card-livro > a{
+    display: flex;
+    flex-direction: row;
+    /* gap: 20px; */
+    justify-content: space-between;
+    
+    border-radius: 20px;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #1F3B6F;
+
+   /* sombras */
+   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.card__capa > img{
+    width: 80px;
+    height: 115px;
+    border-radius: 12px;
+
+    object-fit: cover;
+}
+
+.card__text{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.card__text > .text__titulo > h1{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.card__text > .text__autor > h3{
+    font-size: 16px;
+    color: #ff6d1f;
+}

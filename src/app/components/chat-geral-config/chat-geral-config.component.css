@@ -1,0 +1,21 @@
+img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.lista-conversas{
+    margin-top: 20px;
+    display: flex;
+    padding: 15px;
+    align-items: center;
+}
+
+p{
+    margin-left: 25px;
+    font-family: 'Advent Pro', sans-serif;
+    color: #152139;
+    font-weight: bold;
+    font-size: 24px;
+
+}

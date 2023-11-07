@@ -1,0 +1,36 @@
+<div class="container__card-livro">
+
+    <!-- ROTA EM CASO DE PROCESSO DE ANUNCIAR LIVROS -->
+    <a *ngIf="acesso == 'anunciar'" href="anunciar/{{idLivro}}">
+        <div class="card__capa">
+            <img src="{{urlLivroCapa}}" alt="Capa do Livro">
+        </div>
+    
+        <div class="card__text">
+            <div class="text__titulo">
+                <h1>{{livroTitulo}}</h1>
+            </div>
+    
+            <div class="text__autor">
+                <h3>{{nomeAutor}}</h3>
+            </div>
+        </div>
+    </a>
+
+    <!-- ROTA EM CASO DE PESQUISA DE ANUNCIOS -->
+    <a *ngIf="acesso == 'bloqueado'" href="anuncios/{{idLivro}}">
+        <div class="card__capa">
+            <img src="{{urlLivroCapa}}" alt="Capa do Livro">
+        </div>
+    
+        <div class="card__text">
+            <div class="text__titulo">
+                <h1>{{livroTitulo}}</h1>
+            </div>
+    
+            <div class="text__autor">
+                <h3>{{nomeAutor}}</h3>
+            </div>
+        </div>
+    </a>
+</div>

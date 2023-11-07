@@ -6,19 +6,21 @@
 }
 
 img{
-    height: 35px;
-    width: 35px;
+    height: 20px;
+    width: 20px;
 }
 
 .topBar__wrapper{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    /* justify-content: space-between; */
     margin: 20px;
 }
 
 .wrapper__appTitle > h1{
     color: white;
-    font-family: 'Roboto', sans-serif; /*!!!! */
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 32px;
 }

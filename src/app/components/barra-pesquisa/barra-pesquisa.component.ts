@@ -1,0 +1,24 @@
+import { Component, OnInit, Input } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+
+@Component({
+  selector: 'app-barra-pesquisa',
+  templateUrl: './barra-pesquisa.component.html',
+  styleUrls: ['./barra-pesquisa.component.css']
+})
+export class BarraPesquisaComponent implements OnInit {
+
+  @Input() textoPadrao:string = 'Pesquise um livro...'
+
+  constructor(private router: Router, private route: ActivatedRoute) { }
+
+  ngOnInit(): void {
+  }
+
+
+  rotaPesquisa(pesquisaTexto:string):void{
+    //Ao pesquisar alguma coisa, o Router redireciona à tela de pesquisa
+    this.router.navigate([`../pesquisa/${pesquisaTexto}`]);
+  }
+
+}

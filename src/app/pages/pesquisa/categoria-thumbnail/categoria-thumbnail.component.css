@@ -1,0 +1,22 @@
+a{
+    text-decoration: none;
+    cursor: pointer;
+
+    color:black;
+}
+
+.categoria__imagem > img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+
+    border-radius: .75rem;
+}
+
+.categoria__titulo > h3{
+    margin-top: 5px;
+    font-size: 15px;
+    width: 100px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;   
+}

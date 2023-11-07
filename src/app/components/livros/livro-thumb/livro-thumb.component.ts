@@ -7,6 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class LivroThumbComponent implements OnInit {
 
+  @Input() idLivro:string | null = 'Id do Livro'
   @Input() tituloLivro:string = 'Título do Livro'
   @Input() livroImg:string = 'url Imagem'
 

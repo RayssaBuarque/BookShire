@@ -1,0 +1,7 @@
+.card-unico{
+    display: flex;
+    gap: 5px;
+    margin: 0 24px;
+    border-radius: 50%;
+
+}

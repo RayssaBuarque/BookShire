@@ -1,0 +1,11 @@
+.h2{
+    text-align: center;
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 28px;
+    color: black;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}

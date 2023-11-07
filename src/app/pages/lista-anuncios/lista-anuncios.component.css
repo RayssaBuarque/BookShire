@@ -1,0 +1,34 @@
+.container__list-anuncios{
+    padding: 0 24px;
+}
+
+.anuncios__listagem{
+    margin-top: .75rem;
+}
+
+.mensagemVazia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mensagemVazia > button{
+    background-color: var(--book-clear);
+    padding: .5rem 1.5rem;
+    border: none;
+    border-radius: 1rem;
+
+    font-size: 18px;
+    font-family: 'Roboto';
+    font-weight: 600;
+    color: var(--bookshire-blue);
+    cursor:pointer;
+}
+
+.mensagemVazia > button:hover{
+    background-color: var(--bookshire-blue);
+    color: var(--book-clear);
+    box-shadow: 0px 0px 8px 1px rgba(26,23,89,0.54) inset;
+    -webkit-box-shadow: 0px 0px 8px 1px rgba(26,23,89,0.54) inset;
+    -moz-box-shadow: 0px 0px 8px 1px rgba(26,23,89,0.54) inset;
+}

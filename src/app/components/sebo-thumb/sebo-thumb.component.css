@@ -1,0 +1,28 @@
+img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+
+.container-sebos{
+    display: flex;
+    text-align: center;   
+    background-color: beige;
+    align-items: center;
+}
+
+
+.sebos{
+    margin-left: 20px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--deep-blue);
+}
+
+p{
+    text-align: center;
+}

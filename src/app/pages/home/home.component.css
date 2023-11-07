@@ -1,4 +1,22 @@
-.container-home{
-    margin-top: 100px;
-    margin-bottom: 100px;
+.container__home{
+    margin-bottom: 150px;
 }
+
+.geral_sebos{
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    text-align: center;
+    display:flex;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 28px;
+}
+
+.titulo-sebo{
+    text-align: center;
+}
+
