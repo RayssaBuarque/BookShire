@@ -13,7 +13,7 @@ img{
     
 }
 
-p{
+#nomePerfil{
     margin-left: 25px;
     font-family: 'Advent Pro', sans-serif;
     color: #152139;
@@ -29,4 +29,8 @@ p{
     border-bottom: 2px solid #d7deea;
     padding-bottom: 1rem;
 
+}
+
+a{
+    text-decoration: none;
 }
