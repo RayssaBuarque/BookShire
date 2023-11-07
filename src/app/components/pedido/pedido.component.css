@@ -1,12 +1,71 @@
-.container__pedido{
+
+.geral_pedido{
     display: flex;
-    flex-direction: row;
+    padding: 20px;
+    border-radius: 10px 10px 10px 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+     /* sombras */
+   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
 }
 
-.capa__livro > img{
-    width: 80px;
-    height: 115px;
+.capa_livro{
+   align-items: center;
+}
+.capa_livro > img{
+    width: 90px;
+    height: 160px;
     border-radius: 12px;
 
     object-fit: cover;
+}
+
+p{
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0px;
+    text-align: center;
+    color: #9D9D9D
+}
+
+#nome{
+    margin-bottom: 10px;
+    color: #1F3B6F;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.botoes{
+    align-items: center;
+    text-align: center;
+}
+
+
+button{
+    font-size: 15px;
+    padding: 5px;
+    background-color: #152139;
+    color: white;
+    border-color: #152139;
+    padding: 5px;
+    width: 150px;
+    border-radius: 20px 20px 20px 20px;
+    margin-bottom: 5px;
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: bold;
+}
+
+.infos_pedidos{
+    margin-left: 40px;
+    text-align: center;
+    padding-top: 20px;
+    width: 150px;
+}
+
+a{
+    text-decoration: none;
+    color: #FF6D1F;
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: bold;
 }

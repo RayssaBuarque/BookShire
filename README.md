@@ -35,16 +35,15 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [x] 🏠 Desenvolver tela de Home @MALU
 - [x] 📚 Desenvolver COMPONENTE thumb (ícones) dos Sebos @MALU
 - [x] 📚 Desenvolver tela de Listagem de Sebos @MALU
-- [ ] 👤 Desenvolver tela de Perfil @ RAYSSA
-- [ ] 👤 Estilizar COMPONENTE pedidos pro Perfil @
+- [x] 👤 Desenvolver tela de Perfil @ RAYSSA (marquei pq acho que está pronto)
+- [x] 👤 Estilizar COMPONENTE pedidos pro Perfil @MALU
 - [x] 📢 Desenvolver tela de Anúncios @RAYSSA
 - [x] 📢 Desenvolver tela de Anúncio Específico @RAYSSA
 - [ ] 📢 Estilizar Tela de criação de anúncio @MARIA CLARA
 - [ ] 💵 Desenvolver tela de pagamento @MARIA CLARA
 - [x] 📪 Desenvolver tela de Chat @ MALU
 - [x] 📬 Desenvolver tela de Chat Específico @MALU
-- [ ] 📬 Consertar barra de mensagens na tela de Chat Específico @MALU
-- [ ] 🔔 Desenvolver tela de Notificações @MALU
+- [x] 📬 Consertar barra de mensagens na tela de Chat Específico @MALU
 - [ ] 📪 Conectar headers das telas de Chat com banco @ 
 
 #### 6xth Sprint -- Conexão das Telas

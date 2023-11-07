@@ -17,4 +17,6 @@ button{
     align-items: center;
     margin-bottom: 80px;
     display: flex;
+    height: 100px;
+    align-items: center;
 }
