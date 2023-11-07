@@ -1,4 +1,6 @@
-
+.container_pedidos{
+    margin: 0 10px;
+}
 .geral_pedido{
     display: flex;
     padding: 20px;
