@@ -1,0 +1,63 @@
+
+.header_chat{
+    background-color: #D7DEEA;
+    display: flex;
+    padding: 15px;
+    align-items: center;
+}
+
+img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-left: 45px;
+}
+
+#username{
+    margin-left: 15px;
+    font-family: 'Advent Pro', sans-serif;
+    color: #1F3B6F;
+    font-size: 25px;
+
+}
+
+.mensagens_user1{
+    margin-top: 15px;
+}
+
+.mensagens_user2{
+    margin-top: 90px;
+}
+
+.mensagem_um{
+    margin-right: 5px;
+    background-color: #F2F2F4;
+    width: 250px;
+    padding: 10px;
+    border-radius: 10px 0px 10px 10px;
+    float: right;
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+
+}
+
+.mensagem_dois{
+    margin-top: 10px;
+    margin-left: 5px;
+    background-color: #15213999;
+    width: 250px;
+    padding: 10px;
+    border-radius: 0px 10px 10px 10px;
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+
+}
+
+
+
+.geral_top{
+    margin-top: 80px;
+    margin-bottom: 40px;
+
+}
+

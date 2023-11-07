@@ -36,6 +36,8 @@ import { SebosCadastradosListaComponent } from './components/sebos-cadastrados-l
 import { BotaoVermaisSebosComponent } from './components/botao-vermais-sebos/botao-vermais-sebos.component';
 import { ChatGeralComponent } from './pages/chat-geral/chat-geral.component';
 import { ChatGeralConfigComponent } from './components/chat-geral-config/chat-geral-config.component';
+import { ChatIndividualComponent } from './pages/chat-individual/chat-individual.component';
+import { BottomChatTextboxComponent } from './components/bottom-chat-textbox/bottom-chat-textbox.component';
 
 // Importing bootstrap modules
 // import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
@@ -76,6 +78,8 @@ import { ChatGeralConfigComponent } from './components/chat-geral-config/chat-ge
     BotaoVermaisSebosComponent,
     ChatGeralComponent,
     ChatGeralConfigComponent,
+    ChatIndividualComponent,
+    BottomChatTextboxComponent,
 
     
     // PesquisaAnunciarComponent
