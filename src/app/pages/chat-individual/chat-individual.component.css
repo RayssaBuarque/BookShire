@@ -4,6 +4,7 @@
     display: flex;
     padding: 15px;
     align-items: center;
+
 }
 
 img{
@@ -54,10 +55,10 @@ img{
 }
 
 
-
 .geral_top{
     margin-top: 80px;
-    margin-bottom: 40px;
+    margin-bottom: 100px;
+
 
 }
 

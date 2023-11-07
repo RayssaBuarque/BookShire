@@ -44,7 +44,6 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [x] 📪 Desenvolver tela de Chat @ MALU
 - [x] 📬 Desenvolver tela de Chat Específico @MALU
 - [ ] 📬 Consertar barra de mensagens na tela de Chat Específico @MALU
-- [ ] 📨 Desenvolver bolha de chat @MALU
 - [ ] 🔔 Desenvolver tela de Notificações @MALU
 - [ ] 📪 Conectar headers das telas de Chat com banco @ 
 

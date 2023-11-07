@@ -12,8 +12,9 @@ button{
 }
 
 .geral_bottom{
-    margin-bottom: 0%;
     background-color:#D7DEEA;
     padding: 15px;
     align-items: center;
+    margin-bottom: 80px;
+    display: flex;
 }
