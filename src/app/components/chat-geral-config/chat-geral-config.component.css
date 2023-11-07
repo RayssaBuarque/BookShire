@@ -1,14 +1,15 @@
 img{
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
 }
 
 .lista-conversas{
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     padding: 15px;
     align-items: center;
+    border-bottom: 2px solid #d7deea;
 }
 
 p{

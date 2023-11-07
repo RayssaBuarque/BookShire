@@ -45,6 +45,7 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [ ] 📬 Desenvolver tela de Chat Específico @MALU
 - [ ] 📨 Desenvolver bolha de chat @MALU
 - [ ] 🔔 Desenvolver tela de Notificações @MALU
+- [ ] 📪 Conectar headers das telas de Chat com banco @ 
 
 #### 6xth Sprint -- Conexão das Telas
 - [x] 🙌 Desenvolver CRUD anúncios AWS API @RAYSSA
@@ -64,10 +65,11 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [ ] 📪 Fazer conexões de dados de Chats
 - [ ] 📨 Fazer conexões de dados de Mensagens
 - [ ] 🖇️ Linkar tela de Perfil corretamente (+routing-module)
-- [ ] 🪄 Tornar design Responsivo @ MARIA CLARA 
+
 
 ##### Future Sprints...
 - [ ] ⭐ Adicionar avaliações por livro 
+
 
 ### Setup and Documentations
 This project was made with:

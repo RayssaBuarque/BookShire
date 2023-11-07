@@ -1,7 +1,7 @@
 img{
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
 }
 
 .usuario{
@@ -10,6 +10,7 @@ img{
     align-items: center;
     padding: 15px;
     margin-bottom: 20px;
+    
 }
 
 p{
@@ -21,4 +22,11 @@ p{
 }
 .geral_conversasLista {
     margin-bottom: 50px;
+}
+
+ 
+.header{
+    border-bottom: 2px solid #d7deea;
+    padding-bottom: 1rem;
+
 }

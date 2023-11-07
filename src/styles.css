@@ -7,9 +7,17 @@
     Weight: 400 (regular); 500 (Medium); 600 (SemiBold) 
 */
 
+/* 
+    FONTE POPPINS -- font-family: 'Poppins', sans-serif;
+    Weight: 400(regular); 500 (Medium); 600 (SemiBold)
+
+*/
+
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;500;600&family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap');
 
+/* Import da fonte poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 *{
     padding: 0;
