@@ -80,11 +80,15 @@ This project was made with:
 - [AWS API Gateway](https://aws.amazon.com/api-gateway/) 
 
 ### Dependencies:
-> Angular CLI:
+    
     "npm install -g @angular/cli"
 
-> Angular Builder:
+> Angular CLI:
+
     "npm install @angular-devkit/build-angular"
 
-> ngBootstrap:
+> Angular Builder:
+
     "ng add @ng-bootstrap/ng-bootstrap"
+
+> ngBootstrap:
