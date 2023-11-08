@@ -74,9 +74,12 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 This project was made with:
 - [Angular CLI](https://github.com/angular/angular-cli) version 14.1.2
 - [Node.js](https://nodejs.org/en/docs) version 18.16.0
-- [Google Books API](https://developers.google.com/books) 
+- [Google Books API](https://developers.google.com/books)
+- [AWS Relational Database Service](https://aws.amazon.com/rds/?trk=eca03f9c-ce0f-4704-b08e-e6fe66f1f54d&sc_channel=ps&ef_id=CjwKCAiA3aeqBhBzEiwAxFiOBi8x1R_S1-MRBsNIuq3sut86SOrih5aDofznWUIVQFLT6IP4ZOpS3xoCt-MQAvD_BwE:G:s&s_kwcid=AL!4422!3!548640877181!e!!g!!aws%20rds!12024809973!118832469809)
+- [AWS Lambda](https://aws.amazon.com/pm/lambda/?trk=56f58804-91cd-4af4-98d4-afe277a57fd3&sc_channel=ps&ef_id=CjwKCAiA3aeqBhBzEiwAxFiOBr1fz1cyLtHgc7qp1qWNMpnqEjdUU9-7QoD1brKaXWGKrC1MRMLKIRoCQRoQAvD_BwE:G:s&s_kwcid=AL!4422!3!651510591822!e!!g!!aws%20lambda!19828231347!148480170233)
+- [AWS API Gateway](https://aws.amazon.com/api-gateway/) 
 
 ### Dependencies::
-    - Angular CLI: ""
-    - Angular Builder: ""
+    - Angular CLI: "npm install -g @angular/cli"
+    - Angular Builder: "npm install @angular-devkit/build-angular"
     - ngBootstrap: "ng add @ng-bootstrap/ng-bootstrap"
