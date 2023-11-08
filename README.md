@@ -32,19 +32,19 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [x] 👹 Configurar um Servidor @RAYSSA
 
 #### 5fth Sprint -- Estrutura de Telas
-- [ ] 🏠 Desenvolver tela de Home @MALU
-- [ ] 📚 Desenvolver COMPONENTE thumb (ícones) dos Sebos @MALU
-- [ ] 📚 Desenvolver tela de Listagem de Sebos @MALU
-- [ ] 👤 Desenvolver tela de Perfil @
-- [ ] 👤 Desenvolver COMPONENTE pedidos pro Perfil @
+- [x] 🏠 Desenvolver tela de Home @MALU
+- [x] 📚 Desenvolver COMPONENTE thumb (ícones) dos Sebos @MALU
+- [x] 📚 Desenvolver tela de Listagem de Sebos @MALU
+- [x] 👤 Desenvolver tela de Perfil @ RAYSSA (marquei pq acho que está pronto)
+- [x] 👤 Estilizar COMPONENTE pedidos pro Perfil @MALU
 - [x] 📢 Desenvolver tela de Anúncios @RAYSSA
 - [x] 📢 Desenvolver tela de Anúncio Específico @RAYSSA
-- [ ] 📢 Terminar Tela de criação de anúncio @ 
+- [ ] 📢 Estilizar Tela de criação de anúncio @MARIA CLARA
 - [ ] 💵 Desenvolver tela de pagamento @MARIA CLARA
-- [ ] 📪 Desenvolver tela de Chat @ MALU
-- [ ] 📬 Desenvolver tela de Chat Específico @MALU
-- [ ] 📨 Desenvolver bolha de chat @MALU
-- [ ] 🔔 Desenvolver tela de Notificações @MALU
+- [x] 📪 Desenvolver tela de Chat @ MALU
+- [x] 📬 Desenvolver tela de Chat Específico @MALU
+- [x] 📬 Consertar barra de mensagens na tela de Chat Específico @MALU
+- [ ] 📪 Conectar headers das telas de Chat com banco @ 
 
 #### 6xth Sprint -- Conexão das Telas
 - [x] 🙌 Desenvolver CRUD anúncios AWS API @RAYSSA
@@ -64,10 +64,11 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [ ] 📪 Fazer conexões de dados de Chats
 - [ ] 📨 Fazer conexões de dados de Mensagens
 - [ ] 🖇️ Linkar tela de Perfil corretamente (+routing-module)
-- [ ] 🪄 Tornar design Responsivo @ MARIA CLARA 
+
 
 ##### Future Sprints...
 - [ ] ⭐ Adicionar avaliações por livro 
+
 
 ### Setup and Documentations
 This project was made with:

@@ -12,15 +12,15 @@
 }
 
 .header__perfil > img{
-    width: 115px;
-    height: 115px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     object-fit: cover;
 }
 
 .info__header > h2{
     font-family: 'Advent Pro', sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     color: #152139;
 }
 
@@ -73,4 +73,8 @@
 .estrelinhas > img{
     height: 40px;
     width: 40px;
+}
+
+.pedidos__perfil{
+    padding-bottom: 50px;
 }

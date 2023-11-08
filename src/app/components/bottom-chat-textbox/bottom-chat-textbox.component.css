@@ -1,0 +1,22 @@
+input{
+    width: 300px;
+    padding: 3px;
+}
+
+button{
+    background-color:#F2F2F4;
+    border-color:#F2F2F4;
+    margin-left: 3px;
+    padding: 3px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.geral_bottom{
+    background-color:#D7DEEA;
+    padding: 15px;
+    align-items: center;
+    margin-bottom: 80px;
+    display: flex;
+    height: 100px;
+    align-items: center;
+}

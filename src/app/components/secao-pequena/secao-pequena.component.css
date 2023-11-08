@@ -3,11 +3,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 50px;
+    background-color: #D7DEEA;
+    border-radius: 10px 10px 10px 10px;
+
 }
 
 .scn-pqn__wrapper{
     width: 90%;
     margin: 15px 24px;
+
 }
 
 .scn-pqn__wrapper > .title > h2{
@@ -38,3 +43,4 @@
     border: none;
     background-color: transparent;
 }
+

@@ -14,6 +14,8 @@ import { AnuncioComponent } from './pages/anuncio/anuncio.component';
 import { ChatComponent } from './pages/chat/chat.component';
 import { CriacaoAnuncioComponent } from './pages/criacao-anuncio/criacao-anuncio.component';
 import { SebosListaComponent } from './pages/sebos-lista/sebos-lista.component';
+import { ChatGeralComponent } from './pages/chat-geral/chat-geral.component';
+import { ChatIndividualComponent } from './pages/chat-individual/chat-individual.component';
 
 const routes: Routes = [
   {
@@ -52,10 +54,6 @@ const routes: Routes = [
     component: ListaAnunciosComponent
   },
   {
-    path:'sebos',
-    component: SebosListaComponent
-  },
-  {
     path:'anuncios/:idLivro/:idAnuncio',
     component: AnuncioComponent
   },
@@ -71,7 +69,21 @@ const routes: Routes = [
     path:'notificacoes',
     component: NotificacoesComponent
   },
+  {
+    path:'chat',
+    component: ChatGeralComponent
+  },
+  {
+    path:'conversas',
+    component: ChatIndividualComponent
+  },
 
+  //Sebos 
+  {
+    path:'sebos',
+    component: SebosListaComponent
+  },
+ 
   //Rota default (padrão) = Home
   {
     path: '**',

@@ -1,18 +1,15 @@
 img{
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: .75rem;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
 }
 
 .container_sebos{
-    display: flex;
-    text-align: center;    
-}
-
-.sebos{
-    margin-left: 15px;
+    margin-left:15px;
+    margin-right: 15px;
     text-align: center;
+    margin-top: 15px;
+    align-items: center;
 }
 
 a{
@@ -20,4 +17,13 @@ a{
     color: var(--deep-blue);
 }
 
+p{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin-bottom: 0px;
+}
 
+#local{
+    font-size: 10px;
+}
