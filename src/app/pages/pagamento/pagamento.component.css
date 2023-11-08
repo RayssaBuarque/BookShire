@@ -1,42 +1,58 @@
 
-div {
-    margin: 24px;
-    background-color: white;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    padding: 15px 20px;
-}
 h1 {
     font-size: 25px;
     margin: 10px 60px 10px 60px;
 }
-.conteiner_pagina {
-    text-align: center;
+p{
+    margin: 0%;
+    color: #727272;
 }
 label {
     margin-left:10px;
+    color: #727272;
+}
+div {
+    margin: 24px;
+    background-color: white;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    padding: 15px 20px;
 }
 #endereco_butanta {
     height: 20px;
-    width: 20px;
+    width: 20px;  
 }
 .endereco_butanta_div {
     display: flex;
     flex-direction: row;
-
+    box-shadow: none;
+    padding: 0%;
+    margin: 0%;
 }
 #endereco_morumbi {
     height: 20px;
-    width: 20px;
+    width: 20px; 
 }
 .endereco_morumbi_div {
     display: flex;
     flex-direction: row;
+    box-shadow: none;
+    padding: 0%;
+    margin: 0%;
+}
+.novo_editar_endereco {
+    display: flex;
+    flex-direction: row;
+    padding: 5px 5px;
+    justify-content: center;
+    align-items: center;
 }
 button {
     border-radius: 20px;
     background-color: #152139;
     color: white;
-    padding: 7px 20px;
-    font-size: 14px;
+    padding: 7px 25px;
+    font-size: 12px;
+    border: none;
+    margin:5px;
 }
