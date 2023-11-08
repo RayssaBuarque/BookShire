@@ -1,18 +1,17 @@
-<div class="container__pedido">
-    <div class="capa__livro">
-        <img src="{{urlImg}}" alt="Capa de {{tituloLivro}}">
-    </div>
-
-    <div class="info__pedido">
-        <h2>{{tituloLivro}}</h2>
-
-        <div class="dado__usuario">
-            <p>{{transacao}} realizada com</p>
-            <p>{{nomeAnunciante}}</p>
+<div class="container_pedidos">
+    <div class="geral_pedido">
+        <div class="capa_livro">
+            <img src="{{urlImg}}" alt="Capa de {{tituloLivro}}">
         </div>
-
-        <button>Confirmar entrega</button>
-        <br>
-        <button>Denunciar {{transacao}}</button>
+        <div class="infos_pedidos">
+            <!--<h2>{{tituloLivro}}</h2>-->
+            <p>{{transacao}} efetuada com: </p>
+            <div id="nome"> {{nomeAnunciante}} </div>
+            <div class="botoes">
+                <a href="home"><button>Entrega concluída</button></a>
+                <a href="home">Denunciar {{transacao}}</a>
+            </div>
+        </div>
     </div>
 </div>
+
