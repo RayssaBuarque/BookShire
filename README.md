@@ -81,14 +81,14 @@ This project was made with:
 
 ### Dependencies:
     
-    "npm install -g @angular/cli"
+Angular CLI:
 
-> Angular CLI:
+    npm install -g @angular/cli
 
-    "npm install @angular-devkit/build-angular"
+Angular Builder:
 
-> Angular Builder:
+    npm install @angular-devkit/build-angular
 
-    "ng add @ng-bootstrap/ng-bootstrap"
+ngBootstrap:
 
-> ngBootstrap:
+    ng add @ng-bootstrap/ng-bootstrap
