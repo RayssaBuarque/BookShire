@@ -2,5 +2,13 @@
 <div class="container__grafico" *ngIf="demonstracao == true">
     <p>{{estrelas}}</p>
 
-    <p><ngb-progressbar type="success" [max] = "nValorMax" [value] = "nQtdNotas" ></ngb-progressbar></p>
+    <p><ngb-progressbar 
+        type="warning" 
+        [max] = "valorMax" 
+        [value] = "qtdNotas" 
+        >
+        <!-- aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" -->
+
+        {{nQtdNotas}}
+    </ngb-progressbar></p>
 </div>
