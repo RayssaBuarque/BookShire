@@ -6,6 +6,8 @@
     display: block;
     justify-content: center;
     box-shadow: none;
+    text-align: center;
+    margin-bottom: 150px;
 }
 h1 {
     font-size: 25px;
@@ -25,6 +27,9 @@ div {
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
     padding: 15px 20px;
+}
+.endereco_principal {
+    text-align:left;
 }
 #endereco_butanta {
     height: 20px;
@@ -63,4 +68,30 @@ button {
     font-size: 12px;
     border: none;
     margin:5px;
+}
+.sedex {
+    display: flex;
+    flex-direction: row;
+    box-shadow: none;
+    padding: 0%;
+    margin: 0%;
+    text-align:left;
+}
+.pac{
+    display: flex;
+    flex-direction: row;
+    box-shadow: none;
+    padding: 0%;
+    margin: 0%;
+    text-align:left;
+}
+.continuar_compra {
+    padding: 5px 5px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+}
+.button_continuar_compra {
+    padding: 7px 50px;
+    font-size: 18px;
 }
