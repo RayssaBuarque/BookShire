@@ -9,6 +9,15 @@
     text-align: center;
     margin-bottom: 150px;
 }
+.endereco_entrega_pagamento {
+    margin: 0%;
+    padding: 0%;
+    align-items: center;
+    display: block;
+    justify-content: center;
+    box-shadow: none;
+    text-align: center;
+}
 h1 {
     font-size: 25px;
     margin: 10px 60px 10px 60px;
@@ -18,7 +27,7 @@ p{
     color: #727272;
 }
 label {
-    margin-left:10px;
+    font-size: 15px;
     color: #727272;
 }
 div {
@@ -93,5 +102,117 @@ button {
 }
 .button_continuar_compra {
     padding: 7px 50px;
-    font-size: 18px;
+    font-size: 16px;
 }
+/* Butanta radio button*/
+.endereco_b_radio input {
+    display: none;
+}
+.endereco_b_radio {
+    box-shadow: none;
+    padding: 0%;
+    margin: 0%;
+}
+.endereco_b_radio input + label::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #152139;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 3px;
+  }
+  .endereco_b_radio input:checked + label:before {
+    background-color: #152139;
+    box-sizing: border-box;
+    border: 3px solid white;
+    outline: 1px solid #152139;
+    padding: 4px;
+  }
+/* Morumbi radio button*/
+.endereco_m_radio input {
+    display: none;
+}
+.endereco_m_radio {
+    box-shadow: none;
+    padding: 0%;
+    margin: 0%;
+}
+.endereco_m_radio input + label::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #152139;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 3px;
+  }
+  .endereco_m_radio input:checked + label:before {
+    background-color: #152139;
+    box-sizing: border-box;
+    border: 3px solid white;
+    outline: 1px solid #152139;
+    padding: 4px;
+  }
+/* Sedex radio button*/
+.sedex input {
+    display: none;
+}
+.sedex {
+    box-shadow: none;
+    padding: 0%;
+    margin: 0%;
+}
+.sedex input + label::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #152139;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 3px;
+  }
+  .sedex input:checked + label:before {
+    background-color: #152139;
+    box-sizing: border-box;
+    border: 3px solid white;
+    outline: 1px solid #152139;
+    padding: 4px;
+  }
+/* Pac radio button*/
+.pac input {
+    display: none;
+}
+.pac {
+    box-shadow: none;
+    padding: 0%;
+    margin: 0%;
+}
+.pac input + label::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #152139;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 3px;
+  }
+  .pac input:checked + label:before {
+    background-color: #152139;
+    box-sizing: border-box;
+    border: 3px solid white;
+    outline: 1px solid #152139;
+    padding: 4px;
+  }
