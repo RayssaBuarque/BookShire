@@ -1,3 +1,15 @@
+/***************************************/
+/* CLASSES DE VISIBILIDADE DAS DIVS*/
+
+.escondido{
+    display: none;
+}
+
+.aparecendo{
+    display: block;
+}
+
+/***************************************/
 
 .container__pagamento {
     margin: 0%;
@@ -12,9 +24,6 @@
 .endereco_entrega_pagamento {
     margin: 0%;
     padding: 0%;
-    align-items: center;
-    display: block;
-    justify-content: center;
     box-shadow: none;
     text-align: center;
 }

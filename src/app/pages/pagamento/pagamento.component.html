@@ -1,8 +1,10 @@
 <app-btn-voltar></app-btn-voltar>
 
+<!-- container da tela -->
 <div class="container__pagamento">
 
-    <div class="endereco_entrega_pagamento" id="teste">
+    <!-- SEÇÃO DO PAGAMENTO -->
+    <div class="endereco_entrega_pagamento" id="teste" [ngClass]="view_Endereco">
         <h1>Selecione o Endereço</h1>
         
         <div class="endereco_principal">
@@ -28,12 +30,23 @@
         </div>
         
         <div class="novo_editar_endereco">
-        <button>Novo Endereço</button>
-        <button>Editar Endereços</button>
+            <button>Novo Endereço</button>
+            <button>Editar Endereços</button>
         </div>
-        
-        <h2>Entrega</h2>
+    
+        <!-- botão que confirma a próxima tela -->
+        <button 
+            style="background-color: purple;"
+            (click)="mudar_viewEntrega()"
+            >CONFIRMAR</button>
 
+    </div>
+        
+
+    <!-- SEÇÃO DE ENTREGA -->
+    <div class="secao__entrega" [ngClass]="view_Entrega">
+        <h2>Entrega</h2>
+        
         <div class="entrega_principal">
             <div class="sedex">
                 <input type="radio" id="endereco_morumbi_sedex" name="entrega">
@@ -47,13 +60,15 @@
                 <label for="endereco_butanta_pac">PAC - receba quarta-feira - R$ 7,00</label>
             </div>
         </div>
-
+        
         <div class="continuar_compra">
             <button class="button_continuar_compra">Continuar a Compra</button>
         </div>
-
+        
     </div>
 
+
+<!-- fim do container da tela -->
 </div>
 
 <!--   MARIA, ISSO É A BARRA DE NAVEGAÇÃO: FAVOR NÃO TIRAR :)   -->
