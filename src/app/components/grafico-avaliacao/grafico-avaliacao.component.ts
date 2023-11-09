@@ -13,15 +13,12 @@ export class GraficoAvaliacaoComponent implements OnInit {
 
   @Input() idUsuario:string = "2"
 
-  @Input() valorMax:string = "100"
-  @Input() qtdNotas:string = "50"
-  @Input() qtdEstrelas:string = "0"
+  valorMax!:string
+  qtdNotas:number[] = [0, 0, 0, 0, 0]
+  qtdEstrelas!:string
   
   nValorMax:number = Number(this.valorMax)
-  nQtdNotas:number = Number(this.qtdNotas)
-  
-  estrelas:string = ''
-  // nValorMax:number = Number(this.valorMax)
+  nQtdNotas:number = 20
   // nQtdNotas:number = Number(this.qtdNotas)
 
   demonstracao:boolean = false
@@ -29,17 +26,41 @@ export class GraficoAvaliacaoComponent implements OnInit {
   constructor(private crud:CrudService) { }
   
   ngOnInit(): void {
-    this.crud.read('/pedidos', '', `?Id_usuario=${this.idUsuario}`)
+
+    // pegando todos os pedidos em que o usuário foi anunciante
+    this.crud.read('/pedidos', '', `?Id_anunciante=${this.idUsuario}`)
       .then( (res:any) => {
-        console.log(res)
+        this.setNotas(res)
       })
 
-    for(let i = 0; i<Number(this.qtdEstrelas); i++){
-      this.estrelas += '⭐'
-    }
-    // console.log(this.nQtdNotas)
-    // console.log(this.nValorMax)
     this.demonstracao = true;
+  }
+
+  //definindo o total de avaliações e mapeando as notas
+  setNotas(res:any):void{
+
+    this.valorMax = res.length
+
+    for(let i = 0; i<Number(this.valorMax); i++){
+      let nota = Number(res[i].notaAvaliacao)
+
+      if(nota == 1){
+        this.qtdNotas[0] += 1
+      }
+      else if(nota == 2){
+        this.qtdNotas[1] += 1
+      }
+      else if(nota == 3){
+        this.qtdNotas[2] += 1
+      }
+      else if(nota == 4){
+        this.qtdNotas[3] += 1
+      }
+      else if(nota == 5){
+        this.qtdNotas[4] += 1
+      }
+    }
+
   }
 
 }

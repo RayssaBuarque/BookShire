@@ -19,13 +19,6 @@ export class PerfilComponent implements OnInit {
   
   //Avaliações
   mediaAvaliacao:number = 0
-  notasQtd:string = "0"
-  avaliacao:boolean = false
-  notas1:number = 0
-  notas2:number = 0
-  notas3:number = 0
-  notas4:number = 0
-  notas5:number = 0
   
   idAnuncios:number[] = []
   idPedidos:number[] = []
@@ -57,14 +50,13 @@ export class PerfilComponent implements OnInit {
       })
     
     this.getAnuncios()
-    this.getAvaliacoes()
     this.getPedidos()
   } 
 
+  // coletando todos os anúncios do usuário no banco e os salva numa array 
   getAnuncios():void{
     this.crud.read('/anuncios', '', `?Id_usuario=${this.idUsuario}`)
       .then((res:any[]) => {
-        // console.log(res)
         for (let i = 0; i< res.length; i++){
           this.idAnuncios.push( res[i].Id_anuncio )
         }
@@ -72,37 +64,7 @@ export class PerfilComponent implements OnInit {
       })
   }
 
-  getAvaliacoes():void{
-    this.crud.read('/pedidos', '', `?Id_anunciante=${this.idUsuario}`)
-      .then( (res:any) => {
-        let notasAvaliacao:number[] = []
-
-        for(let i in res){
-          notasAvaliacao.push(res[i].notaAvaliacao)
-
-          if(res[i].notaAvaliacao == 1){
-            this.notas1 += 1
-          }else if(res[i].notaAvaliacao == 2){
-            this.notas2 += 1
-          }else if(res[i].notaAvaliacao == 3){
-            this.notas3 += 1
-          }else if(res[i].notaAvaliacao == 4){
-            this.notas4 += 1
-          }else if(res[i].notaAvaliacao == 5){
-            this.notas5 += 1
-          }
-        }
-
-        this.notasQtd = String(notasAvaliacao.length)
-        this.avaliacao = true
-        // console.log(notas1)
-        // console.log(notas2)
-        // console.log(notas3)
-        // console.log(notas4)
-        // console.log(notas5)
-      })
-  }
-
+  // coletando todos os pedidos do usuário
   getPedidos():void{
     this.crud.read('/pedidos', '', `?Id_cliente=${this.idUsuario}`)
       .then( (res:any) => {
