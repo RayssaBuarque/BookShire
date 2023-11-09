@@ -9,8 +9,9 @@
     width: 150px;
     border-radius: 10px 10px 10px 10px;
     background-color: #F2F2F4C9;
-    border-color: #F2F2F4C9;
+    border: none;
     font-family: 'Advent Pro', sans-serif;
     color: #152139;
     font-weight: bold;
 }
+

@@ -9,6 +9,7 @@ import { SetLivroService } from 'src/app/services/set-livro.service';
 })
 export class PedidoComponent implements OnInit {
 
+
   @Input() idPedido:string = 'Id do pedido'
   private idCliente:string = "Id do Cliente"
   nomeAnunciante:string = "Nome do Anunciante"
@@ -33,7 +34,6 @@ export class PedidoComponent implements OnInit {
       })
   }
 
-  
 
   getAnuncio(idAnuncio:string):void{
     this.crud.read('/anuncios', idAnuncio, '')
