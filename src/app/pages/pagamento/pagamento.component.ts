@@ -11,6 +11,7 @@ export class PagamentoComponent implements OnInit {
   //criando uma variável pra colocar a classe de visibilidade
   view_Endereco:string = 'aparecendo'
   view_Entrega:string = 'escondido'
+  view_Cartao:string = 'escondido'
 
 
   constructor() { }
@@ -26,6 +27,10 @@ export class PagamentoComponent implements OnInit {
 
     //esconde o endereco
     this.view_Endereco = 'escondido'
+  }
+
+  mudar_viewCartao():void{
+    this.view_Cartao = 'aparecendo'
   }
 
 }
