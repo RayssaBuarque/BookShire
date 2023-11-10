@@ -3,8 +3,8 @@
 <!-- container da tela -->
 <div class="container__pagamento">
 
-    <!-- SEÇÃO DO PAGAMENTO -->
-    <div class="endereco_entrega_pagamento" id="teste" [ngClass]="view_Endereco">
+    <div class="endereco_entrega_pagamento" id="teste" [ngClass]="view_endereco_entrega">
+
         <h1>Selecione o Endereço</h1>
         
         <div class="endereco_principal">
@@ -33,16 +33,7 @@
             <button>Novo Endereço</button>
             <button>Editar Endereços</button>
         </div>
-    
-        <!-- botão que confirma a próxima tela -->
-        <button  (click)="mudar_viewEntrega()"
-            >CONFIRMAR</button>
-
-    </div>
         
-
-    <!-- SEÇÃO DE ENTREGA -->
-    <div class="secao__entrega" [ngClass]="view_Entrega">
         <h2>Entrega</h2>
         
         <div class="entrega_principal">
@@ -60,13 +51,30 @@
         </div>
         
         <div class="continuar_compra">
-            <button class="button_continuar_compra">Continuar a Compra</button>
+            <button class="button_continuar_compra" (click)="mudar_view_endereco_entrega()">Continuar a Compra</button>
         </div>
-        
+
     </div>
 
+        <div class="cartao_pagamento" [ngClass]="view_cartao">
+            
+            <h1>Pagamento</h1>
+            <p class="frase_mercado_pago">Com Mercado Pago</p>
+            <div class="cartao01_div">
+                <div class="cartao01">
+                    <input type="radio" id="cartao01" name="cartao">
+                    <label for="cartao01">Mastercard **** 4356</label>
+                </div>
+            </div>
+            <div class="cartao02_div">
+                <div class="cartao02">
+                    <input type="radio" id="cartao02" name="cartao">
+                    <label for="cartao02">Mastercard **** 0090</label>
+                </div>
+            </div>
+        </div>
 
-<!-- fim do container da tela -->
+
 </div>
 
 <!--   MARIA, ISSO É A BARRA DE NAVEGAÇÃO: FAVOR NÃO TIRAR :)   -->

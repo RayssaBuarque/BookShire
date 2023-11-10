@@ -134,7 +134,7 @@ button {
     margin-right: 8px;
     margin-bottom: 3px;
   }
-  .endereco_b_radio input:checked + label:before {
+.endereco_b_radio input:checked + label:before {
     background-color: #152139;
     box-sizing: border-box;
     border: 3px solid white;
@@ -162,7 +162,7 @@ button {
     margin-right: 8px;
     margin-bottom: 3px;
   }
-  .endereco_m_radio input:checked + label:before {
+.endereco_m_radio input:checked + label:before {
     background-color: #152139;
     box-sizing: border-box;
     border: 3px solid white;
@@ -190,7 +190,7 @@ button {
     margin-right: 8px;
     margin-bottom: 3px;
   }
-  .sedex input:checked + label:before {
+.sedex input:checked + label:before {
     background-color: #152139;
     box-sizing: border-box;
     border: 3px solid white;
@@ -218,7 +218,90 @@ button {
     margin-right: 8px;
     margin-bottom: 3px;
   }
-  .pac input:checked + label:before {
+.pac input:checked + label:before {
+    background-color: #152139;
+    box-sizing: border-box;
+    border: 3px solid white;
+    outline: 1px solid #152139;
+    padding: 4px;
+  }
+  /* CSS Cartão */
+.cartao_pagamento {
+    box-shadow: none;
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+  }
+.cartao_pagamento p {
+    font-size: 14px;
+}
+.cartao01 {
+    box-shadow: none;
+    margin: 0%;
+    padding: 0%;
+  }
+.cartao01_div {
+    margin-top: 2px;
+    margin-bottom:14px;
+}
+.cartao02_div {
+    margin-top: 14px;
+}
+.frase_mercado_pago {
+    text-align: left;
+    margin-left: 25px;
+    margin-top: 24px;
+}
+  /* Cartao01 radio button*/
+.cartao01 input {
+    display: none;
+}
+.cartao01 {
+    box-shadow: none;
+    padding: 0%;
+    margin: 0%;
+}
+.cartao01 input + label::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #152139;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 3px;
+  }
+.cartao01 input:checked + label:before {
+    background-color: #152139;
+    box-sizing: border-box;
+    border: 3px solid white;
+    outline: 1px solid #152139;
+    padding: 4px;
+  }
+/* Cartao02 radio button*/
+.cartao02 input {
+    display: none;
+}
+.cartao02 {
+    box-shadow: none;
+    padding: 0%;
+    margin: 0%;
+}
+.cartao02 input + label::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #152139;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 3px;
+  }
+.cartao02 input:checked + label:before {
     background-color: #152139;
     box-sizing: border-box;
     border: 3px solid white;
