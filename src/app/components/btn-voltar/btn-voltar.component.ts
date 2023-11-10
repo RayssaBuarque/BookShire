@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-btn-voltar',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BtnVoltarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private location: Location) { }
 
   ngOnInit(): void {
+  }
+
+  voltarAnterior():void{
+    this.location.back()
   }
 
 }

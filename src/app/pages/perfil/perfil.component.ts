@@ -13,6 +13,7 @@ export class PerfilComponent implements OnInit {
 
   idUsuario:string | null = "2"; //descobrir como dinamizar isso um pouco mais
   private dadosUsuario:any = '';
+  
   url_fotoUsuario:string = '../../../assets/thumbnails/default-book_thumbnail.png'
   nome_usuario:string = 'Nome do Usuário'
   localUsuario:string = 'Local dos Anúncios'
@@ -35,12 +36,10 @@ export class PerfilComponent implements OnInit {
     //recolhendo ids da rota
     this.route.paramMap.subscribe( (value) =>{
       this.idUsuario = value.get('id')
-      // console.log(this.idUsuario)
     });
 
     this.crud.read('/users', this.idUsuario, "")
       .then( (res:JSON) => {
-        // console.log(res)
         this.dadosUsuario = res
       
         this.mediaAvaliacao = this.dadosUsuario[0].mediaAvaliacao
@@ -81,7 +80,6 @@ export class PerfilComponent implements OnInit {
       .then( (res:any) =>{
         this.localUsuario = res[0].bairro
       } )
-
   }
 
   //função que muda a seção aparente no perfil
