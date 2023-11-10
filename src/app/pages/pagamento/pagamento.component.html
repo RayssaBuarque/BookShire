@@ -59,19 +59,61 @@
         <div class="cartao_pagamento" [ngClass]="view_cartao">
             
             <h1>Pagamento</h1>
-            <p class="frase_mercado_pago">Com Mercado Pago</p>
+
+            <div class="mercado_pago">
+                <p class="frase_mercado_pago">Com Mercado Pago</p>
+                <img src="../../../assets/imagens/mercado_pago_logo.png"/>
+            </div>
+
             <div class="cartao01_div">
                 <div class="cartao01">
-                    <input type="radio" id="cartao01" name="cartao">
+                    <img src="../../../assets/imagens/mastercard_logo.png"/>
+                    <input type="radio" id="cartao01" name="cartao" (click)="popUp_esconder_novo_cartao()">
                     <label for="cartao01">Mastercard **** 4356</label>
                 </div>
             </div>
+
             <div class="cartao02_div">
                 <div class="cartao02">
-                    <input type="radio" id="cartao02" name="cartao">
+                    <img src="../../../assets/imagens/mastercard_logo.png"/>
+                    <input type="radio" id="cartao02" name="cartao" (click)="popUp_esconder_novo_cartao()">
                     <label for="cartao02">Mastercard **** 0090</label>
                 </div>
             </div>
+
+            <div class="cartao03_div">
+                <div class="cartao03">
+                    <img src="../../../assets/imagens/mastercard_logo.png"/>
+                    <input type="radio" id="cartao03" name="cartao" (click)="popUp_esconder_novo_cartao()">
+                    <label for="cartao03">Mastercard **** 0234</label>
+                </div>
+            </div>
+
+            <div class="cartao_novo_div">
+                <div class="cartao_novo">
+                    <img src="../../../assets/imagens/novo_cartao_logo.png"/>
+                    <input type="radio" id="cartao_novo" name="cartao" (click)="popUp_view_novo_cartao()">
+                    <label for="cartao_novo">Novo cartão de crédito</label>
+                </div>
+            </div>
+            
+            <div class="pop_up_novo_cartao" [ngClass]="popUp_novo_cartao">
+                <label>Número do Cartão</label>
+                <input type="text" id="numero_cartao">
+                <div class="separar_box_label">
+                    <label>Validade</label> 
+                    <label>CVC</label>
+                </div>
+                <div class="separar_box">
+                    <input type="text" id="validade">
+                    <input type="text" id="cvc">
+                </div>
+                <label>Titular</label>
+                <input type="text" id="titular">
+                <label>CPF do Titular</label>
+                <input type="text" id="cpf_do_titular">
+            </div>
+
         </div>
 
 

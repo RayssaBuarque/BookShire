@@ -231,7 +231,34 @@ button {
     margin: 0%;
     padding: 0%;
     text-align: center;
+    vertical-align: middle;
   }
+.cartao_pagamento h1 {
+    font-size: 30px;
+}
+img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 20px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+}
+.mercado_pago {
+    display: flex;
+    flex-direction: row;
+    box-shadow: none;
+    margin: 0%;
+    padding: 0%;
+    align-items: center;
+    margin-top: 30px;
+}
+.mercado_pago img {
+    width: 20px;
+    height: 20px;
+    margin: 0%;
+    margin-left: 5px;
+    box-shadow: none;
+}
 .cartao_pagamento p {
     font-size: 14px;
 }
@@ -241,16 +268,33 @@ button {
     padding: 0%;
   }
 .cartao01_div {
+    font-size: 16px;
+    text-align: left;
     margin-top: 2px;
     margin-bottom:14px;
 }
 .cartao02_div {
+    font-size: 16px;
+    text-align: left;
     margin-top: 14px;
+    margin-bottom:14px;
+}
+.cartao03_div {
+    font-size: 16px;
+    text-align: left;
+    margin-top: 14px;
+    margin-bottom:14px;
+}
+.cartao_novo_div {
+    font-size: 16px;
+    text-align: left;
+    margin-top: 14px;
+    margin-bottom:14px;
 }
 .frase_mercado_pago {
     text-align: left;
     margin-left: 25px;
-    margin-top: 24px;
+    
 }
   /* Cartao01 radio button*/
 .cartao01 input {
@@ -308,3 +352,102 @@ button {
     outline: 1px solid #152139;
     padding: 4px;
   }
+/* Cartao03 radio button*/
+.cartao03 input {
+    display: none;
+}
+.cartao03 {
+    box-shadow: none;
+    padding: 0%;
+    margin: 0%;
+}
+.cartao03 input + label::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #152139;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 3px;
+  }
+.cartao03 input:checked + label:before {
+    background-color: #152139;
+    box-sizing: border-box;
+    border: 3px solid white;
+    outline: 1px solid #152139;
+    padding: 4px;
+  }
+/* cartao_novo radio button*/
+.cartao_novo input {
+    display: none;
+}
+.cartao_novo {
+    box-shadow: none;
+    padding: 0%;
+    margin: 0%;
+}
+.cartao_novo input + label::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #152139;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 3px;
+  }
+.cartao_novo input:checked + label:before {
+    background-color: #152139;
+    box-sizing: border-box;
+    border: 3px solid white;
+    outline: 1px solid #152139;
+    padding: 4px;
+  }
+.pop_up_novo_cartao {
+    text-align: left;
+}
+.pop_up_novo_cartao input{
+    margin-bottom: 6px;
+    border-radius: 15px;
+    padding: 4px 45px;
+    border: 1px solid #152139;
+}
+.pop_up_novo_cartao label {
+    margin: 0%;
+    margin-bottom: 2px;
+}
+.separar_box_label {
+    display: flex;
+    flex-direction: row;
+    box-shadow: none;
+    margin: 0%;
+    padding: 0%;
+}
+.separar_box_label label {
+   margin-right: 80px;
+   margin-left: 10px;
+}
+.separar_box {
+    display: flex;
+    flex-direction: row;
+    box-shadow: none;
+    justify-content: center;
+    margin: 0%;
+    padding: 0%;
+}
+.pop_up_novo_cartao label {
+    margin-left: 10px;
+ }
+.separar_box input {
+    padding: 4px 20px;
+    width: 135px;
+    height: 35px;
+    margin:2px;
+    margin-bottom: 6px;
+    border: 1px solid #152139;
+}
