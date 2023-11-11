@@ -12,6 +12,7 @@ export class PagamentoComponent implements OnInit {
   view_endereco_entrega:string = 'aparecendo'
   view_cartao:string = 'escondido'
   popUp_novo_cartao:string = 'escondido'
+  view_pagamento_finalizado:string = 'escondido'
 
   constructor() { }
 
@@ -33,6 +34,17 @@ export class PagamentoComponent implements OnInit {
   
   }
   popUp_esconder_novo_cartao(){
+
     this.popUp_novo_cartao = 'escondido'
+
+  }
+  mudar_view_pagamento_finalizado(){
+
+    this. view_pagamento_finalizado = 'aparecendo'
+
+    this.view_endereco_entrega = 'escondido'
+
+    this.view_cartao = 'escondido'
+
   }
 }

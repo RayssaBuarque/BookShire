@@ -444,6 +444,9 @@ img {
 .pop_up_novo_cartao label {
     margin-left: 10px;
  }
+.pop_up_novo_cartao {
+    padding: 20px 20px ;
+}
 .separar_box input {
     padding: 4px 20px;
     width: 135px;
@@ -451,4 +454,26 @@ img {
     margin:2px;
     margin-bottom: 6px;
     border: 1px solid #152139;
+}
+.button_cadastrar_cartao {
+    box-shadow: none;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+}
+.button_cadastrar_cartao button {
+    padding: 7px 40px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.finalizar_compra {
+    padding: 5px 5px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+}
+.finalizar_compra button {
+    padding: 7px 50px;
+    font-size: 16px;
 }

@@ -34,6 +34,7 @@
             <button>Editar Endereços</button>
         </div>
         
+    <!--  
         <h2>Entrega</h2>
         
         <div class="entrega_principal">
@@ -49,7 +50,7 @@
                 <label for="endereco_butanta_pac">PAC - receba quarta-feira - R$ 7,00</label>
             </div>
         </div>
-        
+    -->
         <div class="continuar_compra">
             <button class="button_continuar_compra" (click)="mudar_view_endereco_entrega()">Continuar a Compra</button>
         </div>
@@ -112,10 +113,20 @@
                 <input type="text" id="titular">
                 <label>CPF do Titular</label>
                 <input type="text" id="cpf_do_titular">
+                <div class="button_cadastrar_cartao">
+                    <button>Cadastrar Cartão</button>
+                </div>
+                
+            </div>
+
+            <div class="finalizar_compra">
+                <button class="button_finalizar_compra" (click)=" mudar_view_pagamento_finalizado()">Finalizar Compra</button>
             </div>
 
         </div>
+        <div class="pagamento_finalizado" [ngClass]="view_pagamento_finalizado">
 
+        </div>
 
 </div>
 
