@@ -8,7 +8,9 @@ import { SetLivroService } from 'src/app/services/set-livro.service';
   styleUrls: ['./pedido.component.css']
 })
 export class PedidoComponent implements OnInit {
-
+    //criando uma variável pra colocar a classe de visibilidade
+    view_botoes_confirmar:string = 'escondido'
+    view_entregar:string = 'aparecendo'
 
   @Input() idPedido:string = 'Id do pedido'
   private idCliente:string = "Id do Cliente"
@@ -23,6 +25,7 @@ export class PedidoComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    
     this.crud.read('/pedidos', '', `?Id_pedido=${this.idPedido}`)
       .then( (res:any) => {
         this.idCliente = res[0].Id_cliente
@@ -32,6 +35,16 @@ export class PedidoComponent implements OnInit {
         let idAnuncio = res[0].Id_anuncio
         this.getAnuncio(idAnuncio)
       })
+  }
+  
+  //função para mudar a visibilidade das divs
+  mudar_view_confirmar(){
+
+    //botão deseja entregar?
+    this.view_entregar = 'escondido'
+    //botão para confirmar entrega
+    this.view_botoes_confirmar = 'aparecendo'
+    
   }
 
 
@@ -53,5 +66,7 @@ export class PedidoComponent implements OnInit {
           })
       })
   }
+
+  
 
 }
