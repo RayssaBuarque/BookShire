@@ -485,3 +485,44 @@ img {
     text-align: center;
     vertical-align: middle;
 }
+.h1_finalizar-compra {
+    margin-bottom: 24px;
+    font-size: 30px;
+}
+.livro_comprado {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.livro_comprado img {
+   border-radius: 15px;
+   width: 80px;
+   height: 115px;
+   margin-right: 30px;
+}
+.texto_livro_comprado {
+    box-shadow: none;
+    margin: 0%;
+    padding: 0%;
+}
+.cor_texto{
+    color: #152139;
+}
+.preco_texto {
+    color: #FF6D1F;
+}
+.codigo_rastreio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.texto_codigo_rastreio {
+    color: #FF6D1F;
+    margin-right: 10px;
+}
+.pagamento_finalizado button{
+    padding: 7px 40px;
+    font-size: 16px;
+}

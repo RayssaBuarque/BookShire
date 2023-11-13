@@ -57,7 +57,7 @@
 
     </div>
 
-        <div class="cartao_pagamento" [ngClass]="view_cartao">
+    <div class="cartao_pagamento" [ngClass]="view_cartao">
             
             <h1>Pagamento</h1>
 
@@ -123,11 +123,24 @@
                 <button class="button_finalizar_compra" (click)=" mudar_view_pagamento_finalizado()">Finalizar Compra</button>
             </div>
 
-        </div>
-        <div class="pagamento_finalizado" [ngClass]="view_pagamento_finalizado">
-            <h1>Compra finalizada</h1>
-            <!--  <app-codigo-aleatorio></app-codigo-aleatorio> -->
-        </div>
+    </div>
+
+    <div class="pagamento_finalizado" [ngClass]="view_pagamento_finalizado">
+            <h1 class="h1_finalizar-compra">Compra finalizada</h1>
+            <div class="livro_comprado">
+                <img src="../../../assets/thumbnails/default-book_thumbnail.png"/>
+                <div class="texto_livro_comprado">
+                    <p class="cor_texto">Nome do livro</p>
+                    <p class="cor_texto">local livro</p>
+                    <p class="preco_texto">Preço</p>
+                </div>
+            </div>
+            <div class="codigo_rastreio">
+                <p class="texto_codigo_rastreio">Código de rastreio:</p>
+                <app-codigo-aleatorio></app-codigo-aleatorio>
+            </div>
+            <button>Voltar para tela inicial</button>
+    </div>
 
 </div>
 
