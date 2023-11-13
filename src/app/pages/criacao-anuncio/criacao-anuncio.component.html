@@ -1,4 +1,6 @@
 <div class="container__criacao-anuncio">
+   
+
     <app-btn-voltar></app-btn-voltar>
 
     <div *ngIf="lembrete" class="lembrete">
@@ -11,74 +13,108 @@
         <h1>{{tituloLivro}}</h1>
         <h3 *ngFor="let autor of autoresLivro">{{autor}}</h3>        
     </div>
+   
 
+   <div class="form">
     <form
         [formGroup]="anunciarForm"
         class="formulario__anuncio" 
         (ngSubmit)="onSubmit()"
         >
         <div class="tipo__transacao">
-            <input 
+
+            <div class="RadioVenda">
+                <input 
                 id="radioVenda"
                 type="radio"
                 value="Venda"
                 formControlName="transacao"
                 >
             <label for="radioVenda">Venda</label>
-            
-            <input
+            </div>
+
+            <div class="RadioTroca">
+                <input
                 id="radioTroca"
                 type="radio"
                 value="Troca"
                 formControlName="transacao"
                 >
             <label for="radioTroca">Troca</label>
+            </div>
 
-            <input 
+            <div class="RadioDoacao">
+                <input 
                 id="radioDoacao"
                 type="radio"
                 value="Doação"
                 formControlName="transacao"
                 >
             <label for="radioDoacao">Doação</label>
+            </div>
+            
         </div>
 
         <div class="anuncio__descricao">
             <input
                 id="descricao"
                 formControlName = "descricao"
-                placeholder="Descreva a condição de seu Livro"
+                placeholder="   Descreva"
                 >
         </div>
 
         <div class="anuncio__preco">
-            <input formControlName="preco" type="number" step=".25">
+            <input formControlName="preco" type="number" step=".25" >
         </div>
-
+        
         <div class="anuncio__situacao">
-            <input type="checkbox" formControlName="desc1" value="Rasgado" id="desc1">
-            <label for="desc1">Rasgado</label>
 
-            <input type="checkbox" formControlName="desc2" value="Manchado" id="desc2">
-            <label for="desc2">Manchado</label>
+            <h1>Situação</h1>
 
-            <input type="checkbox" formControlName="desc3" value="Rasurado" id="desc3">
-            <label for="desc3">Rasurado</label>
-
-            <input type="checkbox" formControlName="desc4" value="Página(s) faltando" id="desc4">
-            <label for="desc4">Página(s) faltando</label>
-
-            <input type="checkbox" formControlName="desc5" value="Amassado" id="desc5">
-            <label for="desc5">Amassado</label>
+            <div class="anuncio_situacao_checkbox">
+                <div class="desc1">
+                    <input type="checkbox" formControlName="desc1" value="Rasgado" id="desc1">
+                <label for="desc1">Rasgado</label>
+                </div>
             
-            <input type="checkbox" formControlName="desc6" value="Rasgado" id="desc6">
-            <label for="desc6">Rasgado</label>
+                <div class="desc2">
+                    <input type="checkbox" formControlName="desc2" value="Manchado" id="desc2">
+                    <label for="desc2">Manchado</label>
+                </div>
+            </div>  
+            <div class="anuncio_situacao_checkbox01">
+                <div class="desc3">
+                    <input type="checkbox" formControlName="desc3" value="Rasurado" id="desc3">
+                    <label for="desc3">Rasurado</label>
+                </div>
+            
+                <div class="desc4">
+                    <input type="checkbox" formControlName="desc4" value="Página(s) faltando" id="desc4">
+                    <label for="desc4">Página(s) faltando</label>
+                </div>
+            </div> 
+                
+            <div class="anuncio_situacao_checkbox">
+                <div class="desc5">
+                    <input type="checkbox" formControlName="desc5" value="Amassado" id="desc5">
+                    <label for="desc5">Amassado</label>
+                </div>
+                
+                <div class="desc6">
+                    <input type="checkbox" formControlName="desc6" value="Rasgado" id="desc6">
+                    <label for="desc6">Rasgado</label>
+                </div>
+            </div>    
+                
+           
+
         </div>
 
         <div class="btn__anunciar">
             <button type="submit">Anunciar</button>
         </div>
     </form>
+   </div>
 
 </div>
 
