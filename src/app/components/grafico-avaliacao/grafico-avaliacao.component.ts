@@ -13,27 +13,18 @@ export class GraficoAvaliacaoComponent implements OnInit {
 
   @Input() idUsuario:string = "2"
 
-  valorMax!:string
+  valorMax!:number
   qtdNotas:number[] = [0, 0, 0, 0, 0]
   qtdEstrelas!:string
-  
-  nValorMax:number = Number(this.valorMax)
-  nQtdNotas:number = 20
-  // nQtdNotas:number = Number(this.qtdNotas)
-
-  demonstracao:boolean = false
   
   constructor(private crud:CrudService) { }
   
   ngOnInit(): void {
-
     // pegando todos os pedidos em que o usuário foi anunciante
     this.crud.read('/pedidos', '', `?Id_anunciante=${this.idUsuario}`)
       .then( (res:any) => {
         this.setNotas(res)
       })
-
-    this.demonstracao = true;
   }
 
   //definindo o total de avaliações e mapeando as notas
@@ -43,7 +34,9 @@ export class GraficoAvaliacaoComponent implements OnInit {
 
     for(let i = 0; i<Number(this.valorMax); i++){
       let nota = Number(res[i].notaAvaliacao)
+      console.log(nota)
 
+      //registrando a qtd de notas por estrela na matriz
       if(nota == 1){
         this.qtdNotas[0] += 1
       }

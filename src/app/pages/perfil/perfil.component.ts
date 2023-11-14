@@ -18,21 +18,18 @@ export class PerfilComponent implements OnInit {
   nome_usuario:string = 'Nome do Usuário'
   localUsuario:string = 'Local dos Anúncios'
   
-  //Avaliações
+  //Avaliação
   mediaAvaliacao:number = 0
   
   idAnuncios:number[] = []
   idPedidos:number[] = []
 
   //index da seção que fica aparecendo no perfil
-  secaoIndex:number = 1
+  secaoIndex:number = 0
   
   constructor( private crud:CrudService, private route:ActivatedRoute) { }
 
   ngOnInit(): void {
-    // let componentFactory = this.componentFactoryResolver.resolveComponentFactory(componentName);
-    // let componentRef = entryPoint.createComponent(componentFactory);
-
     //recolhendo ids da rota
     this.route.paramMap.subscribe( (value) =>{
       this.idUsuario = value.get('id')

@@ -15,7 +15,7 @@
     <div class="nav__perfil">
         <button class="navItem" (click)="mudarSecao(0)" [ngClass] = "selecionarA()">Anúncios</button>
         <button class="navItem" (click)="mudarSecao(1)" [ngClass] = "selecionarB()">Avaliação</button>
-        <button class="navItem" (click)="mudarSecao(2)" [ngClass] = "selecionarC()">Pedidos</button>
+        <button class="navItem" (click)="mudarSecao(2)" *ngIf="idUsuario=='2'" [ngClass] = "selecionarC()">Pedidos</button>
     </div>
 
     <div class="anuncios__perfil" *ngIf = "secaoIndex == 0">
@@ -27,20 +27,6 @@
 
     <!-- usar o ngFor aqui depois -->
     <div class="avaliacao__perfil" *ngIf="secaoIndex == 1">
-        <!-- <div class="container__avaliacao" *ngIf="avaliacao == true">
-            <div class="nota__grande">
-                <h1>{{mediaAvaliacao.toFixed(1)}}</h1>
-          
-                <div class="estrelinhas">
-                    <img src="https://i.pinimg.com/originals/56/89/8e/56898e2b68d0d0dbb000d56eafe6ea12.png" alt="Desenho de Estrela">
-                </div>
-            </div>
-        </div>
-
-        <div [innerHTML] = "htmlAvaliacao"></div> -->
-
-
-
         <div class="container__avaliacao" >
             <div class="nota__grande">
                 <h1>{{mediaAvaliacao.toFixed(1)}}</h1>
@@ -56,41 +42,13 @@
                         idUsuario="{{idUsuario}}"
                     >
                     </app-grafico-avaliacao>
-                    <!-- [valMax] = "[notasQtd]"
-                    qtdEstrelas = "5"
-                    [qtdN] = "[notas5]" -->
-                    <!-- <app-grafico-avaliacao
-                        valorMax = "{{notasQtd}}"
-                        qtdEstrelas = "5"
-                        qtdNotas = "{{notas5}}"
-                    ></app-grafico-avaliacao>
-                    <app-grafico-avaliacao
-                        valorMax = "{{notasQtd}}"
-                        qtdEstrelas = "4"
-                        qtdNotas = "{{notas4}}"
-                    ></app-grafico-avaliacao>
-                    <app-grafico-avaliacao
-                        valorMax = "{{notasQtd}}"
-                        qtdEstrelas = "3"
-                        qtdNotas = "{{notas3}}"
-                    ></app-grafico-avaliacao>
-                    <app-grafico-avaliacao
-                        valorMax = "{{notasQtd}}"
-                        qtdEstrelas = "2"
-                        qtdNotas = "{{notas2}}"
-                    ></app-grafico-avaliacao>
-                    <app-grafico-avaliacao
-                        valorMax = "{{notasQtd}}"
-                        qtdEstrelas = "1"
-                        qtdNotas = "{{notas1}}"
-                    ></app-grafico-avaliacao> -->
                 </div>
             </div>
         </div>
     </div>
 
     <!-- usar o ngFor aqui depois -->
-    <div class="pedidos__perfil" *ngIf = "secaoIndex == 2">
+    <div class="pedidos__perfil" *ngIf = "secaoIndex == 2 && idUsuario == '2'">
         <app-pedido
             *ngFor="let pedido of idPedidos"
             idPedido="{{pedido}}"

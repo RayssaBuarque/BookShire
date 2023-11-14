@@ -58,8 +58,11 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [x] 🎯 Consertar rota de Anunciar livro @RAYSSA
 - [x] 📔 Consertar capa padrão de livro @RAYSSA
 
-#### 5fth Sprint -- Conexões com o Banco
-- [ ] 👤 Fazer conexões de dados de Usuários
+#### 5fth Sprint -- Componentes Complementares
+- [ ] ⭐ Ajeitar o CSS da seção "avaliações" do usuário na TELA PERFIL
+
+#### 6fth Sprint -- Conexões com o Banco
+- [x] 👤 Fazer conexões de dados de Usuários
 - [ ] 📢 Fazer conexões de dados de Anúncios
 - [ ] 📪 Fazer conexões de dados de Chats
 - [ ] 📨 Fazer conexões de dados de Mensagens
