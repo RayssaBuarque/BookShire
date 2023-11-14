@@ -19,6 +19,9 @@ export class PedidoComponent implements OnInit {
   tituloLivro:string = 'Título do Livro'
   urlImg:string = '../../../../assets/thumbnails/default-book_thumbnail.png'
 
+  // indicador de denúncia
+  processoDenuncia:string = 'escondido';
+
   constructor(
     private setter:SetLivroService,
     private crud:CrudService
@@ -47,6 +50,10 @@ export class PedidoComponent implements OnInit {
     
   }
 
+  // Função que joga o POPUP da denúncia na tela
+  popDenuncia():void{
+    this.processoDenuncia = 'aparecendo';
+  }
 
   getAnuncio(idAnuncio:string):void{
     this.crud.read('/anuncios', idAnuncio, '')

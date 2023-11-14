@@ -40,6 +40,7 @@ import { ChatIndividualComponent } from './pages/chat-individual/chat-individual
 import { BottomChatTextboxComponent } from './components/bottom-chat-textbox/bottom-chat-textbox.component';
 import { PagamentoComponent } from './pages/pagamento/pagamento.component';
 import { CodigoAleatorioComponent } from './components/codigo-aleatorio/codigo-aleatorio.component';
+import { MsgDenunciaComponent } from './components/msg-denuncia/msg-denuncia.component';
 // Importing bootstrap modules
 // import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
 
@@ -83,6 +84,7 @@ import { CodigoAleatorioComponent } from './components/codigo-aleatorio/codigo-a
     ChatIndividualComponent,
     BottomChatTextboxComponent,
     CodigoAleatorioComponent,
+    MsgDenunciaComponent,
     
     // PesquisaAnunciarComponent
   ],

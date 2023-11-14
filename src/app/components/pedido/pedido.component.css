@@ -24,12 +24,17 @@
 .capa_livro{
    align-items: center;
 }
+
 .capa_livro > img{
     width: 90px;
     height: 160px;
     border-radius: 12px;
 
     object-fit: cover;
+}
+
+.tituloLivro{
+    font-size: 16px;
 }
 
 p{
@@ -58,23 +63,6 @@ p{
     text-align: center;
 }
 
-
-#confirmar{
-    font-size: 15px;
-    padding: 5px;
-    background-color: #152139;
-    color: white;
-    border-color: #152139;
-    padding: 5px;
-    width: 150px;
-    border-radius: 20px 20px 20px 20px;
-    margin-bottom: 5px;
-    font-family: 'Advent Pro', sans-serif;
-    font-weight: bold;
-}
-
-
-
 .infos_pedidos{
     margin-left: 40px;
     text-align: center;
@@ -82,9 +70,17 @@ p{
     width: 150px;
 }
 
-a{
-    text-decoration: none;
-    color: #FF6D1F;
+#confirmar{
+    border: none;
+    border-radius: 20px 20px 20px 20px;
+    background-color: #152139;
+    
+    width: 150px;
+    padding: 5px;
+    margin-bottom: 5px;
+    
+    color: white;
+    font-size: 15px;
     font-family: 'Advent Pro', sans-serif;
     font-weight: bold;
 }

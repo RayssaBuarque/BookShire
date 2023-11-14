@@ -4,15 +4,23 @@
             <img src="{{urlImg}}" alt="Capa de {{tituloLivro}}">
         </div>
         <div class="infos_pedidos">
-            <!--<h2>{{tituloLivro}}</h2>-->
+            <!-- Informações base do pedido -->
+            <h2 class="tituloLivro">{{tituloLivro}}</h2>
             <p>{{transacao}} efetuada com: </p>
-            <div id="nome"> {{nomeAnunciante}} </div>
+            <p id="nome"> {{nomeAnunciante}} </p>
+
+            <!-- View de andamento -->
             <div class="entregar" [ngClass]="view_entregar">
-                <button id="confirmar" (click)="mudar_view_confirmar()">Deseja confimar?</button>
+                <button id="confirmar" (click)="mudar_view_confirmar()">Confirmar entrega</button>
+                <app-msg-denuncia 
+                    transacao="{{transacao}}"
+                ></app-msg-denuncia>
             </div>
+            
+
+            <!-- view de histórico -->
             <div class="botoes_confirmar"  [ngClass]="view_botoes_confirmar">
-                <a href="home"><button id="confirmar">Confirmar entrega</button></a>
-                <a href="home">Denunciar {{transacao}}</a>
+                <button id="confirmar">Confirmar entrega</button>
             </div>
         </div>
     </div>

@@ -25,7 +25,7 @@ export class PerfilComponent implements OnInit {
   idPedidos:number[] = []
 
   //index da seção que fica aparecendo no perfil
-  secaoIndex:number = 0
+  secaoIndex:number = 2
   
   constructor( private crud:CrudService, private route:ActivatedRoute) { }
 

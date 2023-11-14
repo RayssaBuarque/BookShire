@@ -1,0 +1,39 @@
+<button class="btn_denunciar" (click)="popDenuncia()">Denunciar {{transacao}}</button>
+               
+
+<div class="container__tela" [class]="visibilidade">
+    <div class="container__msg-denuncia">
+
+        <div class="primeiraEtapa" *ngIf="etapa==1">
+            <div class="icone__denuncia">
+                <img src="" alt="">
+            </div>
+        
+            <div class="texto__denuncia">
+                <p>Deseja denunciar essa transação?</p>
+                <p>Blablabla mensagem que vai aparecer de denúncia (NOTA: Lembrar de pedir pra alguem montar esse texto pra mim)</p>
+            </div>
+        
+            <div class="btn__opcoes">
+                <button (click)="registrar_denuncia()">Sim</button>
+                <button (click)="popDenuncia()">Não</button>
+            </div>
+        </div>
+
+        <div class="segundaEtapa" *ngIf="etapa==2">
+            <div class="icone__denuncia">
+                <img src="" alt="">
+            </div>
+    
+            <div class="texto__denuncia">
+                <p>Sua denúncia foi efetuada com sucesso!</p>
+            </div>
+    
+            <div class="btn__opcoes">
+                <button (click)="popDenuncia()" >Ok!</button>
+            </div>
+        </div>
+    
+    </div>
+
+</div>

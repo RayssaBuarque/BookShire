@@ -43,8 +43,7 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [x] 💵 Desenvolver tela de pagamento @MARIA CLARA
 - [x] 📪 Desenvolver tela de Chat @ MALU
 - [x] 📬 Desenvolver tela de Chat Específico @MALU
-- [x] 📬 Consertar barra de mensagens na tela de Chat Específico @MALU
-- [ ] 📪 Conectar headers das telas de Chat com banco @ 
+- [x] 📬 Consertar barra de mensagens na tela de Chat Específico @MALU 
 
 #### 6xth Sprint -- Conexão das Telas
 - [x] 🙌 Desenvolver CRUD anúncios AWS API @RAYSSA
@@ -60,7 +59,7 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 
 #### 5fth Sprint -- Componentes Complementares
 - [ ] ⭐ Ajeitar o CSS da seção "avaliações" do usuário na TELA PERFIL
-- [ ] ⚠️ Dinamizar confirmação de Denúncia
+- [ ] ⚠️ Ajeitar o CSS do componente MSG DENÚNCIA
 
 #### 6fth Sprint -- Conexões com o Banco
 - [x] 👤 Fazer conexões de dados de Usuários
