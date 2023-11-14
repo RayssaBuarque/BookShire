@@ -1,62 +1,52 @@
+<div class="container__grafico">
 
-<div class="container__grafico" *ngIf="demonstracao == true">
     <!-- 5 ESTRELAS -->
     <p>⭐⭐⭐⭐⭐</p>
     <p><ngb-progressbar 
         type="warning" 
-        >
-        <!-- aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" -->
-        
-        {{nQtdNotas}}
         [max] = "valorMax" 
-        [value] = "qtdNotas"
+        [value]= "qtdNotas[4]"
+        >
+        {{qtdNotas[4]}}
     </ngb-progressbar></p>
     
     <!-- 4 ESTRELAS -->
     <p>⭐⭐⭐⭐</p>
     <p><ngb-progressbar 
         type="warning" 
-        [max] = "nValorMax" 
-        [value] = "nQtdNotas"
+        [max] = "valorMax" 
+        [value] = "qtdNotas[3]"
         >
-        <!-- aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" -->
-
-        {{nQtdNotas}}
+        {{qtdNotas[3]}}
     </ngb-progressbar></p>
 
     <!-- 3 ESTRELAS -->
     <p>⭐⭐⭐</p>
     <p><ngb-progressbar 
         type="warning" 
-        [max] = "nValorMax" 
-        [value] = "nQtdNotas"
+        [max] = "valorMax" 
+        [value] = "qtdNotas[2]"
         >
-        <!-- aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" -->
-
-        {{nQtdNotas}}
+        {{qtdNotas[2]}}
     </ngb-progressbar></p>
 
     <!-- 2 ESTRELAS -->
     <p>⭐⭐</p>
     <p><ngb-progressbar 
         type="warning" 
-        [max] = "nValorMax" 
-        [value] = "nQtdNotas"
+        [max] = "valorMax" 
+        [value] = "qtdNotas[1]"
         >
-        <!-- aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" -->
-
-        {{nQtdNotas}}
+        {{qtdNotas[1]}}
     </ngb-progressbar></p>
 
     <!-- 1 ESTRELAS -->
     <p>⭐</p>
     <p><ngb-progressbar 
         type="warning" 
-        [max] = "nValorMax" 
-        [value] = "nQtdNotas"
+        [max] = "valorMax" 
+        [value] = "qtdNotas[0]"
         >
-        <!-- aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" -->
-
-        {{nQtdNotas}}
+        {{qtdNotas[0]}}
     </ngb-progressbar></p>
 </div>
