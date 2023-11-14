@@ -35,9 +35,9 @@ div{
 .tipo__transacao {
     justify-content: center;
     align-items: center;
-    padding: 15px 10px;
-    margin-top: 0%;
-    margin-bottom: 0%;
+    padding: 0px;
+    margin: 0%;
+    margin-bottom: 30px;
 }
 .tipo__transacao div{
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
@@ -136,26 +136,49 @@ div{
 .anuncio__descricao {
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: left;
     margin-top: 10px;
+    margin: 0px 15px;
     margin-bottom: 10px;
+    display: block;
+}
+.anuncio__descricao label {
+    margin-left: 10px;
+    margin-bottom: 2px;
+}
+.anuncio__descricao input {
+    padding: 3px 32px;
+    padding-left: 10px;
+    padding-right: 53px;
 }
 .anuncio__preco{
+    margin: 0px 15px;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: left;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    display: block;
+}
+.anuncio__preco label {
+    margin-left: 10px;
+    margin-bottom: 2px;
 }
 .anuncio__preco input{
     border: 1px solid #152139;
     border-radius: 15px;
     text-align: center;
+    padding: 3px 33px;
+    
 }
 .anuncio__situacao{
     display: block;
     text-align: center;
     justify-content: center;
+    border: 1px solid #152139;
+    border-radius: 20px;
+    padding: 20px 15px;
+    margin: 20px 10px;
 }
 .anuncio__situacao h1{
    margin-bottom: 10px;
@@ -164,7 +187,7 @@ div{
     display: flex;
     flex-direction: row;
     font-size: 15px;
-    margin: 5px;
+    margin: 10px;
 }
 .anuncio_situacao_checkbox label {
     margin-right: 4px;
@@ -316,7 +339,8 @@ div{
     outline: 1px solid #152139;
     padding: 4px;
   }
-/* Radio Desc6*/
+ /* Radio Desc6*/
+ /*
 .desc6 input {
     display: none;
 }
@@ -344,6 +368,7 @@ div{
     outline: 1px solid #152139;
     padding: 4px;
   }
+*/
 .btn__anunciar{
     justify-content: center;
     display: block;
@@ -353,7 +378,7 @@ button {
     border-radius: 20px;
     background-color: #152139;
     color: white;
-    padding: 7px 40px;
+    padding: 7px 60px;
     font-size: 16px;
     border: none;
     margin:5px;

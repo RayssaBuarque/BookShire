@@ -99,22 +99,18 @@
             </div>
             
             <div class="pop_up_novo_cartao" [ngClass]="popUp_novo_cartao">
-                <label>Número do Cartão</label>
-                <input type="text" id="numero_cartao">
-                <div class="separar_box_label">
-                    <label>Validade</label> 
-                    <label>CVC</label>
-                </div>
+
+                <h1>Novo Cartão</h1>
+                <input type="text" id="numero_cartao" placeholder="Número do Cartão">
                 <div class="separar_box">
-                    <input type="text" id="validade">
-                    <input type="text" id="cvc">
+                    <input type="text" id="validade" placeholder="Validade" >
+                    <input type="text" id="cvc" placeholder="CVC">
                 </div>
-                <label>Titular</label>
-                <input type="text" id="titular">
-                <label>CPF do Titular</label>
-                <input type="text" id="cpf_do_titular">
-                <div class="button_cadastrar_cartao">
-                    <button>Cadastrar Cartão</button>
+                <input type="text" id="titular" placeholder="Titular">
+                <input type="text" id="cpf_do_titular" placeholder="CPF do Titular">
+                <div class="radio_salvar_cartao">
+                    <input type="checkbox" id="cadastrar_cartao">
+                    <label for="cadastrar_cartao">Salvar Cartão</label>
                 </div>
                 
             </div>
