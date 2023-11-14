@@ -4,14 +4,9 @@
     <h2 class="titulo-sebo">Sebos</h2>
 
     <div class="geral_sebos">
-        <app-sebo-thumb></app-sebo-thumb>
-        <app-sebo-thumb></app-sebo-thumb>
-        <app-sebo-thumb></app-sebo-thumb>
-        <app-sebo-thumb></app-sebo-thumb>
-        <app-sebo-thumb></app-sebo-thumb>
-        <app-sebo-thumb></app-sebo-thumb>
-        <app-sebo-thumb></app-sebo-thumb>
-        <app-sebo-thumb></app-sebo-thumb>
+        <app-sebo-thumb *ngFor="let sebo of sebos"
+            nomeSebo="{{sebo.nome}}"
+        ></app-sebo-thumb>
     </div>
     
 <app-botao-vermais-sebos></app-botao-vermais-sebos>

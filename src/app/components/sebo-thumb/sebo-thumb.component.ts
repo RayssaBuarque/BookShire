@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-sebo-thumb',
@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SeboThumbComponent implements OnInit {
 
+  @Input() nomeSebo = 'Nome do Sebo'
   constructor() { }
 
   ngOnInit(): void {
