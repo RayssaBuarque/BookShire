@@ -14,20 +14,25 @@
 .geral_pedido{
     display: flex;
     padding: 20px;
-    border-radius: 10px 10px 10px 10px;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    border-radius: 15px 15px 15px 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    text-align: center;
+    justify-content: center;
      /* sombras */
    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
 }
 
 .capa_livro{
    align-items: center;
+   justify-content: center;
+   text-align: center;
+   display: flex;
 }
 
 .capa_livro > img{
-    width: 90px;
-    height: 160px;
+    width: 85px;
+    height: 125px;
     border-radius: 12px;
 
     object-fit: cover;
@@ -66,7 +71,6 @@ p{
 .infos_pedidos{
     margin-left: 40px;
     text-align: center;
-    padding-top: 20px;
     width: 150px;
 }
 

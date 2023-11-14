@@ -41,6 +41,7 @@
 
 .text__local > p {
     font-size: 18px;
+    margin-bottom: 10px;
 }
 
 .text__transacao > h1 {
