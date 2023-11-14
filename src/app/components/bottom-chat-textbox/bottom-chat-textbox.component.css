@@ -15,8 +15,9 @@ button{
     background-color:#D7DEEA;
     padding: 15px;
     align-items: center;
-    margin-bottom: 80px;
     display: flex;
     height: 100px;
     align-items: center;
+    margin-top: 40%;
+
 }
