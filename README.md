@@ -39,8 +39,8 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [x] 👤 Estilizar COMPONENTE pedidos pro Perfil @MALU
 - [x] 📢 Desenvolver tela de Anúncios @RAYSSA
 - [x] 📢 Desenvolver tela de Anúncio Específico @RAYSSA
-- [ ] 📢 Estilizar Tela de criação de anúncio @MARIA CLARA
-- [ ] 💵 Desenvolver tela de pagamento @MARIA CLARA
+- [x] 📢 Estilizar Tela de criação de anúncio @MARIA CLARA
+- [x] 💵 Desenvolver tela de pagamento @MARIA CLARA
 - [x] 📪 Desenvolver tela de Chat @ MALU
 - [x] 📬 Desenvolver tela de Chat Específico @MALU
 - [x] 📬 Consertar barra de mensagens na tela de Chat Específico @MALU
