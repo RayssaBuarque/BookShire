@@ -31,6 +31,10 @@
     align-items: center;
 }
 
+.wrapper__caixa-texto input {
+    margin-left: 8px;
+}
+
 .inpt__barra-pesquisa{
     width: 100%;
     border: none;
