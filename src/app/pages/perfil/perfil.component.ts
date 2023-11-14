@@ -24,8 +24,8 @@ export class PerfilComponent implements OnInit {
   idAnuncios:number[] = []
   idPedidos:number[] = []
 
-  //index da seção que fica aparecendo no perfil
-  secaoIndex:number = 2
+  //index da seção inicial do perfil
+  secaoIndex:number = 0
   
   constructor( private crud:CrudService, private route:ActivatedRoute) { }
 

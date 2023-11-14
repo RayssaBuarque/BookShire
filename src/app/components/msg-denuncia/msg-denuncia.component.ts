@@ -8,10 +8,11 @@ import { Component, Input, OnInit } from '@angular/core';
 export class MsgDenunciaComponent implements OnInit {
 
   @Input() transacao = 'transação'
+  @Input() usuario = 'Nome do Usuário'
+
   etapa:number = 1
 
   visibilidade:string = 'escondido'
-  denunciaView:string = 'escondido'
   
   constructor() { }
 
