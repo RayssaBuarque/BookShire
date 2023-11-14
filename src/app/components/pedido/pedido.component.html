@@ -1,5 +1,5 @@
 <div class="container_pedidos">
-    <div class="geral_pedido">
+    <div class="geral_pedido container">
         <div class="capa_livro">
             <img src="{{urlImg}}" alt="Capa de {{tituloLivro}}">
         </div>
@@ -7,7 +7,10 @@
             <!--<h2>{{tituloLivro}}</h2>-->
             <p>{{transacao}} efetuada com: </p>
             <div id="nome"> {{nomeAnunciante}} </div>
-            <div class="botoes-confirmar">
+            <div class="entregar" [ngClass]="view_entregar">
+                <button id="confirmar" (click)="mudar_view_confirmar()">Deseja confimar?</button>
+            </div>
+            <div class="botoes_confirmar"  [ngClass]="view_botoes_confirmar">
                 <a href="home"><button id="confirmar">Confirmar entrega</button></a>
                 <a href="home">Denunciar {{transacao}}</a>
             </div>

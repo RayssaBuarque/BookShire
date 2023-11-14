@@ -1,12 +1,385 @@
 .container__criacao-anuncio{
     margin: 0 24px;
+    margin-bottom: 150px;
+    margin-top: 24px;
 }
-
+div{
+    margin: 24px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.dados__livro{
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 .dados__livro > img{
     height: 220px;
     width: 140px;
     object-fit: cover;
     border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    margin-bottom: 15px;
 }
-
-
+.form {
+    margin: 24px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.tipo__transacao input{
+    margin: 4px;
+}
+.tipo__transacao {
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0%;
+    margin-bottom: 30px;
+}
+.tipo__transacao div{
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    padding: 7px 15px;
+    border-radius: 15px;
+    margin: 10px;
+}
+/* Radio Venda*/
+.RadioVenda input {
+    display: none;
+}
+.RadioVenda {
+    box-shadow: none;
+    padding: 0%;
+    margin: 0%;
+}
+.RadioVenda input + label::before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #152139;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 3px;
+  }
+.RadioVenda input:checked + label:before {
+    background-color: #152139;
+    box-sizing: border-box;
+    border: 3px solid white;
+    outline: 1px solid #152139;
+    padding: 4px;
+  }
+/* Radio Troca*/
+.RadioTroca input {
+    display: none;
+}
+.RadioTroca {
+    box-shadow: none;
+    padding: 0%;
+    margin: 0%;
+}
+.RadioTroca input + label::before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #152139;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 3px;
+  }
+.RadioTroca input:checked + label:before {
+    background-color: #152139;
+    box-sizing: border-box;
+    border: 3px solid white;
+    outline: 1px solid #152139;
+    padding: 4px;
+  }
+/* Radio Doação*/
+.RadioDoacao input {
+    display: none;
+}
+.RadioDoacao {
+    box-shadow: none;
+    padding: 0%;
+    margin: 0%;
+}
+.RadioDoacao input + label::before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #152139;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 3px;
+  }
+.RadioDoacao input:checked + label:before {
+    background-color: #152139;
+    box-sizing: border-box;
+    border: 3px solid white;
+    outline: 1px solid #152139;
+    padding: 4px;
+  }
+.anuncio__descricao input {
+    border: 1px solid #152139;
+    border-radius: 15px;
+}
+.anuncio__descricao {
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin-top: 10px;
+    margin: 0px 15px;
+    margin-bottom: 10px;
+    display: block;
+}
+.anuncio__descricao label {
+    margin-left: 10px;
+    margin-bottom: 2px;
+}
+.anuncio__descricao input {
+    padding: 3px 32px;
+    padding-left: 10px;
+    padding-right: 53px;
+}
+.anuncio__preco{
+    margin: 0px 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    display: block;
+}
+.anuncio__preco label {
+    margin-left: 10px;
+    margin-bottom: 2px;
+}
+.anuncio__preco input{
+    border: 1px solid #152139;
+    border-radius: 15px;
+    text-align: center;
+    padding: 3px 33px;
+    
+}
+.anuncio__situacao{
+    display: block;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid #152139;
+    border-radius: 20px;
+    padding: 20px 15px;
+    margin: 20px 10px;
+}
+.anuncio__situacao h1{
+   margin-bottom: 10px;
+}
+.anuncio_situacao_checkbox {
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    margin: 10px;
+}
+.anuncio_situacao_checkbox label {
+    margin-right: 4px;
+}
+.anuncio_situacao_checkbox01 {
+    font-size: 15px;
+    margin: 5px;
+}
+.lembrete{
+    margin: 0%;
+}
+/* Radio Desc1*/
+.desc1 input {
+    display: none;
+}
+.desc1 {
+    box-shadow: none;
+    padding: 0%;
+    margin: 0%;
+}
+.desc1 input + label::before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #152139;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 4px;
+    margin-bottom: 3px;
+  }
+.desc1 input:checked + label:before {
+    background-color: #152139;
+    box-sizing: border-box;
+    border: 3px solid white;
+    outline: 1px solid #152139;
+    padding: 4px;
+  }
+/* Radio Desc2*/
+.desc2 input {
+    display: none;
+}
+.desc2 {
+    box-shadow: none;
+    padding: 0%;
+    margin: 0%;
+}
+.desc2 input + label::before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #152139;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 4px;
+    margin-bottom: 3px;
+  }
+.desc2 input:checked + label:before {
+    background-color: #152139;
+    box-sizing: border-box;
+    border: 3px solid white;
+    outline: 1px solid #152139;
+    padding: 4px;
+  }
+/* Radio Desc3*/
+.desc3 input {
+    display: none;
+}
+.desc3 {
+    box-shadow: none;
+    padding: 0%;
+    margin: 0%;
+}
+.desc3 input + label::before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #152139;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 4px;
+    margin-bottom: 3px;
+  }
+.desc3 input:checked + label:before {
+    background-color: #152139;
+    box-sizing: border-box;
+    border: 3px solid white;
+    outline: 1px solid #152139;
+    padding: 4px;
+  }
+/* Radio Desc4*/
+.desc4 input {
+    display: none;
+}
+.desc4 {
+    box-shadow: none;
+    padding: 0%;
+    margin: 0%;
+}
+.desc4 input + label::before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #152139;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 4px;
+    margin-bottom: 3px;
+  }
+.desc4 input:checked + label:before {
+    background-color: #152139;
+    box-sizing: border-box;
+    border: 3px solid white;
+    outline: 1px solid #152139;
+    padding: 4px;
+  }
+/* Radio Desc5*/
+.desc5 input {
+    display: none;
+}
+.desc5 {
+    box-shadow: none;
+    padding: 0%;
+    margin: 0%;
+}
+.desc5 input + label::before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #152139;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 4px;
+    margin-bottom: 3px;
+  }
+.desc5 input:checked + label:before {
+    background-color: #152139;
+    box-sizing: border-box;
+    border: 3px solid white;
+    outline: 1px solid #152139;
+    padding: 4px;
+  }
+ /* Radio Desc6*/
+ /*
+.desc6 input {
+    display: none;
+}
+.desc6 {
+    box-shadow: none;
+    padding: 0%;
+    margin: 0%;
+}
+.desc6 input + label::before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #152139;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 4px;
+    margin-bottom: 3px;
+  }
+.desc6 input:checked + label:before {
+    background-color: #152139;
+    box-sizing: border-box;
+    border: 3px solid white;
+    outline: 1px solid #152139;
+    padding: 4px;
+  }
+*/
+.btn__anunciar{
+    justify-content: center;
+    display: block;
+    text-align: center;
+}
+button {
+    border-radius: 20px;
+    background-color: #152139;
+    color: white;
+    padding: 7px 60px;
+    font-size: 16px;
+    border: none;
+    margin:5px;
+}

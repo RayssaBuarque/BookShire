@@ -39,6 +39,7 @@ import { ChatGeralConfigComponent } from './components/chat-geral-config/chat-ge
 import { ChatIndividualComponent } from './pages/chat-individual/chat-individual.component';
 import { BottomChatTextboxComponent } from './components/bottom-chat-textbox/bottom-chat-textbox.component';
 import { PagamentoComponent } from './pages/pagamento/pagamento.component';
+import { CodigoAleatorioComponent } from './components/codigo-aleatorio/codigo-aleatorio.component';
 // Importing bootstrap modules
 // import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
 
@@ -81,6 +82,7 @@ import { PagamentoComponent } from './pages/pagamento/pagamento.component';
     PagamentoComponent,
     ChatIndividualComponent,
     BottomChatTextboxComponent,
+    CodigoAleatorioComponent,
     
     // PesquisaAnunciarComponent
   ],

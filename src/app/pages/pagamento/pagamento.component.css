@@ -134,7 +134,7 @@ button {
     margin-right: 8px;
     margin-bottom: 3px;
   }
-  .endereco_b_radio input:checked + label:before {
+.endereco_b_radio input:checked + label:before {
     background-color: #152139;
     box-sizing: border-box;
     border: 3px solid white;
@@ -162,7 +162,7 @@ button {
     margin-right: 8px;
     margin-bottom: 3px;
   }
-  .endereco_m_radio input:checked + label:before {
+.endereco_m_radio input:checked + label:before {
     background-color: #152139;
     box-sizing: border-box;
     border: 3px solid white;
@@ -190,7 +190,7 @@ button {
     margin-right: 8px;
     margin-bottom: 3px;
   }
-  .sedex input:checked + label:before {
+.sedex input:checked + label:before {
     background-color: #152139;
     box-sizing: border-box;
     border: 3px solid white;
@@ -218,10 +218,358 @@ button {
     margin-right: 8px;
     margin-bottom: 3px;
   }
-  .pac input:checked + label:before {
+.pac input:checked + label:before {
     background-color: #152139;
     box-sizing: border-box;
     border: 3px solid white;
     outline: 1px solid #152139;
     padding: 4px;
   }
+  /* CSS Cartão */
+.cartao_pagamento {
+    box-shadow: none;
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+    vertical-align: middle;
+  }
+.cartao_pagamento h1 {
+    font-size: 30px;
+}
+img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 20px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+}
+.mercado_pago {
+    display: flex;
+    flex-direction: row;
+    box-shadow: none;
+    margin: 0%;
+    padding: 0%;
+    align-items: center;
+    margin-top: 30px;
+}
+.mercado_pago img {
+    width: 20px;
+    height: 20px;
+    margin: 0%;
+    margin-left: 5px;
+    box-shadow: none;
+}
+.cartao_pagamento p {
+    font-size: 14px;
+}
+.cartao01 {
+    box-shadow: none;
+    margin: 0%;
+    padding: 0%;
+  }
+.cartao01_div {
+    font-size: 16px;
+    text-align: left;
+    margin-top: 2px;
+    margin-bottom:14px;
+}
+.cartao02_div {
+    font-size: 16px;
+    text-align: left;
+    margin-top: 14px;
+    margin-bottom:14px;
+}
+.cartao03_div {
+    font-size: 16px;
+    text-align: left;
+    margin-top: 14px;
+    margin-bottom:14px;
+}
+.cartao_novo_div {
+    font-size: 16px;
+    text-align: left;
+    margin-top: 14px;
+    margin-bottom:14px;
+}
+.frase_mercado_pago {
+    text-align: left;
+    margin-left: 25px;
+    
+}
+  /* Cartao01 radio button*/
+.cartao01 input {
+    display: none;
+}
+.cartao01 {
+    box-shadow: none;
+    padding: 0%;
+    margin: 0%;
+}
+.cartao01 input + label::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #152139;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 3px;
+  }
+.cartao01 input:checked + label:before {
+    background-color: #152139;
+    box-sizing: border-box;
+    border: 3px solid white;
+    outline: 1px solid #152139;
+    padding: 4px;
+  }
+/* Cartao02 radio button*/
+.cartao02 input {
+    display: none;
+}
+.cartao02 {
+    box-shadow: none;
+    padding: 0%;
+    margin: 0%;
+}
+.cartao02 input + label::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #152139;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 3px;
+  }
+.cartao02 input:checked + label:before {
+    background-color: #152139;
+    box-sizing: border-box;
+    border: 3px solid white;
+    outline: 1px solid #152139;
+    padding: 4px;
+  }
+/* Cartao03 radio button*/
+.cartao03 input {
+    display: none;
+}
+.cartao03 {
+    box-shadow: none;
+    padding: 0%;
+    margin: 0%;
+}
+.cartao03 input + label::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #152139;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 3px;
+  }
+.cartao03 input:checked + label:before {
+    background-color: #152139;
+    box-sizing: border-box;
+    border: 3px solid white;
+    outline: 1px solid #152139;
+    padding: 4px;
+  }
+/* cartao_novo radio button*/
+.cartao_novo input {
+    display: none;
+}
+.cartao_novo {
+    box-shadow: none;
+    padding: 0%;
+    margin: 0%;
+}
+.cartao_novo input + label::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #152139;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 3px;
+  }
+.cartao_novo input:checked + label:before {
+    background-color: #152139;
+    box-sizing: border-box;
+    border: 3px solid white;
+    outline: 1px solid #152139;
+    padding: 4px;
+  }
+/*Pop_UP css*/
+.pop_up_novo_cartao {
+    text-align: left;
+}
+.pop_up_novo_cartao input{
+    margin-bottom: 6px;
+    border-radius: 15px;
+    padding: 4px 45px;
+    border: 1px solid #152139;
+}
+.pop_up_novo_cartao label {
+    margin: 0%;
+    margin-bottom: 2px;
+}
+.separar_box_label {
+    display: flex;
+    flex-direction: row;
+    box-shadow: none;
+    margin: 0%;
+    padding: 0%;
+}
+.separar_box_label label {
+   margin-right: 80px;
+   margin-left: 10px;
+}
+.separar_box {
+    display: flex;
+    flex-direction: row;
+    box-shadow: none;
+    justify-content: center;
+    margin: 0%;
+    padding: 0%;
+}
+.pop_up_novo_cartao {
+    padding: 20px 20px ;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.pop_up_novo_cartao input {
+    padding-left: 10px;
+    padding-right: 80px;
+}
+.pop_up_novo_cartao h1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.separar_box input {
+    padding: 4px 20px;
+    width: 135px;
+    height: 35px;
+    margin:2px;
+    margin-bottom: 6px;
+    border: 1px solid #152139;
+    padding-left: 10px;
+}
+.radio_salvar_cartao {
+    box-shadow: none;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    margin: 15px;
+    padding: 10px;
+}
+#cpf_do_titular{
+    margin-bottom: 15px;
+}
+.radio_salvar_cartao input {
+    margin: 4px;
+}
+.radio_salvar_cartao label {
+    margin: 0;
+}
+/* radio_salvar_cartao radio button*/
+.radio_salvar_cartao input {
+    display: none;
+}
+.radio_salvar_cartao {
+    box-shadow: none;
+    padding: 0%;
+    margin: 0%;
+}
+.radio_salvar_cartao input + label::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #152139;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 3px;
+  }
+.radio_salvar_cartao input:checked + label:before {
+    background-color: #152139;
+    box-sizing: border-box;
+    border: 3px solid white;
+    outline: 1px solid #152139;
+    padding: 4px;
+  }
+.finalizar_compra {
+    padding: 5px 5px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+}
+.finalizar_compra button {
+    padding: 7px 50px;
+    font-size: 16px;
+}
+/* Css finalizar compra*/
+.pagamento_finalizado {
+    box-shadow: none;
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+    vertical-align: middle;
+}
+.h1_finalizar-compra {
+    margin-bottom: 24px;
+    font-size: 30px;
+}
+.livro_comprado {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.livro_comprado img {
+   border-radius: 15px;
+   width: 80px;
+   height: 115px;
+   margin-right: 30px;
+}
+.texto_livro_comprado {
+    box-shadow: none;
+    margin: 0%;
+    padding: 0%;
+}
+.cor_texto{
+    color: #152139;
+}
+.preco_texto {
+    color: #FF6D1F;
+}
+.codigo_rastreio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.texto_codigo_rastreio {
+    color: #FF6D1F;
+    margin-right: 10px;
+}
+.pagamento_finalizado button{
+    padding: 7px 40px;
+    font-size: 16px;
+}

@@ -1,3 +1,13 @@
+/*divs de visibilidade*/
+.escondido{
+    display: none;
+}
+
+.aparecendo{
+    display: block;
+}
+
+/*css da tela*/
 .container_pedidos{
     margin: 0 10px;
 }
@@ -38,7 +48,12 @@ p{
     text-align: center;
 }
 
-.botoes-confirmar{
+.botoes_confirmar{
+    align-items: center;
+    text-align: center;
+}
+
+.entregar{
     align-items: center;
     text-align: center;
 }

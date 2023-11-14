@@ -9,10 +9,10 @@ export class PagamentoComponent implements OnInit {
 
 
   //criando uma variável pra colocar a classe de visibilidade
-  view_Endereco:string = 'aparecendo'
-  view_Entrega:string = 'escondido'
-  view_Cartao:string = 'escondido'
-
+  view_endereco_entrega:string = 'aparecendo'
+  view_cartao:string = 'escondido'
+  popUp_novo_cartao:string = 'escondido'
+  view_pagamento_finalizado:string = 'escondido'
 
   constructor() { }
 
@@ -21,16 +21,30 @@ export class PagamentoComponent implements OnInit {
 
 
   //FUNÇÃO QUE MUDA A CLASSE DE VISIBILIDADE
-  mudar_viewEntrega(){
+  mudar_view_endereco_entrega(){
     //mostra a entrega
-    this.view_Entrega = 'aparecendo'
-
+    this.view_cartao = 'aparecendo'
     //esconde o endereco
-    this.view_Endereco = 'escondido'
+    this.view_endereco_entrega = 'escondido'
+    
   }
+  popUp_view_novo_cartao() {
 
-  mudar_viewCartao():void{
-    this.view_Cartao = 'aparecendo'
+      this.popUp_novo_cartao = 'aparecendo'
+  
   }
+  popUp_esconder_novo_cartao(){
 
+    this.popUp_novo_cartao = 'escondido'
+
+  }
+  mudar_view_pagamento_finalizado(){
+
+    this. view_pagamento_finalizado = 'aparecendo'
+
+    this.view_endereco_entrega = 'escondido'
+
+    this.view_cartao = 'escondido'
+
+  }
 }
