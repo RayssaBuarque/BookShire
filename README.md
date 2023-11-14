@@ -60,6 +60,7 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 
 #### 5fth Sprint -- Componentes Complementares
 - [ ] ⭐ Ajeitar o CSS da seção "avaliações" do usuário na TELA PERFIL
+- [ ] ⚠️ Dinamizar confirmação de Denúncia
 
 #### 6fth Sprint -- Conexões com o Banco
 - [x] 👤 Fazer conexões de dados de Usuários
