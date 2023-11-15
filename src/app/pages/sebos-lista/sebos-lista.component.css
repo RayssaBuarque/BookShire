@@ -2,11 +2,12 @@
     padding: 0 24px;
 }
 
-.h2{
+.tituloSecao{
     text-align: center;
     font-family: 'Advent Pro', sans-serif;
     font-size: 28px;
     color: black;
+    margin-top: 12px;
 }
 
 a{
