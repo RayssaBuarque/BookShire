@@ -62,6 +62,10 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [ ] ⭐ Ajeitar o CSS da seção "avaliações" do usuário na TELA PERFIL
 - [ ] ⚠️ Ajeitar o CSS do componente MSG DENÚNCIA
 
+###### 5SP Bugs 👾👾👾
+- [ ] Repor bottom nav bar de CHAT
+- [ ] Consertar view da média de avaliação de usuários SEM AVALIAÇÃO
+
 #### 6fth Sprint -- Conexões com o Banco
 - [x] 👤 Fazer conexões de dados de Usuários
 - [ ] 📢 Fazer conexões de dados de Anúncios
