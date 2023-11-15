@@ -39,7 +39,8 @@ export class PerfilComponent implements OnInit {
       .then( (res:JSON) => {
         this.dadosUsuario = res
       
-        this.mediaAvaliacao = this.dadosUsuario[0].mediaAvaliacao
+        let mediaAval = this.dadosUsuario[0].mediaAvaliacao
+        this.mediaAvaliacao = (mediaAval != null)? mediaAval : 0
         this.nome_usuario = this.dadosUsuario[0].nome
         this.url_fotoUsuario = this.dadosUsuario[0].fotoUsuario
         this.getEndereco(this.dadosUsuario[0].Id_usuario);
