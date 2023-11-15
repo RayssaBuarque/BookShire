@@ -70,9 +70,42 @@
 }
 
 /* CSS DA PARTE DE AVALIAÇÃO DO PERFIL */
+
+.container__avaliacao{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container__avaliacao h1 {
+    text-align: center;
+}
+
 .estrelinhas > img{
-    height: 40px;
-    width: 40px;
+    height: 60px;
+    width: 60px;
+    margin: 10px;
+}
+
+.nota__grande{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+    align-items: center;
+}
+
+.nota__grande h1 {
+    font-size: 50px;
+    margin: 0%;
+}
+
+.estrelinhas {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .pedidos__perfil{

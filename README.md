@@ -59,8 +59,8 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 
 #### 5fth Sprint -- Componentes Complementares
 - [x] 📚 Fazer conexões de dados de Sebos
-- [ ] ⭐ Ajeitar o CSS da seção "avaliações" do usuário na TELA PERFIL
-- [ ] ⚠️ Ajeitar o CSS do componente MSG DENÚNCIA
+- [x] ⭐ Ajeitar o CSS da seção "avaliações" do usuário na TELA PERFIL
+- [x] ⚠️ Ajeitar o CSS do componente MSG DENÚNCIA
 
 ###### 5SP Bugs 👾👾👾
 - [ ] Repor bottom nav bar de CHAT

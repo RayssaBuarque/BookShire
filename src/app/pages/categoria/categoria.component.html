@@ -24,8 +24,12 @@
 
     <!-- botões de paginação -->
     <div class="container__paginacao" style="padding-bottom: 50px">
-        <button type="button" (click)="this.recuarLista_Livros()"> < </button>
-        <button type="button" (click)="this.avancarLista_Livros()" > > </button>
+        <button type="button" (click)="this.recuarLista_Livros()"> 
+            <img src="../../../assets/icons/seta_voltar_azul_scuro.svg" (click)="this.recuarLista_Livros()"/>
+        </button>
+        <button type="button" (click)="this.avancarLista_Livros()" > 
+            <img src="../../../assets/icons/seta_voltar_azul_scuro.svg" class="img_seta" (click)="this.avancarLista_Livros()"/>
+        </button>
     </div>
     
 </div>
