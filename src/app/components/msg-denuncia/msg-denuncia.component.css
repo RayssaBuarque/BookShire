@@ -47,12 +47,28 @@
     right: 0;
     
     margin-left: auto; 
-    margin-right: auto; 
+    margin-right: auto;
+    z-index: 10
+
+}
+
+.bloqueado_img  {
+    margin-top: 10px;
+    width: 80px;
+    height: 80px;
+}
+
+.container__msg-denuncia p {
+    color: white;
+    margin: 10px;
 }
 
 .btn__opcoes > button{
+    margin: 10px;
+    background-color: #152139;
+    color: white;
     border: none;
     border-radius: 20px;
 
-    padding: 7px 22px;
+    padding: 4px 25px;
 }

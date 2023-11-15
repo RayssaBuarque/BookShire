@@ -4,14 +4,19 @@
 <div class="container__tela" [class]="visibilidade">
     <div class="container__msg-denuncia">
 
+    
         <div class="primeiraEtapa" *ngIf="etapa==1">
-
+            
+           
+            
             <!-- DAQUI PRA BAIXO PRECISA ARRUMAR NO CSS -->
 
             <div class="icone__denuncia">
                 <img src="" alt="">
             </div>
-        
+
+            <img src="../../../assets/icons/bloqueado.svg" class="bloqueado_img"/>
+            
             <div class="texto__denuncia">
                 <p>Deseja denunciar essa transação com {{usuario}}?</p>
                 <p>Ao denunciar, suas transações serão bloqueadas até confirmarmos e verificarmos a denúncia.</p>
