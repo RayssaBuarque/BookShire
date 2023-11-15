@@ -34,7 +34,6 @@ export class GraficoAvaliacaoComponent implements OnInit {
 
     for(let i = 0; i<Number(this.valorMax); i++){
       let nota = Number(res[i].notaAvaliacao)
-      console.log(nota)
 
       //registrando a qtd de notas por estrela na matriz
       if(nota == 1){

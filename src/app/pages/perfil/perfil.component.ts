@@ -56,7 +56,6 @@ export class PerfilComponent implements OnInit {
         for (let i = 0; i< res.length; i++){
           this.idAnuncios.push( res[i].Id_anuncio )
         }
-        // console.log(this.idAnuncios)
       })
   }
 
@@ -68,10 +67,10 @@ export class PerfilComponent implements OnInit {
         for(let i = 0; i< res.length; i++){
           this.idPedidos.push(res[i].Id_pedido)
         }
-        // console.log(this.idPedidos)
       })
   }
 
+  //pegando o endereço do usuário
   getEndereco(id:number):void{
     this.crud.read('/endereco', '', `?Id_usuario=${id}`)
       .then( (res:any) =>{
