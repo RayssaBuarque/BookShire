@@ -3,8 +3,9 @@ img{
     height: 80px;
     border-radius: 50%;
     align-items: center;
-
+    object-fit: cover;
 }
+
 .sebo_unico{
     background-color: #D7DEEA;
     border-radius: 10px;
@@ -26,8 +27,3 @@ img{
     font-family: 'Poppins', sans-serif;
   
 }
-
-
-
-
-

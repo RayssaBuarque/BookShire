@@ -9,11 +9,9 @@
     <div class="lista_de_sebos">
         <h2 class="tituloSecao">SEBOS</h2>
         
-        <app-sebos-cadastrados-lista></app-sebos-cadastrados-lista>
-        <app-sebos-cadastrados-lista></app-sebos-cadastrados-lista>
-        <app-sebos-cadastrados-lista></app-sebos-cadastrados-lista>
-        <app-sebos-cadastrados-lista></app-sebos-cadastrados-lista>
-        <app-sebos-cadastrados-lista></app-sebos-cadastrados-lista>
+        <app-sebos-cadastrados-lista *ngFor="let sebo of sebosIds"
+            idSebo = "{{sebo}}"
+        ></app-sebos-cadastrados-lista>
         
     </div>
     <br><br><br><br><br>
