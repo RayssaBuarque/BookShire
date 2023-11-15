@@ -87,6 +87,7 @@ This project was made with:
 - [AWS Lambda](https://aws.amazon.com/pm/lambda/?trk=56f58804-91cd-4af4-98d4-afe277a57fd3&sc_channel=ps&ef_id=CjwKCAiA3aeqBhBzEiwAxFiOBr1fz1cyLtHgc7qp1qWNMpnqEjdUU9-7QoD1brKaXWGKrC1MRMLKIRoCQRoQAvD_BwE:G:s&s_kwcid=AL!4422!3!651510591822!e!!g!!aws%20lambda!19828231347!148480170233)
 - [AWS API Gateway](https://aws.amazon.com/api-gateway/) 
 
+
 ### Dependencies:
     
 Angular CLI:
