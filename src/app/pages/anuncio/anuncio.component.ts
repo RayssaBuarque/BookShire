@@ -72,6 +72,11 @@ export class AnuncioComponent implements OnInit {
     if(this.interesse == 'Comprar'){
       this.router.navigate([`../anuncios/${this.idLivro}/${this.idAnuncio}/pagamento`]);
     }else{
+      let vBody = {
+        "anuncio_status": "em andamento"
+      }
+
+      this.crud.update('/anuncios', `${this.idAnuncio}`, vBody) //atualizando status do livro no bd
       this.router.navigate([`../chat`]);
     }
   }

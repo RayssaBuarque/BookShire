@@ -45,8 +45,8 @@ export class CrudService {
   }
 
   //linkar UPDATE
-  update(baseUrl:string, param:string):any{
-    // return this.readService.read(this.apiUrl, baseUrl, param);
+  update(baseUrl:string, param:string, body:any):any{
+    return this.updateService.update(this.apiUrl, baseUrl, param, body);
   }
 
   //linkar DELETE

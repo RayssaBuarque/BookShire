@@ -26,7 +26,7 @@ export class UpdateService {
       body:JSON.stringify(vbody)
     }
 
-    return fetch(`${apiUrl}${baseUrl}${param}`, config)
+    return fetch(`${apiUrl}${baseUrl}/${param}`, config)
       .then( (res:any) => res.json() )
   }
 }
