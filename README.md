@@ -62,6 +62,7 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [x] ⭐ Ajeitar o CSS da seção "avaliações" do usuário na TELA PERFIL
 - [x] ⚠️ Ajeitar o CSS do componente MSG DENÚNCIA
 - [ ] 🚪 Criar tela de login/cadastro @MARIA CLARA
+- [ ] 🔐 Configurar acesso de usuário dependendo do cadastro @RAYSSA
 
 ###### 5SP Bugs 👾👾👾
 - [x] 💀 Repor bottom nav bar de CHAT
