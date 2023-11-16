@@ -39,7 +39,7 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [x] 👤 Estilizar COMPONENTE pedidos pro Perfil @MALU
 - [x] 📢 Desenvolver tela de Anúncios @RAYSSA
 - [x] 📢 Desenvolver tela de Anúncio Específico @RAYSSA
-- [x] 📢 Estilizar Tela de criação de anúncio @MARIA CLARA
+- [ ] 📢 Estilizar Tela de criação de anúncio @MARIA CLARA
 - [x] 💵 Desenvolver tela de pagamento @MARIA CLARA
 - [x] 📪 Desenvolver tela de Chat @ MALU
 - [x] 📬 Desenvolver tela de Chat Específico @MALU
@@ -67,8 +67,10 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [x] 💀 Repor bottom nav bar de CHAT
 - [x] ⭐ Consertar view da média de avaliação de usuários SEM AVALIAÇÃO
 - [ ] ↖️ Ajeitar setinha do pagamento @MARIA CLARA
+- [ ] 🔨 Consertar o css da barra de navegação @MARIA CLARA
 
 #### 6fth Sprint -- Conexões com o Banco
+- [ ] Tornar telas principais responsivas @MARIA CLARA
 - [x] 👤 Fazer conexões de dados de Usuários
 - [ ] 📢 Fazer conexões de dados de Anúncios
 - [ ] 📪 Fazer conexões de dados de Chats

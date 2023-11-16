@@ -1,3 +1,7 @@
+a{
+    text-decoration: none;
+}
+
 img{
     width: 80px;
     height: 80px;
@@ -6,8 +10,7 @@ img{
     object-fit: cover;
 }
 
-.sebo_unico{
-    background-color: #D7DEEA;
+.sebo_unico{    
     border-radius: 10px;
     margin-top: 30px;
     padding: 15px;
@@ -15,15 +18,16 @@ img{
     align-items: center;
 }
 
-.p{
+a .p{
     margin-left: 35px;
     font-family: 11px;
     font-family: 'Poppins', sans-serif;
+    color: var(--book-orange);
 }
 
-.h3{
+a .h3{
     margin-left: 35px;
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
-  
+    color: var(--bookshire-blue);
 }

@@ -38,17 +38,31 @@ export class PerfilComponent implements OnInit {
     this.crud.read('/users', this.idUsuario, "")
       .then( (res:JSON) => {
         this.dadosUsuario = res
+        let foto = this.dadosUsuario[0].fotoUsuario
       
         let mediaAval = this.dadosUsuario[0].mediaAvaliacao
         this.mediaAvaliacao = (mediaAval != null)? mediaAval : 0
         this.nome_usuario = this.dadosUsuario[0].nome
-        this.url_fotoUsuario = this.dadosUsuario[0].fotoUsuario
+
+        let sebo = this.isSebo(this.idUsuario)
+
+        this.url_fotoUsuario = (foto != null)? foto : '../../../assets/thumbnails/default-book_thumbnail.png'
         this.getEndereco(this.dadosUsuario[0].Id_usuario);
       })
     
     this.getAnuncios()
     this.getPedidos()
   } 
+
+  // Descobrindo se o usuário é um sebo ou não
+  isSebo(id:string | null):void{
+    this.crud.read('/users',``,`?get_Sebos=sim&idSebo=${id}`)
+      .then( (res:any) => {
+        if(res.length != 0){
+          this.url_fotoUsuario = '../../../assets/thumbnails/Capa_sebos.png'
+        }
+      }) 
+  }
 
   // coletando todos os anúncios do usuário no banco e os salva numa array 
   getAnuncios():void{
