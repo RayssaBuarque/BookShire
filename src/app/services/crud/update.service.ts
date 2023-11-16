@@ -17,8 +17,16 @@ export class UpdateService {
     }`,
   };
 
-  update(apiUrl:string,baseUrl:string, param:string){
-    fetch(`${apiUrl}${baseUrl}${param}`)
-    .then( (res) => res.json() )
+  update(apiUrl:string, baseUrl:string, param:string, vbody:any){
+    let config = {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json', 
+      },
+      body:JSON.stringify(vbody)
+    }
+
+    return fetch(`${apiUrl}${baseUrl}${param}`, config)
+      .then( (res:any) => res.json() )
   }
 }

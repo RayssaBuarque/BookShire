@@ -58,7 +58,7 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [x] 📔 Consertar capa padrão de livro @RAYSSA
 
 #### 5fth Sprint -- Componentes Complementares
-- [ ] 📚 Fazer conexões de dados de Sebos
+- [x] 📚 Fazer conexões de dados de Sebos
 - [x] ⭐ Ajeitar o CSS da seção "avaliações" do usuário na TELA PERFIL
 - [x] ⚠️ Ajeitar o CSS do componente MSG DENÚNCIA
 - [ ] 🚪 Criar tela de login/cadastro @MARIA CLARA
