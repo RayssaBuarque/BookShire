@@ -13,10 +13,8 @@
 
 .background__capa{
     height: 250px;
-    background-color: var(--bookshire-blue);
-    /* filter: blur(10px);  */
-    /* filter: blur(8px);
-    -webkit-filter: blur(8px); */
+    background-image: url('../../../assets/thumbnails/Capa_livro_atras.png');
+    background-size: cover;
 }
 
 .anuncio__capa{
