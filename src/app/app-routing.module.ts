@@ -58,16 +58,16 @@ const routes: Routes = [
     component: AnuncioComponent
   },
   {
+    path:'anuncios/:idLivro/:idAnuncio/pagamento',
+    component: PagamentoComponent
+  },
+  {
     path:'anunciar/:idLivro',
     component: CriacaoAnuncioComponent
   },
   {
     path:'rayssa',
     component: ChatComponent
-  },
-  {
-    path:'mariaclara',
-    component: PagamentoComponent
   },
   {
     path:'notificacoes',

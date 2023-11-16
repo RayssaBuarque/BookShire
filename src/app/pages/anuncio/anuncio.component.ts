@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Livro } from 'src/app/components/livros/livro-modelo';
 import { Anuncio } from 'src/app/models/anuncio';
 import { CrudService } from 'src/app/services/crud/crud.service';
@@ -23,12 +23,14 @@ export class AnuncioComponent implements OnInit {
   private dadosAnuncio!:Anuncio
   descricaoLivro:string[] = [];
   idVendedor:string = "0";
+
   infoTransacao:string = 'Informação';
   interesse:string = 'Negociar'
   localAnuncio:string = 'Local do Anúncio';
 
   constructor(
     private crud:CrudService,
+    private router:Router,
     private route:ActivatedRoute,
     private setter:SetLivroService
     ) { }
@@ -65,7 +67,16 @@ export class AnuncioComponent implements OnInit {
     })
   }
 
-  
+  // função que abre chat com vendedor OU abre tela de pagamento
+  prosseguir():void{
+    if(this.interesse == 'Comprar'){
+      this.router.navigate([`../anuncios/${this.idLivro}/${this.idAnuncio}/pagamento`]);
+    }else{
+      this.router.navigate([`../chat`]);
+    }
+  }
+
+  // função que coleta informações do anúncio
   getAnuncio():void{
     this.crud.read('/anuncios', this.idAnuncio, "")
       .then( (res:any) => {
