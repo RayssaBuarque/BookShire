@@ -44,9 +44,10 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [x] 📪 Desenvolver tela de Chat @ MALU
 - [x] 📬 Desenvolver tela de Chat Específico @MALU
 - [x] 📬 Consertar barra de mensagens na tela de Chat Específico @MALU 
-- [ ] 📬 Conectar header de tela de chat específico com o usuário @
 - [x] 🔎 Criar barra de pesquisa para tela de sebos @MALU
 - [x] 🔎 Criar barra de pesquisa para tela de chat @MALU
+- [ ] 🔎 Conectar barra de pesquisa de sebos no bd 
+- [ ] 🔎 Conectar barra de pesquisa de chat no bd
 
 #### 6xth Sprint -- Conexão das Telas
 - [x] 🙌 Desenvolver CRUD anúncios AWS API @RAYSSA
