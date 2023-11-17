@@ -76,7 +76,12 @@ export class AnuncioComponent implements OnInit {
         "anuncio_status": "em andamento"
       }
 
-      this.crud.update('/anuncios', `${this.idAnuncio}`, vBody) //atualizando status do livro no bd
+       //atualizando status do livro no bd
+      this.crud.update('/anuncios', `${this.idAnuncio}`, vBody)
+
+      //registrando pedido no bd
+      // this.crud.create()      
+      
       this.router.navigate([`../chat`]);
     }
   }
