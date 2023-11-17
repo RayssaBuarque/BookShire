@@ -14,6 +14,8 @@ export class PedidoComponent implements OnInit {
 
   @Input() idPedido:string = 'Id do pedido'
   private idCliente:string = "Id do Cliente"
+  idAnunciante!:string
+
   nomeAnunciante:string = "Nome do Anunciante"
   transacao:string = 'Transação'
   tituloLivro:string = 'Título do Livro'
@@ -32,7 +34,7 @@ export class PedidoComponent implements OnInit {
     this.crud.read('/pedidos', '', `?Id_pedido=${this.idPedido}`)
       .then( (res:any) => {
         this.idCliente = res[0].Id_cliente
-        // this.idAnunciante = res[0].Id_anunciante
+        this.idAnunciante = res[0].Id_anunciante
         // console.log(res)
         
         let idAnuncio = res[0].Id_anuncio

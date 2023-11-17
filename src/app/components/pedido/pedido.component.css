@@ -52,10 +52,11 @@ p{
 
 #nome{
     margin-bottom: 10px;
-    color: #1F3B6F;
+    color: var(--bookshire-blue);
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    text-decoration: none;
 }
 
 .botoes_confirmar{

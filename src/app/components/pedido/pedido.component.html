@@ -7,7 +7,9 @@
             <!-- Informações base do pedido -->
             <h2 class="tituloLivro">{{tituloLivro}}</h2>
             <p>{{transacao}} efetuada com: </p>
-            <p id="nome"> {{nomeAnunciante}} </p>
+            <a id="nome" href="perfil/{{idAnunciante}}">
+                <p id="nome"> {{nomeAnunciante}} </p>
+            </a>
 
             <!-- View de andamento -->
             <div class="entregar" [ngClass]="view_entregar">
