@@ -41,6 +41,8 @@ import { BottomChatTextboxComponent } from './components/bottom-chat-textbox/bot
 import { PagamentoComponent } from './pages/pagamento/pagamento.component';
 import { CodigoAleatorioComponent } from './components/codigo-aleatorio/codigo-aleatorio.component';
 import { MsgDenunciaComponent } from './components/msg-denuncia/msg-denuncia.component';
+import { BarraPesquisaSebosComponent } from './components/barra-pesquisa-sebos/barra-pesquisa-sebos.component';
+import { BarraPesquisaChatComponent } from './components/barra-pesquisa-chat/barra-pesquisa-chat.component';
 // Importing bootstrap modules
 // import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
 
@@ -85,6 +87,8 @@ import { MsgDenunciaComponent } from './components/msg-denuncia/msg-denuncia.com
     BottomChatTextboxComponent,
     CodigoAleatorioComponent,
     MsgDenunciaComponent,
+    BarraPesquisaSebosComponent,
+    BarraPesquisaChatComponent,
     
     // PesquisaAnunciarComponent
   ],

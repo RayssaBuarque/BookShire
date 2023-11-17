@@ -1,0 +1,46 @@
+.inptbarra-pesquisa-sebos{
+    width: 100%;
+    border: none;
+}
+
+.inptbarra-pesquisa-sebos:focus{
+    outline: none;
+}
+
+.container_barra_chat{
+    justify-content: center;
+    width: 100%;
+}
+
+.container_chat_wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3px 5px;
+
+    border: 1px solid #1f3b6f;
+    border-radius: 50px;
+}
+
+.lupa-chat >#lupa__btn > img{
+    width: 18px;
+    height: 18px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.lupa-chat > #lupa__btn{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.caixa-texto-chat input {
+    margin-left: 8px;
+}
+
+.caixa-texto-chat{
+    width: 100%;
+}

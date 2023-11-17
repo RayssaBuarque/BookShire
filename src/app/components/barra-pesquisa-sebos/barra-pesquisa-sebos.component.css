@@ -1,0 +1,47 @@
+/*BARRA SEBOS*/
+.inptbarra-pesquisa-sebos{
+    width: 100%;
+    border: none;
+}
+
+.inptbarra-pesquisa-sebos:focus{
+    outline: none;
+}
+
+.container_barra{
+    justify-content: center;
+    width: 100%;
+}
+
+.container_sebos_wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3px 5px;
+
+    border: 1px solid #1f3b6f;
+    border-radius: 50px;
+}
+
+.wrapper-lupa-sebos >#lupa__btn > img{
+    width: 18px;
+    height: 18px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.wrapper-lupa-sebos > #lupa__btn{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper-caixa-texto input {
+    margin-left: 8px;
+}
+
+.wrapper-caixa-texto{
+    width: 100%;
+}

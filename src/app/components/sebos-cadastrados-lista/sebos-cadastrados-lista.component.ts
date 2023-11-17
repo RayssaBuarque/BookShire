@@ -7,6 +7,7 @@ import { CrudService } from 'src/app/services/crud/crud.service';
   styleUrls: ['./sebos-cadastrados-lista.component.css']
 })
 export class SebosCadastradosListaComponent implements OnInit {
+  
 
   @Input() idSebo:string = ''
   nomeSebo:string = 'Sebo'
