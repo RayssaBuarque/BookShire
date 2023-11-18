@@ -43,6 +43,7 @@ import { CodigoAleatorioComponent } from './components/codigo-aleatorio/codigo-a
 import { MsgDenunciaComponent } from './components/msg-denuncia/msg-denuncia.component';
 import { BarraPesquisaSebosComponent } from './components/barra-pesquisa-sebos/barra-pesquisa-sebos.component';
 import { BarraPesquisaChatComponent } from './components/barra-pesquisa-chat/barra-pesquisa-chat.component';
+import { LoginComponent } from './pages/login/login.component';
 // Importing bootstrap modules
 // import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
 
@@ -89,6 +90,7 @@ import { BarraPesquisaChatComponent } from './components/barra-pesquisa-chat/bar
     MsgDenunciaComponent,
     BarraPesquisaSebosComponent,
     BarraPesquisaChatComponent,
+    LoginComponent,
     
     // PesquisaAnunciarComponent
   ],

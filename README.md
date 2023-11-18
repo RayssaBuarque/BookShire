@@ -78,7 +78,7 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [ ] Tornar telas principais responsivas @MARIA CLARA
 - [x] 👤 Fazer conexões de dados de Usuários
 - [ ] 📢 Fazer conexões de dados de Anúncios
-- [ ] 📪 Fazer conexões de dados de Chats
+- [x] 📪 Fazer conexões de dados de Chats
 - [ ] 📨 Fazer conexões de dados de Mensagens
 - [ ] 🖇️ Linkar tela de Perfil corretamente (+routing-module)
 

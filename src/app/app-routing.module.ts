@@ -17,6 +17,8 @@ import { SebosListaComponent } from './pages/sebos-lista/sebos-lista.component';
 import { ChatGeralComponent } from './pages/chat-geral/chat-geral.component';
 import { ChatIndividualComponent } from './pages/chat-individual/chat-individual.component';
 import { PagamentoComponent } from './pages/pagamento/pagamento.component';
+import { LoginComponent } from './pages/login/login.component';
+
 const routes: Routes = [
   {
     path:'',
@@ -67,7 +69,7 @@ const routes: Routes = [
   },
   {
     path:'rayssa',
-    component: ChatComponent
+    component: LoginComponent
   },
   {
     path:'notificacoes',

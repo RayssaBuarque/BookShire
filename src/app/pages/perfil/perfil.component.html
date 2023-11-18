@@ -1,7 +1,8 @@
 
-<app-top-nav-bar></app-top-nav-bar>
+<app-top-nav-bar *ngIf="idUsuario == '2'"></app-top-nav-bar>
+<app-btn-voltar *ngIf="idUsuario != '2'"></app-btn-voltar>
 
-<div class="container__perfil container">
+<div class="container__perfil" [class]="tela">
 
     <div class="header__perfil">
 

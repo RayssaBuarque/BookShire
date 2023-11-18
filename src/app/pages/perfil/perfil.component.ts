@@ -17,6 +17,8 @@ export class PerfilComponent implements OnInit {
   url_fotoUsuario:string = '../../../assets/thumbnails/default-book_thumbnail.png'
   nome_usuario:string = 'Nome do Usuário'
   localUsuario:string = 'Local dos Anúncios'
+
+  tela:string = ''
   
   //Avaliação
   mediaAvaliacao:number = 0
@@ -52,6 +54,8 @@ export class PerfilComponent implements OnInit {
     
     this.getAnuncios()
     this.getPedidos()
+
+    this.tela = (this.idUsuario == '2')? 'container' : '' //adaptar com cadastro
   } 
 
   // Descobrindo se o usuário é um sebo ou não
