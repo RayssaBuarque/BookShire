@@ -52,7 +52,7 @@ export class PagamentoComponent implements OnInit {
 
     this.view_cartao = 'escondido'
 
-    this.seta_voltar_ = 'aparecendo'
+    this.seta_voltar_ = 'escondido'
 
     this.seta_voltar_principal = 'escondido'
 
@@ -66,19 +66,6 @@ export class PagamentoComponent implements OnInit {
         this.view_cartao = 'escondido'
 
     }
-    else if (this.view_pagamento_finalizado === 'aparecendo'){
-
-        this.view_endereco_entrega = 'escondido'
-
-        this.view_cartao = 'aparecendo'
-
-        this.seta_voltar_ = 'aparecendo'
-
-        this.view_pagamento_finalizado = 'escondido'
-
-        this.seta_voltar_principal = 'escondido'
-
-    }
-
+    
   }
 }
