@@ -19,9 +19,10 @@
                 <div class="container__fundo" *ngIf="processoAvaliacao == true">
                     <div class="container__avaliacao">
                         <h1>Avalie sua experiência com {{this.nomeAnunciante}}:</h1>
-                        <app-rating-stars></app-rating-stars>
-
-                        <button (click)="mudar_view_confirmar()">Confirmar</button>
+                        <app-rating-stars
+                            idUsuario="{{idCliente}}"
+                            idPedido="{{idPedido}}"
+                        ></app-rating-stars>
                     </div>
                 </div>
 

@@ -15,7 +15,7 @@ export class PedidoComponent implements OnInit {
     view_entregar:string = 'aparecendo'
 
   @Input() idPedido:string = 'Id do pedido'
-  private idCliente:string = "Id do Cliente"
+  idCliente:string = "Id do Cliente"
   idAnunciante!:string
 
   nomeAnunciante:string = "Nome do Anunciante"
@@ -34,12 +34,17 @@ export class PedidoComponent implements OnInit {
 
   ngOnInit(): void {
     
+    // verificando dados do pedido
     this.crud.read('/pedidos', '', `?Id_pedido=${this.idPedido}`)
       .then( (res:any) => {
         this.idCliente = res[0].Id_cliente
         this.idAnunciante = res[0].Id_anunciante
-        // console.log(res)
         
+        if(res[0].dataConclusao != null){
+          this.view_entregar = 'escondido'
+          this.view_botoes_confirmar = 'aparecendo'
+        }
+
         let idAnuncio = res[0].Id_anuncio
         this.getAnuncio(idAnuncio)
       })
