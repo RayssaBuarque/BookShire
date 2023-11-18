@@ -8,28 +8,29 @@
     </div>
 
     <!-- SEÇÃO DE LOGIN -->
-    <div class="container__login conteudo">
-        <div class="forms__login">
+    <div class="container__login " [ngClass]="view_login">
+        <div class="conteudos">
+            <div class="forms__login">
 
-            <div>
-                <label for="email">E-mail</label>
-                <input name="email" type="text">
+                <div>
+                    <input name="email" type="text" placeholder="E-mail">
+                </div>
+                
+                <br>
+                
+                <div>
+                    <input name="senha" type="text" placeholder="Senha">
+                </div>
             </div>
+    
             
-            <br>
-            
-            <div>
-                <label for="senha">Senha</label>
-                <input name="senha" type="text">
-            </div>
         </div>
-
-        <p>Não possui conta no BookShire?</p>
-        <button>Cadastre-se já!</button>
+            <p>Não possui conta no BookShire?</p>
+            <button (click)="mudar_tela_login()">Cadastre-se já!</button>
     </div>
     
     <!-- SEÇÃO DE CADASTRO -->
-    <div class="container__cadastro conteudo">
+    <div class="container__cadastro conteudo" [ngClass]="view_cadastro">
         <div class="forms__cadastro">
             
             <div>

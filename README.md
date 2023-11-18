@@ -71,8 +71,8 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 ###### 5SP Bugs 👾👾👾
 - [x] 💀 Repor bottom nav bar de CHAT
 - [x] ⭐ Consertar view da média de avaliação de usuários SEM AVALIAÇÃO
-- [ ] ↖️ Ajeitar setinha do pagamento @MARIA CLARA
-- [ ] 🔨 Consertar o css da barra de navegação @MARIA CLARA
+- [x] ↖️ Ajeitar setinha do pagamento @MARIA CLARA
+- [x] 🔨 Consertar o css da barra de navegação @MARIA CLARA
 
 #### 6fth Sprint -- Conexões com o Banco
 - [ ] Tornar telas principais responsivas @MARIA CLARA

@@ -532,6 +532,7 @@ img {
     vertical-align: middle;
 }
 .h1_finalizar-compra {
+    margin-top: 44px;
     margin-bottom: 24px;
     font-size: 30px;
 }
@@ -572,4 +573,24 @@ img {
 .pagamento_finalizado button{
     padding: 7px 40px;
     font-size: 16px;
+}
+/* Seta */
+
+.seta_voltar  {
+    background-color: transparent;
+    margin: 24px;
+    box-shadow: none;
+    background-color: transparent;
+    border: none;
+    margin: 0%;
+    padding: 0% ;
+}
+
+.seta_voltar img{
+    margin-top: 24px;
+    padding: 0% ;
+    box-shadow: none;
+    margin-left: 22px;
+    width: 27px;
+    height: 27px;
 }

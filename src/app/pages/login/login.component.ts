@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
+  view_login:string = 'aparecendo'
+  view_cadastro:string = 'escondido'
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  mudar_tela_login(){
+
+    this.view_cadastro = 'aparecendo'
+
+    this.view_login = 'escondido'
+
+  }
 }
