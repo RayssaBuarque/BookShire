@@ -123,3 +123,14 @@ p{
     margin-right: auto;
     z-index: 10
 }
+
+h1 {
+    color: #152139;
+}
+h3 {
+    color:#FF6D1F;
+}
+h1 {
+    margin-top: 10px;
+    font-size: 20px;
+}

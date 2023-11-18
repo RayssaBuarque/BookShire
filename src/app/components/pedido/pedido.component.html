@@ -18,7 +18,9 @@
                 <!-- POPUP DE AVALIAÇÃO -->
                 <div class="container__fundo" *ngIf="processoAvaliacao == true">
                     <div class="container__avaliacao">
-                        <h1>Avalie sua experiência com {{this.nomeAnunciante}}:</h1>
+                        <h1>Avalie sua experiência com </h1>
+                        <h3 class="nome_vendedor">{{this.nomeAnunciante}}</h3>
+                        
                         <app-rating-stars
                             idUsuario="{{idCliente}}"
                             idPedido="{{idPedido}}"
