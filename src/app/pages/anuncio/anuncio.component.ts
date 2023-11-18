@@ -12,9 +12,9 @@ import { SetLivroService } from 'src/app/services/set-livro.service';
 })
 export class AnuncioComponent implements OnInit {
 
-  idAnuncio:string | null = "2"
+  idUsuario:string | null = '2' //id do usuário
   idLivro:string | null = ""
-
+  
   tituloLivro:string = 'Título do Livro';
   autorLivro:string[] = [];
   capaLivro:string = '../../../assets/thumbnails/default-book_thumbnail.png'
@@ -23,6 +23,7 @@ export class AnuncioComponent implements OnInit {
   private dadosAnuncio!:Anuncio
   descricaoLivro:string[] = [];
   idVendedor:string = "0";
+  idAnuncio:string | null = ""
 
   infoTransacao:string = 'Informação';
   interesse:string = 'Negociar'
@@ -72,15 +73,20 @@ export class AnuncioComponent implements OnInit {
     if(this.interesse == 'Comprar'){
       this.router.navigate([`../anuncios/${this.idLivro}/${this.idAnuncio}/pagamento`]);
     }else{
+      //atualizando status do livro no bd
       let vBody = {
         "anuncio_status": "em andamento"
       }
-
-       //atualizando status do livro no bd
       this.crud.update('/anuncios', `${this.idAnuncio}`, vBody)
 
       //registrando pedido no bd
-      // this.crud.create()      
+      let body = {
+        "Id_anunciante": `${this.idVendedor}`,
+        "Id_cliente": `${this.idUsuario}`,
+        "Id_anuncio": `${this.idAnuncio}`
+      }
+      
+      this.crud.create('/pedidos', '', body)      
       
       this.router.navigate([`../chat`]);
     }
