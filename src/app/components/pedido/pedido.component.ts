@@ -5,7 +5,9 @@ import { SetLivroService } from 'src/app/services/set-livro.service';
 @Component({
   selector: 'app-pedido',
   templateUrl: './pedido.component.html',
-  styleUrls: ['./pedido.component.css']
+  styleUrls: [
+    './pedido.component.css',
+  ]
 })
 export class PedidoComponent implements OnInit {
     //criando uma variável pra colocar a classe de visibilidade
@@ -21,8 +23,9 @@ export class PedidoComponent implements OnInit {
   tituloLivro:string = 'Título do Livro'
   urlImg:string = '../../../../assets/thumbnails/default-book_thumbnail.png'
 
-  // indicador de denúncia
+  // indicadores de interaçã
   processoDenuncia:string = 'escondido';
+  processoAvaliacao:boolean = false
 
   constructor(
     private setter:SetLivroService,
@@ -55,6 +58,11 @@ export class PedidoComponent implements OnInit {
   // Função que joga o POPUP da denúncia na tela
   popDenuncia():void{
     this.processoDenuncia = 'aparecendo';
+  }
+
+  // Função que abre processo de CONFIRMAÇÃO DE ENTREGA no banco
+  confirmar_entrega():void{
+    this.processoAvaliacao = true
   }
 
   getAnuncio(idAnuncio:string):void{

@@ -66,6 +66,7 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [x] ⭐ Ajeitar o CSS da seção "avaliações" do usuário na TELA PERFIL
 - [x] ⚠️ Ajeitar o CSS do componente MSG DENÚNCIA
 - [ ] 🚪 Criar tela de login/cadastro @MARIA CLARA
+- [ ] ⭐ Ajeitar CSS de avaliação de pedido @MARIA CLARA
 - [ ] 🔐 Configurar acesso de usuário dependendo do cadastro @RAYSSA
 
 ###### 5SP Bugs 👾👾👾
@@ -78,6 +79,7 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [ ] Tornar telas principais responsivas @MARIA CLARA
 - [x] 👤 Fazer conexões de dados de Usuários
 - [ ] 📢 Fazer conexões de dados de Anúncios
+- [ ] 🎁 Fazer conexões de dados de Pedidos
 - [x] 📪 Fazer conexões de dados de Chats
 - [ ] 📨 Fazer conexões de dados de Mensagens
 - [ ] 🖇️ Linkar tela de Perfil corretamente (+routing-module)

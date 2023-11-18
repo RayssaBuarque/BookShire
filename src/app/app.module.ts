@@ -44,6 +44,7 @@ import { MsgDenunciaComponent } from './components/msg-denuncia/msg-denuncia.com
 import { BarraPesquisaSebosComponent } from './components/barra-pesquisa-sebos/barra-pesquisa-sebos.component';
 import { BarraPesquisaChatComponent } from './components/barra-pesquisa-chat/barra-pesquisa-chat.component';
 import { LoginComponent } from './pages/login/login.component';
+import { RatingStarsComponent } from './components/rating-stars/rating-stars.component';
 // Importing bootstrap modules
 // import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
 
@@ -91,6 +92,7 @@ import { LoginComponent } from './pages/login/login.component';
     BarraPesquisaSebosComponent,
     BarraPesquisaChatComponent,
     LoginComponent,
+    RatingStarsComponent,
     
     // PesquisaAnunciarComponent
   ],

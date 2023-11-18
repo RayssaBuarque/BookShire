@@ -13,7 +13,19 @@
 
             <!-- View de andamento -->
             <div class="entregar" [ngClass]="view_entregar">
-                <button id="confirmar" (click)="mudar_view_confirmar()">Deseja confirmar?</button>
+                <button id="confirmar" (click)="confirmar_entrega()">Deseja confirmar?</button>
+                
+                <!-- POPUP DE AVALIAÇÃO -->
+                <div class="container__fundo" *ngIf="processoAvaliacao == true">
+                    <div class="container__avaliacao">
+                        <h1>Avalie sua experiência com {{this.nomeAnunciante}}:</h1>
+                        <app-rating-stars></app-rating-stars>
+
+                        <button (click)="mudar_view_confirmar()">Confirmar</button>
+                    </div>
+                </div>
+
+                <!-- botão de denúncia -->
                 <app-msg-denuncia 
                     transacao="{{transacao}}"
                     usuario="{{nomeAnunciante}}"
@@ -23,7 +35,7 @@
 
             <!-- view de histórico -->
             <div class="botoes_confirmar"  [ngClass]="view_botoes_confirmar">
-                <button id="confirmar">Confirmar entrega</button>
+                <button id="confirmar">Entrega Confirmada</button>
             </div>
         </div>
     </div>

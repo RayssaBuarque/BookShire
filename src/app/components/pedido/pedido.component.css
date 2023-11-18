@@ -89,3 +89,37 @@ p{
     font-family: 'Advent Pro', sans-serif;
     font-weight: bold;
 }
+
+
+/* ****************** POPUP DE AVALIAÇÃO ****************** */
+
+.container__fundo{
+    background-color: rgba(24, 23, 61, 0.295);
+    width: 100%;
+    height: 100%;
+    position:fixed;
+    top:0;
+    right: 0;
+    left: 0;
+}
+
+.container__avaliacao{
+    background-color: var(--book-clear);
+    border-radius: 16px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%; 
+    padding: 20px;
+
+    position:fixed;
+    top:25%;
+    left: 0; 
+    right: 0;
+    
+    margin-left: auto; 
+    margin-right: auto;
+    z-index: 10
+}
