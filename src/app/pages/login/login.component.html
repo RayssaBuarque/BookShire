@@ -25,48 +25,35 @@
     
             
         </div>
+            <button class="logar_button">Entrar</button>
             <p>Não possui conta no BookShire?</p>
-            <button (click)="mudar_tela_login()">Cadastre-se já!</button>
+            <button class="button_margin" (click)="mudar_tela_login()">Cadastre-se já!</button>
     </div>
     
     <!-- SEÇÃO DE CADASTRO -->
-    <div class="container__cadastro conteudo" [ngClass]="view_cadastro">
+    <div class="container__cadastro " [ngClass]="view_cadastro">
         <div class="forms__cadastro">
             
             <div>
-                <label for="nome">Nome Completo</label>
-                <input name="nome" type="text">
+                <input name="nome" type="text" placeholder="Nome">
             </div>
-            
-            <br>
-            <br>
+   
+            <div>
+                <input name="email" type="text" placeholder="E-mail">
+            </div>
+    
+            <div>
+                <input name="senha" type="text" placeholder="Senha">
+                <input name="senhaConfirm" type="text" placeholder="Confirmar Senha">
+            </div>
             
             <div>
-                <label for="email">E-mail</label>
-                <input name="email" type="text">
+                <input name="telefone" type="text" placeholder="Telefone">
             </div>
             
-            <br>
-            <br>
-            
-            <div>
-                <label for="senha">Senha</label>
-                <input name="senha" type="text">
-                <br>
-                <label for="senhaConfirm">Confirmar Senha</label>
-                <input name="senhaConfirm" type="text">
-            </div>
-            
-            <br>
-            <br>
-            
-            <div>
-                <label for="telefone">Telefone</label>
-                <input name="telefone" type="text">
-            </div>
-            
+            <button class="cadastrar_button">Cadastrar</button>
             <p>Já é cadastrado?</p>
-            <button>Faça Login</button>
+            <button class="button_margin" (click)="mudar_tela_cadastro()">Faça Login</button>
         </div>
 
     </div>

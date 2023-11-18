@@ -30,7 +30,7 @@
 }
 
 .identidade__visual > img{
-    margin-top: 60px;
+    margin-top: 30px;
     margin-bottom: 14px;
     width: 200px;
     height: 200px;
@@ -61,7 +61,7 @@
     justify-content: center;
 }
 
-.container__inicial button{
+.button_margin{
     background-color: transparent;
     border: none;
     color: var(--book-orange);
@@ -74,5 +74,36 @@
 }
 .container__login p{
     color: white;
+    margin-top: 20px;
+}
+/* Css cadastro */
+.container__cadastro p {
+    color: white;
     margin-top: 40px;
+}
+.forms__cadastro input {
+    border-radius: 15px;
+    border: 1px solid #152139;
+    padding: 5px 20px;
+    margin: 10px;
+}
+.forms__cadastro {
+    margin-top: 24px;
+}
+.cadastrar_button {
+    background-color: #FF6D1F;
+    color: white;
+    margin-top: 24px;
+    margin-bottom: 20px;
+    padding: 7px 40px;
+    border-radius: 15px;
+    border: none;
+}
+.logar_button {
+    background-color: #FF6D1F;
+    color: white;
+    margin-bottom: 20px;
+    padding: 7px 40px;
+    border-radius: 15px;
+    border: none;
 }

@@ -22,4 +22,11 @@ export class LoginComponent implements OnInit {
     this.view_login = 'escondido'
 
   }
+  mudar_tela_cadastro(){
+
+    this.view_cadastro ='escondido'
+
+    this.view_login = 'aparecendo'
+
+  }
 }
