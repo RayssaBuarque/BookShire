@@ -107,6 +107,7 @@
 }
 
 .container__vendedor{
+    padding: 10px 0px;
     border-radius: 20px;
     margin: 2rem 0;
     display: flex;
