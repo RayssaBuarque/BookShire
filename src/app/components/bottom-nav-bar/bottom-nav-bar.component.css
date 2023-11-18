@@ -48,6 +48,7 @@
     align-items: row;
     justify-content: space-around;
     color: white;
+    padding: 0%;
 }
 
 .icons > .icon{

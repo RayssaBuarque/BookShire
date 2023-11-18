@@ -1,4 +1,8 @@
-<app-btn-voltar></app-btn-voltar>
+<p [ngClass]="seta_voltar_principal"><app-btn-voltar></app-btn-voltar></p>
+
+<button (click)="seta_voltar()" class="seta_voltar" [ngClass]="seta_voltar_">
+    <img src="../../../assets/icons/seta_voltar_azul_scuro.svg" >
+</button>
 
 <!-- container da tela -->
 <div class="container__pagamento">

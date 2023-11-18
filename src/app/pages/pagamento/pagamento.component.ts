@@ -13,6 +13,8 @@ export class PagamentoComponent implements OnInit {
   view_cartao:string = 'escondido'
   popUp_novo_cartao:string = 'escondido'
   view_pagamento_finalizado:string = 'escondido'
+  seta_voltar_principal:string = 'aparecendo'
+  seta_voltar_:string = 'escondido'
 
   constructor() { }
 
@@ -26,6 +28,10 @@ export class PagamentoComponent implements OnInit {
     this.view_cartao = 'aparecendo'
     //esconde o endereco
     this.view_endereco_entrega = 'escondido'
+
+    this.seta_voltar_ = 'aparecendo'
+
+    this.seta_voltar_principal = 'escondido'
     
   }
   popUp_view_novo_cartao() {
@@ -45,6 +51,34 @@ export class PagamentoComponent implements OnInit {
     this.view_endereco_entrega = 'escondido'
 
     this.view_cartao = 'escondido'
+
+    this.seta_voltar_ = 'aparecendo'
+
+    this.seta_voltar_principal = 'escondido'
+
+  }
+  seta_voltar(){
+
+    if(this.view_cartao === 'aparecendo'){
+
+        this.view_endereco_entrega = 'aparecendo'
+
+        this.view_cartao = 'escondido'
+
+    }
+    else if (this.view_pagamento_finalizado === 'aparecendo'){
+
+        this.view_endereco_entrega = 'escondido'
+
+        this.view_cartao = 'aparecendo'
+
+        this.seta_voltar_ = 'aparecendo'
+
+        this.view_pagamento_finalizado = 'escondido'
+
+        this.seta_voltar_principal = 'escondido'
+
+    }
 
   }
 }
