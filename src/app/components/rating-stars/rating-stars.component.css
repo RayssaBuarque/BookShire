@@ -31,7 +31,7 @@
 .rate > input:checked ~ label:hover,
 .rate > input:checked ~ label:hover ~ label,
 .rate > label:hover ~ input:checked ~ label {
-    color: #c59b08;
+    color: #d8ab09;
 }
 
 /* Modified from: https://github.com/mukulkant/Star-rating-using-pure-css */
