@@ -11,6 +11,7 @@ export class LoginComponent implements OnInit {
   view_cadastro:string = 'escondido'
   tela_cpf:string = 'escondido'
   tela_cnpj:string = 'escondido'
+  view_logo:string = 'aparecendo'
 
   constructor() { }
 
@@ -23,6 +24,8 @@ export class LoginComponent implements OnInit {
 
     this.view_login = 'escondido'
 
+    this.view_logo = 'esconder'
+
   }
   mudar_tela_cadastro(){
 
@@ -33,6 +36,9 @@ export class LoginComponent implements OnInit {
     this.tela_cnpj = 'escondido'
 
     this.tela_cpf = 'escondido'
+
+    this.view_logo = 'aparecendo'
+
     
   }
   mudar_tela_cpf(){

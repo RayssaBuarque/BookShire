@@ -156,6 +156,12 @@
     display: flex;
     flex-direction: row;
 }
+.dado_cnpj input {
+    border-radius: 15px;
+    border: 1px solid #152139;
+    padding: 5px 20px;
+    margin: 10px;
+}
 /*CSS Radio button cpf*/
 .cpf input {
     display: none;
@@ -197,6 +203,12 @@
 .cpf p {
     margin: 0%;
 }
+.dado_cpf input {
+    border-radius: 15px;
+    border: 1px solid #152139;
+    padding: 5px 20px;
+    margin: 10px;
+}
 /*Css PC*/
 @media(min-width: 700px ){
     .container__inicial{
@@ -207,7 +219,14 @@
         width: 100%;
         height: 100%;
         padding: 75.7px 0px;
-        
+        background-image: url(../../../assets/imagens/capa_cad.png);
+        background-size: 1920px 1080px;
+    }
+    .container__cadastro {
+        background-color: rgb(20, 32, 56 ,0.9);
+        border-radius: 20px;
+        padding: 10px 40px;
+        box-shadow: 0px 4px 20px rgba(29, 46, 80, 0.25);
     }
     .container__inicial img {
         width: 400px;
@@ -241,5 +260,51 @@
     }
     .button_margin {
         margin: 0%;
+    }
+    .forms__cadastro {
+        display: flex;
+        flex-direction: row;
+    }
+    .forms__cadastro input {
+        font-size: 22px;
+        padding: 10px 40px;
+        margin-bottom: 20px;
+    }
+    .esconder {
+        display: none;
+        opacity: 0;
+    }
+    .cadastrar_button {
+        padding: 7px 80px;
+        font-size: 20spx;
+    }
+    .dados_cadastro{
+        margin: 15px;
+    }
+    .cpf_cnpj {
+        font-size: 22px;
+    }
+    .dado_cnpj input {
+        border-radius: 15px;
+        border: 1px solid #152139;
+        padding: 5px 20px;
+        font-size: 22px;
+        margin: 10px;
+    }
+    .dado_cpf input {
+        border-radius: 15px;
+        border: 1px solid #152139;
+        padding: 5px 20px;
+        font-size: 22px;
+        margin: 10px;
+    }
+    .div_senha input{
+        margin-top: 20px;
+    }
+    .login{
+        margin-bottom: 35px;
+    }
+    .dados_cadastrar p{
+        margin-top: 20px;
     }
 }
