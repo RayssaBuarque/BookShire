@@ -30,6 +30,10 @@ export class LoginComponent implements OnInit {
 
     this.view_login = 'aparecendo'
 
+    this.tela_cnpj = 'escondido'
+
+    this.tela_cpf = 'escondido'
+    
   }
   mudar_tela_cpf(){
 
