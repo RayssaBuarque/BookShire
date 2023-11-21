@@ -73,7 +73,10 @@ export class PerfilComponent implements OnInit {
     this.crud.read('/anuncios', '', `?Id_usuario=${this.idUsuario}`)
       .then((res:any[]) => {
         for (let i = 0; i< res.length; i++){
-          this.idAnuncios.push( res[i].Id_anuncio )
+
+          if(res[i].anuncio_status == 'aberto'){
+            this.idAnuncios.push( res[i].Id_anuncio )
+          }
         }
       })
   }

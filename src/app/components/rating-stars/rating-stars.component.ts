@@ -14,7 +14,8 @@ export class RatingStarsComponent implements OnInit {
   @Input() idPedido:string = ''
 
   avaliarForm = this.formBuilder.group({
-    notaAvaliacao: null
+    // notaAvaliacao: null
+    rate: '0'
   }) 
 
   notaAvaliacao:String = ''
@@ -30,15 +31,18 @@ export class RatingStarsComponent implements OnInit {
 
   confirmar_entrega():void{
     
-    console.log(this.avaliarForm.value)
+    console.log(this.avaliarForm.value.rate)
+    // console.log('oi')
 
-    // let body = {
-    //   "notaAvaliacao":`${this.notaAvaliacao}`
-    // }
+    let body = {
+      "notaAvaliacao":`${this.avaliarForm.value.rate}`,
+    }
 
-    // this.crud.update('/pedidos', this.idPedido, body)
+    this.crud.update('/pedidos', this.idPedido, body)
+      .then((r:any) => {
+        window.location.reload(); //não é o ideal mas dá pro gasto por enquanto
+      })
 
-    // window.location.reload(); //não é o ideal mas dá pro gasto por enquanto
     // this.router.navigate([`../perfil/${this.idUsuario}`]);
   }
 
