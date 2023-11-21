@@ -20,9 +20,11 @@
                     <div class="container__avaliacao">
                         <h1>Avalie sua experiência com </h1>
                         <h3 class="nome_vendedor">{{this.nomeAnunciante}}</h3>
-                        <app-rating-stars></app-rating-stars>
-
-                        <button (click)="mudar_view_confirmar()">Confirmar</button>
+                        
+                        <app-rating-stars
+                            idUsuario="{{idCliente}}"
+                            idPedido="{{idPedido}}"
+                        ></app-rating-stars>
                     </div>
                 </div>
 

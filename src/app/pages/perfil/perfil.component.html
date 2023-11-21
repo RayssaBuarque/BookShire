@@ -27,7 +27,6 @@
     ></app-anuncio-thumb>
     </div>
 
-    <!-- usar o ngFor aqui depois -->
     <div class="avaliacao__perfil" *ngIf="secaoIndex == 1">
         <div class="container__avaliacao" >
             <h1>Avaliação do Usuário</h1>
@@ -50,7 +49,6 @@
         </div>
     </div>
 
-    <!-- usar o ngFor aqui depois -->
     <div class="pedidos__perfil" *ngIf = "secaoIndex == 2 && idUsuario == '2'">
         <app-pedido
             *ngFor="let pedido of idPedidos"

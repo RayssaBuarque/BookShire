@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { CrudService } from 'src/app/services/crud/crud.service';
+
+import { userData } from 'src/assets/data/user_data';
 
 @Component({
   selector: 'app-pagamento',
@@ -7,6 +11,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PagamentoComponent implements OnInit {
 
+  //VARIÁVEIS DE CONEXÃO COM O BANCO
+  idAnuncio:string|null = ''
+  idLivro:string|null = ''
 
   //criando uma variável pra colocar a classe de visibilidade
   view_endereco_entrega:string = 'aparecendo'
@@ -16,11 +23,54 @@ export class PagamentoComponent implements OnInit {
   seta_voltar_principal:string = 'aparecendo'
   seta_voltar_:string = 'escondido'
 
-  constructor() { }
+  constructor(
+    private route:ActivatedRoute,
+    private router:Router,
+    private crud:CrudService) { }
 
   ngOnInit(): void {
+    //recolhendo ids da rota
+    this.route.paramMap.subscribe( (value) =>{
+      this.idAnuncio = value.get('idAnuncio')
+      this.idLivro = value.get('idLivro')
+    });
+
+    console.log(this.idLivro)
+    // this.prosseguir()
   }
 
+  prosseguir(){
+    let idVendedor = ''
+    let idUsuario= userData.userId
+    
+    this.crud.read('/anuncios', this.idAnuncio, "")
+    .then( (res:any) => {
+      idVendedor = res[0].Id_usuario
+    }).then( (ress:any) =>{
+
+      //atualizando status do livro no bd
+      let vBody = {
+        "anuncio_status": "em andamento"
+      }
+      this.crud.update('/anuncios', `${this.idAnuncio}`, vBody)
+      
+      //registrando pedido no bd
+      let body = {
+        "Id_anunciante": `${idVendedor}`,
+        "Id_cliente": `${idUsuario}`,
+        "Id_anuncio": `${this.idAnuncio}`
+      }
+      
+      this.crud.create('/pedidos', '', body)
+        .then((r:any) => {
+          //mudando a view de pagamento
+          this.mudar_view_pagamento_finalizado();
+        }) 
+      
+      // this.router.navigate([`../chat`]);
+
+    })
+  }
 
   //FUNÇÃO QUE MUDA A CLASSE DE VISIBILIDADE
   mudar_view_endereco_entrega(){

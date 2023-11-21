@@ -1,3 +1,10 @@
+.container__rating{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .rate {
     float: left;
     height: 46px;
@@ -32,6 +39,15 @@
 .rate > input:checked ~ label:hover ~ label,
 .rate > label:hover ~ input:checked ~ label {
     color: #d8ab09;
+}
+
+.container__rating button {
+    border: none;
+    margin-top: 10px;
+    background-color: #FF6D1F;
+    padding: 7px 20px;
+    color: white ;
+    border-radius: 15px;
 }
 
 /* Modified from: https://github.com/mukulkant/Star-rating-using-pure-css */

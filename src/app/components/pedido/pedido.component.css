@@ -123,14 +123,7 @@ p{
     margin-right: auto;
     z-index: 10
 }
-.container__fundo button {
-    border: none;
-    margin-top: 10px;
-    background-color: #FF6D1F;
-    padding: 7px 20px;
-    color: white ;
-    border-radius: 15px;
-}
+
 h1 {
     color: #152139;
 }

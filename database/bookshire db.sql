@@ -237,6 +237,7 @@ BEGIN
     
     IF notaPedido IS NOT NULL THEN 
 		UPDATE usuarios SET mediaAvaliacao = (SELECT AVG(notaAvaliacao) FROM pedido WHERE Id_anunciante = new.Id_anunciante) WHERE Id_usuario = new.Id_anunciante;
+		UPDATE anuncios SET anuncio_status = "fechado" WHERE Id_anuncio =  new.Id_anuncio;
 	END IF;
 
 END

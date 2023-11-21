@@ -4,6 +4,8 @@ import { Anuncio } from 'src/app/models/anuncio';
 import { ActivatedRoute } from '@angular/router';
 import { GraficoAvaliacaoComponent } from 'src/app/components/grafico-avaliacao/grafico-avaliacao.component';
 
+import { userData } from 'src/assets/data/user_data';
+
 @Component({
   selector: 'app-perfil',
   templateUrl: './perfil.component.html',
@@ -11,7 +13,7 @@ import { GraficoAvaliacaoComponent } from 'src/app/components/grafico-avaliacao/
 })
 export class PerfilComponent implements OnInit {
 
-  idUsuario:string | null = "2"; //descobrir como dinamizar isso um pouco mais
+  idUsuario:string | null = userData.userId
   private dadosUsuario:any = '';
   
   url_fotoUsuario:string = '../../../assets/thumbnails/default-book_thumbnail.png'
@@ -27,7 +29,7 @@ export class PerfilComponent implements OnInit {
   idPedidos:number[] = []
 
   //index da seção inicial do perfil
-  secaoIndex:number = 2
+  secaoIndex:number = 0
   
   constructor( private crud:CrudService, private route:ActivatedRoute) { }
 
@@ -55,7 +57,7 @@ export class PerfilComponent implements OnInit {
     this.getAnuncios()
     this.getPedidos()
 
-    this.tela = (this.idUsuario == '2')? 'container' : '' //adaptar com cadastro
+    this.tela = (this.idUsuario == '2')? 'container' : 'outroUser' //adaptar com cadastro
   } 
 
   // Descobrindo se o usuário é um sebo ou não
@@ -73,7 +75,10 @@ export class PerfilComponent implements OnInit {
     this.crud.read('/anuncios', '', `?Id_usuario=${this.idUsuario}`)
       .then((res:any[]) => {
         for (let i = 0; i< res.length; i++){
-          this.idAnuncios.push( res[i].Id_anuncio )
+
+          if(res[i].anuncio_status == 'aberto'){
+            this.idAnuncios.push( res[i].Id_anuncio )
+          }
         }
       })
   }
