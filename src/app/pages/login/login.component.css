@@ -9,11 +9,13 @@
 
 .escondido{
     display: none;
+    opacity: 0;
 }
 
 .aparecendo{
     display: flex;
 }
+
 /**/
 .container__inicial{
     background-color: var(--deep-blue);
@@ -67,6 +69,7 @@
     color: var(--book-orange);
     margin-bottom: 50px;
 }
+
 .forms__login input {
     border-radius: 15px;
     border: 1px solid #152139;
@@ -89,6 +92,15 @@
 }
 .forms__cadastro {
     margin-top: 24px;
+}
+.continuar_button{
+    background-color: #FF6D1F;
+    color: white;
+    margin-top: 24px;
+    margin-bottom: 20px;
+    padding: 7px 40px;
+    border-radius: 15px;
+    border: none;
 }
 .cadastrar_button {
     background-color: #FF6D1F;
@@ -209,6 +221,39 @@
     padding: 5px 20px;
     margin: 10px;
 }
+/* Css endereco */
+.container_endereco {
+    padding: 40px 20px;
+}
+.container_endereco h1 {
+    margin-top: 27px;
+    margin-bottom:20px ;
+    color: white ;
+}
+.container_endereco input{
+    border-radius: 15px;
+    border: 1px solid #152139;
+    padding: 5px 20px;
+    margin-top: 10px;
+}
+.input_endereco {
+    margin-top: 10px;
+}
+.container_endereco p{
+    color:white;
+}
+.button_voltar{
+    background-color: transparent;
+    border: none;
+    color: white;
+    margin-bottom: 15px;
+}
+.button_margin_endereco  {
+    background-color: transparent;
+    border: none;
+    color: var(--book-orange);
+    margin-bottom: 20px;
+}
 /*Css PC*/
 @media(min-width: 700px ){
     .container__inicial{
@@ -273,6 +318,10 @@
     .esconder {
         display: none;
         opacity: 0;
+    }
+    .continuar_button{
+        padding: 7px 80px;
+        font-size: 20spx;
     }
     .cadastrar_button {
         padding: 7px 80px;
