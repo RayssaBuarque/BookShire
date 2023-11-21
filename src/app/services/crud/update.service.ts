@@ -27,7 +27,7 @@ export class UpdateService {
     }
 
     return fetch(`${apiUrl}${baseUrl}/${param}`, config)
-      .then( (res:any) => res.json() )
-      .then( (r:any) => console.log(''))
+      // .then( (res:any) => res.json() )
+      // .then( (r:any) => console.log(''))
   }
 }

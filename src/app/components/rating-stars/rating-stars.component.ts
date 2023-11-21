@@ -36,9 +36,9 @@ export class RatingStarsComponent implements OnInit {
     }
 
     this.crud.update('/pedidos', this.idPedido, body)
-      // .then((r:any) => {
-      //   window.location.reload(); //não é o ideal mas dá pro gasto por enquanto
-      // })
+      .then((r:any) => {
+        window.location.reload(); //não é o ideal mas dá pro gasto por enquanto
+      })
 
     // this.router.navigate([`../perfil/${this.idUsuario}`]);
   }
