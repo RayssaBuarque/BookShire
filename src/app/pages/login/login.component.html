@@ -84,15 +84,17 @@
     <div class="container_endereco" [ngClass]="view_endereco">
 
         <h1>Cadastro do Endereço</h1>
-        <div class="input_endereco">
-            <input name="logradouro" type="text" placeholder="Logradouro" class="logradouro_input">
-            <input name="numero" type="text" placeholder="Número"/>
-            <input name="cep" type="text" placeholder="CEP"/>
-        </div>
-        <div class="input_endereco01">
-            <input name="complemento" type="text" placeholder="Complemento"/>
-            <input name="cidade" type="text" placeholder="Cidade"/>
-            <input name="bairro" type="text" placeholder="Bairro"/>
+        <div class="endereco_cadastro">
+            <div class="input_endereco">
+                <input name="logradouro" type="text" placeholder="Logradouro" class="logradouro_input">
+                <input name="numero" type="text" placeholder="Número"/>
+                <input name="cep" type="text" placeholder="CEP"/>
+            </div>
+            <div class="input_endereco01">
+                <input name="complemento" type="text" placeholder="Complemento"/>
+                <input name="cidade" type="text" placeholder="Cidade"/>
+                <input name="bairro" type="text" placeholder="Bairro"/>
+            </div>
         </div>
         <div class="dados_cadastrar">
             <button class="cadastrar_button">Cadastrar</button>

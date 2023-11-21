@@ -82,11 +82,12 @@ export class LoginComponent implements OnInit {
         this.view_endereco = 'escondido'
 
         this.view_cadastro = 'aparecendo'
-
-        this.view_logo = 'aparecendo'
+      // esconder apenas na tela do pc 
+        this.view_logo = 'esconder'
 
     }
     
   }
+
 
 }

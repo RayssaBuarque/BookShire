@@ -356,4 +356,38 @@
     .dados_cadastrar p{
         margin-top: 20px;
     }
+    /* CSS endereco */
+    .endereco_cadastro{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .endereco_cadastro input {
+        font-size: 22px;
+        margin: 10px;
+        padding: 10px 40px;
+    }
+    .container_endereco h1 {
+        font-size: 50px;
+        margin-bottom: 40px;
+        margin-top: 0%;
+    }
+    .container_endereco p{
+        margin-top: 0%;
+    }
+    .input_endereco{
+        margin: 0%;
+        margin-right: 20px;
+    }
+    .input_endereco{
+        margin: 0%;
+        margin-left: 20px;
+    }
+    .container_endereco{
+        margin: 0%;
+        padding: 0%;
+    }
+    .button_margin_endereco{
+        margin: 5px;
+    }
 }
