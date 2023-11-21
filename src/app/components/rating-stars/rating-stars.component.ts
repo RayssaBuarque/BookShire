@@ -30,18 +30,15 @@ export class RatingStarsComponent implements OnInit {
   }
 
   confirmar_entrega():void{
-    
-    console.log(this.avaliarForm.value.rate)
-    // console.log('oi')
 
     let body = {
       "notaAvaliacao":`${this.avaliarForm.value.rate}`,
     }
 
     this.crud.update('/pedidos', this.idPedido, body)
-      .then((r:any) => {
-        window.location.reload(); //não é o ideal mas dá pro gasto por enquanto
-      })
+      // .then((r:any) => {
+      //   window.location.reload(); //não é o ideal mas dá pro gasto por enquanto
+      // })
 
     // this.router.navigate([`../perfil/${this.idUsuario}`]);
   }

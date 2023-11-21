@@ -27,7 +27,7 @@ export class PerfilComponent implements OnInit {
   idPedidos:number[] = []
 
   //index da seção inicial do perfil
-  secaoIndex:number = 2
+  secaoIndex:number = 0
   
   constructor( private crud:CrudService, private route:ActivatedRoute) { }
 
@@ -55,7 +55,7 @@ export class PerfilComponent implements OnInit {
     this.getAnuncios()
     this.getPedidos()
 
-    this.tela = (this.idUsuario == '2')? 'container' : '' //adaptar com cadastro
+    this.tela = (this.idUsuario == '2')? 'container' : 'outroUser' //adaptar com cadastro
   } 
 
   // Descobrindo se o usuário é um sebo ou não
