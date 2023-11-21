@@ -4,6 +4,8 @@ import { Anuncio } from 'src/app/models/anuncio';
 import { ActivatedRoute } from '@angular/router';
 import { GraficoAvaliacaoComponent } from 'src/app/components/grafico-avaliacao/grafico-avaliacao.component';
 
+import { userData } from 'src/assets/data/user_data';
+
 @Component({
   selector: 'app-perfil',
   templateUrl: './perfil.component.html',
@@ -11,7 +13,7 @@ import { GraficoAvaliacaoComponent } from 'src/app/components/grafico-avaliacao/
 })
 export class PerfilComponent implements OnInit {
 
-  idUsuario:string | null = "2"; //descobrir como dinamizar isso um pouco mais
+  idUsuario:string | null = userData.userId
   private dadosUsuario:any = '';
   
   url_fotoUsuario:string = '../../../assets/thumbnails/default-book_thumbnail.png'

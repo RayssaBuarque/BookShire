@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CrudService } from 'src/app/services/crud/crud.service';
 
+import { userData } from 'src/assets/data/user_data';
+
 @Component({
   selector: 'app-pagamento',
   templateUrl: './pagamento.component.html',
@@ -39,7 +41,7 @@ export class PagamentoComponent implements OnInit {
 
   prosseguir(){
     let idVendedor = ''
-    let idUsuario= '2' //mudar após CADASTRO
+    let idUsuario= userData.userId
     
     this.crud.read('/anuncios', this.idAnuncio, "")
     .then( (res:any) => {
