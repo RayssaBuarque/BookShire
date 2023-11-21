@@ -9,11 +9,13 @@
 
 .escondido{
     display: none;
+    opacity: 0;
 }
 
 .aparecendo{
     display: flex;
 }
+
 /**/
 .container__inicial{
     background-color: var(--deep-blue);
@@ -67,6 +69,7 @@
     color: var(--book-orange);
     margin-bottom: 50px;
 }
+
 .forms__login input {
     border-radius: 15px;
     border: 1px solid #152139;
@@ -90,6 +93,15 @@
 .forms__cadastro {
     margin-top: 24px;
 }
+.continuar_button{
+    background-color: #FF6D1F;
+    color: white;
+    margin-top: 24px;
+    margin-bottom: 20px;
+    padding: 7px 40px;
+    border-radius: 15px;
+    border: none;
+}
 .cadastrar_button {
     background-color: #FF6D1F;
     color: white;
@@ -106,4 +118,242 @@
     padding: 7px 40px;
     border-radius: 15px;
     border: none;
+}
+.cpf_cnpj {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+/*CSS Radio button cpnj*/
+.cnpj input {
+    display: none;
+}
+.cnpj {
+    box-shadow: none;
+    padding: 0%;
+    margin: 0%;
+}
+.cnpj input + label::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid white;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 3px;
+  }
+.cnpj input:checked + label:before {
+    background-color: #FF6D1F;
+    box-sizing: border-box;
+    border: 3px solid white;
+    outline: 1px solid #FF6D1F;
+    padding: 4px;
+  }
+.cnpj label {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+.cnpj p {
+    margin: 0%;
+}
+.cnpj {
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+.dado_cnpj input {
+    border-radius: 15px;
+    border: 1px solid #152139;
+    padding: 5px 20px;
+    margin: 10px;
+}
+/*CSS Radio button cpf*/
+.cpf input {
+    display: none;
+}
+.cpf {
+    box-shadow: none;
+    padding: 0%;
+    margin: 0%;
+}
+.cpf input + label::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid white;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 3px;
+  }
+.cpf input:checked + label:before {
+    background-color: #FF6D1F;
+    box-sizing: border-box;
+    border: 3px solid white;
+    outline: 1px solid #FF6D1F;
+    padding: 4px;
+  }
+.cpf label {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: white;
+  }
+.cpf p {
+    margin: 0%;
+}
+.dado_cpf input {
+    border-radius: 15px;
+    border: 1px solid #152139;
+    padding: 5px 20px;
+    margin: 10px;
+}
+/* Css endereco */
+.container_endereco {
+    padding: 40px 20px;
+}
+.container_endereco h1 {
+    margin-top: 27px;
+    margin-bottom:20px ;
+    color: white ;
+}
+.container_endereco input{
+    border-radius: 15px;
+    border: 1px solid #152139;
+    padding: 5px 20px;
+    margin-top: 10px;
+}
+.input_endereco {
+    margin-top: 10px;
+}
+.container_endereco p{
+    color:white;
+}
+.button_voltar{
+    background-color: transparent;
+    border: none;
+    color: white;
+    margin-bottom: 15px;
+}
+.button_margin_endereco  {
+    background-color: transparent;
+    border: none;
+    color: var(--book-orange);
+    margin-bottom: 20px;
+}
+/*Css PC*/
+@media(min-width: 700px ){
+    .container__inicial{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 75.7px 0px;
+        background-image: url(../../../assets/imagens/capa_cad.png);
+        background-size: 1920px 1080px;
+    }
+    /*.container__cadastro {
+        background-color: rgb(20, 32, 56 ,0.9);
+        border-radius: 20px;
+        padding: 10px 40px;
+        box-shadow: 0px 4px 20px rgba(29, 46, 80, 0.25);
+    }*/
+    .container__inicial img {
+        width: 400px;
+        height: 400px;
+    }
+    .container__login {
+        margin: 20px;
+    }
+    .container__login  p {
+        margin-top: 40px;
+        margin-bottom: 23px;
+    }
+    .senha_div input {
+        margin-top: 10px;
+    }
+    .conteudos {
+        padding: 0%;
+        margin: 20px;
+    }
+    .conteudos input  {
+        padding: 10px 40px;
+        font-size: 22px;
+    }
+    .email_div input {
+        margin-top: 60px;
+    }
+    .logar_button {
+        padding: 7px 80px;
+        font-size: 18px;
+        margin-top: 40px;
+    }
+    .button_margin {
+        margin: 0%;
+    }
+    .forms__cadastro {
+        display: flex;
+        flex-direction: row;
+    }
+    .forms__cadastro input {
+        font-size: 22px;
+        padding: 10px 40px;
+        margin-bottom: 20px;
+    }
+    .esconder {
+        display: none;
+        opacity: 0;
+    }
+    .continuar_button{
+        padding: 7px 80px;
+        font-size: 20spx;
+    }
+    .cadastrar_button {
+        padding: 7px 80px;
+        font-size: 20spx;
+    }
+    .dados_cadastro{
+        margin: 15px;
+    }
+    .cpf_cnpj {
+        font-size: 22px;
+    }
+    .dado_cnpj input {
+        border-radius: 15px;
+        border: 1px solid #152139;
+        padding: 5px 20px;
+        font-size: 22px;
+        margin: 10px;
+    }
+    .dado_cpf input {
+        border-radius: 15px;
+        border: 1px solid #152139;
+        padding: 5px 20px;
+        font-size: 22px;
+        margin: 10px;
+    }
+    .div_senha input{
+        margin-top: 20px;
+    }
+    .login{
+        margin-bottom: 35px;
+    }
+    .dados_cadastrar p{
+        margin-top: 20px;
+    }
 }

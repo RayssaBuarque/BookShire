@@ -2,8 +2,8 @@
 <div class="container__inicial">
 
     <!-- Logo do BookShire -->
-    <div class="identidade__visual">
-        <img src="assets/thumbnails/logoBookshire.png" alt="Logo do BookShire">
+    <div class="identidade__visual" [ngClass]="view_logo" >
+        <img src="../../../assets/imagens/logo_sem_fundo.png" alt="Logo do BookShire">
         <h1>BookShire</h1>
     </div>
 
@@ -12,13 +12,13 @@
         <div class="conteudos">
             <div class="forms__login">
 
-                <div>
+                <div class="email_div">
                     <input name="email" type="text" placeholder="E-mail">
                 </div>
                 
                 <br>
                 
-                <div>
+                <div class="senha_div">
                     <input name="senha" type="text" placeholder="Senha">
                 </div>
             </div>
@@ -33,29 +33,73 @@
     <!-- SEÇÃO DE CADASTRO -->
     <div class="container__cadastro " [ngClass]="view_cadastro">
         <div class="forms__cadastro">
-            
-            <div>
-                <input name="nome" type="text" placeholder="Nome">
-            </div>
-   
-            <div>
-                <input name="email" type="text" placeholder="E-mail">
-            </div>
-    
-            <div>
-                <input name="senha" type="text" placeholder="Senha">
-                <input name="senhaConfirm" type="text" placeholder="Confirmar Senha">
-            </div>
-            
-            <div>
-                <input name="telefone" type="text" placeholder="Telefone">
-            </div>
-            
-            <button class="cadastrar_button">Cadastrar</button>
-            <p>Já é cadastrado?</p>
-            <button class="button_margin" (click)="mudar_tela_cadastro()">Faça Login</button>
-        </div>
+            <div class="dados_cadastro">
+                <div>
+                    <input name="nome" type="text" placeholder="Nome">
+                </div>
+       
+                <div>
+                    <input name="email" type="text" placeholder="E-mail">
+                </div>
+        
+                <div>
+                    <input name="telefone" type="text" placeholder="Telefone">
+                </div>
 
+            </div>
+            <div class="dados_cadastro">
+                <div class="div_senha">
+                    <input name="senha" type="text" placeholder="Senha">
+                    <input name="senhaConfirm" type="text" placeholder="Confirmar Senha">
+                </div>
+                
+                <div class="cpf_cnpj">
+                    <div class="cnpj">
+                        <input name="cnpj_cpf" type="radio" id="cnpj" (click)="mudar_tela_cnpj()" placeholder="CNPJ"/>
+                        <label for="cnpj">CNPJ</label>
+                    </div>
+                    <div class="cpf">
+                        <input name="cnpj_cpf" type="radio" id="cpf" (click)="mudar_tela_cpf()" placeholder="CPF" />
+                        <label for="cpf" >CPF</label>
+                    </div>
+                </div>
+    
+            </div>
+            
+            
+        </div>
+            <div class="dado_cnpj" [ngClass]="tela_cnpj">
+                <input name="cnpj" type="text" placeholder="CNPJ"/>
+            </div>
+            <div class="dado_cpf" [ngClass]="tela_cpf">
+                <input name="cpf" type="text" placeholder="CPF"/>
+            </div>
+        <div class="dados_cadastrar">
+            <button class="continuar_button" (click)="mudar_tela_endereco()" >Continuar</button>
+            <p>Já é cadastrado?</p>
+            <button class="button_margin login" (click)="mudar_tela_cadastro()">Faça Login</button>
+        </div>
+    </div>
+    
+    <div class="container_endereco" [ngClass]="view_endereco">
+
+        <h1>Cadastro do Endereço</h1>
+        <div class="input_endereco">
+            <input name="logradouro" type="text" placeholder="Logradouro" class="logradouro_input">
+            <input name="numero" type="text" placeholder="Número"/>
+            <input name="cep" type="text" placeholder="CEP"/>
+        </div>
+        <div class="input_endereco01">
+            <input name="complemento" type="text" placeholder="Complemento"/>
+            <input name="cidade" type="text" placeholder="Cidade"/>
+            <input name="bairro" type="text" placeholder="Bairro"/>
+        </div>
+        <div class="dados_cadastrar">
+            <button class="cadastrar_button">Cadastrar</button>
+            <button class="button_voltar" (click)="seta_voltar()">Voltar</button>
+            <p>Já é cadastrado?</p>
+            <button class="button_margin_endereco login" (click)="mudar_tela_cadastro()">Faça Login</button>
+        </div>
     </div>
 </div>
 
