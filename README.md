@@ -65,9 +65,11 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [x] 📚 Fazer conexões de dados de Sebos
 - [x] ⭐ Ajeitar o CSS da seção "avaliações" do usuário na TELA PERFIL
 - [x] ⚠️ Ajeitar o CSS do componente MSG DENÚNCIA
-- [ ] 🚪 Criar tela de login/cadastro @MARIA CLARA
-- [ ] ⭐ Ajeitar CSS de avaliação de pedido @MARIA CLARA
+- [x] 🚪 Criar tela de login/cadastro @MARIA CLARA
 - [ ] 🔐 Configurar acesso de usuário dependendo do cadastro @RAYSSA
+- [x] ⭐ Ajeitar CSS de avaliação de pedido @MARIA CLARA
+- [x] ⚠️ Aviso que usuário não possui anúncios @MARIA CLARA 🤝 @RAYSSA
+- [ ] 📑 Ajeitar CSS de scroll da seção de sebos na tela home @MARIA CLARA
 
 ###### 5SP Bugs 👾👾👾
 - [x] 💀 Repor bottom nav bar de CHAT

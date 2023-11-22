@@ -20,10 +20,12 @@
         <button class="navItem" (click)="mudarSecao(2)" *ngIf="idUsuario=='2'" [ngClass] = "selecionarC()">Pedidos</button>
     </div>
 
-    <div class="anuncios__perfil" *ngIf = "secaoIndex == 0">
-        <div class="lembrete">
+    <div class="anuncios__perfil" *ngIf="secaoIndex == 0">
+        
+        <div class="lembrete" *ngIf="idAnuncios.length == 0">
             <p>Este usuário não possui nenhum anúncio.</p>
         </div>
+
         <app-anuncio-thumb *ngFor="let anuncio of idAnuncios"
         idAnuncio = "{{anuncio}}"
         localAnuncio="{{localUsuario}}"
