@@ -70,6 +70,7 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [x] ⭐ Ajeitar CSS de avaliação de pedido @MARIA CLARA
 - [x] ⚠️ Aviso que usuário não possui anúncios @MARIA CLARA 🤝 @RAYSSA
 - [ ] 📑 Ajeitar CSS de scroll da seção de sebos na tela home @MARIA CLARA
+- [ ] 🚓 Parar de vazar dados sensíveis do usuário pela API @RAYSSA
 
 ###### 5SP Bugs 👾👾👾
 - [x] 💀 Repor bottom nav bar de CHAT
