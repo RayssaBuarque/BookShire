@@ -48,6 +48,8 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [x] 🔎 Criar barra de pesquisa para tela de chat @MALU
 - [ ] 🔎 Conectar barra de pesquisa de sebos no bd 
 - [ ] 🔎 Conectar barra de pesquisa de chat no bd
+- [ ] 📬 Consertar tela de chat específico @MALU
+- [ ] 📬 Conectar header tela de chat específico com info do usuário no bd 
 
 #### 6xth Sprint -- Conexão das Telas
 - [x] 🙌 Desenvolver CRUD anúncios AWS API @RAYSSA
@@ -62,9 +64,9 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [x] 📔 Consertar capa padrão de livro @RAYSSA
 
 #### 5fth Sprint -- Componentes Complementares
-- [x] 📚 Fazer conexões de dados de Sebos
-- [x] ⭐ Ajeitar o CSS da seção "avaliações" do usuário na TELA PERFIL
-- [x] ⚠️ Ajeitar o CSS do componente MSG DENÚNCIA
+- [x] 📚 Fazer conexões de dados de Sebos @RAYSSA
+- [x] ⭐ Ajeitar o CSS da seção "avaliações" do usuário na TELA PERFIL @MARIA CLARA
+- [x] ⚠️ Ajeitar o CSS do componente MSG DENÚNCIA @MARIA CLARA
 - [x] 🚪 Criar tela de login/cadastro @MARIA CLARA
 - [ ] 🔐 Configurar acesso de usuário dependendo do cadastro @RAYSSA
 - [x] ⭐ Ajeitar CSS de avaliação de pedido @MARIA CLARA
@@ -73,7 +75,7 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [ ] 🚓 Parar de vazar dados sensíveis do usuário pela API @RAYSSA
 
 ###### 5SP Bugs 👾👾👾
-- [x] 💀 Repor bottom nav bar de CHAT
+- [x] 💀 Repor bottom nav bar de CHAT 
 - [x] ⭐ Consertar view da média de avaliação de usuários SEM AVALIAÇÃO
 - [x] ↖️ Ajeitar setinha do pagamento @MARIA CLARA
 - [x] 🔨 Consertar o css da barra de navegação @MARIA CLARA
