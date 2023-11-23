@@ -1,0 +1,7 @@
+
+/* Versão PC */
+@media(min-width: 700px ){
+    .container__home{
+        padding-bottom: 75px ;
+    }
+}

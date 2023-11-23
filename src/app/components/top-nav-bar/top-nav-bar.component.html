@@ -1,4 +1,4 @@
-<div class="container__topBar">
+<div class="container__topBar" [ngClass]="top_bar">
     <div class="topBar__wrapper">
         <!-- <div class="wrapper__homeIcon">
             <a href="#">
@@ -19,5 +19,21 @@
                     alt="Ícone de Configuração">
             </a>
         </div> -->
+    </div>
+</div>
+<div class="container__top_bar_pc" [ngClass]="top_bar_pc">
+    <div class="container__topBar_pc">
+        <h1>BookShire</h1>
+    <div class="barra_pesquisa">
+        <app-barra-pesquisa></app-barra-pesquisa>
+    </div>
+    <ul class="ul_li">
+        <li class="li"><a href="#">Home</a></li>
+        <li class="li"><a href="https://bookshire.vercel.app/" target="_blank">Sobre nós</a></li>
+        <li><a href="perfil/2"><img src="../../../assets/thumbnails/capa_perfil_inicial.png"/></a></li>
+    </ul>
+    </div>
+    <div class="anunciar_button">
+        <a href="anunciar/pesquisa">Anunciar</a>
     </div>
 </div>

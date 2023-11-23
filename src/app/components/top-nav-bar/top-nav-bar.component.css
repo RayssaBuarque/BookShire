@@ -24,3 +24,10 @@ img{
     font-family: 'Advent Pro', sans-serif;
     font-size: 32px;
 }
+
+.aparecendo {
+    display: block;
+}
+.escondido{
+    display: none;
+}

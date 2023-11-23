@@ -5,11 +5,13 @@ import { CrudService } from 'src/app/services/crud/crud.service';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css','home.responsividade.css']
 })
+
 export class HomeComponent implements OnInit {
 
   sebosIds:any[] = []
+
 
   constructor(private crud:CrudService) { }
 
@@ -28,6 +30,7 @@ export class HomeComponent implements OnInit {
       })
 
   }
+  
 
 }
 
