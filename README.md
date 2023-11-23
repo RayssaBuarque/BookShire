@@ -48,7 +48,7 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [x] 🔎 Criar barra de pesquisa para tela de chat @MALU
 - [ ] 🔎 Conectar barra de pesquisa de sebos no bd 
 - [ ] 🔎 Conectar barra de pesquisa de chat no bd
-- [ ] 📬 Consertar tela de chat específico @MALU
+- [x] 📬 Consertar tela de chat específico @MALU
 - [ ] 📬 Conectar header tela de chat específico com info do usuário no bd 
 
 #### 6xth Sprint -- Conexão das Telas
@@ -72,7 +72,7 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [x] ⭐ Ajeitar CSS de avaliação de pedido @MARIA CLARA
 - [x] ⚠️ Aviso que usuário não possui anúncios @MARIA CLARA 🤝 @RAYSSA
 - [ ] 📑 Ajeitar CSS de scroll da seção de sebos na tela home @MARIA CLARA
-- [ ] 🚓 Parar de vazar dados sensíveis do usuário pela API @RAYSSA
+- [x] 🚓 Parar de vazar dados sensíveis do usuário pela API @RAYSSA
 
 ###### 5SP Bugs 👾👾👾
 - [x] 💀 Repor bottom nav bar de CHAT 

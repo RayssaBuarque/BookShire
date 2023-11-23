@@ -47,9 +47,9 @@ export class CriacaoAnuncioComponent implements OnInit {
       this.idLivro = value.get('idLivro') 
     });
 
+    // Organiza as informações do Livro na página
     this.setter.setLivro(this.idLivro)
       .then( (res:any) => {
-        // console.log(res)
         this.tituloLivro = res.titulo
         
         if(res.urlImg != undefined){
@@ -64,6 +64,7 @@ export class CriacaoAnuncioComponent implements OnInit {
       })
   }
 
+  // Função de criação de anúncio no banco de dados
   onSubmit():void{
     //cheque se os valores foram preenchidos
     let inpts = this.anunciarForm.value
@@ -82,8 +83,7 @@ export class CriacaoAnuncioComponent implements OnInit {
         situacao = 'Livro em perfeita condição.'
       }
 
-      console.log(inpts)
-
+      // Informações do anúncio
       let body =
         {
         Id_usuario: inpts.Id_usuario,
@@ -98,7 +98,6 @@ export class CriacaoAnuncioComponent implements OnInit {
         .then( (r) => {
           this.router.navigateByUrl('perfil')
         })
-      console.log(body)
     }
 
     
