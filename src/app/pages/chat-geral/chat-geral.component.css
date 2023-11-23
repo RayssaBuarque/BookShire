@@ -16,7 +16,7 @@ img{
 #nomePerfil{
     margin-left: 25px;
     font-family: 'Advent Pro', sans-serif;
-    color: #152139;
+    color: var(--deep-blue);
     font-weight: bold;
     font-size: 24px;
 }
@@ -26,13 +26,14 @@ img{
 
  
 .header{
-    border-bottom: 2px solid #d7deea;
+    border-bottom: 2px solid var(--book-clear);
     padding-bottom: 1rem;
-
 }
 
-a{
-    text-decoration: none;
+.geral_conversasLista button{
+    background-color: transparent;
+    border: none;
+    width: 100%;
 }
 
 .lembrete{

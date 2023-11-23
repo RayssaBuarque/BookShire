@@ -6,14 +6,22 @@ import { userData } from 'src/assets/data/user_data';
 @Component({
   selector: 'app-chat-geral',
   templateUrl: './chat-geral.component.html',
-  styleUrls: ['./chat-geral.component.css']
+  styleUrls: [
+    './chat-geral.component.css', // css da div de chat geral
+    'chat-individual.css' // css da div de conversa individual
+  ]
 })
 export class ChatGeralComponent implements OnInit {
   
   //configurar cadastro mais tarde
   idUsuario:string = userData.userId
-
   idChats:string[] = []
+
+  chatIndividual:boolean = false
+
+  //dados variaveis da conversa aberta:
+  fotoUsuario!:string 
+  nomeUsuario!:string
 
   constructor(
     private crud:CrudService
@@ -21,6 +29,29 @@ export class ChatGeralComponent implements OnInit {
 
   ngOnInit(): void {
     this.getConversas()
+  }
+
+  // Mudando a tela visível para o chat geral ou um chat específico
+  mudarConversa(chat:any):void{
+    if(!this.chatIndividual == true && chat != null){
+      this.crud.read('/chat', chat, '')
+        .then((res:any) => {
+
+          let userId = (res[0].Id_usuario1 != this.idUsuario)? res[0].Id_usuario1 : res[0].Id_usuario2
+          this.crud.read('/users', userId, '')
+            .then((r:any) => {
+              let nome = r[0].nome.split(' ')
+              this.nomeUsuario = nome[0] + ' ' + nome[ nome.length - 1]
+
+              try{ // Tentando adicionar uma imagem ao usuário
+                this.fotoUsuario = r[0].fotoUsuario
+              }catch(error){ this.fotoUsuario = '/assets/thumbnails/default_perfil.png'}
+            })
+
+        })
+    }
+
+    this.chatIndividual = !this.chatIndividual
   }
 
   getConversas(){
@@ -40,7 +71,6 @@ export class ChatGeralComponent implements OnInit {
             // coletando chats onde User é anunciante
             this.crud.read('/pedidos', '', `?Id_anunciante=${this.idUsuario}`)
               .then((pAnunciante:any) =>{
-                console.log(pAnunciante)
                 for(let pedido of pAnunciante){
                   if(pedido.dataConclusao == null){
                     idPedidos.push(pedido.Id_pedido)

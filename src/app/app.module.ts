@@ -18,13 +18,11 @@ import { PerfilComponent } from './pages/perfil/perfil.component';
 import { PesquisaAnunciarComponent } from './pages/pesquisa/pesquisa-anunciar/pesquisa-anunciar.component';
 import { NotificacoesComponent } from './pages/notificacoes/notificacoes.component';
 import { CardNotificacaoComponent } from './components/card-notificacao/card-notificacao.component';
-import { ChatComponent } from './pages/chat/chat.component';
 import { ListaAnunciosComponent } from './pages/lista-anuncios/lista-anuncios.component';
 import { AnuncioThumbComponent } from './components/anuncios/anuncio-thumb/anuncio-thumb.component';
 import { AnuncioComponent } from './pages/anuncio/anuncio.component';
 import { BtnVoltarComponent } from './components/btn-voltar/btn-voltar.component';
 import { CardVendedorComponent } from './pages/anuncio/card-vendedor/card-vendedor.component';
-import { ConversaThumbComponent } from './pages/chat/conversa-thumb/conversa-thumb.component';
 import { PedidoComponent } from './components/pedido/pedido.component';
 import { SeboThumbComponent } from './components/sebo-thumb/sebo-thumb.component';
 import { CriacaoAnuncioComponent } from './pages/criacao-anuncio/criacao-anuncio.component';
@@ -36,7 +34,6 @@ import { SebosCadastradosListaComponent } from './components/sebos-cadastrados-l
 import { BotaoVermaisSebosComponent } from './components/botao-vermais-sebos/botao-vermais-sebos.component';
 import { ChatGeralComponent } from './pages/chat-geral/chat-geral.component';
 import { ChatGeralConfigComponent } from './components/chat-geral-config/chat-geral-config.component';
-import { ChatIndividualComponent } from './pages/chat-individual/chat-individual.component';
 import { BottomChatTextboxComponent } from './components/bottom-chat-textbox/bottom-chat-textbox.component';
 import { PagamentoComponent } from './pages/pagamento/pagamento.component';
 import { CodigoAleatorioComponent } from './components/codigo-aleatorio/codigo-aleatorio.component';
@@ -68,13 +65,11 @@ import { RatingStarsComponent } from './components/rating-stars/rating-stars.com
     PesquisaAnunciarComponent,
     NotificacoesComponent,
     CardNotificacaoComponent,
-    ChatComponent,
     ListaAnunciosComponent,
     AnuncioThumbComponent,
     AnuncioComponent,
     BtnVoltarComponent,
     CardVendedorComponent,
-    ConversaThumbComponent,
     PedidoComponent,
     SeboThumbComponent,
     CriacaoAnuncioComponent,
@@ -85,7 +80,6 @@ import { RatingStarsComponent } from './components/rating-stars/rating-stars.com
     ChatGeralComponent,
     ChatGeralConfigComponent,
     PagamentoComponent,
-    ChatIndividualComponent,
     BottomChatTextboxComponent,
     CodigoAleatorioComponent,
     MsgDenunciaComponent,

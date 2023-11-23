@@ -11,11 +11,9 @@ import { PesquisaAnunciarComponent } from './pages/pesquisa/pesquisa-anunciar/pe
 import { NotificacoesComponent } from './pages/notificacoes/notificacoes.component';
 import { ListaAnunciosComponent } from './pages/lista-anuncios/lista-anuncios.component';
 import { AnuncioComponent } from './pages/anuncio/anuncio.component';
-import { ChatComponent } from './pages/chat/chat.component';
 import { CriacaoAnuncioComponent } from './pages/criacao-anuncio/criacao-anuncio.component';
 import { SebosListaComponent } from './pages/sebos-lista/sebos-lista.component';
 import { ChatGeralComponent } from './pages/chat-geral/chat-geral.component';
-import { ChatIndividualComponent } from './pages/chat-individual/chat-individual.component';
 import { PagamentoComponent } from './pages/pagamento/pagamento.component';
 import { LoginComponent } from './pages/login/login.component';
 
@@ -78,10 +76,6 @@ const routes: Routes = [
   {
     path:'chat',
     component: ChatGeralComponent
-  },
-  {
-    path:'conversas',
-    component: ChatIndividualComponent
   },
 
   //Sebos 

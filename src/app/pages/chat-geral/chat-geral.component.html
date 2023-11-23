@@ -1,7 +1,7 @@
 <!-- TELA DE LISTA DE CONVERSAS -->
-<app-top-nav-bar></app-top-nav-bar>
+<app-top-nav-bar *ngIf="chatIndividual == false"></app-top-nav-bar>
 
-<div class="geral_conversasLista container">
+<div class="geral_conversasLista container" *ngIf="chatIndividual == false">
     <div class="header">
         <!--Barra de pesquisa -->
         <app-barra-pesquisa-chat></app-barra-pesquisa-chat>
@@ -12,12 +12,54 @@
     <div class="lembrete" *ngIf="idChats.length == 0">
         Parece que você não tem nenhuma conversa no momento.
     </div>
-    <a href="conversas">
-        <app-chat-geral-config *ngFor="let chat of idChats"
+    <button *ngFor="let chat of idChats" (click)="mudarConversa(chat)">
+        <app-chat-geral-config
             idChat="{{chat}}"
         ></app-chat-geral-config>
-    </a>
+    </button>
 
 </div>
 
-<app-bottom-nav-bar></app-bottom-nav-bar>
+<app-bottom-nav-bar *ngIf="chatIndividual == false"></app-bottom-nav-bar>
+
+<!-- CHAT INDIVIDUAL -->
+<div class="geral_top" *ngIf="chatIndividual">
+    <div class="header_chat">
+        <button (click)="mudarConversa(null)"><img id="seta" src="assets/icons/seta_azul.svg"></button>
+        <img src="{{fotoUsuario}}">
+        <div id="username"> {{nomeUsuario}} </div>
+    </div>
+    
+    <div class="mensagens_user1">
+        <div class="mensagem_um">
+            <p id="men1"> Boa tarde, necessito de ajuda. </p>
+        </div>
+    </div>
+    
+    <div class="mensagens_user2">
+        <div class="mensagem_dois">
+            <p id="men2"> Claro, o que você precisa hoje? </p>
+        </div>
+    </div>
+
+    <div class="mensagens_user1">
+        <div class="mensagem_um">
+            <p id="men1"> Quais tipos de anúncios posso fazer? </p>
+        </div>
+    </div>
+
+    <div class="mensagens_user2">
+        <div class="mensagem_dois">
+            <p id="men2"> No BookShire, você pode realizar anúncios de troca, doação e venda de livros </p>
+        </div>
+    </div>
+
+    <div class="mensagens_user1">
+        <div class="mensagem_um">
+            <p id="men1"> Obrigada pela informação! </p>
+        </div>
+    </div>
+</div>
+<app-bottom-chat-textbox *ngIf="chatIndividual == true"></app-bottom-chat-textbox>
+
+
