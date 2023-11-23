@@ -1,12 +1,16 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { CrudService } from 'src/app/services/crud/crud.service';
 
+import { userData } from 'src/assets/data/user_data';
+
 @Component({
   selector: 'app-chat-geral-config',
   templateUrl: './chat-geral-config.component.html',
   styleUrls: ['./chat-geral-config.component.css']
 })
 export class ChatGeralConfigComponent implements OnInit {
+
+  private idUsuario:string = userData.userId
 
   @Input() idChat!:string
   private idPedido!:string
@@ -30,7 +34,7 @@ export class ChatGeralConfigComponent implements OnInit {
     this.crud.read('/chat', `${this.idChat}`, '')
       .then( (res:any) => {
         this.idPedido = res[0].Id_pedido
-        this.idPessoa = res[0].Id_usuario1
+        this.idPessoa = (res[0].Id_usuario1 != this.idUsuario)? res[0].Id_usuario1 : res[0].Id_usuario2
 
         this.setPessoa()
         this.setPedido()

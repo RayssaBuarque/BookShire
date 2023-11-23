@@ -36,7 +36,6 @@ export class ChatGeralComponent implements OnInit {
                 idPedidos.push(pedido.Id_pedido)
               }
             }
-            // console.log(res)
 
             // coletando chats onde User é anunciante
             this.crud.read('/pedidos', '', `?Id_anunciante=${this.idUsuario}`)
@@ -53,10 +52,8 @@ export class ChatGeralComponent implements OnInit {
                     this.idChats.push(chats.Id_chat)
                   }
                 }
-                // console.log(idPedidos)
               })
           })
-        
         
       })
   }
