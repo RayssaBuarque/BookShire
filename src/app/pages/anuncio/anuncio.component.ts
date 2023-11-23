@@ -107,6 +107,8 @@ export class AnuncioComponent implements OnInit {
             "anuncio_status": "removido"
           }
           this.crud.update('/anuncios', `${this.idAnuncio}`, vBody)
+          // this.router.navigate([`../perfil/${this.idUsuario}`]);  
+          this.router.navigate([`../home`]);  
         }else{
           this.aviso = true
         }
