@@ -27,6 +27,8 @@ export class AnuncioComponent implements OnInit {
   idVendedor:string = "0";
   idAnuncio:string | null = ""
 
+  aviso:boolean = false
+
   infoTransacao:string = 'Informação';
   interesse:string = 'Negociar'
   localAnuncio:string = 'Local do Anúncio';
@@ -96,7 +98,19 @@ export class AnuncioComponent implements OnInit {
 
   // "deletando" o anúncio
   removerAnuncio():void{
-    console.log('é pra remover o anúncio aqui')
+
+    this.crud.read('/pedidos', '', `?Id_anuncio=${this.idAnuncio}`)
+      .then((res:any) => {
+        // checando se existem pedidos sob o anúncio    
+        if(res.length == 0){
+          let vBody = {
+            "anuncio_status": "removido"
+          }
+          this.crud.update('/anuncios', `${this.idAnuncio}`, vBody)
+        }else{
+          this.aviso = true
+        }
+      })
   }
 
 
