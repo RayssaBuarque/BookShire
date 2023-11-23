@@ -65,12 +65,13 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 
 #### 5fth Sprint -- Componentes Complementares
 - [x] 📚 Fazer conexões de dados de Sebos @RAYSSA
+- [x] 🖇️ Fazer conexões de dados do livro em pagamento @RAYSSA
 - [x] ⭐ Ajeitar o CSS da seção "avaliações" do usuário na TELA PERFIL @MARIA CLARA
 - [x] ⚠️ Ajeitar o CSS do componente MSG DENÚNCIA @MARIA CLARA
 - [x] 🚪 Criar tela de login/cadastro @MARIA CLARA
-- [ ] 🔐 Configurar acesso de usuário dependendo do cadastro @RAYSSA
 - [x] ⭐ Ajeitar CSS de avaliação de pedido @MARIA CLARA
 - [x] ⚠️ Aviso que usuário não possui anúncios @MARIA CLARA 🤝 @RAYSSA
+- [ ] ❓ Evitar com que usuários peçam seus próprios anúncios @RAYSSA
 - [ ] 📑 Ajeitar CSS de scroll da seção de sebos na tela home @MARIA CLARA
 - [x] 🚓 Parar de vazar dados sensíveis do usuário pela API @RAYSSA
 
@@ -88,6 +89,7 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [x] 📪 Fazer conexões de dados de Chats
 - [ ] 📨 Fazer conexões de dados de Mensagens
 - [ ] 🖇️ Linkar tela de Perfil corretamente (+routing-module)
+- [ ] 🔐 Configurar acesso de usuário dependendo do cadastro @RAYSSA
 
 
 ##### Future Sprints...

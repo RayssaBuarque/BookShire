@@ -15,7 +15,17 @@
 
         <h1>{{infoTransacao}}</h1>
 
-        <button class="text__transacao" (click)="prosseguir()">
+        <button
+            class="text__transacao" 
+            (click)="prosseguir()"
+            *ngIf="idUsuario != idVendedor">
+            <h1>{{interesse}}</h1>
+        </button>
+        
+        <button
+            class="text__transacao" 
+            (click)="removerAnuncio()"
+            *ngIf="idUsuario == idVendedor">
             <h1>{{interesse}}</h1>
         </button>
 

@@ -94,6 +94,12 @@ export class AnuncioComponent implements OnInit {
     }
   }
 
+  // "deletando" o anúncio
+  removerAnuncio():void{
+    console.log('é pra remover o anúncio aqui')
+  }
+
+
   // função que coleta informações do anúncio
   getAnuncio():void{
     this.crud.read('/anuncios', this.idAnuncio, "")
@@ -120,12 +126,13 @@ export class AnuncioComponent implements OnInit {
         }else{
           this.infoTransacao = this.dadosAnuncio.transacao
         }
+
+        this.interesse = (this.idUsuario == this.idVendedor)? 'Remover anúncio' : this.interesse
         
         //recolhendo dados do vendedor
         this.crud.read('/endereco', '', `?Id_usuario=${this.idVendedor}`)
         .then( (res:any) => {
           this.localAnuncio = res[0].bairro
-          this.descricaoLivro.push(`Local do anunciante: ${this.localAnuncio}`);
           })
 
       })    

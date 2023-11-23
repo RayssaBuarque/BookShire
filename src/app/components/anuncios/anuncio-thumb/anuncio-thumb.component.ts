@@ -10,41 +10,53 @@ import { Livro } from '../../livros/livro-modelo';
 })
 export class AnuncioThumbComponent implements OnInit {
 
+  idAnunciante!:string
+  
   idLivro:string = 'Id do Livro'
   @Input() idAnuncio:string = 'Id do Anúncio'
   @Input() localAnuncio:string = 'Local do anunciante'
+
+  // INFORMAÇÕES SOBRE O LIVRO
   tituloLivro:string = 'Título do Livro'
   urlImgLivro:string = '../../../../assets/thumbnails/default-book_thumbnail.png'
   transacaoData:string = 'Doação/Troca/Preço'
 
-  constructor(private crud:CrudService, private setter:SetLivroService) { }
+  constructor(
+    private crud:CrudService,
+    private setter:SetLivroService) { }
 
   ngOnInit(): void {
     this.setAnuncio()
   }
 
+  // Coletando dados do anúncio
   setAnuncio():void{
     this.crud.read('/anuncios', this.idAnuncio, '')
       .then( (res:any) =>{
-        // console.log(res)
+        this.idAnunciante = res[0].Id_usuario
         this.idLivro = res[0].Id_livro
         
+
         if(res[0].transacao == 'Venda'){
           this.transacaoData = `R$ ${Number(res[0].preco).toFixed(2)}`
         }else{
           this.transacaoData = res[0].transacao
         }
 
-        this.setter.setLivro(this.idLivro)
-          .then( (info:Livro) => {
-              this.tituloLivro = info.titulo
-    
-                if(info.urlImg != undefined){
-                  this.urlImgLivro = info.urlImg
-                }
-              })
+        this.setLivro()
       })
+  }
 
+  setLivro():void{
+    // Coletando dados do Livro
+    this.setter.setLivro(this.idLivro)
+    .then( (info:Livro) => {
+        this.tituloLivro = info.titulo
+
+          if(info.urlImg != undefined){
+            this.urlImgLivro = info.urlImg
+          }
+        })
   }
 
   //ANTIGA FUNÇÃO QUE RECOLHIA DADOS DO GOOGLE BOOKS
