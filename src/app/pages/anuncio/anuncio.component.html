@@ -2,7 +2,7 @@
     <div class="background__capa">
         <div class="anuncio__topo">
             <app-btn-voltar></app-btn-voltar>
-            
+
             <div class="anuncio__capa">
                 <img src="{{capaLivro}}" alt="Capa de {{tituloLivro}}">
             </div>
@@ -15,8 +15,9 @@
 
         <h1>{{infoTransacao}}</h1>
 
+        
         <button
-            class="text__transacao" 
+        class="text__transacao" 
             (click)="prosseguir()"
             *ngIf="idUsuario != idVendedor">
             <h1>{{interesse}}</h1>
@@ -26,8 +27,13 @@
             class="text__transacao" 
             (click)="removerAnuncio()"
             *ngIf="idUsuario == idVendedor">
-            <h1>{{interesse}}</h1>
+            <h1>Remover Anúncio</h1>
         </button>
+        
+        <!-- *ngIf="aviso == true" -->
+        <div class="lembrete" >
+            <p>Parece que este anúncio possui pedidos em andamento, cancele suas transações antes de remover o anúncio.</p>
+        </div>
 
         <h3>{{localAnuncio}}</h3>
     </div>

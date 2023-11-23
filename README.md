@@ -71,7 +71,8 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [x] 🚪 Criar tela de login/cadastro @MARIA CLARA
 - [x] ⭐ Ajeitar CSS de avaliação de pedido @MARIA CLARA
 - [x] ⚠️ Aviso que usuário não possui anúncios @MARIA CLARA 🤝 @RAYSSA
-- [ ] ❓ Evitar com que usuários peçam seus próprios anúncios @RAYSSA
+- [x] ❓ Evitar com que usuários peçam seus próprios anúncios @RAYSSA
+- [ ] ⚠️ Corrigir lembrete da tela de anúncio ao clicar em botão de anúncio que já existe @MARIA CLARA
 - [ ] 📑 Ajeitar CSS de scroll da seção de sebos na tela home @MARIA CLARA
 - [x] 🚓 Parar de vazar dados sensíveis do usuário pela API @RAYSSA
 
