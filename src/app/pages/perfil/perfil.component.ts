@@ -87,7 +87,7 @@ export class PerfilComponent implements OnInit {
   getPedidos():void{
     this.crud.read('/pedidos', '', `?Id_cliente=${this.idUsuario}`)
       .then( (res:any) => {
-
+        
         for(let i = 0; i< res.length; i++){
           this.idPedidos.push(res[i].Id_pedido)
         }

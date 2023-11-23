@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CrudService } from 'src/app/services/crud/crud.service';
+import { SetLivroService } from 'src/app/services/set-livro.service';
 
 import { userData } from 'src/assets/data/user_data';
 
@@ -15,6 +16,10 @@ export class PagamentoComponent implements OnInit {
   idAnuncio:string|null = ''
   idLivro:string|null = ''
 
+  //VARIÁVEIS DE IFORMAÇÃO SOBRE O LIVRO
+  urlFotoLivro:string = '../../../assets/thumbnails/default-book_thumbnail.png'
+  tituloLivro!:string
+
   //criando uma variável pra colocar a classe de visibilidade
   view_endereco_entrega:string = 'aparecendo'
   view_cartao:string = 'escondido'
@@ -26,7 +31,8 @@ export class PagamentoComponent implements OnInit {
   constructor(
     private route:ActivatedRoute,
     private router:Router,
-    private crud:CrudService) { }
+    private crud:CrudService,
+    private setter:SetLivroService) { }
 
   ngOnInit(): void {
     //recolhendo ids da rota
@@ -35,7 +41,6 @@ export class PagamentoComponent implements OnInit {
       this.idLivro = value.get('idLivro')
     });
 
-    console.log(this.idLivro)
     // this.prosseguir()
   }
 
@@ -82,6 +87,16 @@ export class PagamentoComponent implements OnInit {
     this.seta_voltar_ = 'aparecendo'
 
     this.seta_voltar_principal = 'escondido'
+
+    // Coletando informações sobre o livro para tela final
+    this.setter.setLivro(this.idLivro) 
+      .then((res:any) => {
+        this.tituloLivro = res.titulo
+        
+        if (res.urlImg){
+          this.urlFotoLivro = res.urlImg
+        }
+      })
     
   }
   popUp_view_novo_cartao() {
