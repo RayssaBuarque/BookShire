@@ -26,12 +26,12 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [x] 🪢 Fazer conexões dos nichos com a API @RAYSSA
 - [x] 🪢 Fazer conexões de busca com a API @RAYSSA
 
-#### 4rth Sprint -- Banco de Dados
+#### 4th Sprint -- Banco de Dados
 - [x] 🔨 Estruturar Banco de Dados @SARA
 - [x] 👹👹👹👹 Testar o BookShire em um Servidor local @RAYSSA
 - [x] 👹 Configurar um Servidor @RAYSSA
 
-#### 5fth Sprint -- Estrutura de Telas
+#### 5th Sprint -- Estrutura de Telas
 - [x] 🏠 Desenvolver tela de Home @MALU
 - [x] 📚 Desenvolver COMPONENTE thumb (ícones) dos Sebos @MALU
 - [x] 📚 Desenvolver tela de Listagem de Sebos @MALU
@@ -49,9 +49,9 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [ ] 🔎 Conectar barra de pesquisa de sebos no bd 
 - [ ] 🔎 Conectar barra de pesquisa de chat no bd
 - [x] 📬 Consertar tela de chat específico @MALU
-- [ ] 📬 Conectar header tela de chat específico com info do usuário no bd 
+- [x] 📬 Conectar header de chat específico com info do bd @RAYSSA
 
-#### 6xth Sprint -- Conexão das Telas
+#### 6th Sprint -- Conexão das Telas
 - [x] 🙌 Desenvolver CRUD anúncios AWS API @RAYSSA
 - [x] 🙌 Desenvolver CRUD endereço AWS API @RAYSSA
 - [x] 🙌 Desenvolver CRUD usuários AWS API @RAYSSA
@@ -63,7 +63,7 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [x] 🎯 Consertar rota de Anunciar livro @RAYSSA
 - [x] 📔 Consertar capa padrão de livro @RAYSSA
 
-#### 5fth Sprint -- Componentes Complementares
+#### 7th Sprint -- Componentes Complementares
 - [x] 📚 Fazer conexões de dados de Sebos @RAYSSA
 - [x] 🖇️ Fazer conexões de dados do livro em pagamento @RAYSSA
 - [x] ⭐ Ajeitar o CSS da seção "avaliações" do usuário na TELA PERFIL @MARIA CLARA
@@ -74,27 +74,28 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [x] ❓ Evitar com que usuários peçam seus próprios anúncios @RAYSSA
 - [ ] ⚠️ Corrigir lembrete da tela de anúncio ao clicar em botão de anúncio que já existe @MARIA CLARA
 - [ ] 📑 Ajeitar CSS de scroll da seção de sebos na tela home @MARIA CLARA
-- [x] 🚓 Parar de vazar dados sensíveis do usuário pela API @RAYSSA
+- [ ] 📧 Ajeitar CSS da caixa de texto da tela de CHAT @MARIA CLARA
 
-###### 5SP Bugs 👾👾👾
+###### 7SP Bugs 👾👾👾
 - [x] 💀 Repor bottom nav bar de CHAT 
 - [x] ⭐ Consertar view da média de avaliação de usuários SEM AVALIAÇÃO
 - [x] ↖️ Ajeitar setinha do pagamento @MARIA CLARA
 - [x] 🔨 Consertar o css da barra de navegação @MARIA CLARA
+- [x] 🚓 Parar de vazar dados sensíveis do usuário pela API @RAYSSA
 
-#### 6fth Sprint -- Conexões com o Banco
-- [ ] Tornar telas principais responsivas @MARIA CLARA
-- [x] 👤 Fazer conexões de dados de Usuários
-- [ ] 📢 Fazer conexões de dados de Anúncios
-- [ ] 🎁 Fazer conexões de dados de Pedidos
-- [x] 📪 Fazer conexões de dados de Chats
-- [ ] 📨 Fazer conexões de dados de Mensagens
-- [ ] 🖇️ Linkar tela de Perfil corretamente (+routing-module)
-- [ ] 🔐 Configurar acesso de usuário dependendo do cadastro @RAYSSA
+#### 8th Sprint -- Conexões com o Banco
+- [ ] 🧠 Tornar telas principais responsivas @MARIA CLARA
+- [x] 👤 Fazer conexões de dados de Usuários @RAYSSA
+- [x] 📢 Fazer conexões de dados de Anúncios @RAYSSA
+- [ ] 🎁 Fazer conexões de dados de Pedidos @RAYSSA
+- [x] 📪 Fazer conexões de dados de Chats @RAYSSA
+- [x] 🖇️ Fazer conexões da tela de Perfil @RAYSSA
+- [ ] 🔐 Configurar acesso de usuário dependendo do cadastro @RAYSSA ⏳⏳⏳
 
 
 ##### Future Sprints...
-- [ ] ⭐ Adicionar avaliações por livro 
+- [ ] ⭐ Adicionar avaliações por livro @RAYSSA 
+- [ ] 📨 Fazer conexões de dados de Mensagens @RAYSSA 
 
 
 ### Setup and Documentations
