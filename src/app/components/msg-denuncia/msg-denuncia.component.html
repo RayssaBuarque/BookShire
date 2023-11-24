@@ -5,12 +5,7 @@
 <div class="container__tela" [class]="visibilidade">
     <div class="container__msg-denuncia">
 
-    
         <div class="primeiraEtapa" *ngIf="etapa==1">
-            
-           
-            
-            <!-- DAQUI PRA BAIXO PRECISA ARRUMAR NO CSS -->
             <img src="../../../assets/icons/bloqueado.svg" class="bloqueado_img"/>
             
             <div class="texto__denuncia">
@@ -35,20 +30,23 @@
                     (ngSubmit)="registrar_denuncia()"
                     >
 
-                    <div class="tituloDenuncia">
+                    <div class="texto__denuncia">
+                        <p>Escreva uma mensagem para acompanhar sua denúncia</p>
+                    </div>
+
+                    <div class="inptsForm">
                         <input
                             id="tituloDenuncia"
                             placeholder="Título"
                             formControlName = "tituloDenuncia"
                             >
-                    </div>
 
-                    <div class="mensagem">
-                        <input
+                        <textarea
+                            class = "descricao"
                             id="mensagem"
                             placeholder="Descreva o ocorrido"
                             formControlName = "mensagem"
-                            >
+                            ></textarea>
                     </div>
 
                     <div class="btn__opcoes">

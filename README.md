@@ -74,7 +74,7 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [x] ❓ Evitar com que usuários peçam seus próprios anúncios @RAYSSA
 - [ ] ⚠️ Corrigir lembrete da tela de anúncio ao clicar em botão de anúncio que já existe @MARIA CLARA
 - [ ] 📑 Ajeitar CSS de scroll da seção de sebos na tela home @MARIA CLARA
-- [ ] 📧 Ajeitar CSS da caixa de texto da tela de CHAT @MARIA CLARA
+- [ ] 📧 Ajeitar CSS da caixa de texto da tela de CHAT @RAYSSA 🤝 @MARIA CLARA
 - [ ] ⚠️ Ajeitar CSS do formulário de denúncia @MARIA CLARA
 
 ###### 7SP Bugs 👾👾👾
