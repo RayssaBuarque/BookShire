@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
+import { Router } from '@angular/router';
 import { CrudService } from 'src/app/services/crud/crud.service';
 
 import { userData } from 'src/assets/data/user_data';
@@ -32,6 +33,7 @@ export class MsgDenunciaComponent implements OnInit {
   
   constructor(
     private formBuilder:FormBuilder,
+    private router:Router,
     private crud:CrudService
   ) { }
   
@@ -52,8 +54,13 @@ export class MsgDenunciaComponent implements OnInit {
   }
 
   // determina a visibilidade do popup
-  popDenuncia():void{
-    this.visibilidade = (this.visibilidade == 'aparecendo')? 'escondido' : 'aparecendo'
+  popDenuncia(stats:any):void{
+    if(stats == null){
+      this.visibilidade = (this.visibilidade == 'aparecendo')? 'escondido' : 'aparecendo'
+    }
+    else if (stats == 'done'){
+      location.reload();
+    }
   }
   
   // coleta os dados da denuncia pro registro
@@ -70,15 +77,16 @@ export class MsgDenunciaComponent implements OnInit {
       "tituloDenuncia": inpts.tituloDenuncia,
       "mensagem": inpts.mensagem
     }
-    console.log(this.denunciaBody)
+    
     this.crud.create('/denuncia', '', this.denunciaBody)
-
+    
     this.etapa = 2
   }
+    
+    // cancela a denúncia
+    cancelarDenuncia():void{
+      this.etapa = 1
+      this.popDenuncia(null)
 
-  // cancela a denúncia
-  cancelarDenuncia():void{
-    this.etapa = 1
-    this.popDenuncia()
   }
 }

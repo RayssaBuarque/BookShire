@@ -1,4 +1,4 @@
-<button class="btn_denunciar" (click)="popDenuncia()" *ngIf="!denuncia_status">Denunciar {{transacao}}</button>
+<button class="btn_denunciar" (click)="popDenuncia(null)" *ngIf="!denuncia_status">Denunciar {{transacao}}</button>
 <button class="btn_denunciar" *ngIf="denuncia_status">Você denunciou esta {{transacao}}</button>
                
 
@@ -15,7 +15,7 @@
         
             <div class="btn__opcoes">
                 <button (click)="coletaDados()">Sim</button>
-                <button (click)="popDenuncia()">Não</button>
+                <button (click)="popDenuncia(null)">Não</button>
             </div>
         </div>
 
@@ -68,7 +68,7 @@
             </div>
     
             <div class="btn__opcoes">
-                <button (click)="popDenuncia()">Ok!</button>
+                <button (click)="popDenuncia('done')">Ok!</button>
             </div>
         </div>
     
