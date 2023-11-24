@@ -1,4 +1,5 @@
-<button class="btn_denunciar" (click)="popDenuncia()">Denunciar {{transacao}}</button>
+<button class="btn_denunciar" (click)="popDenuncia()" *ngIf="!denuncia_status">Denunciar {{transacao}}</button>
+<button class="btn_denunciar" *ngIf="denuncia_status">Você denunciou esta {{transacao}}</button>
                
 
 <div class="container__tela" [class]="visibilidade">
@@ -10,11 +11,6 @@
            
             
             <!-- DAQUI PRA BAIXO PRECISA ARRUMAR NO CSS -->
-
-            <div class="icone__denuncia">
-                <img src="" alt="">
-            </div>
-
             <img src="../../../assets/icons/bloqueado.svg" class="bloqueado_img"/>
             
             <div class="texto__denuncia">
@@ -23,14 +19,50 @@
             </div>
         
             <div class="btn__opcoes">
-                <button (click)="registrar_denuncia()">Sim</button>
+                <button (click)="coletaDados()">Sim</button>
                 <button (click)="popDenuncia()">Não</button>
+            </div>
+        </div>
+
+        <div class="etapaDados" *ngIf="etapa==3">
+            <div class="icone__denuncia">
+                <img src="../../../assets/icons/bloqueado.svg" class="bloqueado_img"/>
+            </div>
+
+            <div class="formDenuncia">
+                <form 
+                    [formGroup]="denunciarForm"
+                    (ngSubmit)="registrar_denuncia()"
+                    >
+
+                    <div class="tituloDenuncia">
+                        <input
+                            id="tituloDenuncia"
+                            placeholder="Título"
+                            formControlName = "tituloDenuncia"
+                            >
+                    </div>
+
+                    <div class="mensagem">
+                        <input
+                            id="mensagem"
+                            placeholder="Descreva o ocorrido"
+                            formControlName = "mensagem"
+                            >
+                    </div>
+
+                    <div class="btn__opcoes">
+                        <button type="submit">Denunciar</button>
+                        <button type="button" (click)="cancelarDenuncia()">Cancelar</button>
+                    </div>
+
+                </form>
             </div>
         </div>
 
         <div class="segundaEtapa" *ngIf="etapa==2">
             <div class="icone__denuncia">
-                <img src="" alt="">
+                <img src="../../../assets/icons/bloqueado.svg" class="bloqueado_img"/>
             </div>
     
             <div class="texto__denuncia">
@@ -38,7 +70,7 @@
             </div>
     
             <div class="btn__opcoes">
-                <button (click)="popDenuncia()" >Ok!</button>
+                <button (click)="popDenuncia()">Ok!</button>
             </div>
         </div>
     
