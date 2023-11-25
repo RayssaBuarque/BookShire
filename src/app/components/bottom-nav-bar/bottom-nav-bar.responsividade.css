@@ -32,13 +32,12 @@
     
     }
     .mensagem_container img{
-        margin-bottom: 6px;
         margin-right: 10px;
-        width: 25px;
-        height: 25px;
+        width: 20px;
+        height: 20px;
     }
     .mensagem_container a {
-        font-size: 22px;
+        font-size: 1.5rem;
         text-decoration: none;
         color: #152139;
     }
