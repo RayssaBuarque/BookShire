@@ -1,6 +1,6 @@
 
-<app-top-nav-bar *ngIf="idUsuario == '2'"></app-top-nav-bar>
-<app-btn-voltar *ngIf="idUsuario != '2'"></app-btn-voltar>
+<app-top-nav-bar *ngIf="idUsuario == loggedUser"></app-top-nav-bar>
+<app-btn-voltar *ngIf="idUsuario != loggedUser"></app-btn-voltar>
 
 <div class="container__perfil" [class]="tela">
 
@@ -17,13 +17,14 @@
     <div class="nav__perfil">
         <button class="navItem" (click)="mudarSecao(0)" [ngClass] = "selecionarA()">Anúncios</button>
         <button class="navItem" (click)="mudarSecao(1)" [ngClass] = "selecionarB()">Avaliação</button>
-        <button class="navItem" (click)="mudarSecao(2)" *ngIf="idUsuario=='2'" [ngClass] = "selecionarC()">Pedidos</button>
+        <button class="navItem" (click)="mudarSecao(2)" *ngIf="idUsuario==loggedUser" [ngClass] = "selecionarC()">Pedidos</button>
     </div>
 
     <div class="anuncios__perfil" *ngIf="secaoIndex == 0">
         
         <div class="lembrete" *ngIf="idAnuncios.length == 0">
-            <p>Este usuário não possui nenhum anúncio.</p>
+            <p *ngIf="idUsuario!=loggedUser">Este usuário não possui nenhum anúncio.</p> 
+            <p *ngIf="idUsuario==loggedUser">Você não possui nenhum anúncio.</p> 
         </div>
 
         <app-anuncio-thumb *ngFor="let anuncio of idAnuncios"
@@ -54,7 +55,7 @@
         </div>
     </div>
 
-    <div class="pedidos__perfil" *ngIf = "secaoIndex == 2 && idUsuario == '2'">
+    <div class="pedidos__perfil" *ngIf="secaoIndex == 2 && idUsuario == loggedUser">
         <app-pedido
             *ngFor="let pedido of idPedidos"
             idPedido="{{pedido}}"

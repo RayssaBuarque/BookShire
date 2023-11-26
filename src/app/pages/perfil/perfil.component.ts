@@ -4,7 +4,6 @@ import { Anuncio } from 'src/app/models/anuncio';
 import { ActivatedRoute } from '@angular/router';
 import { GraficoAvaliacaoComponent } from 'src/app/components/grafico-avaliacao/grafico-avaliacao.component';
 
-import { userData } from 'src/assets/data/user_data';
 import { LoginService } from 'src/app/services/login/login.service';
 
 @Component({
@@ -14,7 +13,8 @@ import { LoginService } from 'src/app/services/login/login.service';
 })
 export class PerfilComponent implements OnInit {
 
-  idUsuario:string | null = userData.userId
+  loggedUser: string | null = JSON.parse(localStorage.getItem('userId') || '')
+  idUsuario:string | null = ''
   private dadosUsuario:any = '';
   
   url_fotoUsuario:string = '../../../assets/thumbnails/default-book_thumbnail.png'
@@ -62,11 +62,7 @@ export class PerfilComponent implements OnInit {
     this.getAnuncios()
     this.getPedidos()
 
-    this.tela = (this.idUsuario == userData.userId)? 'container' : 'outroUser' //adaptar de acordo com user em login
-      
-    console.log((this.idUsuario == userData.userId))
-      console.log(this.idUsuario) 
-      console.log(userData.userId) 
+    this.tela = (this.idUsuario == this.loggedUser)? 'container' : 'outroUser' //adaptar de acordo com user em login
   } 
 
   // Descobrindo se o usuário é um sebo ou não

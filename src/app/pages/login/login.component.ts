@@ -61,6 +61,7 @@ export class LoginComponent implements OnInit {
 
             // armazenando id do usuário logado
             userData.userId = res[0].Id_usuario
+            localStorage.setItem('userId', res[0].Id_usuario)
             // console.log(userData.userId)
 
             this.router.navigate([`..#`]);
