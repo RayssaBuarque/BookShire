@@ -74,26 +74,34 @@ export class AnuncioComponent implements OnInit {
 
   // função que abre chat com vendedor OU abre tela de pagamento
   prosseguir():void{
-    if(this.interesse == 'Comprar'){
-      this.router.navigate([`../anuncios/${this.idLivro}/${this.idAnuncio}/pagamento`]);
-    }else{
-      //atualizando status do livro no bd
-      let vBody = {
-        "anuncio_status": "em andamento"
-      }
-      this.crud.update('/anuncios', `${this.idAnuncio}`, vBody)
 
-      //registrando pedido no bd
-      let body = {
-        "Id_anunciante": `${this.idVendedor}`,
-        "Id_cliente": `${this.idUsuario}`,
-        "Id_anuncio": `${this.idAnuncio}`
-      }
-      
-      this.crud.create('/pedidos', '', body)      
-      
-      this.router.navigate([`../chat`]);
-    }
+    //checando se o pedido já não existe
+    this.crud.read('/pedidos', '', `?Id_cliente=${this.idUsuario}&Id_anuncio=${this.idAnuncio}`)
+      .then((busca:any) => {
+
+        if(busca.length == 0){
+          if(this.interesse == 'Comprar'){
+            this.router.navigate([`../anuncios/${this.idLivro}/${this.idAnuncio}/pagamento`]);
+          }else{
+            //atualizando status do livro no bd
+            let vBody = {
+              "anuncio_status": "em andamento"
+            }
+            this.crud.update('/anuncios', `${this.idAnuncio}`, vBody)
+            
+            //registrando pedido no bd
+            let body = {
+              "Id_anunciante": `${this.idVendedor}`,
+              "Id_cliente": `${this.idUsuario}`,
+              "Id_anuncio": `${this.idAnuncio}`
+            }
+            
+            this.crud.create('/pedidos', '', body)
+              .then(() => this.router.navigate([`../chat`]) )      
+            
+          }
+        }
+      })
   }
 
   // "deletando" o anúncio
