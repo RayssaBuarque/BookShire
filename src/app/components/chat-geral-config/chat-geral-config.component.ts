@@ -1,8 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { CrudService } from 'src/app/services/crud/crud.service';
 
-import { userData } from 'src/assets/data/user_data';
-
 @Component({
   selector: 'app-chat-geral-config',
   templateUrl: './chat-geral-config.component.html',
@@ -10,7 +8,7 @@ import { userData } from 'src/assets/data/user_data';
 })
 export class ChatGeralConfigComponent implements OnInit {
 
-  private idUsuario:string = userData.userId
+  private idUsuario:string = JSON.parse(localStorage.getItem('userId') || '')
 
   @Input() idChat!:string
   private idPedido!:string

@@ -3,8 +3,6 @@ import { FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
 import { CrudService } from 'src/app/services/crud/crud.service';
 
-import { userData } from 'src/assets/data/user_data';
-
 @Component({
   selector: 'app-msg-denuncia',
   templateUrl: './msg-denuncia.component.html',
@@ -13,7 +11,7 @@ import { userData } from 'src/assets/data/user_data';
 export class MsgDenunciaComponent implements OnInit {
 
   @Input() idPedido:string = '' 
-  private Id_usuario:string = userData.userId
+  private Id_usuario:string = JSON.parse(localStorage.getItem('userId') || '')
 
   @Input() transacao:string = 'transação'
   @Input() usuario:string = 'Nome do Usuário'

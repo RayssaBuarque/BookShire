@@ -3,8 +3,6 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { CrudService } from 'src/app/services/crud/crud.service';
 import { SetLivroService } from 'src/app/services/set-livro.service';
 
-import { userData } from 'src/assets/data/user_data';
-
 @Component({
   selector: 'app-pagamento',
   templateUrl: './pagamento.component.html',
@@ -46,7 +44,7 @@ export class PagamentoComponent implements OnInit {
 
   prosseguir(){
     let idVendedor = ''
-    let idUsuario= userData.userId
+    let idUsuario= JSON.parse(localStorage.getItem('userId') || '')
     
     this.crud.read('/anuncios', this.idAnuncio, "")
     .then( (res:any) => {
