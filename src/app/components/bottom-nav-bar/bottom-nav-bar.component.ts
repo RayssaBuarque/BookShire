@@ -9,7 +9,6 @@ import { userData } from 'src/assets/data/user_data';
 })
 export class BottomNavBarComponent implements OnInit {
 
-  // id = userData.userId
   id = JSON.parse(localStorage.getItem('userId') || '')
 
   container_navBottom:string = 'aparecendo'
