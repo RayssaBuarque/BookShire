@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterModule, Router, ActivatedRoute } from '@angular/router';
+import { RouterModule, ActivatedRoute } from '@angular/router';
+import { userData } from 'src/assets/data/user_data';
 
 @Component({
   selector: 'app-bottom-nav-bar',
@@ -7,6 +8,8 @@ import { RouterModule, Router, ActivatedRoute } from '@angular/router';
   styleUrls: ['./bottom-nav-bar.component.css','bottom-nav-bar.responsividade.css']
 })
 export class BottomNavBarComponent implements OnInit {
+
+  id = userData.userId
 
   container_navBottom:string = 'aparecendo'
   container__rodape:string = 'escondido'

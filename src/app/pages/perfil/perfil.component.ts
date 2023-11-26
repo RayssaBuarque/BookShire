@@ -5,6 +5,7 @@ import { ActivatedRoute } from '@angular/router';
 import { GraficoAvaliacaoComponent } from 'src/app/components/grafico-avaliacao/grafico-avaliacao.component';
 
 import { userData } from 'src/assets/data/user_data';
+import { LoginService } from 'src/app/services/login/login.service';
 
 @Component({
   selector: 'app-perfil',
@@ -31,7 +32,10 @@ export class PerfilComponent implements OnInit {
   //index da seção inicial do perfil
   secaoIndex:number = 0
   
-  constructor( private crud:CrudService, private route:ActivatedRoute) { }
+  constructor(
+    private login:LoginService,
+    private crud:CrudService,
+    private route:ActivatedRoute) { }
 
   ngOnInit(): void {
     //recolhendo ids da rota
@@ -39,6 +43,7 @@ export class PerfilComponent implements OnInit {
       this.idUsuario = value.get('id')
     });
 
+    //coletando dados do usuario
     this.crud.read('/users', this.idUsuario, "")
       .then( (res:JSON) => {
         this.dadosUsuario = res
@@ -57,7 +62,11 @@ export class PerfilComponent implements OnInit {
     this.getAnuncios()
     this.getPedidos()
 
-    this.tela = (this.idUsuario == '2')? 'container' : 'outroUser' //adaptar com cadastro
+    this.tela = (this.idUsuario == userData.userId)? 'container' : 'outroUser' //adaptar de acordo com user em login
+      
+    console.log((this.idUsuario == userData.userId))
+      console.log(this.idUsuario) 
+      console.log(userData.userId) 
   } 
 
   // Descobrindo se o usuário é um sebo ou não

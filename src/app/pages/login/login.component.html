@@ -5,28 +5,46 @@
         <img src="../../../assets/imagens/logo_sem_fundo.png" alt="Logo do BookShire">
         <h1>BookShire</h1>
     </div>
-
+    
     <!-- SEÇÃO DE LOGIN -->
     <div class="container__login " [ngClass]="view_login">
-        <div class="conteudos">
-            <div class="forms__login">
+        
+        <div class="lembrete">
+            <p>{{msgErro}}</p>
+        </div>
 
-                <div class="email_div">
-                    <input name="email" type="text" placeholder="E-mail">
-                </div>
+        <form [formGroup]="loginForm" (ngSubmit)="login()">    
+            <div class="conteudos">    
+                <div class="forms__login">
+
+                    <div class="email_div">
+                        <input 
+                            formControlName="email"
+                            name="email"
+                            type="text"
+                            placeholder="E-mail"
+                            (keyup.enter)="login()">
+                    </div>
+                    
+                    <br>
                 
-                <br>
-                
-                <div class="senha_div">
-                    <input name="senha" type="text" placeholder="Senha">
+                    <div class="senha_div">
+                        <input
+                            formControlName="senha"
+                            name="senha"
+                            type="text"
+                            placeholder="Senha"
+                            (keyup.enter)="login()">
+                    </div>
+
                 </div>
             </div>
-    
-            
-        </div>
-            <button class="logar_button">Entrar</button>
-            <p>Não possui conta no BookShire?</p>
-            <button class="button_margin" (click)="mudar_tela_login()">Cadastre-se já!</button>
+
+            <button class="logar_button" type="submit">Entrar</button>
+        </form>
+
+        <p>Não possui conta no BookShire?</p>
+        <button class="button_margin" (click)="mudar_tela_login()">Cadastre-se já!</button>
     </div>
     
     <!-- SEÇÃO DE CADASTRO -->

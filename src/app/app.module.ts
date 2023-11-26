@@ -42,10 +42,6 @@ import { BarraPesquisaSebosComponent } from './components/barra-pesquisa-sebos/b
 import { BarraPesquisaChatComponent } from './components/barra-pesquisa-chat/barra-pesquisa-chat.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RatingStarsComponent } from './components/rating-stars/rating-stars.component';
-// Importing bootstrap modules
-// import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
-
-// import { PesquisaAnunciarComponent } from './pages/pesquisa-anunciar/pesquisa-anunciar.component';
 
 @NgModule({
   declarations: [

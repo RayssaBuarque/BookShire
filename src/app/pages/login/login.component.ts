@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
+import { Router } from '@angular/router';
+import { LoginService } from 'src/app/services/login/login.service';
+
+import { userData } from 'src/assets/data/user_data';
 
 @Component({
   selector: 'app-login',
@@ -14,10 +19,55 @@ export class LoginComponent implements OnInit {
   view_logo:string = 'aparecendo'
   view_endereco:string = 'escondido'
  
+  // Objeto que armazena inputs do formulario de Login
+  loginForm = this.formBuilder.group({
+    email: null,
+    senha: null
+  })
 
-  constructor() { }
+  msgErro:string = ''
+
+  constructor(
+    private formBuilder:FormBuilder,
+    private log:LoginService,
+    private router:Router
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  // função que ele roda pra tentar logar no BookShire
+  login():void{
+    let loginInfo = this.loginForm.value
+
+    // Conferindo se nenhum campo está vazio
+    if(loginInfo.email == null || loginInfo.senha == null){
+      this.msgErro = 'Preencha todos os campos para continuar'
+    }else{
+
+      let vbody = {
+        "email": loginInfo.email,
+        "senha":loginInfo.senha
+      }
+
+      // o login é realizado via create pq mandar dados pelo body é mais seguro que por querys/params
+      this.log.login('/login', '', vbody)
+        .then((res:any) => {
+
+          if(res.length == 0){
+            this.msgErro = 'Senha e/ou Email inválidos'
+          }else{
+            this.msgErro = ''
+
+            // armazenando id do usuário logado
+            userData.userId = res[0].Id_usuario
+            // console.log(userData.userId)
+
+            this.router.navigate([`..#`]);
+          }
+        })
+
+    }
   }
   
 
