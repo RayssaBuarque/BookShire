@@ -245,3 +245,14 @@ BEGIN
 
 END
 $$
+
+-- GATILHO QUE CRIA UM CHAT SEMPRE QUE UM PEDIDO É REALIZADO
+DELIMITER $$
+CREATE TRIGGER tgNewChat AFTER INSERT ON pedido
+	FOR EACH ROW
+BEGIN
+    
+	INSERT INTO chat(Id_usuario1, Id_usuario2, Id_pedido) VALUES( new.Id_anunciante, new.Id_cliente, new.Id_pedido);
+
+END
+$$
