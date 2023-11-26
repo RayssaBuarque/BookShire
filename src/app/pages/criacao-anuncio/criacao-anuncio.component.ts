@@ -4,7 +4,6 @@ import { FormBuilder } from '@angular/forms';
 
 import { SetLivroService } from 'src/app/services/set-livro.service';
 import { CrudService } from 'src/app/services/crud/crud.service';
-import { userData } from 'src/assets/data/user_data';
 
 @Component({
   selector: 'app-criacao-anuncio',
@@ -23,7 +22,7 @@ export class CriacaoAnuncioComponent implements OnInit {
   // grupo que armazena inputs do formulário
   anunciarForm = this.formBuilder.group({
     //POSSIBILITAR TROCA DO USUARIO NO FUTURO !!!
-    Id_usuario: userData.userId,
+    Id_usuario: JSON.parse(localStorage.getItem('userId') || ''),
     transacao: null,
     preco : 0,
     descricao : null,

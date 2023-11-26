@@ -3,8 +3,6 @@ import { FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
 import { LoginService } from 'src/app/services/login/login.service';
 
-import { userData } from 'src/assets/data/user_data';
-
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -60,9 +58,7 @@ export class LoginComponent implements OnInit {
             this.msgErro = ''
 
             // armazenando id do usuário logado
-            userData.userId = res[0].Id_usuario
             localStorage.setItem('userId', res[0].Id_usuario)
-            // console.log(userData.userId)
 
             this.router.navigate([`..#`]);
           }
