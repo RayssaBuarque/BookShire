@@ -8,3 +8,11 @@
 
     gap: 20px;
 }
+@media (min-width : 700px ){
+    .container__pesquisa{
+        padding:  10% 20% 5% 20% ;
+    }
+    .escondido{
+        display: none;
+    }
+}
