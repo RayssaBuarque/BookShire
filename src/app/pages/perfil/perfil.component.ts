@@ -1,10 +1,7 @@
-import { Component, OnInit, AfterContentInit} from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { CrudService } from 'src/app/services/crud/crud.service';
-import { Anuncio } from 'src/app/models/anuncio';
 import { ActivatedRoute } from '@angular/router';
-import { GraficoAvaliacaoComponent } from 'src/app/components/grafico-avaliacao/grafico-avaliacao.component';
-
-import { userData } from 'src/assets/data/user_data';
+import { LoginService } from 'src/app/services/login/login.service';
 
 @Component({
   selector: 'app-perfil',
@@ -13,9 +10,12 @@ import { userData } from 'src/assets/data/user_data';
 })
 export class PerfilComponent implements OnInit {
 
-  idUsuario:string | null = userData.userId
+  // dados importantes
+  loggedUser: string | null = JSON.parse(localStorage.getItem('userId') || '{}')
+  idUsuario:string | null = ''
   private dadosUsuario:any = '';
   
+  // dados de preenchimento da tela
   url_fotoUsuario:string = '../../../assets/thumbnails/default-book_thumbnail.png'
   nome_usuario:string = 'Nome do Usuário'
   localUsuario:string = 'Local dos Anúncios'
@@ -31,14 +31,20 @@ export class PerfilComponent implements OnInit {
   //index da seção inicial do perfil
   secaoIndex:number = 0
   
-  constructor( private crud:CrudService, private route:ActivatedRoute) { }
+  constructor(
+    private crud:CrudService,
+    private login:LoginService,
+    private route:ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.login.isLoggedIn()
+
     //recolhendo ids da rota
     this.route.paramMap.subscribe( (value) =>{
       this.idUsuario = value.get('id')
     });
 
+    //coletando dados do usuario
     this.crud.read('/users', this.idUsuario, "")
       .then( (res:JSON) => {
         this.dadosUsuario = res
@@ -57,7 +63,8 @@ export class PerfilComponent implements OnInit {
     this.getAnuncios()
     this.getPedidos()
 
-    this.tela = (this.idUsuario == '2')? 'container' : 'outroUser' //adaptar com cadastro
+    //adaptar de acordo com user em login
+    this.tela = (this.idUsuario == this.loggedUser)? 'container' : 'outroUser'
   } 
 
   // Descobrindo se o usuário é um sebo ou não

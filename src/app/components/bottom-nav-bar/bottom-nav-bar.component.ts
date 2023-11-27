@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterModule, Router, ActivatedRoute } from '@angular/router';
+import { RouterModule, ActivatedRoute } from '@angular/router';
+import { userData } from 'src/assets/data/user_data';
 
 @Component({
   selector: 'app-bottom-nav-bar',
@@ -8,15 +9,16 @@ import { RouterModule, Router, ActivatedRoute } from '@angular/router';
 })
 export class BottomNavBarComponent implements OnInit {
 
+  id = ''
+
   container_navBottom:string = 'aparecendo'
   container__rodape:string = 'escondido'
   container_mensagem:string = 'escondido'
 
   constructor(RouterModule:RouterModule, activatedRoute:ActivatedRoute) { }
 
-  
   ngOnInit(): void {
-    
+    this.id = JSON.parse(localStorage.getItem('userId') || '{}')
   }
 
 }

@@ -20,14 +20,10 @@
 
 .container__inicial{
     background-color: var(--deep-blue);
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    /*AQUI ESTÁ AS CONFIGURAÇÕES DO TAMANHO DA DIV*/
-    min-width: 100vw;
-    min-height: 100vh;
     
+    width: 100%;
+    height: 100%;
+
     text-align: center;
     flex-direction:column;
     align-items: center;
@@ -275,9 +271,9 @@
     
          
         /*alterei o padding: código anterior: padding: 75.7px 0;*/
-        /*SE DER ERRO MUDE AQUI*/
-        padding: 75.7px 0px;
-        
+        padding: 119.5px 0px;
+        background-image: url(../../../assets/imagens/capa_cad.png);
+        background-size: 1920px 1080px;
     }
     /*.container__cadastro {
         background-color: rgb(20, 32, 56 ,0.9);

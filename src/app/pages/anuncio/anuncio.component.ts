@@ -5,8 +5,6 @@ import { Anuncio } from 'src/app/models/anuncio';
 import { CrudService } from 'src/app/services/crud/crud.service';
 import { SetLivroService } from 'src/app/services/set-livro.service';
 
-import { userData } from 'src/assets/data/user_data';
-
 @Component({
   selector: 'app-anuncio',
   templateUrl: './anuncio.component.html',
@@ -14,7 +12,7 @@ import { userData } from 'src/assets/data/user_data';
 })
 export class AnuncioComponent implements OnInit {
 
-  idUsuario:string | null = userData.userId
+  idUsuario:string | null = JSON.parse(localStorage.getItem('userId') || '')
   idLivro:string | null = ""
   
   tituloLivro:string = 'Título do Livro';

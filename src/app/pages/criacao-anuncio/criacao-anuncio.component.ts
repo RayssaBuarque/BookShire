@@ -2,8 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { FormBuilder } from '@angular/forms';
 
-import { SetLivroService } from 'src/app/services/set-livro.service';
 import { CrudService } from 'src/app/services/crud/crud.service';
+import { LoginService } from 'src/app/services/login/login.service';
+import { SetLivroService } from 'src/app/services/set-livro.service';
 
 @Component({
   selector: 'app-criacao-anuncio',
@@ -19,9 +20,10 @@ export class CriacaoAnuncioComponent implements OnInit {
 
   lembrete:boolean = false
 
+  // grupo que armazena inputs do formulário
   anunciarForm = this.formBuilder.group({
     //POSSIBILITAR TROCA DO USUARIO NO FUTURO !!!
-    Id_usuario: '2',
+    Id_usuario: JSON.parse(localStorage.getItem('userId') || '{}'),
     transacao: null,
     preco : 0,
     descricao : null,
@@ -34,14 +36,18 @@ export class CriacaoAnuncioComponent implements OnInit {
   })
 
   constructor(
-    private setter:SetLivroService,
+    private crud:CrudService,
+    private formBuilder:FormBuilder,
+    private login:LoginService,
     private route:ActivatedRoute,
     private router:Router,
-    private formBuilder:FormBuilder,
-    private crud:CrudService
+    private setter:SetLivroService
     ) { }
 
   ngOnInit(): void {
+
+    this.login.isLoggedIn()
+
     //pegando o Id do livro pelo url da página
     this.route.paramMap.subscribe( (value) => {
       this.idLivro = value.get('idLivro') 
@@ -100,8 +106,6 @@ export class CriacaoAnuncioComponent implements OnInit {
         })
     }
 
-    
-    // this.anunciarForm.reset();
   }
 
 }
