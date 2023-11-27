@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
+
 import { LoginService } from 'src/app/services/login/login.service';
 
 @Component({
@@ -32,7 +33,6 @@ export class LoginComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    // this.log.isLoggedIn()
   }
 
   // função que ele roda pra tentar logar no BookShire

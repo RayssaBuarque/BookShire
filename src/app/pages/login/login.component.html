@@ -10,7 +10,7 @@
     <!-- SEÇÃO DE LOGIN -->
     <div class="container__login " [ngClass]="view_login">
         
-        <div class="lembrete">
+        <div class="lembrete" *ngIf="msgErro != ''">
             <p>{{msgErro}}</p>
         </div>
 
