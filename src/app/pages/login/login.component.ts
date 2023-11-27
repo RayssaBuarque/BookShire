@@ -19,6 +19,7 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
 
   mudar_tela_login(){
 
@@ -88,6 +89,7 @@ export class LoginComponent implements OnInit {
     }
     
   }
+ 
 
 
 }

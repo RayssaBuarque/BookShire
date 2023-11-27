@@ -71,24 +71,27 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [x] 🚪 Criar tela de login/cadastro @MARIA CLARA
 - [x] ⭐ Ajeitar CSS de avaliação de pedido @MARIA CLARA
 - [x] ⚠️ Aviso que usuário não possui anúncios @MARIA CLARA 🤝 @RAYSSA
-- [x] ❓ Evitar com que usuários peçam seus próprios anúncios @RAYSSA
 - [ ] ⚠️ Corrigir lembrete da tela de anúncio ao clicar em botão de anúncio que já existe @MARIA CLARA
 - [ ] 📑 Ajeitar CSS de scroll da seção de sebos na tela home @MARIA CLARA
 - [ ] 📧 Ajeitar CSS da caixa de texto da tela de CHAT @MARIA CLARA
+- [x] ⚠️ Ajeitar CSS do formulário de denúncia @RAYSSA
 
 ###### 7SP Bugs 👾👾👾
 - [x] 💀 Repor bottom nav bar de CHAT 
-- [x] ⭐ Consertar view da média de avaliação de usuários SEM AVALIAÇÃO
+- [x] ⭐ Consertar view da média de avaliação de usuários SEM AVALIAÇÃO @MARIA CLARA
 - [x] ↖️ Ajeitar setinha do pagamento @MARIA CLARA
 - [x] 🔨 Consertar o css da barra de navegação @MARIA CLARA
 - [x] 🚓 Parar de vazar dados sensíveis do usuário pela API @RAYSSA
+- [x] ❓ Evitar com que usuários peçam seus próprios anúncios @RAYSSA
+- [x] ❓ Impedir usuário de fazer 2 pedidos iguais @RAYSSA
 
 #### 8th Sprint -- Conexões com o Banco
 - [ ] 🧠 Tornar telas principais responsivas @MARIA CLARA
 - [x] 👤 Fazer conexões de dados de Usuários @RAYSSA
 - [x] 📢 Fazer conexões de dados de Anúncios @RAYSSA
 - [ ] 🎁 Fazer conexões de dados de Pedidos @RAYSSA
-- [x] 📪 Fazer conexões de dados de Chats @RAYSSA
+- [x] ⚠️ Fazer conexões de dados de Denúncias @RAYSSA
+- [ ] 📪 Fazer conexões de dados de Chats @RAYSSA
 - [x] 🖇️ Fazer conexões da tela de Perfil @RAYSSA
 - [ ] 🔐 Configurar acesso de usuário dependendo do cadastro @RAYSSA ⏳⏳⏳
 

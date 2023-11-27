@@ -1,3 +1,8 @@
 .lembrete p {
     margin: 0%;
 }
+@media (min-width: 700px ){
+    .escondido{
+        display: none;
+    }
+}

@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PesquisaAnunciarComponent implements OnInit {
 
+  barra_pesquisa:string = 'escondido'
+
   //variável que carrega os IDs de categorias apresentados
   private idCategorias:string[] = ['1021','1017','1003','1004','1015','1025','1002','1007','1013','1016','1005','1001','1009','1034','1024'];  
 
