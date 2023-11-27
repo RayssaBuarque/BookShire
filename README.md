@@ -89,15 +89,9 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [ ] 🧠 Tornar telas principais responsivas @MARIA CLARA
 - [x] 👤 Fazer conexões de dados de Usuários @RAYSSA
 - [x] 📢 Fazer conexões de dados de Anúncios @RAYSSA
-<<<<<<< HEAD
-- [ ] 🎁 Fazer conexões de dados de Pedidos @RAYSSA
-- [x] ⚠️ Fazer conexões de dados de Denúncias @RAYSSA
-- [ ] 📪 Fazer conexões de dados de Chats @RAYSSA
-=======
 - [x] 🎁 Fazer conexões de dados de Pedidos @RAYSSA
 - [x] ⚠️ Fazer conexões de dados de Denúncias @RAYSSA
 - [x] 📪 Fazer conexões de dados de Chats @RAYSSA
->>>>>>> 418b6b10a970fb189b387be2a017e659d20398a3
 - [x] 🖇️ Fazer conexões da tela de Perfil @RAYSSA
 - [x] 🔐 Configurar acesso de usuário dependendo do login @RAYSSA ⏳⏳⏳
 
