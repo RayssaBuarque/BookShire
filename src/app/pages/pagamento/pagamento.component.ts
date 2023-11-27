@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+
 import { CrudService } from 'src/app/services/crud/crud.service';
+import { LoginService } from 'src/app/services/login/login.service';
 import { SetLivroService } from 'src/app/services/set-livro.service';
 
 @Component({
@@ -27,24 +29,26 @@ export class PagamentoComponent implements OnInit {
   seta_voltar_:string = 'escondido'
 
   constructor(
+    private crud:CrudService,
+    private login:LoginService,
     private route:ActivatedRoute,
     private router:Router,
-    private crud:CrudService,
     private setter:SetLivroService) { }
 
   ngOnInit(): void {
+    this.login.isLoggedIn()
+
     //recolhendo ids da rota
     this.route.paramMap.subscribe( (value) =>{
       this.idAnuncio = value.get('idAnuncio')
       this.idLivro = value.get('idLivro')
     });
 
-    // this.prosseguir()
   }
 
   prosseguir(){
     let idVendedor = ''
-    let idUsuario= JSON.parse(localStorage.getItem('userId') || '')
+    let idUsuario= JSON.parse(localStorage.getItem('userId') || '{}')
     
     this.crud.read('/anuncios', this.idAnuncio, "")
     .then( (res:any) => {
@@ -69,8 +73,6 @@ export class PagamentoComponent implements OnInit {
           //mudando a view de pagamento
           this.mudar_view_pagamento_finalizado();
         }) 
-      
-      // this.router.navigate([`../chat`]);
 
     })
   }

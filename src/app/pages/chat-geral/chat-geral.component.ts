@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CrudService } from 'src/app/services/crud/crud.service';
+import { LoginService } from 'src/app/services/login/login.service';
+
 
 @Component({
   selector: 'app-chat-geral',
@@ -12,7 +14,7 @@ import { CrudService } from 'src/app/services/crud/crud.service';
 export class ChatGeralComponent implements OnInit {
   
   //configurar cadastro mais tarde
-  idUsuario:string = JSON.parse(localStorage.getItem('userId') || '')
+  idUsuario:string = JSON.parse(localStorage.getItem('userId') || '{}')
   idChats:string[] = []
 
   chatIndividual:boolean = false
@@ -22,10 +24,12 @@ export class ChatGeralComponent implements OnInit {
   nomeUsuario!:string
 
   constructor(
-    private crud:CrudService
+    private crud:CrudService,
+    private login:LoginService
   ) { }
 
   ngOnInit(): void {
+    this.login.isLoggedIn()
     this.getConversas()
   }
 

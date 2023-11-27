@@ -8,7 +8,6 @@ import { CategoriaComponent } from './pages/categoria/categoria.component';
 import { PesquisaResultadosComponent } from './pages/pesquisa-resultados/pesquisa-resultados.component';
 import { PerfilComponent } from './pages/perfil/perfil.component';
 import { PesquisaAnunciarComponent } from './pages/pesquisa/pesquisa-anunciar/pesquisa-anunciar.component';
-import { NotificacoesComponent } from './pages/notificacoes/notificacoes.component';
 import { ListaAnunciosComponent } from './pages/lista-anuncios/lista-anuncios.component';
 import { AnuncioComponent } from './pages/anuncio/anuncio.component';
 import { CriacaoAnuncioComponent } from './pages/criacao-anuncio/criacao-anuncio.component';
@@ -21,6 +20,10 @@ const routes: Routes = [
   {
     path:'',
     component: HomeComponent
+  },
+  {
+    path:'login',
+    component: LoginComponent
   },
   {
     // DETALHE:: especificar ID do perfil mais tarde
@@ -64,14 +67,6 @@ const routes: Routes = [
   {
     path:'anunciar/:idLivro',
     component: CriacaoAnuncioComponent
-  },
-  {
-    path:'rayssa',
-    component: LoginComponent
-  },
-  {
-    path:'notificacoes',
-    component: NotificacoesComponent
   },
   {
     path:'chat',

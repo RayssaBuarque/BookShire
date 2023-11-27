@@ -32,6 +32,7 @@ export class LoginComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    // this.log.isLoggedIn()
   }
 
   // função que ele roda pra tentar logar no BookShire

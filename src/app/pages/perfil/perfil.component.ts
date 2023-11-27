@@ -1,7 +1,7 @@
 import { Component, OnInit} from '@angular/core';
 import { CrudService } from 'src/app/services/crud/crud.service';
 import { ActivatedRoute } from '@angular/router';
-
+import { LoginService } from 'src/app/services/login/login.service';
 
 @Component({
   selector: 'app-perfil',
@@ -11,7 +11,7 @@ import { ActivatedRoute } from '@angular/router';
 export class PerfilComponent implements OnInit {
 
   // dados importantes
-  loggedUser: string | null = JSON.parse(localStorage.getItem('userId') || '')
+  loggedUser: string | null = JSON.parse(localStorage.getItem('userId') || '{}')
   idUsuario:string | null = ''
   private dadosUsuario:any = '';
   
@@ -33,9 +33,12 @@ export class PerfilComponent implements OnInit {
   
   constructor(
     private crud:CrudService,
+    private login:LoginService,
     private route:ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.login.isLoggedIn()
+
     //recolhendo ids da rota
     this.route.paramMap.subscribe( (value) =>{
       this.idUsuario = value.get('id')
