@@ -42,3 +42,8 @@
     width: 20px;
     height: 30px;
 }
+@media (min-width: 700px){
+    .container__pesquisa-resultados{
+        margin-top: 2.5%;
+    }
+}
