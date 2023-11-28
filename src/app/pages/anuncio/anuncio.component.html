@@ -15,7 +15,11 @@
 
         <h1>{{infoTransacao}}</h1>
 
-        
+         
+        <div class="aviso" *ngIf="aviso == true">
+            <p class="lembrete">Parece que este anúncio possui pedidos em andamento, cancele suas transações antes de remover o anúncio.</p>
+        </div>
+
         <button
         class="text__transacao" 
             (click)="prosseguir()"
@@ -29,12 +33,7 @@
             *ngIf="idUsuario == idVendedor">
             <h1>Remover Anúncio</h1>
         </button>
-        
-        <!-- *ngIf="aviso == true" -->
-        <div class="lembrete" >
-            <p>Parece que este anúncio possui pedidos em andamento, cancele suas transações antes de remover o anúncio.</p>
-        </div>
-
+       
         <h3>{{localAnuncio}}</h3>
     </div>
 

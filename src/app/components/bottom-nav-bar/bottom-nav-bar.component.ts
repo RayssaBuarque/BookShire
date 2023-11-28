@@ -9,7 +9,7 @@ import { userData } from 'src/assets/data/user_data';
 })
 export class BottomNavBarComponent implements OnInit {
 
-  id = ''
+  id = JSON.parse(localStorage.getItem('userId') || '{}')
 
   container_navBottom:string = 'aparecendo'
   container__rodape:string = 'escondido'
@@ -18,7 +18,6 @@ export class BottomNavBarComponent implements OnInit {
   constructor(RouterModule:RouterModule, activatedRoute:ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.id = JSON.parse(localStorage.getItem('userId') || '{}')
   }
 
 }

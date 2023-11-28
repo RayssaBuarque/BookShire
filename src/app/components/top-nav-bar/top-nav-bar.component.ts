@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopNavBarComponent implements OnInit {
 
+  idUsuario = JSON.parse(localStorage.getItem('userId') || '{}')
+
   top_bar_pc:string = 'escondido'
   top_bar:string = 'aparecendo'
 
