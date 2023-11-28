@@ -55,4 +55,10 @@
     .container__categoria{
         margin-top: 2.5%;
     }
+    .container__categoria{
+        width: 60%;
+    }
+    .pesquisa__barra {
+        width: 100%;
+    }
 }

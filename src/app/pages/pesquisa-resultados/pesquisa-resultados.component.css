@@ -46,4 +46,10 @@
     .container__pesquisa-resultados{
         margin-top: 2.5%;
     }
+    .container__pesquisa-resultados{
+        width: 60%;
+    }
+    .pesquisa__barra {
+        width: 100%;
+    }
 }
