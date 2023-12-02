@@ -28,7 +28,7 @@ jobs:
       #   run: npm run test:headless
 
       - name: Build
-        run: npm run build:production
+        run: ng build --configuration production
 
       - name: Deploy
         if: success()
