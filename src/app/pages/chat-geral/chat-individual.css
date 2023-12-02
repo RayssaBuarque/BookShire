@@ -2,24 +2,30 @@
 .header_chat{
     background-color: #D7DEEA;
     display: flex;
-    padding: 15px;
+    padding: 15px 20px;
     align-items: center;
-
+    position: fixed;
+    top: 1rem;
+    border-radius: 15px;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    float: left;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.10);
 }
 
 img{
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     margin-left: 20px;
     object-fit: cover;
 }
 
 #seta{
-    width: 20px;
+    width: 23px;
     height: 20px;
     border-radius: 50%;
-    margin-left: 10px;
+    margin-left: 0px;
 }
 #username{
     margin-left: 15px;
@@ -40,37 +46,118 @@ img{
 }
 
 .mensagem_um{
-    margin-right: 5px;
     background-color: #F2F2F4;
-    width: 300px;
-    padding: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.20);
+    width: 40%;
+    padding: 15px;
     border-radius: 10px 0px 10px 10px;
     float: right;
     font-family: 'Roboto', sans-serif;
     align-items: center;
     text-align: center;
+}
 
+.mensagem_um p {
+    margin: 0%;
+    color: #152139;
 }
 
 .mensagem_dois{
     margin-top: 100px;
-    margin-left: 5px;
-    background-color: #15213999;
-    width: 300px;
-    padding: 10px;
+    background-color: #D7DEEA;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.10);
+    width: 40%;
+    padding: 15px;
     border-radius: 0px 10px 10px 10px;
     font-family: 'Roboto', sans-serif;
     align-items: center;
     text-align: center;
-
 }
 
+.mensagem_dois p {
+    margin: 0%;
+    color: #152139;
+}
 
 .geral_top{
     margin-bottom: 100px;
+    display: block;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .header_chat button{
     background-color: transparent;
     border: none;
+    padding: 3px;
+}
+
+.bookshire{
+    width: 100%;
+    height: 50%;
+    background-color: #152139;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.bookshire h1 {
+    color: white;
+    font-family: 'Advent Pro', sans-serif;
+    margin: 0%;
+}
+
+.conversa{
+    margin-top: 13%;
+    overflow-y: scroll;
+    width: 95%;
+    height: 20rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+/* teste */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: e6e9f0; 
+    border-radius: 15px;
+    height: 20px;
+  }
+::-webkit-scrollbar-thumb:hover {
+    background: #cbd3e0; 
+    border-radius: 15px;
+    height: 20px;
+  }
+
+@media (max-width: 699px ){
+    .header_chat {
+        width: 100%;
+        position: fixed;
+        top: 0%;
+        margin:0;
+        border-radius: 0;
+    }
+    .conversa{
+        margin-top: 25%;
+        overflow-y: scroll;
+        width: 95%;
+        height: 100%;
+        margin-left:0.5rem;
+        margin-right: 0;
+        padding: 10px;
+        padding-right: 0px;
+    }
+    .mensagem_dois{
+        margin-top: 143px;
+        width: 45%;
+        margin-right: 0;
+    }
+    .mensagem_um{
+        width: 45%;
+        margin-right: 0;
+    }
+    
 }

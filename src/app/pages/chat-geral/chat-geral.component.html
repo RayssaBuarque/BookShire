@@ -24,41 +24,50 @@
 
 <!-- CHAT INDIVIDUAL -->
 <div class="geral_top" *ngIf="chatIndividual">
+
+    <!--
+    <div class="bookshire">
+        <h1>BookShire</h1>
+    </div>
+    -->
+
     <div class="header_chat">
-        <button (click)="mudarConversa(null)"><img id="seta" src="assets/icons/seta_azul.svg"></button>
+        <button (click)="mudarConversa(null)"><img id="seta" src="../../../assets/icons/seta_azul.svg"></button>
         <img src="{{fotoUsuario}}">
         <div id="username"> {{nomeUsuario}} </div>
     </div>
+    <div class="conversa">
+        <div class="mensagens_user1">
+            <div class="mensagem_um">
+                <p id="men1"> Boa tarde, necessito de ajuda. </p>
+            </div>
+        </div>
+        
+        <div class="mensagens_user2">
+            <div class="mensagem_dois">
+                <p id="men2"> Claro, o que você precisa hoje? </p>
+            </div>
+        </div>
     
-    <div class="mensagens_user1">
-        <div class="mensagem_um">
-            <p id="men1"> Boa tarde, necessito de ajuda. </p>
+        <div class="mensagens_user1">
+            <div class="mensagem_um">
+                <p id="men1"> Quais tipos de anúncios posso fazer? </p>
+            </div>
+        </div>
+    
+        <div class="mensagens_user2">
+            <div class="mensagem_dois">
+                <p id="men2"> No BookShire, você pode realizar anúncios de troca, doação e venda de livros </p>
+            </div>
+        </div>
+    
+        <div class="mensagens_user1">
+            <div class="mensagem_um">
+                <p id="men1"> Obrigada pela informação! </p>
+            </div>
         </div>
     </div>
     
-    <div class="mensagens_user2">
-        <div class="mensagem_dois">
-            <p id="men2"> Claro, o que você precisa hoje? </p>
-        </div>
-    </div>
-
-    <div class="mensagens_user1">
-        <div class="mensagem_um">
-            <p id="men1"> Quais tipos de anúncios posso fazer? </p>
-        </div>
-    </div>
-
-    <div class="mensagens_user2">
-        <div class="mensagem_dois">
-            <p id="men2"> No BookShire, você pode realizar anúncios de troca, doação e venda de livros </p>
-        </div>
-    </div>
-
-    <div class="mensagens_user1">
-        <div class="mensagem_um">
-            <p id="men1"> Obrigada pela informação! </p>
-        </div>
-    </div>
 </div>
 <app-bottom-chat-textbox *ngIf="chatIndividual == true"></app-bottom-chat-textbox>
 

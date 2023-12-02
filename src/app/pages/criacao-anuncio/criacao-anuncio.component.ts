@@ -9,7 +9,7 @@ import { SetLivroService } from 'src/app/services/set-livro.service';
 @Component({
   selector: 'app-criacao-anuncio',
   templateUrl: './criacao-anuncio.component.html',
-  styleUrls: ['./criacao-anuncio.component.css']
+  styleUrls: ['./criacao-anuncio.component.css','criacao-anuncio.responsividade.css']
 })
 export class CriacaoAnuncioComponent implements OnInit {
 

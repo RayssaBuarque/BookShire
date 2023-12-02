@@ -1,0 +1,25 @@
+@media (min-width: 700px){
+    .container__criacao-anuncio{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 50px;
+        margin-top: 0;
+    }
+    .tipo__transacao {
+        display: flex;
+        flex-direction: row;
+    }
+    .tipo__transacao div {
+        padding: 2% 6%;
+    }
+    .RadioVenda {
+        margin-right: 10px;
+    }
+    .RadioTroca{
+        margin-right: 10px;
+    }
+    .dados__livro{
+        width: 35%;
+        margin-right: 3rem;
+    }
+}

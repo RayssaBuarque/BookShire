@@ -51,3 +51,14 @@
     width: 20px;
     height: 30px;
 }
+@media (min-width: 700px){
+    .container__categoria{
+        margin-top: 2.5%;
+    }
+    .container__categoria{
+        width: 60%;
+    }
+    .pesquisa__barra {
+        width: 100%;
+    }
+}

@@ -4,12 +4,17 @@ input{
 }
 
 button{
-    background-color:#F2F2F4;
-    border-color:#F2F2F4;
-    margin-left: 3px;
+    border: none;
+    background-color: transparent;
+    margin-left: 0.5rem;
     padding: 3px;
-    border-radius: 5px 5px 5px 5px;
 }
+
+button img {
+    width: 2rem;
+    height: 2rem;
+}
+
 
 .geral_bottom{
     background-color:#D7DEEA;
@@ -17,9 +22,18 @@ button{
     width: 100%;
     bottom: 0;
     
+    justify-content: center;
+    text-align: center;
     align-items: center;
     display: flex;
     margin-top: 50%;
     position: fixed;
 
+}
+
+.geral_bottom input {
+    border-radius: 15px;
+    border: none;
+    padding-left: 0.8rem;
+    width: 80%;
 }

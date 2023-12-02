@@ -6,7 +6,7 @@ import { LoginService } from 'src/app/services/login/login.service';
 @Component({
   selector: 'app-perfil',
   templateUrl: './perfil.component.html',
-  styleUrls: ['./perfil.component.css']
+  styleUrls: ['./perfil.component.css','perfil.responsividade.css']
 })
 export class PerfilComponent implements OnInit {
 

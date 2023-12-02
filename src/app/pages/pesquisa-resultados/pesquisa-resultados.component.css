@@ -42,3 +42,14 @@
     width: 20px;
     height: 30px;
 }
+@media (min-width: 700px){
+    .container__pesquisa-resultados{
+        margin-top: 2.5%;
+    }
+    .container__pesquisa-resultados{
+        width: 60%;
+    }
+    .pesquisa__barra {
+        width: 100%;
+    }
+}
