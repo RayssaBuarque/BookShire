@@ -16,16 +16,21 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Node.js
+      - name: Install Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 14
+          node-version: 18.16.0
+
+      - name: Install Angular
+        run: |
+          npm install -g @angular/cli
+          npm install @angular-devkit/build-angular
 
       - name: Install dependencies
         run: npm install
 
       # - name: Tests
-      #   run: npm run test:headless
+      #   run: npm run test
 
       - name: Build
         run: ng build --configuration production
