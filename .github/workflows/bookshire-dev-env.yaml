@@ -1,0 +1,27 @@
+name: Validate
+
+on: 
+  push:
+    branches:
+      - develop
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Tests
+        run: npm run test:headless
+
+      - name: Build
+        run: npm run build:development
