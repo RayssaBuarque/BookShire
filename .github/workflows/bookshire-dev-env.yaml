@@ -19,9 +19,8 @@ jobs:
 
       - name: Install Angular
         run: |
-          npm i @angular/cli@14.1.2
+          npm install -g @angular/cli
           npm install @angular-devkit/build-angular
-          ng add @ng-bootstrap/ng-bootstrap
 
       - name: Install dependencies
         run: npm install
