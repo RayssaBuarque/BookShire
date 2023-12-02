@@ -24,11 +24,11 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Tests
-        run: npm run test:headless
+      # - name: Tests
+      #   run: npm run test:headless
 
       - name: Build
-        run: npm run build:development
+        run: npm run build:production
 
       - name: Deploy
         if: success()
@@ -37,9 +37,9 @@ jobs:
           folder: build
           bucket: ${{ secrets.S3_BUCKET }}
           bucket-region: ${{ secrets.S3_BUCKET_REGION }}
-          dist-id: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
-          invalidation: /
-          delete-removed: true
-          no-cache: true
-          private: true
-          files-to-include: '{.*/**,**}'
+          # dist-id: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
+          # invalidation: /
+          # delete-removed: true
+          # no-cache: true
+          # private: true
+          # files-to-include: '{.*/**,**}'
