@@ -6,7 +6,7 @@ on:
       - develop
 
 jobs:
-  dev:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -40,7 +40,7 @@ jobs:
           bucket-region: ${{ secrets.S3_BUCKET_REGION }}
           # dist-id: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
           # invalidation: /
-          # delete-removed: true
-          # no-cache: true
-          # private: true
+          delete-removed: true
+          no-cache: true
+          private: true
           # files-to-include: '{.*/**,**}'
