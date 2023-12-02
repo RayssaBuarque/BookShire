@@ -6,16 +6,22 @@ on:
       - develop
 
 jobs:
-  run:
+  dev:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v3
 
-      - name: Node.js
+      - name: Install Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 14
+          node-version: 18.16.0
+
+      - name: Install Angular
+        run: |
+          npm i @angular/cli@14.1.2
+          npm install @angular-devkit/build-angular
+          ng add @ng-bootstrap/ng-bootstrap
 
       - name: Install dependencies
         run: npm install
