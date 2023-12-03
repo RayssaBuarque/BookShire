@@ -21,6 +21,8 @@ export class AnuncioThumbComponent implements OnInit {
   urlImgLivro:string = '../../../../assets/thumbnails/default-book_thumbnail.png'
   transacaoData:string = 'Doação/Troca/Preço'
 
+  status:string = 'Aberto'
+
   constructor(
     private crud:CrudService,
     private setter:SetLivroService) { }
@@ -36,15 +38,38 @@ export class AnuncioThumbComponent implements OnInit {
         this.idAnunciante = res[0].Id_usuario
         this.idLivro = res[0].Id_livro
         
-
         if(res[0].transacao == 'Venda'){
           this.transacaoData = `R$ ${Number(res[0].preco).toFixed(2)}`
         }else{
           this.transacaoData = res[0].transacao
         }
 
+        this.setStatus(res[0])
+        
+
         this.setLivro()
       })
+  }
+
+  setStatus(dadosAnuncio:any):void{
+    console.log(dadosAnuncio)
+    let status = dadosAnuncio.anuncio_status
+
+    if(status == 'em andamento'){
+      this.status = 'Em andamento'
+    }else if(status == 'fechado'){
+      this.crud.read('/pedidos', '', `?Id_anuncio=${dadosAnuncio.Id_anuncio}`)
+        .then((res:any) => {
+          for(let i in res){
+            if(res[i].dataConclusao != null){
+              const inputDate = new Date(res[i].dataConclusao)
+              let data = isNaN(inputDate.getTime()) ? 'Invalid date string' : inputDate.toLocaleDateString('en-GB');
+              this.status = `Concluído em ${data}`
+            }
+          }
+          console.log(res)
+        })
+    }
   }
 
   setLivro():void{
@@ -58,22 +83,5 @@ export class AnuncioThumbComponent implements OnInit {
           }
         })
   }
-
-  //ANTIGA FUNÇÃO QUE RECOLHIA DADOS DO GOOGLE BOOKS
-  // setLivro(Id_livro:string):void{
-  //   //Coletando titulo do livro com base no id dele
-  //   let fetchApi = fetch(`https://www.googleapis.com/books/v1/volumes/${Id_livro}`)
-  //                   .then( (res) => res.json() )
-  //                   .then( (res) => {
-  //                     this.tituloLivro = res.volumeInfo.title
-
-  //                     try{
-  //                       this.urlImgLivro = res.volumeInfo.imageLinks.thumbnail
-  //                     }
-  //                     catch(error){
-                       
-  //                     }
-  //                   } )
-  // }
 
 }

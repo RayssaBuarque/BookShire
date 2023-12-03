@@ -83,9 +83,12 @@ export class PerfilComponent implements OnInit {
       .then((res:any[]) => {
         for (let i = 0; i< res.length; i++){
 
-          if(res[i].anuncio_status == 'aberto'){
+
+          /////AQUI É A PARTE DE COLETA DOS IDS DOS DITOS CUJOS
+          // console.log(res)
+          // if(res[i].anuncio_status == 'aberto'){
             this.idAnuncios.push( res[i].Id_anuncio )
-          }
+          // }
         }
       })
   }

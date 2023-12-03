@@ -21,6 +21,8 @@ export class AnuncioComponent implements OnInit {
   sinopseLivro:string = 'Sinopse do Livro kdhfkj sdhkjfhdskjfhksdhf kjdshfkj hdskjfhs dkjhfkjdshfuye iuhfsdkjhfkdjshfkuehfkjhgf akfhkjhdksjhfudshfdsjhd fkjdshfkj';
   
   private dadosAnuncio!:Anuncio
+  statusAnuncio!:string
+
   descricaoLivro:string[] = [];
   idVendedor:string = "0";
   idAnuncio:string | null = ""
@@ -139,6 +141,7 @@ export class AnuncioComponent implements OnInit {
           res[0].anuncio_status
         )
         
+        this.statusAnuncio = this.dadosAnuncio.status
         this.idVendedor = this.dadosAnuncio.Id_usuario
         this.descricaoLivro.push(this.dadosAnuncio.descricao);
         
@@ -149,7 +152,26 @@ export class AnuncioComponent implements OnInit {
           this.infoTransacao = this.dadosAnuncio.transacao
         }
 
-        this.interesse = (this.idUsuario == this.idVendedor)? 'Remover anúncio' : this.interesse
+        // Conferindo se o anúncio ainda está no ar
+        if(this.statusAnuncio != "fechado"){
+          this.interesse = (this.idUsuario == this.idVendedor)? 'Remover Anúncio' : this.interesse
+        }else{
+          this.crud.read('/pedidos', '', `?Id_anuncio=${this.dadosAnuncio.Id_anuncio}`)
+            .then((res:any) => {
+              for(let i in res){
+                if(res[i].dataConclusao != null){
+                  const inputDate = new Date(res[i].dataConclusao)
+                  let data = isNaN(inputDate.getTime()) ? 'Invalid date string' : inputDate.toLocaleDateString('en-GB');
+                  this.interesse = `Concluído em ${data}`
+                }
+              }
+            });
+          console.log(res)
+          // const inputDate = new Date(res[i].dataConclusao)
+          // let data = isNaN(inputDate.getTime()) ? 'Invalid date string' : inputDate.toLocaleDateString('en-GB');
+          
+          // this.interesse = `Transação concluída em ${data}`
+        }
         
         //recolhendo dados do vendedor
         this.crud.read('/endereco', '', `?Id_usuario=${this.idVendedor}`)

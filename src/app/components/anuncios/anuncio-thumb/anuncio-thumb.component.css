@@ -3,14 +3,40 @@
     flex-direction: row;
     justify-content: space-between;
     
+    color: var(--bookshire-blue);
+    text-decoration: none;
+}
+
+.container__anuncio-thumb{
     border-radius: 20px;
     padding: 15px 20px;
     text-decoration: none;
-    color: #1F3B6F;
     margin-bottom: 1.5rem;
-
+    
     /* sombras */
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.container__anuncio-thumb button{
+    border: none;
+    border-radius: 10px;
+    
+    background-color: var(--bookshire-blue);
+    color: white;
+    margin-top: 1rem;
+    padding: 5px;
+    width: 100%;
+}
+
+/* CSS do botão quando o anúncio está fechado */
+.container__anuncio-thumb button.em{
+    background-color: var(--deep-blue);
+}
+
+.andamento > button.confirmarEntrega{
+    margin-top: .5rem;
+    background-color: transparent;
+    color: var(--book-orange);
 }
 
 .anuncio-thumb__img > img{
@@ -46,5 +72,5 @@
 
 .text__transacao > h1 {
     font-size: 22px;
-    color: #FF6D1F;
+    color: var(--book-orange);
 }

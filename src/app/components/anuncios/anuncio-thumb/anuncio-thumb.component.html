@@ -18,6 +18,29 @@
                 <h1>{{transacaoData}}</h1>
             </div>
         </div>
-    
     </a>
+    
+    <!-- Aviso de anúncio EM ANDAMENTO -->
+    <div class="andamento"
+        *ngIf="status == 'Em andamento'"
+    >
+        <button
+            [ngClass]="status"
+            >
+            {{status}}
+        </button>
+        <button
+            class = "confirmarEntrega"
+        >
+            Confirmar entrega
+        </button>
+    </div>
+
+    <!-- Aviso de anúncio FECHADO -->
+    <button
+        *ngIf="status != 'Em andamento' && status != 'Aberto'"
+        [ngClass]="status"
+    >
+        {{status}}
+    </button>
 </div>

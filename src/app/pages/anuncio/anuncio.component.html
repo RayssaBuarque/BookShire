@@ -20,18 +20,27 @@
             <p class="lembrete">Parece que este anúncio possui pedidos em andamento, cancele suas transações antes de remover o anúncio.</p>
         </div>
 
+        <!-- Botão que aparece pro CLIENTE quando o anúncio está no ar -->
         <button
-        class="text__transacao" 
+            class="text__transacao" 
             (click)="prosseguir()"
             *ngIf="idUsuario != idVendedor">
             <h1>{{interesse}}</h1>
         </button>
-        
+    
+        <!-- Botão que aparece pro ANUNCIANTE quando o anúncio está no ar -->
         <button
             class="text__transacao" 
             (click)="removerAnuncio()"
-            *ngIf="idUsuario == idVendedor">
-            <h1>Remover Anúncio</h1>
+            *ngIf="idUsuario == idVendedor && statusAnuncio != 'fechado'">
+            <h1>{{interesse}}</h1>
+        </button>
+    
+        <!-- Botão que aparece pro ANUNCIANTE quando o anúncio está ENCERRADO -->
+        <button
+            class="text__transacao" 
+            *ngIf="idUsuario == idVendedor && statusAnuncio == 'fechado'">
+            <h1>{{interesse}}</h1>
         </button>
        
         <h3>{{localAnuncio}}</h3>
