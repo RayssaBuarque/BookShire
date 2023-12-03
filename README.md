@@ -96,7 +96,8 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [x] 🔐 Configurar acesso de usuário dependendo do login @RAYSSA ⏳⏳⏳
 
 #### 9th Sprint -- Pontos nos is
-- [ ] 🤝 Fazer com que vendedor também avalie o usuário @RAYSSA
+- [x] 🤝 Fazer com que vendedor também avalie o usuário @RAYSSA
+- [ ] ❌ Permitir cancelamento de pedido @RAYSSA
 
 ##### Future Sprints...
 - [ ] ⭐ Adicionar avaliações por livro @RAYSSA 
