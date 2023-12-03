@@ -85,10 +85,16 @@ export class PerfilComponent implements OnInit {
 
 
           /////AQUI É A PARTE DE COLETA DOS IDS DOS DITOS CUJOS
-          // console.log(res)
-          // if(res[i].anuncio_status == 'aberto'){
+          if(res[i].anuncio_status == 'aberto'){
             this.idAnuncios.push( res[i].Id_anuncio )
-          // }
+          }
+
+          if(this.idUsuario == this.loggedUser && res[i].anuncio_status == 'fechado'){
+            this.idAnuncios.push( res[i].Id_anuncio )
+          }
+          else if(this.idUsuario == this.loggedUser && res[i].anuncio_status == 'em andamento'){
+            this.idAnuncios.push( res[i].Id_anuncio )
+          }
         }
       })
   }

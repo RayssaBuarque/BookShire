@@ -2,6 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { CrudService } from 'src/app/services/crud/crud.service';
 import { SetLivroService } from 'src/app/services/set-livro.service';
 import { Livro } from '../../livros/livro-modelo';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-anuncio-thumb',
@@ -30,10 +31,15 @@ export class AnuncioThumbComponent implements OnInit {
 
   constructor(
     private crud:CrudService,
-    private setter:SetLivroService) { }
+    private setter:SetLivroService,
+    private router:Router) { }
 
   ngOnInit(): void {
     this.setAnuncio()
+  }
+
+  acessarChat():void{
+    this.router.navigate(['../chat'])
   }
 
   // função que confirma o término de uma transação
