@@ -25,6 +25,11 @@ export class GraficoAvaliacaoComponent implements OnInit {
       .then( (res:any) => {
         this.setNotas(res)
       })
+    // pegando todos os pedidos em que o usuário foi cliente
+    this.crud.read('/pedidos', '', `?Id_cliente=${this.idUsuario}`)
+      .then( (res:any) => {
+        this.setNotas(res)
+      })
   }
 
   //definindo o total de avaliações e mapeando as notas

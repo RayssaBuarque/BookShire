@@ -23,12 +23,22 @@ export class AnuncioThumbComponent implements OnInit {
 
   status:string = 'Aberto'
 
+  // pro processo de Confirmação de entrega
+  processoAvaliacao:boolean = false
+  idPedido!:String
+  nomeCliente:string = 'o cliente'
+
   constructor(
     private crud:CrudService,
     private setter:SetLivroService) { }
 
   ngOnInit(): void {
     this.setAnuncio()
+  }
+
+  // função que confirma o término de uma transação
+  confirmarEntrega():void{
+    this.processoAvaliacao = (this.processoAvaliacao == false)? true : false
   }
 
   // Coletando dados do anúncio
@@ -45,31 +55,41 @@ export class AnuncioThumbComponent implements OnInit {
         }
 
         this.setStatus(res[0])
-        
-
         this.setLivro()
       })
   }
 
+  // Conferindo Status do anúncio
   setStatus(dadosAnuncio:any):void{
-    console.log(dadosAnuncio)
     let status = dadosAnuncio.anuncio_status
 
-    if(status == 'em andamento'){
-      this.status = 'Em andamento'
-    }else if(status == 'fechado'){
-      this.crud.read('/pedidos', '', `?Id_anuncio=${dadosAnuncio.Id_anuncio}`)
+    this.crud.read('/pedidos', '', `?Id_anuncio=${dadosAnuncio.Id_anuncio}`)
         .then((res:any) => {
+          let dataConclusao
+
+          // Coletando dados do pedido pro popUp de avaliação
           for(let i in res){
             if(res[i].dataConclusao != null){
-              const inputDate = new Date(res[i].dataConclusao)
-              let data = isNaN(inputDate.getTime()) ? 'Invalid date string' : inputDate.toLocaleDateString('en-GB');
-              this.status = `Concluído em ${data}`
+              dataConclusao = res[i].dataConclusao // data de Conclusão
             }
           }
-          console.log(res)
-        })
-    }
+
+          if(status == 'em andamento'){
+            this.status = 'Em andamento'
+            this.idPedido = res[0].Id_pedido //Id do pedido
+
+            this.crud.read('/users', res[0].Id_cliente, '')
+                .then((r:any) => {
+                  let nome = r[0].nome.split(' ')
+                  this.nomeCliente = nome[0] + ' ' + nome[nome.length - 1]
+                });
+          }
+          else if(status == 'fechado'){
+            const inputDate = new Date(dataConclusao)
+            let data = isNaN(inputDate.getTime()) ? 'Invalid date string' : inputDate.toLocaleDateString('en-GB');
+            this.status = `Concluído em ${data}`
+          }
+      });
   }
 
   setLivro():void{

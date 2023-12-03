@@ -166,11 +166,6 @@ export class AnuncioComponent implements OnInit {
                 }
               }
             });
-          console.log(res)
-          // const inputDate = new Date(res[i].dataConclusao)
-          // let data = isNaN(inputDate.getTime()) ? 'Invalid date string' : inputDate.toLocaleDateString('en-GB');
-          
-          // this.interesse = `Transação concluída em ${data}`
         }
         
         //recolhendo dados do vendedor
