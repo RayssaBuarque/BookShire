@@ -134,6 +134,7 @@ img{
 
 @media (max-width: 699px ){
     .header_chat {
+        padding: 20px 25px;
         width: 100%;
         position: fixed;
         top: 0%;
