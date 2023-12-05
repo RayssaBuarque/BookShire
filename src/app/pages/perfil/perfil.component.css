@@ -25,7 +25,7 @@
 .info__header > h2{
     font-family: 'Advent Pro', sans-serif;
     font-size: 25px;
-    color: #152139;
+    color: var(--deep-blue);
 }
 
 /* NAVEGAÇÃO DO PERFIL */
@@ -37,19 +37,22 @@
 
     margin-top: 1.5rem;
     padding-top: .65rem;
-    border-top: 2px solid #d7deea;
-    border-bottom: 6px solid #d7deea;
+    border-top: 2px solid var(--book-clear);
+    border-bottom: 6px solid var(--book-clear);
 
     -webkit-box-shadow: 0px 46px 57px 1px rgba(215,222,234,0.75);
     -moz-box-shadow: 0px 46px 57px 1px rgba(215,222,234,0.75);
     box-shadow: 0px 46px 57px 1px rgba(215,222,234,0.75);
 }
 
-/* .nav-decor{
-    height: 5px;
-    width: 100%;
-    background-color: #d7deea;
-} */
+.log-out__btn{
+    background-color: var(--book-clear);
+    border: none;
+    border-radius: 10px;
+
+    color: white;
+    padding: 3px 15px;
+}
 
 .outroUser{
     padding-bottom: 120px;

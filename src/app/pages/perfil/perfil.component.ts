@@ -1,6 +1,6 @@
 import { Component, OnInit} from '@angular/core';
 import { CrudService } from 'src/app/services/crud/crud.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { LoginService } from 'src/app/services/login/login.service';
 
 @Component({
@@ -34,7 +34,8 @@ export class PerfilComponent implements OnInit {
   constructor(
     private crud:CrudService,
     private login:LoginService,
-    private route:ActivatedRoute) { }
+    private route:ActivatedRoute,
+    private router: Router) { }
 
   ngOnInit(): void {
     this.login.isLoggedIn()
@@ -153,6 +154,11 @@ export class PerfilComponent implements OnInit {
     }else{
       return ''
     }
+  }
+
+  logOut():void{
+    localStorage.removeItem("userId");
+    this.router.navigate(['../login'])
   }
 
 }

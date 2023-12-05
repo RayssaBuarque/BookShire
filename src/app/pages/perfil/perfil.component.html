@@ -5,11 +5,12 @@
 <div class="container__perfil" [class]="tela">
 
     <div class="header__perfil">
-        
+
         <img src="{{url_fotoUsuario}}" alt="Foto de Perfil de {{nome_usuario}}">
 
         <div class="info__header">
             <h2>{{nome_usuario}}</h2>
+            <button class="log-out__btn" (click)="logOut()">Sair</button>
         </div>
 
     </div>
