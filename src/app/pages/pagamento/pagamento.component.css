@@ -1,3 +1,4 @@
+
 /***************************************/
 /* CLASSES DE VISIBILIDADE DAS DIVS*/
 
@@ -28,15 +29,16 @@
     text-align: center;
 }
 h1 {
-    font-size: 25px;
-    margin: 10px 60px 10px 60px;
+    font-size: 2.5rem;
+    margin: 60px 60px 48px 60px;
 }
 p{
+    font-size: 120%;
     margin: 0%;
     color: #727272;
 }
 label {
-    font-size: 15px;
+    font-size: 130%;
     color: #727272;
 }
 div {
@@ -59,6 +61,7 @@ div {
     box-shadow: none;
     padding: 0%;
     margin: 0%;
+    margin-bottom: 0.5rem;
 }
 #endereco_morumbi {
     height: 20px;
@@ -70,6 +73,7 @@ div {
     box-shadow: none;
     padding: 0%;
     margin: 0%;
+    margin-bottom: 0.5rem;
 }
 .novo_editar_endereco {
     display: flex;
@@ -82,8 +86,8 @@ button {
     border-radius: 20px;
     background-color: #152139;
     color: white;
-    padding: 7px 25px;
-    font-size: 12px;
+    padding: 7px 3rem;
+    font-size: 1rem;
     border: none;
     margin:5px;
 }
@@ -111,7 +115,7 @@ button {
 }
 .button_continuar_compra {
     padding: 7px 50px;
-    font-size: 16px;
+    font-size: 110%;
 }
 /* Butanta radio button*/
 .endereco_b_radio input {
@@ -124,8 +128,8 @@ button {
 }
 .endereco_b_radio input + label::before {
     content: '';
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
     border-radius: 50%;
     background-color: white;
     border: 1px solid #152139;
@@ -152,8 +156,8 @@ button {
 }
 .endereco_m_radio input + label::before {
     content: '';
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;;
     border-radius: 50%;
     background-color: white;
     border: 1px solid #152139;
@@ -234,7 +238,7 @@ button {
     vertical-align: middle;
   }
 .cartao_pagamento h1 {
-    font-size: 30px;
+    font-size: 2.5rem;
 }
 img {
     object-fit: cover;
@@ -522,7 +526,7 @@ img {
 }
 .finalizar_compra button {
     padding: 7px 50px;
-    font-size: 16px;
+    font-size: 1.2rem;
 }
 /* Css finalizar compra*/
 .pagamento_finalizado {
@@ -533,9 +537,9 @@ img {
     vertical-align: middle;
 }
 .h1_finalizar-compra {
-    margin-top: 44px;
+    margin-top: 6rem;
     margin-bottom: 24px;
-    font-size: 30px;
+    font-size: 2.5rem;
 }
 .livro_comprado {
     display: flex;
@@ -573,7 +577,7 @@ img {
 }
 .pagamento_finalizado button{
     padding: 7px 40px;
-    font-size: 16px;
+    font-size: 1.2rem;
 }
 /* Seta */
 
