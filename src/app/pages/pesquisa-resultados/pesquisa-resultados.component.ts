@@ -9,8 +9,12 @@ import { Livro } from 'src/app/components/livros/livro-modelo';
 })
 export class PesquisaResultadosComponent implements OnInit {
 
+  // define se a pesquisa é em prol de anuúcio ou não
+  acesso:string | null = 'bloqueado'
+
   pesquisaQuery:string | null = ''
   livros:Livro[] = [];
+
   private startIndex:number = 0;
   private qtdLivros:number = 0;
 
@@ -24,6 +28,12 @@ export class PesquisaResultadosComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    //pegando o acesso da rota do URL
+    this.route.paramMap.subscribe( (value) => this.acesso = value.get('acesso') );
+    if(this.acesso == null){
+      this.acesso = 'bloqueado';
+    }
+
     //pegando a Query de pesquisa da rota do URL  
     this.route.paramMap.subscribe( (value) => this.pesquisaQuery = value.get('pesquisaQuery') );
     this.getPesquisa(this.pesquisaQuery, this.startIndex);

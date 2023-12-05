@@ -1,3 +1,7 @@
+.lembrete{
+    padding:0;
+}
+
 .resultados__livros {
     margin-top: .75rem;
 }
@@ -42,6 +46,7 @@
     width: 20px;
     height: 30px;
 }
+
 @media (min-width: 700px){
     .container__pesquisa-resultados{
         margin-top: 2.5%;
