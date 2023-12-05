@@ -39,6 +39,10 @@ const routes: Routes = [
     component: PesquisaComponent,
   },
   {
+    path:'pesquisa/:acesso/:pesquisaQuery',
+    component: PesquisaResultadosComponent
+  },
+  {
     path:'pesquisa/:pesquisaQuery',
     component: PesquisaResultadosComponent
   },

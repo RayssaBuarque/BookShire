@@ -2,9 +2,11 @@
 
 O BookShire é uma plataforma de vendas, doações e trocas de livros usados que visa facilitar o acesso à literatura.
 
+> [Confira o BookShire já!!](https://bookshire.net.s3-website-us-east-1.amazonaws.com/login)
+
 ![Banner Informativo do BookShire](/src/assets/banner.png)
 
-Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais sobre o BookShire, acesse [nosso site oficial](https://bookshire.vercel.app/)
+Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais sobre o BookShire, acesse [nosso site informativo](https://bookshire.vercel.app/).
 
 ### Atividades de Desenvolvimento
 
@@ -39,15 +41,13 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 - [x] 👤 Estilizar COMPONENTE pedidos pro Perfil @MALU
 - [x] 📢 Desenvolver tela de Anúncios @RAYSSA
 - [x] 📢 Desenvolver tela de Anúncio Específico @RAYSSA
-- [ ] 📢 Estilizar Tela de criação de anúncio @MARIA CLARA
+- [x] 📢 Estilizar Tela de criação de anúncio @MARIA CLARA
 - [x] 💵 Desenvolver tela de pagamento @MARIA CLARA
 - [x] 📪 Desenvolver tela de Chat @ MALU
 - [x] 📬 Desenvolver tela de Chat Específico @MALU
 - [x] 📬 Consertar barra de mensagens na tela de Chat Específico @MALU 
 - [x] 🔎 Criar barra de pesquisa para tela de sebos @MALU
 - [x] 🔎 Criar barra de pesquisa para tela de chat @MALU
-- [ ] 🔎 Conectar barra de pesquisa de sebos no bd 
-- [ ] 🔎 Conectar barra de pesquisa de chat no bd
 - [x] 📬 Consertar tela de chat específico @MALU
 - [x] 📬 Conectar header de chat específico com info do bd @RAYSSA
 
@@ -98,6 +98,10 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 #### 9th Sprint -- Pontos nos is
 - [x] 🤝 Fazer com que vendedor também avalie o usuário @RAYSSA
 - [ ] ❌ Permitir cancelamento de pedido @RAYSSA
+- [x] 🌳 Trocar icon da aba do BookShire @RAYSSA
+
+###### 9SP Bugs 👾👾👾
+- [x] 🔐 Consertar criação indesejada de anúncios na pesquisa de livros pela barra de pesquisa @RAYSSA
 
 ##### Future Sprints...
 - [ ] ⭐ Adicionar avaliações por livro @RAYSSA 

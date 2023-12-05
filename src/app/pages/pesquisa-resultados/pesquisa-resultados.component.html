@@ -1,7 +1,9 @@
 <app-top-nav-bar></app-top-nav-bar>
 
 <div class="container__pesquisa-resultados container">
-    
+    <div *ngIf="acesso == 'anunciar'" class="lembrete">
+        <p>Escolha o livro que deseja anunciar:</p>
+    </div>
     
     <div class="pesquisa__barra">
         <app-barra-pesquisa
@@ -17,7 +19,7 @@
             urlLivroCapa="{{livro.urlImg}}"
             nomeAutor="{{livro.autores}}"
             
-            acesso="anunciar"
+            acesso="{{acesso}}"
             ></app-card-livro>
         </button>
     </div>
