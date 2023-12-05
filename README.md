@@ -97,6 +97,7 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 
 #### 9th Sprint -- Pontos nos is
 - [x] 🤝 Fazer com que vendedor também avalie o usuário @RAYSSA
+- [x] 👋 Permitir que o usuário faça log-out @RAYSSA
 - [ ] ❌ Permitir cancelamento de pedido @RAYSSA
 - [x] 🌳 Trocar icon da aba do BookShire @RAYSSA
 
