@@ -1,12 +1,7 @@
 <!-- TELA DE LISTA DE CONVERSAS -->
 <app-top-nav-bar *ngIf="chatIndividual == false"></app-top-nav-bar>
 
-<div class="geral_conversasLista container" *ngIf="chatIndividual == false">
-    <div class="header">
-        <!--Barra de pesquisa -->
-        <app-barra-pesquisa-chat></app-barra-pesquisa-chat>
-    </div>
-    
+<div class="geral_conversasLista container" *ngIf="chatIndividual == false">   
 
     <!-- Lista de conversas -->
     <div class="lembrete" *ngIf="idChats.length == 0">
