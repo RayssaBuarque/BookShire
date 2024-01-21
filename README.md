@@ -8,6 +8,7 @@ O BookShire é uma plataforma de vendas, doações e trocas de livros usados que
 
 Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais sobre o BookShire, acesse [nosso site informativo](https://bookshire.vercel.app/).
 
+<!--
 ### Atividades de Desenvolvimento
 
 ##### 1st Sprint -- Componentes Principais
@@ -106,7 +107,8 @@ Este é o repositório de desenvolvimento oficial do BookShire. Para saber mais 
 
 ##### Future Sprints...
 - [ ] ⭐ Adicionar avaliações por livro @RAYSSA 
-- [ ] 📨 Fazer conexões de dados de Mensagens @RAYSSA 
+- [ ] 📨 Fazer conexões de dados de Mensagens @RAYSSA
+-->
 
 
 ### Setup and Documentations
@@ -118,7 +120,7 @@ This project was made with:
 - [AWS Lambda](https://aws.amazon.com/pm/lambda/?trk=56f58804-91cd-4af4-98d4-afe277a57fd3&sc_channel=ps&ef_id=CjwKCAiA3aeqBhBzEiwAxFiOBr1fz1cyLtHgc7qp1qWNMpnqEjdUU9-7QoD1brKaXWGKrC1MRMLKIRoCQRoQAvD_BwE:G:s&s_kwcid=AL!4422!3!651510591822!e!!g!!aws%20lambda!19828231347!148480170233)
 - [AWS API Gateway](https://aws.amazon.com/api-gateway/) 
 
-
+<!--
 ### Dependencies:
     
 Angular CLI:
@@ -131,4 +133,4 @@ Angular Builder:
 
 ngBootstrap:
 
-    ng add @ng-bootstrap/ng-bootstrap
+    ng add @ng-bootstrap/ng-bootstrap -->
